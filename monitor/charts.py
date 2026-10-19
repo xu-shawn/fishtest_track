@@ -54,7 +54,7 @@ THEMES = {
     "light": Theme(
         surface="#fcfcfb", border="#0b0b0b1a", ink="#0b0b0b", ink2="#52514e",
         muted="#898781", grid="#e1e0d9", axis="#c3c2b7",
-        types=("#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6",
+        types=("#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#64748b", "#6250d6",
                "#e34948"),
         passed="#0ca30c", simplified="#66ccff", rejected="#c3c2b7", other="#e1e0d9",
         heat="#184f95", others="#e1e0d9",
@@ -63,7 +63,7 @@ THEMES = {
     "dark": Theme(
         surface="#1a1a19", border="#ffffff1a", ink="#f0efec", ink2="#c3c2b7",
         muted="#898781", grid="#2c2c2a", axis="#383835",
-        types=("#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9",
+        types=("#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#94a3b8", "#9085e9",
                "#e66767"),
         passed="#0ca30c", simplified="#66ccff", rejected="#52514e", other="#383835",
         heat="#9ec5f4", others="#383835",
@@ -489,23 +489,28 @@ def types_chart(checks: list[Check], now: datetime, theme: Theme, days: int = 14
                        f"Cores by test type ({', '.join(TEST_TYPES)}) over the last {days} days")
 
 
-def type_counts_chart(hourly: list[dict], tests_info: dict[str, dict[str, str]],
-                      checks: list[Check], now: datetime, theme: Theme, days: int = 14) -> str:
-    """Running tests by test type, from the hourly breakdown of running tests."""
+def breakdown_types_chart(hourly: list[dict], tests_info: dict[str, dict[str, str]],
+                          checks: list[Check], now: datetime, theme: Theme, count: bool = False,
+                          days: int = 14) -> str:
+    """Cores (or, with `count`, running tests) by test type, from the per-test hourly
+    breakdown. Each test's type is looked up as of now, so reclassifying a test also
+    corrects its history."""
     times = [parse_iso(row["time"]) for row in hourly]
     t1 = max([now] + times)
     t0 = min(max(t1 - timedelta(days=days), min(times, default=t1)), t1 - timedelta(hours=12))
     points = []
     for row, t in zip(hourly, times):
         if t >= t0:
-            counts = [0] * _N
-            for test_id in row.get("tests", {}):
+            values = [0] * _N
+            for test_id, cores in row.get("tests", {}).items():
                 k = TYPE_INDEX.get(tests_info.get(test_id, {}).get("type", ""))
                 if k is not None:
-                    counts[k] += 1
-            points.append((t, counts))
-    return _type_stack(theme, points, t0, t1, MAX_GAP, _outages(checks, t0), "tests running",
-                       f"Running tests by test type ({', '.join(TEST_TYPES)}) over the last {days} days")
+                    values[k] += 1 if count else cores
+            points.append((t, values))
+    what = "Running tests" if count else "Cores"
+    return _type_stack(theme, points, t0, t1, MAX_GAP, _outages(checks, t0),
+                       "tests running" if count else "cores in total",
+                       f"{what} by test type ({', '.join(TEST_TYPES)}) over the last {days} days")
 
 
 # ---------------------------------------------------------------- per-entity bands over time
@@ -1390,7 +1395,7 @@ def weekly_types_chart(checks: list[Check], now: datetime, theme: Theme, weeks: 
     """Average cores per week by test type, measured from the hourly snapshots."""
     by_week: dict[date, list[Check]] = defaultdict(list)
     for c in checks:
-        if c.has_data:
+        if c.has_data and c.cores_stc is not None:  # snapshots without a type split are skipped
             by_week[_week_start(c.time.date())].append(c)
     this_week = _week_start(now.date())
     first = max(min(by_week, default=this_week), this_week - timedelta(weeks=weeks - 1))
@@ -1662,6 +1667,7 @@ def _tests_info(history: History) -> dict[str, dict[str, str]]:
 def render_all(history: History, now: datetime) -> dict[str, str]:
     """Every chart in both themes, keyed by file name."""
     h = history
+    info = _tests_info(h)
     hourly_times = [parse_iso(row["time"]) for row in h.hourly]
     authors_cores = _hourly_series(h.hourly, "authors", 0)
     authors_tests = _hourly_series(h.hourly, "authors", 1)
@@ -1682,7 +1688,7 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
         files[f"runtime-{mode}.svg"] = runtime_chart(h.active, now, theme)
         files[f"throughput-{mode}.svg"] = throughput_chart(h.finished, now, theme)
         files[f"runtime-trend-{mode}.svg"] = runtime_trend_chart(h.finished, now, theme)
-        files[f"types-{mode}.svg"] = types_chart(h.checks, now, theme)
+        files[f"types-{mode}.svg"] = breakdown_types_chart(h.hourly, info, h.checks, now, theme)
         files[f"activity-{mode}.svg"] = activity_chart(h.checks, now, theme)
         files[f"finished-{mode}.svg"] = finished_chart(h.finished, now, theme)
         files[f"llr-{mode}.svg"] = llr_chart(h.llr, now, theme)
@@ -1692,13 +1698,13 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
                            ("net", "net"), ("search", "search")):
             files[f"weekly-{name}-{mode}.svg"] = weekly_finished_chart(h.finished, now, theme,
                                                                        kind=kind)
-        files[f"tests-trend-{mode}.svg"] = tests_trend_chart(h.hourly, _tests_info(h), now, theme)
+        files[f"tests-trend-{mode}.svg"] = tests_trend_chart(h.hourly, info, now, theme)
         files[f"authors-trend-{mode}.svg"] = entity_trend_chart(
             authors_cores, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="authors",
             unit="cores", label="Cores per author over the last 14 days")
         files[f"net-search-trend-{mode}.svg"] = net_search_chart(h.checks, now, theme)
-        files[f"type-counts-{mode}.svg"] = type_counts_chart(h.hourly, _tests_info(h), h.checks,
-                                                               now, theme)
+        files[f"type-counts-{mode}.svg"] = breakdown_types_chart(h.hourly, info, h.checks, now,
+                                                                   theme, count=True)
         files[f"author-tests-trend-{mode}.svg"] = entity_trend_chart(
             authors_tests, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="authors",
             unit="tests", label="Running tests per author over the last 14 days")

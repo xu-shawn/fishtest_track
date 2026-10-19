@@ -555,11 +555,15 @@ class Charts(unittest.TestCase):
         hourly = [{"time": f"2026-10-19T0{h}:17:00Z", "tests": {"a": 10, "b": 20, "c": 200}}
                   for h in range(4)]
         info = {"a": {"type": "STC"}, "b": {"type": "STC"}, "c": {"type": "Progtest"}}
-        svg = charts.type_counts_chart(hourly, info, [], NOW, charts.THEMES["light"])
+        svg = charts.breakdown_types_chart(hourly, info, [], NOW, charts.THEMES["light"], count=True)
         ET.fromstring(svg)
         self.assertIn("3 tests running", svg)
         self.assertIn(">STC 2<", svg)
         self.assertIn(">Progtest 1<", svg)
+        # Cores use the same lookup, so a reclassified test moves in the whole history.
+        svg = charts.breakdown_types_chart(hourly, info, [], NOW, charts.THEMES["light"])
+        self.assertIn("230 cores in total", svg)
+        self.assertIn(">Progtest 200<", svg)
 
     def test_net_search_chart(self):
         checks = [make_check(h, tests_net=8 + h % 3) for h in range(30, -1, -1)]
