@@ -1,5 +1,6 @@
-time,status,reason,tests_active,tests_pending,authors_active,workers,contributors,cores,cores_stc,cores_ltc,cores_vltc,cores_vvltc,cores_smp,cores_nodestime,cores_spsa,mnps,games_per_min,pending_hours,latency_ms
-2026-10-19T05:46:19Z,up,,53,2,17,170,,1614,740,222,0,426,214,12,0,886.0,1310.5,53.7,570
-2026-10-19T05:57:41Z,up,,53,2,17,171,58,1645,708,276,0,494,155,12,0,870.0,1277.0,51.9,601
-2026-10-19T06:06:49Z,up,,53,2,17,169,58,1610,733,215,0,408,242,12,0,893.8,1333.3,53.2,585
-2026-10-19T06:16:33Z,up,,53,3,17,170,57,1613,722,225,0,417,234,15,0,901.5,1270.4,59.7,570
+time,status,reason,tests_active,tests_pending,authors_active,workers,contributors,cores,cores_stc,cores_ltc,cores_vltc,cores_vvltc,cores_smp,cores_nodestime,cores_spsa,tests_net,cores_net,mnps,games_per_min,pending_hours,latency_ms
+2026-10-19T05:46:19Z,up,,53,2,17,170,,1614,740,222,0,426,214,12,0,,,886.0,1310.5,53.7,570
+2026-10-19T05:57:41Z,up,,53,2,17,171,58,1645,708,276,0,494,155,12,0,,,870.0,1277.0,51.9,601
+2026-10-19T06:06:49Z,up,,53,2,17,169,58,1610,733,215,0,408,242,12,0,,,893.8,1333.3,53.2,585
+2026-10-19T06:16:33Z,up,,53,3,17,170,57,1613,722,225,0,417,234,15,0,,,901.5,1270.4,59.7,570
+2026-10-19T06:55:41Z,up,,54,2,17,172,59,1618,710,270,0,435,192,11,0,10,421,913.5,1225.1,65.9,996
