@@ -1378,6 +1378,102 @@ def weekly_types_chart(checks: list[Check], now: datetime, theme: Theme, weeks: 
     return _doc(WIDTH, top + 200 + 24 + PAD, theme, label, body)
 
 
+# ---------------------------------------------------------------- throughput and runtimes
+
+def throughput_chart(finished: dict[str, dict[str, str]], now: datetime, theme: Theme,
+                     days: int = 14) -> str:
+    """Tests finished per hour: faint hourly counts under a trailing 24-hour average.
+    Only complete hours count, and tests stopped before playing a game are left out."""
+    hour = timedelta(hours=1)
+    end = now.replace(minute=0, second=0, microsecond=0)  # the current hour is still running
+    start = end - timedelta(days=days)
+    counts: dict[datetime, int] = defaultdict(int)
+    for r in finished.values():
+        if int(r.get("games") or 0) > 0:
+            counts[parse_iso(r["finished"]).replace(minute=0, second=0)] += 1
+    slots = [start + i * hour for i in range(days * 24)]
+    hourly = [counts.get(s, 0) for s in slots]
+    rolling = [sum(counts.get(s - j * hour, 0) for j in range(24)) / 24 for s in slots]
+
+    color = theme.ink2
+    header_y = PAD + 13
+    body = [
+        f'<rect x="{PAD}" y="{header_y - 9}" width="10" height="10" rx="2" fill="{color}" '
+        f'fill-opacity="0.25"/>',
+        _text(PAD + 16, header_y, "Finished in each hour", theme.ink2, 12),
+    ]
+    x = PAD + 16 + text_width("Finished in each hour", 12) + 18
+    body += [_line(x, header_y - 4, x + 14, header_y - 4, color, 2),
+             _text(x + 20, header_y, "24-hour average", theme.ink2, 12)]
+    if slots:
+        body.append(_text(WIDTH - PAD, header_y, f"{rolling[-1]:.2f} per hour now · "
+                          f"{sum(hourly):,} in {days} days", theme.ink, 13, 600, "end"))
+
+    ticks = nice_ticks(max(hourly + rolling, default=0), integer=True)
+    frame = Frame(PAD + 44, WIDTH - PAD - 8, header_y + 24, header_y + 24 + 200, start, end, ticks[-1])
+    body += _frame(theme, frame, ticks, compact, PAD, WIDTH - PAD, [])
+    slot_w = (frame.right - frame.left) / max(1, len(slots))
+    for i, c in enumerate(hourly):
+        if c:
+            x0 = frame.left + i * slot_w
+            body.append(f'<rect x="{_n(x0 + slot_w * 0.15)}" y="{_n(frame.y(c))}" '
+                        f'width="{_n(slot_w * 0.7)}" height="{_n(frame.bottom - frame.y(c))}" '
+                        f'fill="{color}" fill-opacity="0.25"/>')
+    points = " ".join(f"{_n(frame.left + (i + 0.5) * slot_w)},{_n(frame.y(v))}"
+                      for i, v in enumerate(rolling))
+    if points:
+        body.append(f'<polyline points="{points}" fill="none" stroke="{color}" stroke-width="2" '
+                    f'stroke-linejoin="round" stroke-linecap="round"/>')
+        last_x, last_y = frame.left + (len(slots) - 0.5) * slot_w, frame.y(rolling[-1])
+        body.append(f'<circle cx="{_n(last_x)}" cy="{_n(last_y)}" r="4" fill="{color}" '
+                    f'stroke="{theme.surface}" stroke-width="2"/>')
+    # Tooltips per day: hovering an hour column is too fiddly at this width.
+    for d in range(days):
+        day_slots = range(d * 24, (d + 1) * 24)
+        first = slots[d * 24]
+        tip = (f"{first:%b} {first.day}: {sum(hourly[i] for i in day_slots)} tests finished, "
+               f"busiest hour {max(hourly[i] for i in day_slots)}")
+        body.append(_hit(frame.left + d * 24 * slot_w, frame.top, 24 * slot_w,
+                         frame.bottom - frame.top, tip))
+    label = f"Tests finished per hour over the last {days} days, with a 24-hour average"
+    return _doc(WIDTH, frame.bottom + 24 + PAD, theme, label, body)
+
+
+RUNTIME_BUCKETS = [(1, "<1h"), (3, "1–3h"), (6, "3–6h"), (12, "6–12h"), (24, "12h–1d"),
+                   (48, "1–2d"), (96, "2–4d"), (168, "4–7d"), (336, "1–2w"), (math.inf, "2w+")]
+
+
+def _age(hours: float) -> str:
+    return f"{hours:.0f} h" if hours < 48 else f"{hours / 24:.1f} days"
+
+
+def runtime_chart(active: list[dict[str, str]], now: datetime, theme: Theme) -> str:
+    """How long the running tests have been going (since they were submitted), by test type."""
+    running = [r for r in active if _int(r, "cores") > 0 and r.get("started")]
+    counts = [[0] * (_N + 1) for _ in RUNTIME_BUCKETS]
+    ages = []
+    for r in running:
+        hours = (now - parse_iso(r["started"])).total_seconds() / 3600
+        ages.append(hours)
+        bucket = next(i for i, (limit, _) in enumerate(RUNTIME_BUCKETS) if hours < limit)
+        counts[bucket][TYPE_INDEX.get(r["type"], _N)] += 1
+
+    present = {k for c in counts for k in range(_N + 1) if c[k]}
+    summary = (f"{len(running)} running tests · median {_age(statistics.median(ages))} since submitted"
+               if ages else "")
+    body, header_y = _header(theme, _type_items(theme, present), summary)
+    columns = []
+    for (_, label), c in zip(RUNTIME_BUCKETS, counts):
+        split = ", ".join(f"{c[k]} {TEST_TYPES[k] if k < _N else 'other'}" for k in range(_N + 1) if c[k])
+        tip = f"Running for {label}: {sum(c)} {'test' if sum(c) == 1 else 'tests'}" + (f" — {split}" if split else "")
+        columns.append(Column(label, c, tip))
+    top = header_y + 24
+    colors = [_part_color(theme, k) for k in range(_N + 1)]
+    body += _columns(theme, colors, columns, PAD + 36, WIDTH - PAD, top, top + 180)
+    label = "Running tests by how long ago they were submitted, stacked by test type"
+    return _doc(WIDTH, top + 180 + 24 + PAD, theme, label, body)
+
+
 # ---------------------------------------------------------------- all charts
 
 def _hourly_series(hourly: list[dict], key: str, index: int) -> dict[str, dict[datetime, float]]:
@@ -1433,6 +1529,8 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
         files[f"tests-{mode}.svg"] = tests_chart(h.active, theme)
         files[f"authors-{mode}.svg"] = authors_chart(h.active, theme)
         files[f"contributors-{mode}.svg"] = contributors_chart(h.workers, h.active, theme)
+        files[f"runtime-{mode}.svg"] = runtime_chart(h.active, now, theme)
+        files[f"throughput-{mode}.svg"] = throughput_chart(h.finished, now, theme)
         files[f"types-{mode}.svg"] = types_chart(h.checks, now, theme)
         files[f"activity-{mode}.svg"] = activity_chart(h.checks, now, theme)
         files[f"finished-{mode}.svg"] = finished_chart(h.finished, now, theme)

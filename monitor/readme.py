@@ -243,6 +243,8 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
     _section(lines, "Tests, authors, contributors and throughput", "activity", url, "Line charts of "
              "tests running and waiting, authors, workers, contributors, nodes per second, games per "
              "minute and pending hours over the last 14 days.")
+    _section(lines, "Tests finished per hour", "throughput", url, "Faint columns of tests finished "
+             "in each hour over the last 14 days, with a line for the trailing 24-hour average.")
     if h.llr:
         _section(lines, "LLR distribution of running tests", "llr", url, "Heatmap of where the LLRs "
                  "of running SPRT tests sit between -2.94 (reject) and +2.94 (pass), one column per "
@@ -301,6 +303,9 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
         "", "### Cores by test", "",
         _picture("tests", url, "Horizontal bars of cores per running test, largest first, "
                  "colored by test type."),
+        "", "### Runtime of running tests", "",
+        _picture("runtime", url, "Columns of running tests by how long ago they were submitted, "
+                 "from under an hour to over two weeks, stacked by test type."),
         "", "### Cores by author", "",
         _picture("authors", url, "Horizontal bars of cores per author, largest first, "
                  "split by test type."),

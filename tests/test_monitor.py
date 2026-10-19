@@ -538,6 +538,27 @@ class Charts(unittest.TestCase):
         self.assertIn("1,900 cores on average this week", svg)
         ET.fromstring(charts.weekly_types_chart([], NOW, theme))
 
+    def test_throughput_chart(self):
+        finished = {str(i): {"id": str(i), "games": "1000", "outcome": "rejected",
+                             "finished": (NOW - timedelta(hours=1, minutes=10 * i)).strftime("%Y-%m-%dT%H:%M:%SZ")}
+                    for i in range(12)}  # 12 tests over the 2 hours before the current one
+        finished["empty"] = {**finished["0"], "id": "empty", "games": "0"}  # stopped at once
+        svg = charts.throughput_chart(finished, NOW, charts.THEMES["light"])
+        ET.fromstring(svg)
+        self.assertIn("0.50 per hour now · 12 in 14 days", svg)  # 12 tests / 24 hours
+
+    def test_runtime_chart(self):
+        def running(hours_ago, kind, test_id):
+            return {"id": test_id, "cores": "8", "type": kind,
+                    "started": (NOW - timedelta(hours=hours_ago)).strftime("%Y-%m-%dT%H:%M:%SZ")}
+        active = [running(0.5, "STC", "a"), running(2, "STC", "b"), running(30, "LTC", "c"),
+                  running(400, "VVLTC", "d"), {**running(5, "STC", "w"), "cores": "0"}]
+        svg = charts.runtime_chart(active, NOW, charts.THEMES["light"])
+        ET.fromstring(svg)
+        self.assertIn("4 running tests · median 16 h since submitted", svg)
+        self.assertIn("Running for 2w+: 1 test — 1 VVLTC", svg)
+        self.assertIn("Running for 1–2d: 1 test — 1 LTC", svg)
+
     def test_header_wraps_when_crowded(self):
         theme = charts.THEMES["light"]
         _, one_line = charts._header(theme, charts._type_items(theme, [0, 1]), "1,644 cores in total")
@@ -610,7 +631,7 @@ class Readme(unittest.TestCase):
         self.assertIn("**2 passed** (1 STC, 1 nodestime)", text)
         self.assertIn("| 100+1\u00a0nodestime |", text)
         self.assertIn("SPRT pass rate 66.7%: 66.7% for gainers (3); 66.7% for search tests (3)", text)
-        for chart in ("weekly-net", "weekly-search"):
+        for chart in ("weekly-net", "weekly-search", "throughput", "runtime"):
             self.assertIn(f"/{chart}-light.svg", text)
         self.assertIn("| Net tests running | 0 |", text)
         for chart in ("weekly-gainers", "weekly-simplifications"):
