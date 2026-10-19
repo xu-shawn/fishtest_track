@@ -1,0 +1,67 @@
+name: Status report
+
+on:
+  schedule:
+    - cron: "17 * * * *" # hourly, away from the busy top of the hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Never run two checks at once; a late run waits for the previous one.
+concurrency:
+  group: status-report
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Check fishtest
+        run: python -m monitor collect
+
+      - name: Draw charts
+        run: python -m monitor charts --out build/charts
+
+      - name: Publish charts
+        id: charts
+        run: |
+          # A single parentless commit, force-pushed to the charts branch, so chart
+          # images are replaced each hour instead of piling up in the history.
+          export GIT_INDEX_FILE="$RUNNER_TEMP/charts-index"
+          git --work-tree=build/charts add --all
+          commit=$(git commit-tree "$(git write-tree)" -m "Charts from run ${GITHUB_RUN_ID}")
+          git push --force origin "${commit}:refs/heads/charts"
+          echo "sha=${commit}" >> "$GITHUB_OUTPUT"
+
+      - name: Update README
+        env:
+          CHARTS_SHA: ${{ steps.charts.outputs.sha }}
+        # Linking to the exact commit means every update gets fresh image URLs,
+        # so GitHub's image cache never shows stale charts.
+        run: >-
+          python -m monitor readme
+          --charts-url "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${CHARTS_SHA}"
+
+      - name: Commit results
+        run: |
+          git add data README.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit --quiet -m "Status report $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase
+          done
+          exit 1

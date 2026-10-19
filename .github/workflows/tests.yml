@@ -1,0 +1,19 @@
+name: Tests
+
+on:
+  push:
+    paths: ["monitor/**", "tests/**", ".github/workflows/tests.yml"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"] # oldest supported and the one the monitor runs on
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m unittest -v
