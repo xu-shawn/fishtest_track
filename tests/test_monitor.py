@@ -102,7 +102,11 @@ class Summaries(unittest.TestCase):
         self.assertEqual(fishtest.classify_test({"tc": "60+0.6", "threads": 6}), "VVLTC")
         self.assertEqual(fishtest.classify_test({"tc": "20+0.2", "threads": 8}), "SMP")
         prog = {"tc": "60+0.6", "threads": 8, "num_games": 60000, "new_tag": "master",
-                "base_tag": "edb0d9db6731067ec50ce619ff372b463bc4dd5d"}
+                "base_tag": "edb0d9db6731067ec50ce619ff372b463bc4dd5d",
+                "info": 'SMP Progression test of "Update NNUE architecture" of Oct 17'}
+        # A fork's own master over 60,000 games, but not a progression test.
+        self.assertEqual(fishtest.classify_test({**prog, "threads": 1, "info": "Yeet psqt weights"}),
+                         "LTC")
         self.assertEqual(fishtest.classify_test(prog), "Progtest")
         self.assertEqual(fishtest.classify_test({**prog, "threads": 1}), "Progtest")
         self.assertEqual(fishtest.classify_test({**prog, "new_tag": "my-branch", "base_tag": "master"}),

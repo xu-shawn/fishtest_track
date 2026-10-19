@@ -11,6 +11,7 @@ import gzip
 import http.client
 import json
 import math
+import re
 import os
 import time
 import urllib.error
@@ -32,6 +33,9 @@ TYPE_COLUMNS = {t: f"cores_{t.lower()}" for t in TEST_TYPES}
 LTC_MIN_BASE_TIME = 40  # seconds; fishtest's own STC/LTC boundary (rundb.ltc_lower_bound)
 VLTC_MIN_BASE_TIME = 180  # seconds; VLTC is 180+1.8
 PROGTEST_MIN_GAMES = 60000
+# Progression tests say so in their description ("Progression test of ...", "SMP Progression
+# test of ..."); that tells them apart from other fixed-games tests of a fork's own master.
+PROGTEST_INFO = re.compile(r"\bprog(ression)?[ -]?test", re.IGNORECASE)
 LLR_BINS = 16
 STANDARD_LLR_BOUND = math.log(0.95 / 0.05)  # 2.944, the bound for alpha = beta = 0.05
 
@@ -219,12 +223,13 @@ def base_time(tc: str) -> float:
 
 def is_progtest(args: dict, tc_base: float) -> bool:
     """A progression test: master against the last release over a fixed number of
-    games (60,000 at LTC or VVLTC), with no SPRT or SPSA."""
+    games (60,000 at LTC or VVLTC), with no SPRT or SPSA, described as such."""
     return ("sprt" not in args and "spsa" not in args
             and int(args.get("num_games") or 0) >= PROGTEST_MIN_GAMES
             and tc_base >= LTC_MIN_BASE_TIME
             and args.get("new_tag") == "master"
-            and args.get("base_tag") not in (None, "", "master"))
+            and args.get("base_tag") not in (None, "", "master")
+            and bool(PROGTEST_INFO.search(args.get("info") or "")))
 
 
 def classify_test(args: dict, tc_base: float | None = None) -> str:

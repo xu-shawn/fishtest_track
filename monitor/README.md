@@ -26,7 +26,7 @@ Test types are checked in this order:
 |:--|:--|:--|
 | Nodestime | either engine sets the `nodestime` option to a non-zero value (those tests count nodes rather than time) | 100+1 nodestime=60 |
 | SPSA | parameter tuning run | 60+0.6 |
-| Progtest | progression test: `master` against the last release, at least 60,000 fixed games (no SPRT or SPSA) at an LTC base time | 60+0.6, 1 or 8 threads |
+| Progtest | progression test: `master` against the last release, at least 60,000 fixed games (no SPRT or SPSA) at an LTC base time, described as a progression test | 60+0.6, 1 or 8 threads |
 | VVLTC | more than one thread, base time of 40 s or more | 60+0.6, 8 threads |
 | SMP | more than one thread, shorter base time | 5+0.05 or 20+0.2, 8 threads |
 | VLTC | one thread, base time of 180 s or more | 180+1.8 |
