@@ -8705,3 +8705,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ac581495349156614d93d41,2026-10-19T15:18:36Z,2026-10-06T23:16:25Z,Kaarssteun,simp-qs-ttdepth,LTC,0,60+0.6,1,-1.75,0.25,rejected,554112,-0.49,0.42,28547.9
 6ace7a9a733e627f7058bfa9,2026-10-19T16:27:32Z,2026-10-13T18:38:18Z,sg,rescale_stat_score2,STC,0,10+0.1,1,0,2,rejected,136896,-0.15,0.91,1175.5
 6ad2e41e733e627f7058c535,2026-10-19T17:30:28Z,2026-10-17T02:57:34Z,Dubslow,nettest-505-s1,STC,1,10+0.1,1,0,2,rejected,76256,-0.67,1.24,654.8
+6ad54da9733e627f7058c7a9,2026-10-19T18:29:18Z,2026-10-18T22:52:25Z,shawnxu,test1732,STC,1,10+0.1,1,0,2,rejected,19200,-4.11,2.45,164.9
