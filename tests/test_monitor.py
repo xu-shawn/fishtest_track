@@ -565,14 +565,21 @@ class Charts(unittest.TestCase):
         self.assertIn("230 cores in total", svg)
         self.assertIn(">Progtest 200<", svg)
 
-    def test_net_search_chart(self):
-        checks = [make_check(h, tests_net=8 + h % 3) for h in range(30, -1, -1)]
-        checks[0] = make_check(31, tests_net=None)  # older checks lack the column: skipped
-        svg = charts.net_search_chart(checks, NOW, charts.THEMES["light"])
+    def test_split_charts(self):
+        hourly = [{"time": f"2026-10-19T0{h}:17:00Z", "tests": {"g": 30, "s": 20, "n": 200, "f": 300}}
+                  for h in range(4)]
+        info = {"g": {"net": "0", "elo0": "0", "elo1": "2"},
+                "s": {"net": "0", "elo0": "-1.75", "elo1": "0.25"},
+                "n": {"net": "1", "elo0": "0.5", "elo1": "2.5"},
+                "f": {"net": "0", "elo0": "", "elo1": ""}}  # fixed games: no bounds
+        svg = charts.split_chart(hourly, info, NOW, charts.THEMES["light"], "net")
         ET.fromstring(svg)
-        self.assertIn("8 of 50 running tests are net tests", svg)
-        self.assertIn("Net tests: 8 running now, peak 10", svg)
-        self.assertIn(">Search tests<", svg)
+        self.assertIn("3 search tests · 1 net test", svg)
+        self.assertIn("Net tests: 1 running now, peak 1", svg)
+        svg = charts.split_chart(hourly, info, NOW, charts.THEMES["light"], "bounds")
+        ET.fromstring(svg)
+        self.assertIn("2 gainers · 1 simplification · 1 test without SPRT bounds", svg)
+        self.assertIn('fill="#66ccff"', svg)  # simplifications in fishtest's blue
 
     def test_throughput_chart(self):
         finished = {str(i): {"id": str(i), "games": "1000", "outcome": "rejected",
@@ -684,7 +691,7 @@ class Readme(unittest.TestCase):
         self.assertIn("| 100+1\u00a0nodestime |", text)
         self.assertIn("SPRT pass rate 66.7%: 66.7% for gainers (3); 66.7% for search tests (3)", text)
         for chart in ("weekly-net", "weekly-search", "throughput", "runtime", "runtime-trend",
-                      "net-search-trend", "type-counts"):
+                      "net-search-trend", "type-counts", "bounds-trend"):
             self.assertIn(f"/{chart}-light.svg", text)
         self.assertIn("| Net tests running | 0 |", text)
         for chart in ("weekly-gainers", "weekly-simplifications"):

@@ -793,24 +793,47 @@ def neighbor_shades(order: list[str], kind: dict[str, int],
     return shade
 
 
-def net_search_chart(checks: list[Check], now: datetime, theme: Theme, days: int = 14) -> str:
-    """Running tests over time, split into search tests and net tests."""
-    measured = [c for c in checks if c.has_data and c.tests_net is not None]
-    times = [c.time for c in measured]
+def split_chart(hourly: list[dict], tests_info: dict[str, dict[str, str]], now: datetime,
+                theme: Theme, split: str, days: int = 14) -> str:
+    """Running tests over time split into kinds: net vs search tests (`split="net"`) or
+    gainer vs simplification bounds (`split="bounds"`). Built from the per-test hourly
+    breakdown with each test's current details, like the type charts."""
+    if split == "net":
+        kinds = [("Search tests", theme.ranked[0], lambda i: i.get("net") == "0",
+                  ("search test", "search tests")),
+                 ("Net tests", theme.ranked[1], lambda i: i.get("net") == "1",
+                  ("net test", "net tests"))]
+    else:
+        def bounds(i: dict[str, str]) -> str:
+            return bounds_kind(i.get("elo0"), i.get("elo1"))
+        kinds = [("Gainer bounds", theme.passed, lambda i: bounds(i) == "gainer",
+                  ("gainer", "gainers")),
+                 ("Simplification bounds", theme.simplified, lambda i: bounds(i) == "simplification",
+                  ("simplification", "simplifications")),
+                 ("No SPRT bounds", theme.others, lambda i: bounds(i) == "",
+                  ("test without SPRT bounds", "tests without SPRT bounds"))]
+    times = [parse_iso(row["time"]) for row in hourly]
     t1 = max([now] + times)
     t0 = min(max(t1 - timedelta(days=days), min(times, default=t1)), t1 - timedelta(hours=12))
-    search = {c.time: (c.tests_active or 0) - c.tests_net for c in measured}
-    net = {c.time: c.tests_net for c in measured}
+    series: list[dict[datetime, float]] = [{} for _ in kinds]
+    for row, t in zip(hourly, times):
+        infos = [tests_info[i] for i in row.get("tests", {}) if i in tests_info]
+        for k, (_, _, match, _) in enumerate(kinds):
+            series[k][t] = sum(1 for i in infos if match(i))
 
     def tip(name: str, values: dict[datetime, float]) -> str:
         latest = values[times[-1]] if times else 0
         return f"{name}: {latest:,.0f} running now, peak {max(values.values(), default=0):,.0f}"
 
-    bands = [Band("Search tests", theme.ranked[0], search, tip("Search tests", search)),
-             Band("Net tests", theme.ranked[1], net, tip("Net tests", net))]
-    summary = f"{net[times[-1]]} of {net[times[-1]] + search[times[-1]]} running tests are net tests" if times else ""
+    bands = [Band(name, color, values, tip(name, values))
+             for (name, color, _, _), values in zip(kinds, series)]
+
+    now_counts = [values[times[-1]] for values in series] if times else []
+    summary = " · ".join(f"{n} {words[0] if n == 1 else words[1]}"
+                         for (_, _, _, words), n in zip(kinds, now_counts) if n)
+    what = "net tests and search tests" if split == "net" else "tests by SPRT bounds"
     return _band_chart(theme, times, bands, t0, t1, MAX_GAP, [], summary,
-                       f"Running net tests and search tests over the last {days} days")
+                       f"Running {what} over the last {days} days")
 
 
 def tests_trend_chart(hourly: list[dict], tests_info: dict[str, dict[str, str]], now: datetime,
@@ -1702,7 +1725,8 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
         files[f"authors-trend-{mode}.svg"] = entity_trend_chart(
             authors_cores, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="authors",
             unit="cores", label="Cores per author over the last 14 days")
-        files[f"net-search-trend-{mode}.svg"] = net_search_chart(h.checks, now, theme)
+        files[f"net-search-trend-{mode}.svg"] = split_chart(h.hourly, info, now, theme, "net")
+        files[f"bounds-trend-{mode}.svg"] = split_chart(h.hourly, info, now, theme, "bounds")
         files[f"type-counts-{mode}.svg"] = breakdown_types_chart(h.hourly, info, h.checks, now,
                                                                    theme, count=True)
         files[f"author-tests-trend-{mode}.svg"] = entity_trend_chart(

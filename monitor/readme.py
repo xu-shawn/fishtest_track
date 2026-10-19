@@ -233,9 +233,12 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
     if h.hourly:
         _section(lines, "Tests by type", "type-counts", url, "Stacked area of running tests by test "
                  "type over the last 14 days.")
-    if any(c.tests_net is not None for c in checks):
+    if h.hourly:
         _section(lines, "Net tests and search tests", "net-search-trend", url, "Stacked bands of "
                  "running search tests and net tests over the last 14 days.")
+        _section(lines, "Gainer and simplification bounds", "bounds-trend", url, "Stacked bands of "
+                 "running tests with gainer bounds, simplification bounds and no SPRT bounds over "
+                 "the last 14 days.")
     if h.hourly:
         _section(lines, "Cores by test", "tests-trend", url, "Stacked bands of cores per test over "
                  "the last 14 days, one band per test, colored by test type.")
