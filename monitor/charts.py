@@ -434,27 +434,23 @@ def activity_chart(checks: list[Check], now: datetime, theme: Theme, days: int =
 _TYPE_ATTRS = tuple(TYPE_COLUMNS[t] for t in TEST_TYPES)
 
 
-def types_chart(checks: list[Check], now: datetime, theme: Theme, days: int = 14,
-                max_gap: timedelta = MAX_GAP) -> str:
-    t0, t1 = _window(checks, now, days)
-    points = [
-        (c.time, [getattr(c, a) or 0 for a in _TYPE_ATTRS] if c.has_data else None)
-        for c in checks if c.time >= t0
-    ]
+def _type_stack(theme: Theme, points: list[tuple[datetime, list[int] | None]], t0: datetime,
+                t1: datetime, max_gap: timedelta, outages: list[datetime], unit: str,
+                label: str) -> str:
+    """Stacked area per test type: `points` hold one value per type (None = no data)."""
     latest = next((v for _, v in reversed(points) if v is not None), None)
-
     present = sorted({k for _, v in points if v for k in range(_N) if v[k]})
     body, header_y = _header(theme, _type_items(theme, present, latest),
-                             f"{sum(latest):,} cores in total" if latest else "")
+                             f"{sum(latest):,} {unit}" if latest else "")
 
     ticks = nice_ticks(max((sum(v) for _, v in points if v), default=0), integer=True)
     frame = Frame(PAD + 44, WIDTH - PAD - 48, header_y + 24, header_y + 24 + 210, t0, t1, ticks[-1])
-    body += _frame(theme, frame, ticks, compact, PAD, WIDTH - PAD, _outages(checks, t0))
+    body += _frame(theme, frame, ticks, compact, PAD, WIDTH - PAD, outages)
 
     for seg in _segments(points, max_gap):
         xs = [frame.x(t) for t, _ in seg]
         cum = [[sum(v[: k + 1]) for k in range(_N)] for _, v in seg]
-        if len(seg) == 1:  # a lone check: draw it as a thin stacked column
+        if len(seg) == 1:  # a lone snapshot: draw it as a thin stacked column
             for k in range(_N):
                 lo, hi = frame.y(cum[0][k - 1] if k else 0), frame.y(cum[0][k])
                 if lo - hi > 0:
@@ -466,8 +462,8 @@ def types_chart(checks: list[Check], now: datetime, theme: Theme, days: int = 14
             lower = [f"{_n(x)},{_n(frame.y(c[k - 1] if k else 0))}" for x, c in zip(xs, cum)]
             body.append(f'<path d="M{" L".join(upper)} L{" L".join(reversed(lower))} Z" '
                         f'fill="{theme.types[k]}" fill-opacity="0.28"/>')
-        # Top edges, drawn from the top band down so a band with zero cores
-        # never paints over the band beneath it.
+        # Top edges, drawn from the top band down so an empty band never paints
+        # over the band beneath it.
         for k in reversed(range(_N)):
             upper = " ".join(f"{_n(x)},{_n(frame.y(c[k]))}" for x, c in zip(xs, cum))
             body.append(f'<polyline points="{upper}" fill="none" stroke="{theme.types[k]}" '
@@ -480,10 +476,36 @@ def types_chart(checks: list[Check], now: datetime, theme: Theme, days: int = 14
             lo, hi = frame.y(cum[k - 1] if k else 0), frame.y(cum[k])
             if lo - hi >= 14:
                 body.append(_text(frame.right + 8, (lo + hi) / 2 + 4, TEST_TYPES[k], theme.ink2, 11))
+    return _doc(WIDTH, frame.bottom + 24 + PAD, theme, label, body)
 
-    height = frame.bottom + 24 + PAD
-    label = f"Cores by test type ({', '.join(TEST_TYPES)}) over the last {days} days"
-    return _doc(WIDTH, height, theme, label, body)
+
+def types_chart(checks: list[Check], now: datetime, theme: Theme, days: int = 14,
+                max_gap: timedelta = MAX_GAP) -> str:
+    """Cores by test type, from the hourly checks."""
+    t0, t1 = _window(checks, now, days)
+    points = [(c.time, [getattr(c, a) or 0 for a in _TYPE_ATTRS] if c.has_data else None)
+              for c in checks if c.time >= t0]
+    return _type_stack(theme, points, t0, t1, max_gap, _outages(checks, t0), "cores in total",
+                       f"Cores by test type ({', '.join(TEST_TYPES)}) over the last {days} days")
+
+
+def type_counts_chart(hourly: list[dict], tests_info: dict[str, dict[str, str]],
+                      checks: list[Check], now: datetime, theme: Theme, days: int = 14) -> str:
+    """Running tests by test type, from the hourly breakdown of running tests."""
+    times = [parse_iso(row["time"]) for row in hourly]
+    t1 = max([now] + times)
+    t0 = min(max(t1 - timedelta(days=days), min(times, default=t1)), t1 - timedelta(hours=12))
+    points = []
+    for row, t in zip(hourly, times):
+        if t >= t0:
+            counts = [0] * _N
+            for test_id in row.get("tests", {}):
+                k = TYPE_INDEX.get(tests_info.get(test_id, {}).get("type", ""))
+                if k is not None:
+                    counts[k] += 1
+            points.append((t, counts))
+    return _type_stack(theme, points, t0, t1, MAX_GAP, _outages(checks, t0), "tests running",
+                       f"Running tests by test type ({', '.join(TEST_TYPES)}) over the last {days} days")
 
 
 # ---------------------------------------------------------------- per-entity bands over time
@@ -764,6 +786,26 @@ def neighbor_shades(order: list[str], kind: dict[str, int],
         exact = _color_exactly(members, adjacent, len(SHADES), budget)
         shade.update(exact if exact is not None else _fewest_clashes(members, touching, len(SHADES)))
     return shade
+
+
+def net_search_chart(checks: list[Check], now: datetime, theme: Theme, days: int = 14) -> str:
+    """Running tests over time, split into search tests and net tests."""
+    measured = [c for c in checks if c.has_data and c.tests_net is not None]
+    times = [c.time for c in measured]
+    t1 = max([now] + times)
+    t0 = min(max(t1 - timedelta(days=days), min(times, default=t1)), t1 - timedelta(hours=12))
+    search = {c.time: (c.tests_active or 0) - c.tests_net for c in measured}
+    net = {c.time: c.tests_net for c in measured}
+
+    def tip(name: str, values: dict[datetime, float]) -> str:
+        latest = values[times[-1]] if times else 0
+        return f"{name}: {latest:,.0f} running now, peak {max(values.values(), default=0):,.0f}"
+
+    bands = [Band("Search tests", theme.ranked[0], search, tip("Search tests", search)),
+             Band("Net tests", theme.ranked[1], net, tip("Net tests", net))]
+    summary = f"{net[times[-1]]} of {net[times[-1]] + search[times[-1]]} running tests are net tests" if times else ""
+    return _band_chart(theme, times, bands, t0, t1, MAX_GAP, [], summary,
+                       f"Running net tests and search tests over the last {days} days")
 
 
 def tests_trend_chart(hourly: list[dict], tests_info: dict[str, dict[str, str]], now: datetime,
@@ -1654,6 +1696,9 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
         files[f"authors-trend-{mode}.svg"] = entity_trend_chart(
             authors_cores, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="authors",
             unit="cores", label="Cores per author over the last 14 days")
+        files[f"net-search-trend-{mode}.svg"] = net_search_chart(h.checks, now, theme)
+        files[f"type-counts-{mode}.svg"] = type_counts_chart(h.hourly, _tests_info(h), h.checks,
+                                                               now, theme)
         files[f"author-tests-trend-{mode}.svg"] = entity_trend_chart(
             authors_tests, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="authors",
             unit="tests", label="Running tests per author over the last 14 days")

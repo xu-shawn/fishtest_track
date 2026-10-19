@@ -547,6 +547,25 @@ class Charts(unittest.TestCase):
         self.assertIn("1,900 cores on average this week", svg)
         ET.fromstring(charts.weekly_types_chart([], NOW, theme))
 
+    def test_type_counts_chart(self):
+        hourly = [{"time": f"2026-10-19T0{h}:17:00Z", "tests": {"a": 10, "b": 20, "c": 200}}
+                  for h in range(4)]
+        info = {"a": {"type": "STC"}, "b": {"type": "STC"}, "c": {"type": "Progtest"}}
+        svg = charts.type_counts_chart(hourly, info, [], NOW, charts.THEMES["light"])
+        ET.fromstring(svg)
+        self.assertIn("3 tests running", svg)
+        self.assertIn(">STC 2<", svg)
+        self.assertIn(">Progtest 1<", svg)
+
+    def test_net_search_chart(self):
+        checks = [make_check(h, tests_net=8 + h % 3) for h in range(30, -1, -1)]
+        checks[0] = make_check(31, tests_net=None)  # older checks lack the column: skipped
+        svg = charts.net_search_chart(checks, NOW, charts.THEMES["light"])
+        ET.fromstring(svg)
+        self.assertIn("8 of 50 running tests are net tests", svg)
+        self.assertIn("Net tests: 8 running now, peak 10", svg)
+        self.assertIn(">Search tests<", svg)
+
     def test_throughput_chart(self):
         finished = {str(i): {"id": str(i), "games": "1000", "outcome": "rejected",
                              "finished": (NOW - timedelta(hours=1, minutes=10 * i)).strftime("%Y-%m-%dT%H:%M:%SZ")}
@@ -656,7 +675,8 @@ class Readme(unittest.TestCase):
         self.assertIn("**2 passed** (1 STC, 1 nodestime)", text)
         self.assertIn("| 100+1\u00a0nodestime |", text)
         self.assertIn("SPRT pass rate 66.7%: 66.7% for gainers (3); 66.7% for search tests (3)", text)
-        for chart in ("weekly-net", "weekly-search", "throughput", "runtime", "runtime-trend"):
+        for chart in ("weekly-net", "weekly-search", "throughput", "runtime", "runtime-trend",
+                      "net-search-trend", "type-counts"):
             self.assertIn(f"/{chart}-light.svg", text)
         self.assertIn("| Net tests running | 0 |", text)
         for chart in ("weekly-gainers", "weekly-simplifications"):

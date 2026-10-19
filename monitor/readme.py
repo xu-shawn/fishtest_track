@@ -231,6 +231,12 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
     _section(lines, "Cores by test type", "types", url, "Stacked area of cores used by each test "
              "type (STC, LTC, VLTC, VVLTC, SMP, progtest, nodestime, SPSA) over the last 14 days.")
     if h.hourly:
+        _section(lines, "Tests by type", "type-counts", url, "Stacked area of running tests by test "
+                 "type over the last 14 days.")
+    if any(c.tests_net is not None for c in checks):
+        _section(lines, "Net tests and search tests", "net-search-trend", url, "Stacked bands of "
+                 "running search tests and net tests over the last 14 days.")
+    if h.hourly:
         _section(lines, "Cores by test", "tests-trend", url, "Stacked bands of cores per test over "
                  "the last 14 days, one band per test, colored by test type.")
         _section(lines, "Cores by author", "authors-trend", url, "Stacked bands of cores per author "
