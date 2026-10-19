@@ -547,6 +547,22 @@ class Charts(unittest.TestCase):
         ET.fromstring(svg)
         self.assertIn("0.50 per hour now · 12 in 14 days", svg)  # 12 tests / 24 hours
 
+    def test_runtime_trend_chart(self):
+        finished = {}
+        for i, hours in enumerate([2, 4, 24, 48, 300]):
+            end = NOW - timedelta(days=8)
+            finished[str(i)] = {"id": str(i), "games": "1000", "outcome": "rejected",
+                                "finished": end.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                                "started": (end - timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%M:%SZ")}
+        # History starting on a Monday, so the first week counts as complete.
+        finished["old"] = {"id": "old", "games": "1000", "finished": "2026-09-28T00:00:00Z",
+                           "started": "2026-09-27T14:00:00Z"}
+        svg = charts.runtime_trend_chart(finished, NOW, charts.THEMES["dark"])
+        ET.fromstring(svg)
+        self.assertIn("data:image/png;base64,", svg)
+        self.assertIn("Week of Oct 5: 5 tests, median 24 h, 90% within 2.0 days", svg)
+        self.assertIn("6 tests in 4 weeks · median 17 h lately", svg)  # 2, 4, 10, 24, 48, 300 h
+
     def test_runtime_chart(self):
         def running(hours_ago, kind, test_id):
             return {"id": test_id, "cores": "8", "type": kind,
@@ -631,7 +647,7 @@ class Readme(unittest.TestCase):
         self.assertIn("**2 passed** (1 STC, 1 nodestime)", text)
         self.assertIn("| 100+1\u00a0nodestime |", text)
         self.assertIn("SPRT pass rate 66.7%: 66.7% for gainers (3); 66.7% for search tests (3)", text)
-        for chart in ("weekly-net", "weekly-search", "throughput", "runtime"):
+        for chart in ("weekly-net", "weekly-search", "throughput", "runtime", "runtime-trend"):
             self.assertIn(f"/{chart}-light.svg", text)
         self.assertIn("| Net tests running | 0 |", text)
         for chart in ("weekly-gainers", "weekly-simplifications"):

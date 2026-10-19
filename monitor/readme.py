@@ -260,6 +260,9 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
     _section(lines, "Finished tests per week", "weekly-finished", url, "Stacked columns of tests "
              "finished per week over the last year, split into gainers passed, simplifications "
              "passed, rejected and other.")
+    _section(lines, "Runtime of finished tests", "runtime-trend", url, "Heatmap of how long the "
+             "tests finished each week ran, from submission to finish on a log scale from 15 "
+             "minutes to 6 weeks, with the weekly median as a line.")
     _section(lines, "Average cores per week by test type", "weekly-types", url, "Stacked columns "
              "of the average cores each test type used per week, measured from the hourly snapshots.")
     _section(lines, "Gainer bounds", "weekly-gainers", url, "Stacked columns of tests with gainer "

@@ -1474,6 +1474,112 @@ def runtime_chart(active: list[dict[str, str]], now: datetime, theme: Theme) -> 
     return _doc(WIDTH, top + 180 + 24 + PAD, theme, label, body)
 
 
+# Runtime of finished tests (submission to finish), on a log scale.
+RUNTIME_LOG2 = (-2.0, 10.0)  # 15 minutes .. about 6 weeks, in log2(hours)
+RUNTIME_BINS = 24  # half-octave rows
+RUNTIME_TICKS = [(1, "1h"), (6, "6h"), (24, "1d"), (72, "3d"), (168, "1w"), (336, "2w"), (672, "4w")]
+
+
+def runtime_trend_chart(finished: dict[str, dict[str, str]], now: datetime, theme: Theme,
+                        weeks: int = 52) -> str:
+    """Heatmap of how long finished tests ran (submission to finish), one column per
+    week, darker = larger share of that week's tests, with the weekly median as a line."""
+    week_list = _week_list(finished, now, weeks)
+    index = {w: i for i, w in enumerate(week_list)}
+    lo, hi = RUNTIME_LOG2
+    per_week: list[list[float]] = [[] for _ in week_list]
+    for r in finished.values():
+        if int(r.get("games") or 0) <= 0:
+            continue
+        end = parse_iso(r["finished"])
+        i = index.get(_week_start(end.date()))
+        if i is not None:
+            per_week[i].append(max(1 / 60, (end - parse_iso(r["started"])).total_seconds() / 3600))
+
+    def row(hours: float) -> int:
+        x = (math.log2(hours) - lo) / (hi - lo)
+        return min(RUNTIME_BINS - 1, max(0, int(x * RUNTIME_BINS)))
+
+    shares = []
+    for runtimes in per_week:
+        counts = [0] * RUNTIME_BINS
+        for h in runtimes:
+            counts[row(h)] += 1
+        shares.append([c / len(runtimes) for c in counts] if runtimes else None)
+    medians = [statistics.median(r) if r else None for r in per_week]
+
+    header_y = PAD + 13
+    body: list[str] = []
+    x = PAD
+    body.append(_text(x, header_y, "Share of tests", theme.ink2, 12))
+    x += text_width("Share of tests", 12) + 8
+    for alpha in (0.2, 0.4, 0.6, 0.8, 1.0):
+        body.append(f'<rect x="{_n(x)}" y="{_n(header_y - 9)}" width="10" height="10" rx="2" '
+                    f'fill="{theme.heat}" fill-opacity="{alpha}"/>')
+        x += 12
+    x += 18
+    body.append(f'<line x1="{_n(x)}" y1="{_n(header_y - 4)}" x2="{_n(x + 14)}" y2="{_n(header_y - 4)}" '
+                f'stroke="{theme.ink}" stroke-width="2" stroke-linecap="round"/>')
+    body.append(_text(x + 20, header_y, "Median", theme.ink2, 12))
+    total = sum(len(r) for r in per_week)
+    recent = [h for r in per_week[-5:-1] for h in r]  # the last four full weeks
+    if total:
+        summary = f"{total:,} tests in {len(week_list)} weeks"
+        if recent:
+            summary += f" · median {_age(statistics.median(recent))} lately"
+        body.append(_text(WIDTH - PAD, header_y, summary, theme.ink, 13, 600, "end"))
+
+    left, right, top, bottom = PAD + 44, WIDTH - PAD, header_y + 24, header_y + 24 + 220
+
+    def ly(hours: float) -> float:
+        return bottom - (math.log2(hours) - lo) / (hi - lo) * (bottom - top)
+
+    if any(s is not None for s in shares):
+        # Scale on complete weeks: this week has only a few tests, so its shares are lumpy.
+        complete = [s for s in shares[:-1] if s] or [s for s in shares if s]
+        peak = max(v for s in complete for v in s) or 1
+        clear = (0, 0, 0, 0)
+        pixels = [[clear] * len(week_list) for _ in range(RUNTIME_BINS)]
+        for i, s in enumerate(shares):
+            fade = 0.55 if i == len(week_list) - 1 else 1.0  # this week is still filling up
+            for k, v in enumerate(s or []):
+                if v > 0:
+                    pixels[RUNTIME_BINS - 1 - k][i] = _rgba(theme.heat, min(1.0, v / peak) * fade)
+        data = base64.b64encode(_png(pixels)).decode()
+        body.append(f'<image x="{_n(left)}" y="{_n(top)}" width="{_n(right - left)}" '
+                    f'height="{_n(bottom - top)}" preserveAspectRatio="none" '
+                    f'image-rendering="optimizeSpeed" style="image-rendering:pixelated" '
+                    f'href="data:image/png;base64,{data}"/>')
+    for hours, label in RUNTIME_TICKS:
+        body.append(_line(left - 4, ly(hours), left, ly(hours), theme.axis))
+        body.append(_text(left - 8, ly(hours) + 4, label, theme.muted, 11, anchor="end"))
+    body.append(_line(left, top, left, bottom, theme.axis))
+    body.append(_line(left, bottom, right, bottom, theme.axis))
+
+    slot = (right - left) / max(1, len(week_list))
+    body += _axis_labels(theme, [(left + (i + 0.5) * slot, _week_label(week_list, i))
+                                 for i in range(len(week_list)) if _week_label(week_list, i)],
+                         bottom + 17, right)
+    # Median: an ink line with a surface-colored halo so it reads over any cell.
+    points = " ".join(f"{_n(left + (i + 0.5) * slot)},{_n(ly(m))}"
+                      for i, m in enumerate(medians) if m is not None)
+    if points:
+        for stroke, width in ((theme.surface, 4), (theme.ink, 1.5)):
+            body.append(f'<polyline points="{points}" fill="none" stroke="{stroke}" '
+                        f'stroke-width="{width}" stroke-linejoin="round" stroke-linecap="round"/>')
+    for i, (w, runtimes) in enumerate(zip(week_list, per_week)):
+        if runtimes:
+            ordered = sorted(runtimes)
+            p90 = ordered[int(0.9 * (len(ordered) - 1))]
+            tip = (f"Week of {w:%b} {w.day}: {len(runtimes)} tests, median {_age(medians[i])}, "
+                   f"90% within {_age(p90)}")
+            body.append(_hit(left + i * slot, top, slot, bottom - top, tip))
+
+    label = (f"Heatmap of how long tests finished in each of the last {len(week_list)} weeks ran, "
+             "from submission to finish, with the weekly median")
+    return _doc(WIDTH, bottom + 24 + PAD, theme, label, body)
+
+
 # ---------------------------------------------------------------- all charts
 
 def _hourly_series(hourly: list[dict], key: str, index: int) -> dict[str, dict[datetime, float]]:
@@ -1531,6 +1637,7 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
         files[f"contributors-{mode}.svg"] = contributors_chart(h.workers, h.active, theme)
         files[f"runtime-{mode}.svg"] = runtime_chart(h.active, now, theme)
         files[f"throughput-{mode}.svg"] = throughput_chart(h.finished, now, theme)
+        files[f"runtime-trend-{mode}.svg"] = runtime_trend_chart(h.finished, now, theme)
         files[f"types-{mode}.svg"] = types_chart(h.checks, now, theme)
         files[f"activity-{mode}.svg"] = activity_chart(h.checks, now, theme)
         files[f"finished-{mode}.svg"] = finished_chart(h.finished, now, theme)
