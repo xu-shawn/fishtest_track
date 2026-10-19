@@ -8702,3 +8702,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad27f6e733e627f7058c48d,2026-10-19T06:21:50Z,2026-10-16T19:47:58Z,rn,bestmove-change-take3,STC,0,10+0.1,1,0,2,rejected,74528,-0.68,1.23,639.9
 6aca57795349156614d942db,2026-10-19T12:16:42Z,2026-10-10T15:19:21Z,Gruenerapfel,main_thread_nps_scaling,STC,0,10+0.1,1,0,2,passed,332128,0.73,0.56,2851.9
 6ad60578733e627f7058c8ec,2026-10-19T12:46:02Z,2026-10-19T11:56:40Z,AdrianStockfish,extensionsChange,STC,0,10+0.1,1,0,2,stopped,512,-87.29,14.59,4.4
+6ac581495349156614d93d41,2026-10-19T15:18:36Z,2026-10-06T23:16:25Z,Kaarssteun,simp-qs-ttdepth,LTC,0,60+0.6,1,-1.75,0.25,rejected,554112,-0.49,0.42,28547.9
