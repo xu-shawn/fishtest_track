@@ -263,6 +263,11 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
     _section(lines, "Finished tests per day", "finished", url, "Stacked columns of tests finished "
              "per day, split into gainers passed, simplifications passed, rejected and other.")
     lines += ["", _finished_summary(h.finished, now)]
+    if any(r["kind"] == "arch" for r in h.daily):
+        _section(lines, "Cores by architecture", "monthly-arch", url, "Stacked bands of the "
+                 "average cores per day by worker architecture over the last 30 days.")
+        _section(lines, "Cores by compiler", "monthly-compiler", url, "Stacked bands of the "
+                 "average cores per day by compiler and major version over the last 30 days.")
 
     start = good[0].time
     lines += ["", "### Last year"]
@@ -274,6 +279,11 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
              "minutes to 6 weeks, with the weekly median as a line.")
     _section(lines, "Average cores per week by test type", "weekly-types", url, "Stacked columns "
              "of the average cores each test type used per week, measured from the hourly snapshots.")
+    if any(r["kind"] == "arch" for r in h.daily):
+        _section(lines, "Cores by architecture", "yearly-arch", url, "Stacked bands of the "
+                 "average cores per week by worker architecture over the last year.")
+        _section(lines, "Cores by compiler", "yearly-compiler", url, "Stacked bands of the "
+                 "average cores per week by compiler and major version over the last year.")
     _section(lines, "Gainer bounds", "weekly-gainers", url, "Stacked columns of tests with gainer "
              "bounds (such as [0, 2] and [0.5, 2.5]) finished per week.")
     _section(lines, "Simplification bounds", "weekly-simplifications", url, "Stacked columns of tests "

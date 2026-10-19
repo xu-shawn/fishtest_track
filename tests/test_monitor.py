@@ -296,9 +296,9 @@ CHALLENGE_PAGE = """<title>Checking your browser</title><script>(function(){
 class Machines(unittest.TestCase):
     def test_parse(self):
         workers = machines.parse_workers(MACHINES_PAGE)
-        self.assertEqual([(w.username, w.cores, w.run) for w in workers],
-                         [("alice", 16, "6ad54e36733e627f7058c7b2"),
-                          ("bob", 8, "6ad43985733e627f7058c6c8")])
+        self.assertEqual([(w.username, w.cores, w.run, w.arch, w.compiler) for w in workers],
+                         [("alice", 16, "6ad54e36733e627f7058c7b2", "x86-64-avx2", "g++ 14"),
+                          ("bob", 8, "6ad43985733e627f7058c6c8", "x86-64-bmi2", "g++ 15")])
         empty = '<table><tbody><tr id="no-machines"><td colspan=20>No machines running</td></tr></tbody></table>'
         self.assertEqual(machines.parse_workers(empty), [])
         with self.assertRaises(fishtest.FetchError):
@@ -337,11 +337,14 @@ class Machines(unittest.TestCase):
             "w": make_run(_id="w", workers=0, cores=0),  # waiting: not counted
         }
         runs["b"]["args"] = {**runs["b"]["args"], "username": "other"}
-        workers = [machines.Worker("alice", 16, "a"), machines.Worker("alice", 4, "b")]
+        workers = [machines.Worker("alice", 16, "a", arch="x86-64-avx512", compiler="g++ 16.2.0"),
+                   machines.Worker("alice", 4, "b", arch="x86-64-bmi2", compiler="g++ 16.2.0")]
         parts = collect.breakdown(runs, workers)
         self.assertEqual(parts, {"tests": {"a": 16, "b": 8},
                                  "authors": {"someone": [16, 1], "other": [8, 1]},
-                                 "contributors": {"alice": [20, 2]}})
+                                 "contributors": {"alice": [20, 2]},
+                                 "arches": {"x86-64-avx512": [16, 1], "x86-64-bmi2": [4, 1]},
+                                 "compilers": {"g++ 16.2.0": [20, 2]}})
         self.assertNotIn("contributors", collect.breakdown(runs, None))
 
         with tempfile.TemporaryDirectory() as tmp:
@@ -360,7 +363,11 @@ class Machines(unittest.TestCase):
             daily = store.read_rows(data, store.DAILY_FILE)
         self.assertEqual(len(hourly), 1)
         self.assertEqual(hourly[0]["authors"], {"someone": [16, 1], "other": [8, 1]})
-        today = [r for r in daily if r["date"] == "2026-10-19"]
+        today = [r for r in daily if r["date"] == "2026-10-19" and r["kind"] in ("author", "contributor")]
+        self.assertIn({"date": "2026-10-19", "kind": "arch", "name": "x86-64-avx512",
+                       "core_hours": "20.0", "count_hours": "1.2"}, daily)
+        self.assertIn({"date": "2026-10-19", "kind": "hours", "name": "arch", "core_hours": "1.2",
+                       "count_hours": "0.0"}, daily)
         self.assertEqual(today, [
             {"date": "2026-10-19", "kind": "author", "name": "other", "core_hours": "10.0",
              "count_hours": "1.2"},
@@ -617,6 +624,37 @@ class Charts(unittest.TestCase):
         self.assertIn("4 running tests · median 16 h since submitted", svg)
         self.assertIn("Running for 2w+: 1 test — 1 VVLTC", svg)
         self.assertIn("Running for 1–2d: 1 test — 1 LTC", svg)
+
+    def test_arch_and_compiler_trends(self):
+        self.assertEqual(charts.compiler_major("g++ 16.2.0"), "g++ 16")
+        self.assertEqual(charts.compiler_major("clang++ 18.1.8"), "clang++ 18")
+        self.assertEqual(charts.compiler_major("unknown"), "unknown")
+        # Two snapshots 15 minutes apart cover 1.25 hours, not two.
+        checks = [make_check(1), make_check(0.75)]
+        self.assertEqual(charts.covered_hours(checks), {NOW.date(): 1.25})
+        daily = [{"date": "2026-10-19", "kind": "compiler", "name": "g++ 16.2.0", "core_hours": "500",
+                  "count_hours": "50"},
+                 {"date": "2026-10-19", "kind": "compiler", "name": "g++ 16.1.0", "core_hours": "125",
+                  "count_hours": "10"}]
+        series = charts._daily_series(daily, checks, "compiler", "core_hours", charts.compiler_major)
+        self.assertEqual(series, {"g++ 16": {datetime(2026, 10, 19, 12, tzinfo=UTC): 500.0}})
+        # A kind observed for only part of the day divides by its own hours.
+        observed = daily + [{"date": "2026-10-19", "kind": "hours", "name": "compiler",
+                             "core_hours": "0.25", "count_hours": ""}]
+        series = charts._daily_series(observed, checks, "compiler", "core_hours", charts.compiler_major, NOW)
+        self.assertEqual(series, {"g++ 16": {NOW: 2500.0}})  # today's point is placed at now
+        weekly = charts._weekly_series(daily, checks, "compiler", "core_hours", charts.compiler_major)
+        self.assertEqual(list(weekly["g++ 16"].values()), [500.0])  # 625 core-hours over 1.25 h
+        history = store.History(checks, [], {}, [], [], [], daily + [
+            {"date": "2026-10-19", "kind": "arch", "name": "x86-64-avx512", "core_hours": "625",
+             "count_hours": "60"}])
+        files = charts.render_all(history, NOW)
+        for name in ("monthly-arch", "monthly-compiler", "yearly-arch", "yearly-compiler"):
+            ET.fromstring(files[f"{name}-light.svg"])
+        self.assertIn("g++ 16: 500 cores, peak 500", files["monthly-compiler-dark.svg"].replace(" now,", ","))
+        text = readme.build_readme(history, NOW, "u")
+        self.assertIn("u/monthly-arch-light.svg", text)
+        self.assertIn("u/yearly-compiler-dark.svg", text)
 
     def test_header_wraps_when_crowded(self):
         theme = charts.THEMES["light"]

@@ -18,7 +18,7 @@
 | [`data/workers.csv`](../data/workers.csv) | Every active worker at the latest run: the user who runs it, its cores, and the test it is playing. |
 | [`data/llr_distribution.csv`](../data/llr_distribution.csv) | One row per hourly run: how many SPRT tests were running, their median LLR, and how many fall in each of 16 equal LLR bins from the rejection bound to the acceptance bound (each test scaled by its own bounds onto the standard ±2.94). The chart smooths each bin over 5 hours. |
 | [`data/hourly_breakdown.jsonl`](../data/hourly_breakdown.jsonl) | One JSON line per hourly run with cores per running test, cores and running tests per author, and cores and workers per contributor. Only the last 15 days are kept; it feeds the 14-day band charts. |
-| [`data/daily_breakdown.csv`](../data/daily_breakdown.csv) | Per day and per author or contributor: core-hours, plus test-hours (authors) or worker-hours (contributors). Summed from the hourly snapshots, each counting for the time since the previous one, at most an hour. Kept for good; it feeds the long-range charts and the contributors table. |
+| [`data/daily_breakdown.csv`](../data/daily_breakdown.csv) | Per day and per author, contributor, worker architecture or compiler: core-hours, plus test-hours (authors) or worker-hours (the rest). Summed from the hourly snapshots, each counting for the time since the previous one, at most an hour; rows of kind `hours` record how long each kind was observed that day, which the daily and weekly averages divide by. Kept for good; it feeds the long-range charts and the contributors table. |
 
 Test types are checked in this order:
 

@@ -642,11 +642,12 @@ def _top_names(series: dict[str, dict[datetime, float]], limit: int) -> list[str
 
 def entity_trend_chart(series: dict[str, dict[datetime, float]], times: list[datetime],
                        now: datetime, theme: Theme, *, days: int, max_gap: timedelta, what: str,
-                       unit: str, label: str, top: int = 8, integer: bool = True) -> str:
+                       unit: str, label: str, top: int = 8, integer: bool = True,
+                       min_span: timedelta = timedelta(hours=12)) -> str:
     """Bands for the top entities by total over the window, plus one band for everyone else."""
     t1 = max([now] + times)
     t0 = max(t1 - timedelta(days=days), min(times, default=t1))
-    t0 = min(t0, t1 - timedelta(hours=12))
+    t0 = min(t0, t1 - min_span)
     window = {n: {t: v for t, v in vals.items() if t >= t0} for n, vals in series.items()}
     window = {n: v for n, v in window.items() if any(v.values())}
     names = _top_names(window, top)
@@ -1664,21 +1665,67 @@ def _hourly_series(hourly: list[dict], key: str, index: int) -> dict[str, dict[d
     return series
 
 
-def _daily_series(daily: list[dict[str, str]], checks: list[Check], kind: str,
-                  column: str) -> dict[str, dict[datetime, float]]:
-    """name -> {day at noon: average over the hours covered that day}."""
+def covered_hours(checks: list[Check]) -> dict[date, float]:
+    """Hours each UTC day's snapshots stand for, weighted as when they were recorded:
+    the time since the previous snapshot with data, at most an hour each."""
     covered: dict[date, float] = defaultdict(float)
+    previous = None
     for c in checks:
         if c.has_data:
-            covered[c.time.date()] += 1
-    series: dict[str, dict[datetime, float]] = defaultdict(dict)
+            gap = 1.0 if previous is None else (c.time - previous).total_seconds() / 3600
+            covered[c.time.date()] += max(0.0, min(1.0, gap))
+            previous = c.time
+    return covered
+
+
+def _kind_hours(daily: list[dict[str, str]], checks: list[Check], kind: str) -> dict[date, float]:
+    """Hours `kind` was observed each day: recorded with the data, or, for days recorded
+    before that, the hours all snapshots covered."""
+    recorded = {date.fromisoformat(r["date"]): float(r["core_hours"])
+                for r in daily if r["kind"] == "hours" and r["name"] == kind}
+    covered = covered_hours(checks)
+    return {day: recorded.get(day, covered.get(day, 0.0))
+            for day in set(recorded) | set(covered)}
+
+
+def _daily_series(daily: list[dict[str, str]], checks: list[Check], kind: str, column: str,
+                  rename: Callable[[str], str] = lambda name: name,
+                  now: datetime | None = None) -> dict[str, dict[datetime, float]]:
+    """name -> {middle of the day (or now, for today): average over the hours observed}."""
+    hours = _kind_hours(daily, checks, kind)
+    series: dict[str, dict[datetime, float]] = defaultdict(lambda: defaultdict(float))
     for r in daily:
         if r["kind"] != kind or not r[column]:
             continue
         day = date.fromisoformat(r["date"])
-        hours = min(24.0, covered.get(day, 24.0)) or 24.0
-        series[r["name"]][datetime(day.year, day.month, day.day, 12, tzinfo=UTC)] = float(r[column]) / hours
+        t = datetime(day.year, day.month, day.day, 12, tzinfo=UTC)
+        series[rename(r["name"])][min(t, now) if now else t] += float(r[column]) / (hours.get(day) or 24.0)
+    return {name: dict(values) for name, values in series.items()}
+
+
+def _weekly_series(daily: list[dict[str, str]], checks: list[Check], kind: str, column: str,
+                   rename: Callable[[str], str] = lambda name: name,
+                   now: datetime | None = None) -> dict[str, dict[datetime, float]]:
+    """name -> {middle of the week (or now, for this week): average over the hours observed}."""
+    covered: dict[date, float] = defaultdict(float)
+    for day, hours in _kind_hours(daily, checks, kind).items():
+        covered[_week_start(day)] += hours
+    sums: dict[str, dict[date, float]] = defaultdict(lambda: defaultdict(float))
+    for r in daily:
+        if r["kind"] == kind and r[column]:
+            sums[rename(r["name"])][_week_start(date.fromisoformat(r["date"]))] += float(r[column])
+    series: dict[str, dict[datetime, float]] = {}
+    for name, weeks in sums.items():
+        middle = {w: datetime(w.year, w.month, w.day, tzinfo=UTC) + timedelta(days=3.5) for w in weeks}
+        series[name] = {(min(middle[w], now) if now else middle[w]): total / (covered.get(w) or 168.0)
+                        for w, total in weeks.items()}
     return series
+
+
+def compiler_major(label: str) -> str:
+    """'g++ 16.2.0' -> 'g++ 16'; compiler adoption shows at the major version."""
+    name, _, version = label.partition(" ")
+    return f"{name} {version.split('.')[0]}" if version else label
 
 
 def _tests_info(history: History) -> dict[str, dict[str, str]]:
@@ -1735,6 +1782,19 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
         files[f"contributors-trend-{mode}.svg"] = entity_trend_chart(
             contributors, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="contributors",
             unit="cores", label="Cores contributed per user over the last 14 days")
+        for kind, what, rename in (("arch", "architectures", lambda n: n),
+                                   ("compiler", "compilers", compiler_major)):
+            name = "arch" if kind == "arch" else "compiler"
+            monthly = _daily_series(h.daily, h.checks, kind, "core_hours", rename, now)
+            files[f"monthly-{name}-{mode}.svg"] = entity_trend_chart(
+                monthly, sorted({t for v in monthly.values() for t in v}), now, theme, days=30,
+                max_gap=DAILY_GAP, what=what, unit="cores", min_span=timedelta(days=7),
+                label=f"Average cores per day by {'architecture' if kind == 'arch' else 'compiler'}, last 30 days")
+            yearly = _weekly_series(h.daily, h.checks, kind, "core_hours", rename, now)
+            files[f"yearly-{name}-{mode}.svg"] = entity_trend_chart(
+                yearly, sorted({t for v in yearly.values() for t in v}), now, theme, days=365,
+                max_gap=timedelta(days=10), what=what, unit="cores", min_span=timedelta(weeks=8),
+                label=f"Average cores per week by {'architecture' if kind == 'arch' else 'compiler'}, last year")
         if long:
             files[f"long-types-{mode}.svg"] = types_chart(days, now, theme, 365, DAILY_GAP)
             files[f"long-activity-{mode}.svg"] = activity_chart(days, now, theme, 365, DAILY_GAP)

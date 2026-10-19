@@ -40,6 +40,8 @@ class Worker:
     cores: int
     run: str  # id of the test the worker is playing games for
     key: str = ""  # short worker id shown on the page, only used to drop duplicates
+    arch: str = ""  # Stockfish build the worker uses, e.g. x86-64-avx512
+    compiler: str = ""  # e.g. g++ 16.2.0
 
 
 # ---------------------------------------------------------------- proof of work
@@ -146,7 +148,8 @@ def parse_workers(page: str) -> list[Worker]:
         if not cores.isdigit():
             raise FetchError(f"unexpected machines table layout (cores cell {cores!r})")
         workers.append(Worker(row[0]["text"].strip(), int(cores), run.group(1) if run else "",
-                              row[2]["text"].strip()))
+                              row[2]["text"].strip(), row[6]["text"].strip(),
+                              " ".join(row[7]["text"].split())))
     if not workers and "No machines running" not in page:
         raise FetchError("machines table not found")
     return workers

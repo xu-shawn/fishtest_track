@@ -85,7 +85,8 @@ def snapshot_hours(data_dir: Path, now: datetime) -> float:
 
 
 def write_workers(data_dir: Path, workers: list[Worker]) -> None:
-    rows = [{"username": w.username, "cores": str(w.cores), "run": w.run} for w in workers]
+    rows = [{"username": w.username, "cores": str(w.cores), "run": w.run, "arch": w.arch,
+             "compiler": w.compiler} for w in workers]
     rows.sort(key=lambda r: (r["username"].lower(), -int(r["cores"]), r["run"]))
     write_rows(data_dir, WORKERS_FILE, WORKER_FIELDS, rows)
 
@@ -103,11 +104,12 @@ def breakdown(runs: dict, workers: list[Worker] | None) -> dict[str, dict]:
         author[1] += 1
     parts = {"tests": tests, "authors": dict(authors)}
     if workers is not None:
-        contributors: dict[str, list[int]] = defaultdict(lambda: [0, 0])
-        for w in workers:
-            contributors[w.username][0] += w.cores
-            contributors[w.username][1] += 1
-        parts["contributors"] = dict(contributors)
+        for key, field in (("contributors", "username"), ("arches", "arch"), ("compilers", "compiler")):
+            totals: dict[str, list[int]] = defaultdict(lambda: [0, 0])
+            for w in workers:
+                totals[getattr(w, field) or "unknown"][0] += w.cores
+                totals[getattr(w, field) or "unknown"][1] += 1
+            parts[key] = dict(totals)
     return parts
 
 
@@ -121,8 +123,13 @@ def update_breakdown(data_dir: Path, parts: dict[str, dict], now: datetime, hour
     daily = {(r["date"], r["kind"], r["name"]): [float(r["core_hours"]), float(r["count_hours"] or 0)]
              for r in read_rows(data_dir, DAILY_FILE)}
     today = now.date().isoformat()
-    for kind, key in (("author", "authors"), ("contributor", "contributors")):
-        for name, (cores, count) in parts.get(key, {}).items():
+    for kind, key in (("author", "authors"), ("contributor", "contributors"), ("arch", "arches"),
+                      ("compiler", "compilers")):
+        if key not in parts:
+            continue  # e.g. the machines page could not be read this time
+        # Hours this kind was observed, so daily averages divide by its own coverage.
+        daily.setdefault((today, "hours", kind), [0.0, 0.0])[0] += hours
+        for name, (cores, count) in parts[key].items():
             totals = daily.setdefault((today, kind, name), [0.0, 0.0])
             totals[0] += cores * hours
             totals[1] += count * hours
