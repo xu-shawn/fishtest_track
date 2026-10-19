@@ -229,7 +229,7 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
     # ------------------------------------------------------------ trends
     lines += ["## Trends", "", "### Last 14 days"]
     _section(lines, "Cores by test type", "types", url, "Stacked area of cores used by each test "
-             "type (STC, LTC, VLTC, VVLTC, SMP, nodestime, SPSA) over the last 14 days.")
+             "type (STC, LTC, VLTC, VVLTC, SMP, progtest, nodestime, SPSA) over the last 14 days.")
     if h.hourly:
         _section(lines, "Cores by test", "tests-trend", url, "Stacked bands of cores per test over "
                  "the last 14 days, one band per test, colored by test type.")

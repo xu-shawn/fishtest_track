@@ -26,11 +26,12 @@ BASE_URL = "https://tests.stockfishchess.org"
 REPO = os.environ.get("GITHUB_REPOSITORY", "xu-shawn/fishtest_track")
 USER_AGENT = f"fishtest_track/1.0 (hourly status report; +https://github.com/{REPO})"
 
-TEST_TYPES = ("STC", "LTC", "VLTC", "VVLTC", "SMP", "Nodestime", "SPSA")
+TEST_TYPES = ("STC", "LTC", "VLTC", "VVLTC", "SMP", "Progtest", "Nodestime", "SPSA")
 # Column in data/checks.csv holding the cores used by each test type.
 TYPE_COLUMNS = {t: f"cores_{t.lower()}" for t in TEST_TYPES}
 LTC_MIN_BASE_TIME = 40  # seconds; fishtest's own STC/LTC boundary (rundb.ltc_lower_bound)
 VLTC_MIN_BASE_TIME = 180  # seconds; VLTC is 180+1.8
+PROGTEST_MIN_GAMES = 60000
 LLR_BINS = 16
 STANDARD_LLR_BOUND = math.log(0.95 / 0.05)  # 2.944, the bound for alpha = beta = 0.05
 
@@ -216,12 +217,23 @@ def base_time(tc: str) -> float:
     return float(clock[0]) * 60 + float(clock[1]) if len(clock) == 2 else float(clock[0])
 
 
+def is_progtest(args: dict, tc_base: float) -> bool:
+    """A progression test: master against the last release over a fixed number of
+    games (60,000 at LTC or VVLTC), with no SPRT or SPSA."""
+    return ("sprt" not in args and "spsa" not in args
+            and int(args.get("num_games") or 0) >= PROGTEST_MIN_GAMES
+            and tc_base >= LTC_MIN_BASE_TIME
+            and args.get("new_tag") == "master"
+            and args.get("base_tag") not in (None, "", "master"))
+
+
 def classify_test(args: dict, tc_base: float | None = None) -> str:
     """One of TEST_TYPES, checked in this order:
 
     Nodestime  either engine sets nodestime; such tests count nodes instead of
                time, so their time control says little about game length
     SPSA       parameter tuning
+    Progtest   master against the last release, 60,000 fixed games at LTC or VVLTC
     VVLTC      more than one thread at an LTC base time (60+0.6 with 8 threads)
     SMP        more than one thread at a shorter base time (5+0.05, 20+0.2)
     VLTC       one thread, base time of 180 s or more (180+1.8)
@@ -234,6 +246,8 @@ def classify_test(args: dict, tc_base: float | None = None) -> str:
         return "SPSA"
     if tc_base is None:
         tc_base = base_time(args["tc"])
+    if is_progtest(args, tc_base):
+        return "Progtest"
     if int(args.get("threads", 1)) > 1:
         return "VVLTC" if tc_base >= LTC_MIN_BASE_TIME else "SMP"
     if tc_base >= VLTC_MIN_BASE_TIME:
@@ -282,6 +296,7 @@ class Snapshot:
     cores_vltc: int
     cores_vvltc: int
     cores_smp: int
+    cores_progtest: int
     cores_nodestime: int
     cores_spsa: int
     tests_net: int

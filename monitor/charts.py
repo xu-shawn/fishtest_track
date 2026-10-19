@@ -54,7 +54,8 @@ THEMES = {
     "light": Theme(
         surface="#fcfcfb", border="#0b0b0b1a", ink="#0b0b0b", ink2="#52514e",
         muted="#898781", grid="#e1e0d9", axis="#c3c2b7",
-        types=("#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#6250d6", "#e34948"),
+        types=("#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6",
+               "#e34948"),
         passed="#0ca30c", simplified="#66ccff", rejected="#c3c2b7", other="#e1e0d9",
         heat="#184f95", others="#e1e0d9",
         ranked=("#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"),
@@ -62,7 +63,8 @@ THEMES = {
     "dark": Theme(
         surface="#1a1a19", border="#ffffff1a", ink="#f0efec", ink2="#c3c2b7",
         muted="#898781", grid="#2c2c2a", axis="#383835",
-        types=("#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#9085e9", "#e66767"),
+        types=("#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9",
+               "#e66767"),
         passed="#0ca30c", simplified="#66ccff", rejected="#52514e", other="#383835",
         heat="#9ec5f4", others="#383835",
         ranked=("#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"),

@@ -44,6 +44,7 @@ class Check:
     cores_vltc: int | None = None
     cores_vvltc: int | None = None
     cores_smp: int | None = None
+    cores_progtest: int | None = None
     cores_nodestime: int | None = None
     cores_spsa: int | None = None
     tests_net: int | None = None  # running tests of a new network

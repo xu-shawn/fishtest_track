@@ -79,7 +79,7 @@ class Summaries(unittest.TestCase):
         self.assertEqual((snap.tests_active, snap.tests_pending, snap.authors_active), (2, 1, 2))
         self.assertEqual((snap.workers, snap.cores), (3, 24))
         self.assertEqual([getattr(snap, fishtest.TYPE_COLUMNS[t]) for t in fishtest.TEST_TYPES],
-                         [16, 8, 0, 0, 0, 0, 0])
+                         [16, 8, 0, 0, 0, 0, 0, 0])
         self.assertEqual(snap.mnps, 10.0)
         self.assertEqual(snap.games_per_min, 60.0)
         self.assertGreater(snap.pending_hours, 0)
@@ -101,6 +101,15 @@ class Summaries(unittest.TestCase):
         self.assertEqual(fishtest.classify_test({"tc": "60+0.6", "threads": 8}), "VVLTC")
         self.assertEqual(fishtest.classify_test({"tc": "60+0.6", "threads": 6}), "VVLTC")
         self.assertEqual(fishtest.classify_test({"tc": "20+0.2", "threads": 8}), "SMP")
+        prog = {"tc": "60+0.6", "threads": 8, "num_games": 60000, "new_tag": "master",
+                "base_tag": "edb0d9db6731067ec50ce619ff372b463bc4dd5d"}
+        self.assertEqual(fishtest.classify_test(prog), "Progtest")
+        self.assertEqual(fishtest.classify_test({**prog, "threads": 1}), "Progtest")
+        self.assertEqual(fishtest.classify_test({**prog, "new_tag": "my-branch", "base_tag": "master"}),
+                         "VVLTC")  # a branch against master is not a progression test
+        self.assertEqual(fishtest.classify_test({**prog, "num_games": 20000}), "VVLTC")
+        self.assertEqual(fishtest.classify_test({**prog, "sprt": {}}), "VVLTC")
+        self.assertEqual(fishtest.classify_test({**prog, "tc": "10+0.1", "threads": 1}), "STC")
 
     def test_nodestime(self):
         ltc = {"tc": "100+1", "threads": 1}
@@ -578,7 +587,7 @@ class Charts(unittest.TestCase):
     def test_header_wraps_when_crowded(self):
         theme = charts.THEMES["light"]
         _, one_line = charts._header(theme, charts._type_items(theme, [0, 1]), "1,644 cores in total")
-        crowded = charts._type_items(theme, range(7), [1740, 252, 30, 400, 236, 16, 0])
+        crowded = charts._type_items(theme, range(8), [1740, 252, 30, 400, 236, 0, 16, 0])
         parts, two_lines = charts._header(theme, crowded, "54 tests running · median 16 cores")
         self.assertEqual(two_lines - one_line, 24)
         self.assertIn("SPSA 0", "".join(parts))
