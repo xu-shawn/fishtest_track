@@ -7,8 +7,8 @@ from datetime import datetime, timedelta
 from html import escape
 from urllib.parse import quote
 
-from .charts import compact, has_long_history, short
-from .fishtest import TEST_TYPES, bounds_kind
+from .charts import compact, has_long_history, matches_kind, short
+from .fishtest import TEST_TYPES
 from .store import Check, History, parse_iso
 
 FISHTEST = "https://tests.stockfishchess.org"
@@ -26,6 +26,8 @@ TABLE_ROWS = [
     ("Cores", "cores", _whole),
     ("Workers", "workers", _whole),
     ("Contributors with workers", "contributors", _whole),
+    ("Net tests running", "tests_net", _whole),
+    ("Cores on net tests", "cores_net", _whole),
     ("Nodes per second", "mnps", lambda v: short(v * 1e6)),
     ("Games per minute", "games_per_min", _whole),
     ("Pending hours", "pending_hours", lambda v: f"{v:,.0f} h"),
@@ -93,15 +95,19 @@ def _finished_summary(finished: dict[str, dict[str, str]], now: datetime) -> str
         text += f", {count['failed']} failed"
     if sprt:
         text += f". SPRT pass rate {100 * count['passed'] / sprt:.1f}%"
-        rates = []
-        for kind in ("gainer", "simplification"):
-            tests = [r for r in week if bounds_kind(r.get("elo0"), r.get("elo1")) == kind
-                     and r["outcome"] in ("passed", "rejected")]
-            if tests:
-                rate = 100 * sum(r["outcome"] == "passed" for r in tests) / len(tests)
-                rates.append(f"{rate:.1f}% for {kind}s ({len(tests)})")
-        if rates:
-            text += ": " + ", ".join(rates)
+        groups = []
+        for pair in (("gainer", "simplification"), ("net", "search")):
+            rates = []
+            for kind in pair:
+                tests = [r for r in week if matches_kind(r, kind) and r["outcome"] in ("passed", "rejected")]
+                if tests:
+                    rate = 100 * sum(r["outcome"] == "passed" for r in tests) / len(tests)
+                    label = f"{kind}s" if kind in ("gainer", "simplification") else f"{kind} tests"
+                    rates.append(f"{rate:.1f}% for {label} ({len(tests)})")
+            if rates:
+                groups.append(", ".join(rates))
+        if groups:
+            text += ": " + "; ".join(groups)
     return text + "."
 
 
@@ -258,6 +264,10 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
              "bounds (such as [0, 2] and [0.5, 2.5]) finished per week.")
     _section(lines, "Simplification bounds", "weekly-simplifications", url, "Stacked columns of tests "
              "with simplification bounds (such as [-1.75, 0.25]) finished per week.")
+    _section(lines, "Net tests", "weekly-net", url, "Stacked columns of tests of new networks "
+             "finished per week.")
+    _section(lines, "Search tests", "weekly-search", url, "Stacked columns of tests of code changes "
+             "(not new networks) finished per week.")
 
     if has_long_history(checks):
         lines += ["", f"### Since {start.day} {start:%b %Y}, daily averages"]

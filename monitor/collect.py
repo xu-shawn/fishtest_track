@@ -164,14 +164,16 @@ def update_finished(data_dir: Path, now: datetime) -> int:
     return added
 
 
-def backfill_finished(data_dir: Path, days: int, max_pages: int = 400) -> int:
-    """Extend data/finished_runs.csv back to `days` ago (a one-off, slow on purpose)."""
+def backfill_finished(data_dir: Path, days: int, max_pages: int = 400,
+                      refresh: bool = False) -> int:
+    """Extend data/finished_runs.csv back to `days` ago (a one-off, slow on purpose).
+    With `refresh`, fetch the whole window again so new columns get filled in."""
     known = read_finished(data_dir)
     target = datetime.now(UTC) - timedelta(days=days)
-    if known and min(parse_iso(r["finished"]) for r in known.values()) <= target:
+    if not refresh and known and min(parse_iso(r["finished"]) for r in known.values()) <= target:
         return 0
     # Skip pages we already have, keeping one page of overlap for runs finished since.
-    page = max(1, len(known) // 50 - 1)
+    page = 1 if refresh else max(1, len(known) // 50 - 1)
     added = 0
     for _ in range(max_pages):
         reply = fetch_json_with_retries(f"/api/finished_runs?page={page}", delays=(10, 30))

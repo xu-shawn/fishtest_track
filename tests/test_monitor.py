@@ -35,7 +35,7 @@ def make_check(hours_ago, status="up", **values):
     defaults = dict(tests_active=50, tests_pending=2, authors_active=20, workers=170,
                     contributors=55, cores=1600,
                     cores_stc=900, cores_ltc=300, cores_vltc=50, cores_vvltc=150, cores_smp=60,
-                    cores_nodestime=100, cores_spsa=40,
+                    cores_nodestime=100, cores_spsa=40, tests_net=0, cores_net=0,
                     mnps=900.0,
                     games_per_min=1200.0, pending_hours=50.0, latency_ms=500)
     if status == "down":
@@ -133,6 +133,18 @@ class Summaries(unittest.TestCase):
         self.assertEqual(counts[4], 1)  # -0.5 of the way scales to -1.47
         self.assertAlmostEqual(median, 0.0)
         self.assertEqual(fishtest.llr_distribution({}), (0, None, [0] * 16))
+
+    def test_net_tests(self):
+        self.assertTrue(fishtest.is_net_test({"base_nets": ["nn-a.nnue"], "new_nets": ["nn-b.nnue"]}))
+        self.assertFalse(fishtest.is_net_test({"base_nets": ["nn-a.nnue", "nn-s.nnue"],
+                                               "new_nets": ["nn-s.nnue", "nn-a.nnue"]}))
+        self.assertFalse(fishtest.is_net_test({}))
+        net = make_run(workers=3, cores=30)
+        net["args"] = {**net["args"], "base_nets": ["nn-a.nnue"], "new_nets": ["nn-b.nnue"]}
+        snap = fishtest.summarize({"search": make_run(), "net": net})
+        self.assertEqual((snap.tests_net, snap.cores_net), (1, 30))
+        self.assertEqual(fishtest.active_record(net)["net"], "1")
+        self.assertEqual(fishtest.finished_record(make_run(finished=True))["net"], "0")
 
     def test_bounds_kind(self):
         self.assertEqual(fishtest.bounds_kind("0", "2"), "gainer")
@@ -508,8 +520,11 @@ class Charts(unittest.TestCase):
         self.assertNotIn("SPRT pass rate", svg)  # no per-week rate panel any more
         self.assertIn("Simplifications passed 1", svg)
         self.assertIn('fill="#66ccff"', svg)
-        svg = charts.weekly_finished_chart(finished, NOW, theme, bounds="gainer")
+        svg = charts.weekly_finished_chart(finished, NOW, theme, kind="gainer")
         self.assertNotIn("Simplifications passed", svg)  # legend lists only what occurs
+        finished["n"] = {**finished["s"], "id": "n", "net": "1", "elo0": "0", "elo1": "2"}
+        svg = charts.weekly_finished_chart(finished, NOW, theme, kind="net")
+        self.assertIn("Net tests · 1 tests in 52 weeks", svg)
         self.assertEqual(len(charts._week_list(finished, NOW, 52)), 52)
 
     def test_weekly_types_chart(self):
@@ -594,7 +609,10 @@ class Readme(unittest.TestCase):
         self.assertIn("https://example.com/c/tests-dark.svg", text)
         self.assertIn("**2 passed** (1 STC, 1 nodestime)", text)
         self.assertIn("| 100+1\u00a0nodestime |", text)
-        self.assertIn("SPRT pass rate 66.7%: 66.7% for gainers (3)", text)
+        self.assertIn("SPRT pass rate 66.7%: 66.7% for gainers (3); 66.7% for search tests (3)", text)
+        for chart in ("weekly-net", "weekly-search"):
+            self.assertIn(f"/{chart}-light.svg", text)
+        self.assertIn("| Net tests running | 0 |", text)
         for chart in ("weekly-gainers", "weekly-simplifications"):
             self.assertIn(f"/{chart}-dark.svg", text)
         self.assertIn(r"[a\_b\*c](https://tests.stockfishchess.org/tests/user/a_b%2Ac)", text)

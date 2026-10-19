@@ -46,6 +46,8 @@ class Check:
     cores_smp: int | None = None
     cores_nodestime: int | None = None
     cores_spsa: int | None = None
+    tests_net: int | None = None  # running tests of a new network
+    cores_net: int | None = None
     mnps: float | None = None
     games_per_min: float | None = None
     pending_hours: float | None = None

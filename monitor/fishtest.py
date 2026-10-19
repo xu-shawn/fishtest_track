@@ -251,6 +251,12 @@ def bounds_kind(elo0: str | float | None, elo1: str | float | None) -> str:
     return "simplification" if float(elo0) + float(elo1) < 0 else "gainer"
 
 
+def is_net_test(args: dict) -> bool:
+    """A test of a new network: the new side plays with different NNUE nets than the base.
+    Every other test changes code (search, evaluation, time management, ...)."""
+    return sorted(args.get("new_nets") or []) != sorted(args.get("base_nets") or [])
+
+
 def games_played(run: dict) -> int:
     r = run["results"]
     return r["wins"] + r["losses"] + r["draws"]
@@ -278,6 +284,8 @@ class Snapshot:
     cores_smp: int
     cores_nodestime: int
     cores_spsa: int
+    tests_net: int
+    cores_net: int
     mnps: float
     games_per_min: float
     pending_hours: float
@@ -300,6 +308,7 @@ def summarize(runs: dict) -> Snapshot:
     by_type = Counter()
     for r in active:
         by_type[classify_test(r["args"], r.get("tc_base"))] += r.get("cores", 0)
+    net = [r for r in active if is_net_test(r["args"])]
 
     return Snapshot(
         tests_active=len(active),
@@ -308,6 +317,8 @@ def summarize(runs: dict) -> Snapshot:
         workers=sum(r.get("workers", 0) for r in active),
         cores=cores,
         **{TYPE_COLUMNS[t]: by_type[t] for t in TEST_TYPES},
+        tests_net=len(net),
+        cores_net=sum(r.get("cores", 0) for r in net),
         mnps=round(sum(r.get("nps", 0.0) for r in active) / 1e6, 1),
         games_per_min=round(sum(r.get("games_per_minute", 0.0) for r in active), 1),
         pending_hours=round(pending_hours, 1),
@@ -348,6 +359,7 @@ def _common_fields(run: dict) -> dict[str, str]:
         "username": args.get("username", ""),
         "branch": args.get("new_tag", ""),
         "type": classify_test(args, run.get("tc_base")),
+        "net": "1" if is_net_test(args) else "0",
         "tc": args.get("tc", ""),
         "threads": str(args.get("threads", 1)),
         "elo0": f"{sprt['elo0']:g}" if "elo0" in sprt else "",
@@ -358,9 +370,9 @@ def _common_fields(run: dict) -> dict[str, str]:
     }
 
 
-ACTIVE_FIELDS = ["id", "username", "branch", "type", "tc", "threads", "elo0", "elo1", "games",
+ACTIVE_FIELDS = ["id", "username", "branch", "type", "net", "tc", "threads", "elo0", "elo1", "games",
                  "elo", "elo95", "cores", "workers", "llr", "started"]
-FINISHED_FIELDS = ["id", "finished", "started", "username", "branch", "type", "tc", "threads",
+FINISHED_FIELDS = ["id", "finished", "started", "username", "branch", "type", "net", "tc", "threads",
                    "elo0", "elo1", "outcome", "games", "elo", "elo95", "core_hours"]
 
 

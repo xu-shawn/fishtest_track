@@ -1301,19 +1301,30 @@ def _week_label(weeks: list[date], i: int) -> str:
     return "This week" if i == len(weeks) - 1 else f"{weeks[i]:%b} {weeks[i].day}"
 
 
+WEEKLY_KINDS = {"gainer": "Gainer bounds", "simplification": "Simplification bounds",
+                "net": "Net tests", "search": "Search tests"}
+
+
+def matches_kind(r: dict[str, str], kind: str) -> bool:
+    if kind in ("gainer", "simplification"):
+        return bounds_kind(r.get("elo0"), r.get("elo1")) == kind
+    if kind in ("net", "search"):
+        return r.get("net") == ("1" if kind == "net" else "0")
+    return True
+
+
 def weekly_finished_chart(finished: dict[str, dict[str, str]], now: datetime, theme: Theme,
-                          weeks: int = 52, bounds: str = "") -> str:
-    """Tests finished per week. With `bounds` ("gainer" or "simplification") only
-    SPRT tests with that kind of bounds are counted."""
+                          weeks: int = 52, kind: str = "") -> str:
+    """Tests finished per week, optionally only one kind of test (see WEEKLY_KINDS)."""
     week_list = _week_list(finished, now, weeks)
     by_week: dict[date, list] = defaultdict(list)
     for r in finished.values():
-        if not bounds or bounds_kind(r.get("elo0"), r.get("elo1")) == bounds:
+        if matches_kind(r, kind):
             by_week[_week_start(parse_iso(r["finished"]).date())].append(r)
     counts = [_outcome_counts(by_week[w]) for w in week_list]
     totals = [sum(c[i] for c in counts) for i in range(4)]
 
-    what = {"gainer": "Gainer bounds · ", "simplification": "Simplification bounds · "}.get(bounds, "")
+    what = f"{WEEKLY_KINDS[kind]} · " if kind else ""
     passed, sprt = totals[0] + totals[1], totals[0] + totals[1] + totals[2]
     rate = f" · {100 * passed / sprt:.0f}% passed" if sprt else ""
     body, header_y = _header(theme, _outcome_legend(theme, totals),
@@ -1428,10 +1439,10 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
         files[f"llr-{mode}.svg"] = llr_chart(h.llr, now, theme)
         files[f"weekly-finished-{mode}.svg"] = weekly_finished_chart(h.finished, now, theme)
         files[f"weekly-types-{mode}.svg"] = weekly_types_chart(h.checks, now, theme)
-        files[f"weekly-gainers-{mode}.svg"] = weekly_finished_chart(h.finished, now, theme,
-                                                                    bounds="gainer")
-        files[f"weekly-simplifications-{mode}.svg"] = weekly_finished_chart(
-            h.finished, now, theme, bounds="simplification")
+        for kind, name in (("gainer", "gainers"), ("simplification", "simplifications"),
+                           ("net", "net"), ("search", "search")):
+            files[f"weekly-{name}-{mode}.svg"] = weekly_finished_chart(h.finished, now, theme,
+                                                                       kind=kind)
         files[f"tests-trend-{mode}.svg"] = tests_trend_chart(h.hourly, _tests_info(h), now, theme)
         files[f"authors-trend-{mode}.svg"] = entity_trend_chart(
             authors_cores, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="authors",

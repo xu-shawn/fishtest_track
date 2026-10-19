@@ -21,6 +21,8 @@ def main() -> None:
 
     backfill = commands.add_parser("backfill", help="fetch older finished tests (one-off)")
     backfill.add_argument("--days", type=int, default=365)
+    backfill.add_argument("--refresh", action="store_true",
+                          help="fetch the whole window again, e.g. to fill in a new column")
 
     charts = commands.add_parser("charts", help="draw the SVG charts")
     charts.add_argument("--out", type=Path, default=Path("build/charts"))
@@ -37,7 +39,7 @@ def main() -> None:
         collect(args.data)
         return
     if args.command == "backfill":
-        print(f"{backfill_finished(args.data, args.days)} finished tests added")
+        print(f"{backfill_finished(args.data, args.days, refresh=args.refresh)} finished tests added")
         return
 
     history = load(args.data)
