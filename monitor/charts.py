@@ -1769,6 +1769,9 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
     authors_cores = _hourly_series(h.hourly, "authors", 0)
     authors_tests = _hourly_series(h.hourly, "authors", 1)
     contributors = _hourly_series(h.hourly, "contributors", 0)
+    # Hours when the machines page could not be read have no contributor data: skip them
+    # rather than drawing everyone at zero.
+    contributor_times = [parse_iso(row["time"]) for row in h.hourly if "contributors" in row]
     contributors_mnps = _hourly_series(h.hourly, "contributors", 2)
     mnps_times = sorted({t for values in contributors_mnps.values() for t in values})
     long = has_long_history(h.checks)
@@ -1814,7 +1817,7 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
             authors_tests, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="authors",
             unit="tests", label="Running tests per author over the last 14 days")
         files[f"contributors-trend-{mode}.svg"] = entity_trend_chart(
-            contributors, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="contributors",
+            contributors, contributor_times, now, theme, days=14, max_gap=MAX_GAP, what="contributors",
             unit="cores", label="Cores contributed per user over the last 14 days")
         files[f"contributors-mnps-trend-{mode}.svg"] = entity_trend_chart(
             contributors_mnps, mnps_times, now, theme, days=14, max_gap=MAX_GAP,

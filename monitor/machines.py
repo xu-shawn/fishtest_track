@@ -15,6 +15,7 @@ import hashlib
 import os
 import re
 import time
+from collections import defaultdict
 from dataclasses import dataclass
 from html.parser import HTMLParser
 from multiprocessing import Pool
@@ -42,7 +43,9 @@ class Worker:
     key: str = ""  # short worker id shown on the page, only used to drop duplicates
     arch: str = ""  # Stockfish build the worker uses, e.g. x86-64-avx512
     compiler: str = ""  # e.g. g++ 16.2.0
-    mnps: float = 0.0  # the whole worker's speed: cores x the page's MNps per core
+    # The whole worker's speed: cores x the page's MNps per core. None while fishtest has not
+    # measured it yet (the page shows 0, e.g. right after the worker restarts).
+    mnps: float | None = None
 
 
 # ---------------------------------------------------------------- proof of work
@@ -151,21 +154,50 @@ def parse_workers(page: str) -> list[Worker]:
         try:
             per_core = float(row[3]["text"].strip())
         except ValueError:
-            per_core = 0.0  # no speed reported yet
+            per_core = 0.0
         workers.append(Worker(row[0]["text"].strip(), int(cores), run.group(1) if run else "",
                               row[2]["text"].strip(), row[6]["text"].strip(),
-                              " ".join(row[7]["text"].split()), int(cores) * per_core))
+                              " ".join(row[7]["text"].split()),
+                              int(cores) * per_core if per_core > 0 else None))
     if not workers and "No machines running" not in page:
         raise FetchError("machines table not found")
     return workers
 
 
+def fill_unmeasured(workers: list[Worker]) -> int:
+    """Give each worker whose speed is not measured yet the average speed per core of the
+    same user's measured workers (usually identical machines), or of all measured workers
+    if the user has none, so a restart does not read as a drop in speed. Returns how many
+    workers were filled in."""
+    def per_core(group: list[Worker]) -> float | None:
+        cores = sum(w.cores for w in group if w.mnps is not None)
+        return sum(w.mnps for w in group if w.mnps is not None) / cores if cores else None
+
+    overall = per_core(workers)
+    by_user: dict[str, list[Worker]] = defaultdict(list)
+    for w in workers:
+        by_user[w.username].append(w)
+    filled = 0
+    for group in by_user.values():
+        rate = per_core(group) or overall
+        for w in group:
+            if w.mnps is None and rate is not None:
+                w.mnps = w.cores * rate
+                filled += 1
+    return filled
+
+
 def fetch_workers() -> list[Worker]:
-    """Every active worker, passing the proof-of-work check if it is shown."""
+    """Every active worker, passing the proof-of-work check if it is shown. A rejected
+    answer is retried with the new challenge; it happens now and then."""
     page = _page(PATH, None)
-    cookie = _pass_check(page)
-    if cookie:
+    cookie = None
+    for _ in range(3):
+        if not _CHALLENGE.search(page):
+            break
+        cookie = _pass_check(page)
         page = _page(PATH, cookie)
+    else:
         if _CHALLENGE.search(page):
             raise FetchError("proof-of-work check not accepted")
     workers = parse_workers(page)

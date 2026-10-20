@@ -334,6 +334,20 @@ class Machines(unittest.TestCase):
         self.assertIsNone(cookies[0])
         self.assertRegex(cookies[1], r"^__Host-fishtest-ac=82980\.\d+$")
 
+    def test_unmeasured_speed(self):
+        page = MACHINES_PAGE.replace("<td>1.1</td>", "<td>0.00</td>")
+        workers = machines.parse_workers(page)
+        self.assertIsNone(workers[1].mnps)  # bob's worker was not measured yet
+        same_user = [machines.Worker("u", 8, "r", mnps=4.0), machines.Worker("u", 4, "r"),
+                     machines.Worker("v", 2, "r", mnps=3.0), machines.Worker("w", 10, "r")]
+        self.assertEqual(machines.fill_unmeasured(same_user), 2)
+        self.assertEqual([w.mnps for w in same_user], [4.0, 2.0, 3.0, 7.0])  # w: 7 / 10 cores
+
+    def test_retries_rejected_answer(self):
+        pages = [CHALLENGE_PAGE, CHALLENGE_PAGE, MACHINES_PAGE]
+        with mock.patch.object(machines, "_page", side_effect=lambda path, cookie: pages.pop(0)):
+            self.assertEqual(len(machines.fetch_workers()), 2)
+
     def test_rejected_cookie(self):
         with mock.patch.object(machines, "_page", return_value=CHALLENGE_PAGE):
             with self.assertRaisesRegex(fishtest.FetchError, "not accepted"):

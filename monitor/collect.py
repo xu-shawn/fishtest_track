@@ -21,7 +21,7 @@ from .fishtest import (
     parse_time,
     summarize,
 )
-from .machines import Worker, fetch_workers
+from .machines import Worker, fetch_workers, fill_unmeasured
 from .store import (
     ACTIVE_FILE,
     DAILY_FIELDS,
@@ -86,7 +86,8 @@ def snapshot_hours(data_dir: Path, now: datetime) -> float:
 
 def write_workers(data_dir: Path, workers: list[Worker]) -> None:
     rows = [{"username": w.username, "cores": str(w.cores), "run": w.run, "arch": w.arch,
-             "compiler": w.compiler, "mnps": f"{w.mnps:.2f}"} for w in workers]
+             "compiler": w.compiler, "mnps": f"{w.mnps:.2f}" if w.mnps is not None else ""}
+            for w in workers]
     rows.sort(key=lambda r: (r["username"].lower(), -int(r["cores"]), r["run"]))
     write_rows(data_dir, WORKERS_FILE, WORKER_FIELDS, rows)
 
@@ -111,7 +112,7 @@ def breakdown(runs: dict, workers: list[Worker] | None) -> dict[str, dict]:
                 entry = totals[getattr(w, field) or "unknown"]
                 entry[0] += w.cores
                 entry[1] += 1
-                entry[2] += w.mnps
+                entry[2] += w.mnps or 0.0
             parts[key] = {name: [cores, count, round(mnps, 1)]
                           for name, (cores, count, mnps) in totals.items()}
     return parts
@@ -225,6 +226,9 @@ def collect(data_dir: Path) -> Check:
         try:
             workers = fetch_workers()
             check.contributors = len({w.username for w in workers})
+            filled = fill_unmeasured(workers)
+            if filled:
+                print(f"{filled} workers have no measured speed yet; using their owner's average")
         except FetchError as e:
             # Contributor data is a bonus; keep the rest of the snapshot.
             print(f"warning: could not read the machines page: {e}")
