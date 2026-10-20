@@ -793,7 +793,13 @@ class Readme(unittest.TestCase):
         self.assertIn("| Nodes per second | 900M |", text)
         self.assertLess(text.index("types-light.svg"), text.index("tests-light.svg"))
         self.assertLess(text.index("llr-light.svg"), text.index("## Right now"))
-        self.assertIn("(170 workers from 55 contributors)", text)
+        self.assertIn("(170 workers from 55 contributors). 2 tests are waiting for workers, and "
+                      "about 50 hours of work is queued.", text)
+        self.assertNotIn("| Tests waiting for workers |", text)
+        idle = store.History([make_check(1), make_check(0, tests_pending=0)], active,
+                             self.finished(), workers, llr, hourly, daily)
+        self.assertIn("contributors). About 50 hours of work is queued.",
+                      readme.build_readme(idle, NOW, "https://example.com/c"))
         self.assertIn("https://example.com/c/contributors-light.svg", text)
         self.assertIn("| [donor](https://tests.stockfishchess.org/tests/user/donor) | 1,536 | 100.0% | 64 | "
                       "58 | 1 |", text)

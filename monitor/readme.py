@@ -21,7 +21,6 @@ def _whole(v: float) -> str:
 
 TABLE_ROWS = [
     ("Tests running", "tests_active", _whole),
-    ("Tests waiting for workers", "tests_pending", _whole),
     ("Authors with running tests", "authors_active", _whole),
     ("Cores", "cores", _whole),
     ("Workers", "workers", _whole),
@@ -257,7 +256,7 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
                      "bands of the speed, in million nodes per second, each user's workers "
                      "contributed over the last 14 days, the top 8 labelled.")
     _section(lines, "Tests, authors, contributors and throughput", "activity", url, "Line charts of "
-             "tests running and waiting, authors, workers, contributors, nodes per second, games per "
+             "tests running, authors, cores, workers, contributors, nodes per second, games per "
              "minute and pending hours over the last 14 days.")
     _section(lines, "Tests finished per hour", "throughput", url, "Faint columns of tests finished "
              "in each hour over the last 14 days, with a line for the trailing 24-hour average.")
@@ -315,20 +314,23 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
                      "bands of the daily average speed, in million nodes per second, contributed "
                      "per user, the top 8 labelled.")
         _section(lines, "Tests, authors, contributors and throughput", "long-activity", url,
-                 "Line charts of the daily averages of tests, authors, workers, contributors, "
-                 "nodes per second, games per minute and pending hours.")
+                 "Line charts of the daily averages of tests, authors, cores, workers, "
+                 "contributors, nodes per second, games per minute and pending hours.")
 
     # ------------------------------------------------------------ right now
-    waiting = (f"{snap.tests_pending} {'test is' if snap.tests_pending == 1 else 'tests are'} "
-               "waiting for workers")
+    queued = f"about {snap.pending_hours:,.0f} hours of work is queued."
+    if snap.tests_pending:  # rare: paused tests do not count
+        queued = (f"{snap.tests_pending} {'test is' if snap.tests_pending == 1 else 'tests are'} "
+                  f"waiting for workers, and {queued}")
+    else:
+        queued = queued[0].upper() + queued[1:]
     machines = f"{snap.workers:,} workers"
     if snap.contributors is not None:
         machines += f" from {snap.contributors} contributors"
     lines += [
         "", "## Right now", "",
         f"**{snap.tests_active} tests** from **{snap.authors_active} authors** are running on "
-        f"**{snap.cores:,} cores** ({machines}). {waiting}, and about "
-        f"{snap.pending_hours:,.0f} hours of work is queued.",
+        f"**{snap.cores:,} cores** ({machines}). {queued}",
         "",
     ]
     lines += _key_numbers(checks, snap, now)

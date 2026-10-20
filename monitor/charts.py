@@ -405,6 +405,7 @@ def activity_chart(checks: list[Check], now: datetime, theme: Theme, days: int =
     panels = [
         Panel("Tests running", "tests_active", whole),
         Panel("Authors with running tests", "authors_active", whole),
+        Panel("Cores", "cores", whole),
         Panel("Workers", "workers", whole),
         Panel("Contributors with workers", "contributors", whole),
         Panel("Nodes per second", "mnps", lambda v: short(v * 1e6),
@@ -412,7 +413,6 @@ def activity_chart(checks: list[Check], now: datetime, theme: Theme, days: int =
         Panel("Games per minute", "games_per_min", whole),
         Panel("Pending hours (fishtest estimate)", "pending_hours", lambda v: f"{v:,.0f} h",
               integer=False),
-        Panel("Tests waiting for workers", "tests_pending", whole),
     ]
     t0, t1 = _window(checks, now, days)
     gap_x, gap_y, panel_h = 32, 24, 184
@@ -424,7 +424,7 @@ def activity_chart(checks: list[Check], now: datetime, theme: Theme, days: int =
         body += _line_panel(theme, checks, panel, px, py, panel_w, panel_h, t0, t1, max_gap)
     rows = math.ceil(len(panels) / 2)
     height = 2 * PAD + rows * panel_h + (rows - 1) * gap_y
-    label = (f"Tests running and waiting, authors, workers, contributors, nodes per second, "
+    label = (f"Tests running, authors, cores, workers, contributors, nodes per second, "
              f"games per minute and pending hours over the last {days} days")
     return _doc(WIDTH, height, theme, label, body)
 
