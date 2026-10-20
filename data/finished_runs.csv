@@ -8720,3 +8720,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad67d1a733e627f7058c935,2026-10-20T05:30:14Z,2026-10-19T20:27:06Z,jayc,nn-172a45f3c74a,STC,1,10+0.1,1,0,2,rejected,13984,-5.76,2.83,120.1
 6ad05b7f733e627f7058c268,2026-10-20T07:52:49Z,2026-10-15T04:50:07Z,Vizvezdenec,multicutFR2,STC,0,10+0.1,1,0,2,rejected,121856,-0.22,0.96,1046.3
 6ad72fa1733e627f7058cdc6,2026-10-20T09:08:49Z,2026-10-20T09:08:49Z,AdrianStockfish,eval,STC,1,10+0.1,1,0,2,stopped,0,,,0.0
+6ad6af0f733e627f7058ca80,2026-10-20T11:01:55Z,2026-10-20T00:00:15Z,fauzi2,cachs4a,STC,0,10+0.1,1,0,2,stopped,9824,-4.14,3.41,84.4
+6ad50eb5733e627f7058c777,2026-10-20T11:39:52Z,2026-10-18T18:23:49Z,Elhamuddin,improving/opponentWorsening_reduction_spsa,STC,0,10+0.1,1,0,2,rejected,68288,-0.80,1.29,586.4
