@@ -133,8 +133,8 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-20,arch,x86-64-avx512,12273.6,1449.6,3871.6
 2026-10-20,arch,x86-64-avx512icl,1879.5,334.5,1415.5
 2026-10-20,arch,x86-64-avxvnni,2041.5,240.6,847.2
-2026-10-20,arch,x86-64-bmi2,9725.1,1099.2,3601.0
-2026-10-20,arch,x86-64-sse41-popcnt,774.1,97.9,172.0
+2026-10-20,arch,x86-64-bmi2,9725.5,1099.6,3601.2
+2026-10-20,arch,x86-64-sse41-popcnt,774.7,98.1,172.1
 2026-10-20,arch,x86-64-vnni512,63.4,4.0,45.8
 2026-10-20,author,0x539,1217.8,28.6,
 2026-10-20,author,AdrianStockfish,1502.5,93.1,
@@ -149,14 +149,14 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-20,author,HappyNoah,430.7,22.3,
 2026-10-20,author,jayc,211.9,11.7,
 2026-10-20,author,linrock,1536.5,68.0,
-2026-10-20,author,lsst,1585.6,110.7,
+2026-10-20,author,lsst,1586.4,110.9,
 2026-10-20,author,luozichen,629.8,31.3,
 2026-10-20,author,rn,2262.3,45.6,
 2026-10-20,author,rustamcpp,526.9,22.3,
 2026-10-20,author,sg,2634.4,134.1,
 2026-10-20,author,shawnxu,1902.6,88.9,
 2026-10-20,author,vdv,1478.0,45.3,
-2026-10-20,author,Vizvezdenec,4354.2,130.5,
+2026-10-20,author,Vizvezdenec,4354.4,130.7,
 2026-10-20,compiler,clang++ 17.0.0,222.9,30.6,121.7
 2026-10-20,compiler,clang++ 17.0.6,535.4,22.3,289.6
 2026-10-20,compiler,clang++ 19.1.7,34.7,5.0,37.1
@@ -167,11 +167,11 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-20,compiler,g++ 10.2.1,540.5,19.3,154.6
 2026-10-20,compiler,g++ 11.4.0,502.9,108.1,154.5
 2026-10-20,compiler,g++ 12.2.0,938.4,63.2,356.8
-2026-10-20,compiler,g++ 13.3.0,15476.5,2060.5,5526.8
+2026-10-20,compiler,g++ 13.3.0,15476.7,2060.7,5526.9
 2026-10-20,compiler,g++ 13.3.1,357.1,22.3,138.9
 2026-10-20,compiler,g++ 14.2.0,5532.9,267.6,1757.2
 2026-10-20,compiler,g++ 15.1.0,164.7,15.0,114.8
-2026-10-20,compiler,g++ 15.2.0,2491.9,523.1,1113.9
+2026-10-20,compiler,g++ 15.2.0,2492.7,523.5,1114.1
 2026-10-20,compiler,g++ 16.1.0,1023.6,100.5,268.4
 2026-10-20,compiler,g++ 16.2.0,1957.1,284.3,1075.0
 2026-10-20,compiler,g++ 16.2.1,6650.2,297.7,2772.9
@@ -181,7 +181,7 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-20,contributor,ali-al-zhrani,22.3,22.3,8.8
 2026-10-20,contributor,amicic,133.9,22.3,57.3
 2026-10-20,contributor,ampere35,8.0,1.0,4.3
-2026-10-20,contributor,AngelBePro,22.3,22.3,5.3
+2026-10-20,contributor,AngelBePro,22.5,22.5,5.4
 2026-10-20,contributor,Angelkld,287.4,71.8,69.1
 2026-10-20,contributor,Antihistamine,287.4,61.9,178.3
 2026-10-20,contributor,beginnerchess10002551,1769.9,442.4,928.0
@@ -228,7 +228,7 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-20,contributor,PluckyPizzicato,156.2,22.3,156.5
 2026-10-20,contributor,Poly,351.6,69.9,148.8
 2026-10-20,contributor,qgluca,89.1,22.3,99.6
-2026-10-20,contributor,RickGroszkiewicz,22.6,22.6,11.3
+2026-10-20,contributor,RickGroszkiewicz,22.8,22.8,11.4
 2026-10-20,contributor,rieger,22.6,22.6,7.2
 2026-10-20,contributor,rn,178.5,22.3,140.9
 2026-10-20,contributor,robal,164.7,15.0,114.8
@@ -237,7 +237,7 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-20,contributor,Spprtr,156.2,22.3,98.8
 2026-10-20,contributor,Squidroot,44.5,22.3,12.0
 2026-10-20,contributor,sylvek,290.0,66.9,141.7
-2026-10-20,contributor,tastedcheese,69.9,23.3,9.5
+2026-10-20,contributor,tastedcheese,70.5,23.5,9.6
 2026-10-20,contributor,technologov,897.4,41.5,296.8
 2026-10-20,contributor,tolkki963,101.0,12.7,17.3
 2026-10-20,contributor,Torom,358.3,15.0,312.4
@@ -251,8 +251,8 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-20,contributor,zeryl,290.0,22.3,123.3
 2026-10-20,contributor,Zirie,685.6,64.9,370.7
 2026-10-20,contributor,zoe,351.5,48.2,77.8
-2026-10-20,hours,arch,23.3,0.0,
-2026-10-20,hours,author,23.3,0.0,
-2026-10-20,hours,compiler,23.3,0.0,
-2026-10-20,hours,contributor,23.3,0.0,
-2026-10-20,hours,mnps,16.3,0.0,
+2026-10-20,hours,arch,23.5,0.0,
+2026-10-20,hours,author,23.5,0.0,
+2026-10-20,hours,compiler,23.5,0.0,
+2026-10-20,hours,contributor,23.5,0.0,
+2026-10-20,hours,mnps,16.5,0.0,

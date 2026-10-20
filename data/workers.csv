@@ -1,10 +1,4 @@
 username,cores,run,arch,compiler,mnps
 AngelBePro,1,6ad4872d733e627f7058c70c,x86-64-bmi2,g++ 15.2.0,0.33
-Angelkld,4,6ad1f9e8733e627f7058c419,x86-64-bmi2,g++ 11.4.0,1.48
-Angelkld,4,6ad5b435733e627f7058c8b2,x86-64-bmi2,g++ 11.4.0,1.44
-fungiblemoose,2,6ad1fcfc733e627f7058c41f,x86-64-avxvnni,g++ 14.2.0,0.54
-maximmasiutin,6,6ad6bdbf733e627f7058cb36,x86-64-avxvnni,g++ 15.2.0,1.44
 RickGroszkiewicz,1,6ad439a8733e627f7058c6ca,x86-64-bmi2,g++ 13.3.0,0.66
-rieger,1,6ad731d8733e627f7058cdce,x86-64-sse41-popcnt,g++ 16.2.0,0.45
 tastedcheese,3,6ad439a8733e627f7058c6ca,x86-64-sse41-popcnt,g++ 15.2.0,0.51
-zoe,4,6ad68f6a733e627f7058c93f,armv8-dotprod,g++ 15.2.0,1.00
