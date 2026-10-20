@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from html import escape
 from urllib.parse import quote
 
-from .charts import compact, has_long_history, matches_kind, short
+from .charts import compact, has_long_history, matches_kind, mnps_label, short
 from .fishtest import TEST_TYPES
 from .store import Check, History, parse_iso
 
@@ -190,17 +190,20 @@ def _top_contributors(daily: list[dict[str, str]], workers: list[dict[str, str]]
         return ["No contributor history yet."]
     cores_now: dict[str, int] = defaultdict(int)
     workers_now: dict[str, int] = defaultdict(int)
+    mnps_now: dict[str, float] = defaultdict(float)
     for w in workers:
         cores_now[w["username"]] += int(w["cores"])
         workers_now[w["username"]] += 1
+        mnps_now[w["username"]] += float(w.get("mnps") or 0)
     total = sum(hours.values()) or 1
     lines = [
-        "| Contributor | Core-hours | Share | Cores now | Workers now |",
-        "|:--|--:|--:|--:|--:|",
+        "| Contributor | Core-hours | Share | Cores now | MNps now | Workers now |",
+        "|:--|--:|--:|--:|--:|--:|",
     ]
     for name, h in sorted(hours.items(), key=lambda kv: (-kv[1], kv[0].lower()))[:limit]:
         lines.append(f"| {_author_link(name)} | {h:,.0f} | {100 * h / total:.1f}% | "
-                     f"{cores_now.get(name, 0):,} | {workers_now.get(name, 0)} |")
+                     f"{cores_now.get(name, 0):,} | {mnps_label(mnps_now.get(name, 0.0))} | "
+                     f"{workers_now.get(name, 0)} |")
     return lines
 
 
@@ -249,6 +252,10 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
         if any(row.get("contributors") for row in h.hourly):
             _section(lines, "Cores contributed by user", "contributors-trend", url, "Stacked bands of "
                      "cores contributed per user over the last 14 days, the top 8 labelled.")
+        if any(len(v) > 2 for row in h.hourly for v in row.get("contributors", {}).values()):
+            _section(lines, "MNps contributed by user", "contributors-mnps-trend", url, "Stacked "
+                     "bands of the speed, in million nodes per second, each user's workers "
+                     "contributed over the last 14 days, the top 8 labelled.")
     _section(lines, "Tests, authors, contributors and throughput", "activity", url, "Line charts of "
              "tests running and waiting, authors, workers, contributors, nodes per second, games per "
              "minute and pending hours over the last 14 days.")
@@ -303,6 +310,10 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
                  "average running tests per author, the top 8 labelled.")
         _section(lines, "Cores contributed by user", "long-contributors", url, "Stacked bands of "
                  "the daily average cores contributed per user, the top 8 labelled.")
+        if any(r.get("mnps_hours") for r in h.daily if r["kind"] == "contributor"):
+            _section(lines, "MNps contributed by user", "long-contributors-mnps", url, "Stacked "
+                     "bands of the daily average speed, in million nodes per second, contributed "
+                     "per user, the top 8 labelled.")
         _section(lines, "Tests, authors, contributors and throughput", "long-activity", url,
                  "Line charts of the daily averages of tests, authors, workers, contributors, "
                  "nodes per second, games per minute and pending hours.")
@@ -340,6 +351,11 @@ def build_readme(history: History, now: datetime, charts_url: str) -> str:
                       f"from {_when(latest.time)} UTC.</sub>", ""]
         lines.append(_picture("contributors", url, "Horizontal bars of cores contributed per "
                               "user, largest first, split by the type of test their workers play."))
+        if any(w.get("mnps") for w in h.workers):
+            lines += ["", "### MNps contributed by user", "",
+                      _picture("contributors-mnps", url, "Horizontal bars of the speed, in million "
+                               "nodes per second, each user's workers contribute, largest first, "
+                               "split by the type of test they play.")]
 
     # ------------------------------------------------------------ tables
     lines += ["", "## Last 30 days in detail", "", "### Recently passed", ""]

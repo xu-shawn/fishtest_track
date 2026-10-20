@@ -84,6 +84,14 @@ class Summaries(unittest.TestCase):
         self.assertEqual(snap.games_per_min, 60.0)
         self.assertGreater(snap.pending_hours, 0)
 
+    def test_paused_tests_are_not_waiting(self):
+        runs = {"w": make_run(workers=0, cores=0), "p": make_run(workers=0, cores=0)}
+        runs["p"]["args"] = {**runs["p"]["args"], "priority": -1}
+        snap = fishtest.summarize(runs)
+        self.assertEqual(snap.tests_pending, 1)
+        self.assertTrue(fishtest.is_paused(runs["p"]))
+        self.assertFalse(fishtest.is_paused(runs["w"]))
+
     def test_summarize_idle(self):
         snap = fishtest.summarize({})
         self.assertEqual((snap.workers, snap.cores, snap.pending_hours), (0, 0, 0))
@@ -299,6 +307,7 @@ class Machines(unittest.TestCase):
         self.assertEqual([(w.username, w.cores, w.run, w.arch, w.compiler) for w in workers],
                          [("alice", 16, "6ad54e36733e627f7058c7b2", "x86-64-avx2", "g++ 14"),
                           ("bob", 8, "6ad43985733e627f7058c6c8", "x86-64-bmi2", "g++ 15")])
+        self.assertEqual([round(w.mnps, 2) for w in workers], [23.84, 8.8])  # cores x MNps per core
         empty = '<table><tbody><tr id="no-machines"><td colspan=20>No machines running</td></tr></tbody></table>'
         self.assertEqual(machines.parse_workers(empty), [])
         with self.assertRaises(fishtest.FetchError):
@@ -337,14 +346,17 @@ class Machines(unittest.TestCase):
             "w": make_run(_id="w", workers=0, cores=0),  # waiting: not counted
         }
         runs["b"]["args"] = {**runs["b"]["args"], "username": "other"}
-        workers = [machines.Worker("alice", 16, "a", arch="x86-64-avx512", compiler="g++ 16.2.0"),
-                   machines.Worker("alice", 4, "b", arch="x86-64-bmi2", compiler="g++ 16.2.0")]
+        workers = [machines.Worker("alice", 16, "a", arch="x86-64-avx512", compiler="g++ 16.2.0",
+                                   mnps=12.0),
+                   machines.Worker("alice", 4, "b", arch="x86-64-bmi2", compiler="g++ 16.2.0",
+                                   mnps=3.5)]
         parts = collect.breakdown(runs, workers)
         self.assertEqual(parts, {"tests": {"a": 16, "b": 8},
                                  "authors": {"someone": [16, 1], "other": [8, 1]},
-                                 "contributors": {"alice": [20, 2]},
-                                 "arches": {"x86-64-avx512": [16, 1], "x86-64-bmi2": [4, 1]},
-                                 "compilers": {"g++ 16.2.0": [20, 2]}})
+                                 "contributors": {"alice": [20, 2, 15.5]},
+                                 "arches": {"x86-64-avx512": [16, 1, 12.0],
+                                            "x86-64-bmi2": [4, 1, 3.5]},
+                                 "compilers": {"g++ 16.2.0": [20, 2, 15.5]}})
         self.assertNotIn("contributors", collect.breakdown(runs, None))
 
         with tempfile.TemporaryDirectory() as tmp:
@@ -365,17 +377,34 @@ class Machines(unittest.TestCase):
         self.assertEqual(hourly[0]["authors"], {"someone": [16, 1], "other": [8, 1]})
         today = [r for r in daily if r["date"] == "2026-10-19" and r["kind"] in ("author", "contributor")]
         self.assertIn({"date": "2026-10-19", "kind": "arch", "name": "x86-64-avx512",
-                       "core_hours": "20.0", "count_hours": "1.2"}, daily)
+                       "core_hours": "20.0", "count_hours": "1.2", "mnps_hours": "15.0"}, daily)
         self.assertIn({"date": "2026-10-19", "kind": "hours", "name": "arch", "core_hours": "1.2",
-                       "count_hours": "0.0"}, daily)
+                       "count_hours": "0.0", "mnps_hours": ""}, daily)
+        self.assertIn({"date": "2026-10-19", "kind": "hours", "name": "mnps", "core_hours": "1.2",
+                       "count_hours": "0.0", "mnps_hours": ""}, daily)
         self.assertEqual(today, [
             {"date": "2026-10-19", "kind": "author", "name": "other", "core_hours": "10.0",
-             "count_hours": "1.2"},
+             "count_hours": "1.2", "mnps_hours": ""},
             {"date": "2026-10-19", "kind": "author", "name": "someone", "core_hours": "20.0",
-             "count_hours": "1.2"},
+             "count_hours": "1.2", "mnps_hours": ""},
             {"date": "2026-10-19", "kind": "contributor", "name": "alice", "core_hours": "25.0",
-             "count_hours": "2.5"},
+             "count_hours": "2.5", "mnps_hours": "19.4"},
         ])
+
+    def test_daily_mnps_divides_by_its_own_hours(self):
+        # Cores were seen for 4 hours that day, MNps only for the last 2.
+        daily = [{"date": "2026-10-19", "kind": "contributor", "name": "alice",
+                  "core_hours": "40.0", "count_hours": "4.0", "mnps_hours": "30.0"},
+                 {"date": "2026-10-19", "kind": "hours", "name": "contributor",
+                  "core_hours": "4.0", "count_hours": "0.0", "mnps_hours": ""},
+                 {"date": "2026-10-19", "kind": "hours", "name": "mnps",
+                  "core_hours": "2.0", "count_hours": "0.0", "mnps_hours": ""},
+                 {"date": "2026-10-18", "kind": "contributor", "name": "alice",
+                  "core_hours": "240.0", "count_hours": "24.0"}]  # before MNps was recorded
+        cores = charts._daily_series(daily, [], "contributor", "core_hours")
+        mnps = charts._daily_series(daily, [], "contributor", "mnps_hours", hours_kind="mnps")
+        self.assertEqual(sorted(cores["alice"].values()), [10.0, 10.0])
+        self.assertEqual(list(mnps["alice"].values()), [15.0])
 
     def test_collect_survives_machines_failure(self):
         runs = {"a": make_run()}
@@ -440,6 +469,19 @@ class Charts(unittest.TestCase):
         ET.fromstring(svg)
         self.assertIn(">Other<", svg)
         self.assertIn("u1 — 12 cores on 2 workers, playing 8 STC, 4 other", svg)
+
+    def test_contributors_mnps_chart(self):
+        theme = charts.THEMES["light"]
+        active = [fishtest.active_record(make_run(_id="t1"))]
+        workers = [{"username": "u1", "cores": "8", "run": "t1", "mnps": "9.60"},
+                   {"username": "u1", "cores": "4", "run": "gone", "mnps": "2.40"},
+                   {"username": "u2", "cores": "2", "run": "t1", "mnps": ""}]  # no speed yet
+        svg = charts.contributors_chart(workers, active, theme, measure="mnps")
+        ET.fromstring(svg)
+        self.assertIn("u1 — 12 MNps from 12 cores on 2 workers (1.00 MNps per core), "
+                      "playing 9.6 STC, 2.4 other", svg)
+        self.assertIn("1 contributor · top 3 give 100% of MNps", svg)
+        self.assertNotIn("u2", svg)
 
     def test_png(self):
         png = charts._png([[(255, 0, 0, 255), (0, 0, 0, 0)], [(0, 0, 255, 255), (1, 2, 3, 4)]])
@@ -711,7 +753,7 @@ class Readme(unittest.TestCase):
     def test_full_report(self):
         checks = [make_check(h) for h in range(48, -1, -1)]
         active = [fishtest.active_record(make_run())]
-        workers = [{"username": "donor", "cores": "64", "run": "abc"}]
+        workers = [{"username": "donor", "cores": "64", "run": "abc", "mnps": "57.60"}]
         daily = [{"date": "2026-10-18", "kind": "contributor", "name": "donor",
                   "core_hours": "1536.0", "count_hours": "24.0"},
                  {"date": "2026-10-18", "kind": "author", "name": "someone",
@@ -719,7 +761,7 @@ class Readme(unittest.TestCase):
         llr = [{"time": "2026-10-19T04:00:00Z", "tests": "1", "median": "0.5",
                 "counts": "0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0"}]
         hourly = [{"time": "2026-10-19T04:00:00Z", "tests": {"abc": 16},
-                   "authors": {"someone": [16, 1]}, "contributors": {"donor": [64, 1]}}]
+                   "authors": {"someone": [16, 1]}, "contributors": {"donor": [64, 1, 57.6]}}]
         history = store.History(checks, active, self.finished(), workers, llr, hourly, daily)
         text = readme.build_readme(history, NOW, "https://example.com/c")
         self.assertTrue(text.startswith("# Fishtest status"))
@@ -753,8 +795,11 @@ class Readme(unittest.TestCase):
         self.assertLess(text.index("llr-light.svg"), text.index("## Right now"))
         self.assertIn("(170 workers from 55 contributors)", text)
         self.assertIn("https://example.com/c/contributors-light.svg", text)
-        self.assertIn("| [donor](https://tests.stockfishchess.org/tests/user/donor) | 1,536 | 100.0% | 64 | 1 |",
-                      text)
+        self.assertIn("| [donor](https://tests.stockfishchess.org/tests/user/donor) | 1,536 | 100.0% | 64 | "
+                      "58 | 1 |", text)
+        self.assertIn("### MNps contributed by user", text)
+        self.assertIn("/contributors-mnps-light.svg", text)
+        self.assertIn("/contributors-mnps-trend-light.svg", text)
 
     def test_api_down_warning(self):
         checks = [make_check(2), make_check(1), make_check(0, "down")]

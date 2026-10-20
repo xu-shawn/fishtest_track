@@ -12,13 +12,13 @@
 
 | File | Contents |
 |:--|:--|
-| [`data/checks.csv`](../data/checks.csv) | One row per hourly run: tests running and waiting, authors, workers, cores (total and by test type), nodes per second, games per minute, pending hours. If the API could not be reached, that row has only the time and the reason. |
+| [`data/checks.csv`](../data/checks.csv) | One row per hourly run: tests running and waiting (paused tests, priority -1 or lower, do not count as waiting), authors, workers, cores (total and by test type), nodes per second, games per minute, pending hours. If the API could not be reached, that row has only the time and the reason. |
 | [`data/active_runs.csv`](../data/active_runs.csv) | Every unfinished test at the latest run, with its cores, workers, games, Elo and LLR. Its git history is an hourly record of each test. |
 | [`data/finished_runs.csv`](../data/finished_runs.csv) | One row per finished test: outcome, bounds, games, Elo and estimated core-hours. |
-| [`data/workers.csv`](../data/workers.csv) | Every active worker at the latest run: the user who runs it, its cores, and the test it is playing. |
+| [`data/workers.csv`](../data/workers.csv) | Every active worker at the latest run: the user who runs it, its cores, architecture, compiler, speed in MNps (its cores times the machines page's MNps per core), and the test it is playing. |
 | [`data/llr_distribution.csv`](../data/llr_distribution.csv) | One row per hourly run: how many SPRT tests were running, their median LLR, and how many fall in each of 16 equal LLR bins from the rejection bound to the acceptance bound (each test scaled by its own bounds onto the standard ±2.94). The chart smooths each bin over 5 hours. |
-| [`data/hourly_breakdown.jsonl`](../data/hourly_breakdown.jsonl) | One JSON line per hourly run with cores per running test, cores and running tests per author, and cores and workers per contributor. Only the last 15 days are kept; it feeds the 14-day band charts. |
-| [`data/daily_breakdown.csv`](../data/daily_breakdown.csv) | Per day and per author, contributor, worker architecture or compiler: core-hours, plus test-hours (authors) or worker-hours (the rest). Summed from the hourly snapshots, each counting for the time since the previous one, at most an hour; rows of kind `hours` record how long each kind was observed that day, which the daily and weekly averages divide by. Kept for good; it feeds the long-range charts and the contributors table. |
+| [`data/hourly_breakdown.jsonl`](../data/hourly_breakdown.jsonl) | One JSON line per hourly run with cores per running test, cores and running tests per author, and cores, workers and MNps per contributor, architecture and compiler (older rows have no MNps). Only the last 15 days are kept; it feeds the 14-day band charts. |
+| [`data/daily_breakdown.csv`](../data/daily_breakdown.csv) | Per day and per author, contributor, worker architecture or compiler: core-hours, plus test-hours (authors) or worker-hours (the rest), and MNps-hours for everything read from the machines page. Summed from the hourly snapshots, each counting for the time since the previous one, at most an hour; rows of kind `hours` record how long each kind was observed that day, which the daily and weekly averages divide by (the one named `mnps` covers the MNps-hours, which started later). Kept for good; it feeds the long-range charts and the contributors table. |
 
 Test types are checked in this order:
 

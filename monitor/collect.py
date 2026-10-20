@@ -86,13 +86,14 @@ def snapshot_hours(data_dir: Path, now: datetime) -> float:
 
 def write_workers(data_dir: Path, workers: list[Worker]) -> None:
     rows = [{"username": w.username, "cores": str(w.cores), "run": w.run, "arch": w.arch,
-             "compiler": w.compiler} for w in workers]
+             "compiler": w.compiler, "mnps": f"{w.mnps:.2f}"} for w in workers]
     rows.sort(key=lambda r: (r["username"].lower(), -int(r["cores"]), r["run"]))
     write_rows(data_dir, WORKERS_FILE, WORKER_FIELDS, rows)
 
 
 def breakdown(runs: dict, workers: list[Worker] | None) -> dict[str, dict]:
-    """Cores per running test, cores and tests per author, cores and workers per contributor."""
+    """Cores per running test, cores and tests per author, and cores, workers and MNps per
+    contributor, architecture and compiler."""
     tests: dict[str, int] = {}
     authors: dict[str, list[int]] = defaultdict(lambda: [0, 0])
     for run in runs.values():
@@ -105,11 +106,14 @@ def breakdown(runs: dict, workers: list[Worker] | None) -> dict[str, dict]:
     parts = {"tests": tests, "authors": dict(authors)}
     if workers is not None:
         for key, field in (("contributors", "username"), ("arches", "arch"), ("compilers", "compiler")):
-            totals: dict[str, list[int]] = defaultdict(lambda: [0, 0])
+            totals: dict[str, list] = defaultdict(lambda: [0, 0, 0.0])
             for w in workers:
-                totals[getattr(w, field) or "unknown"][0] += w.cores
-                totals[getattr(w, field) or "unknown"][1] += 1
-            parts[key] = dict(totals)
+                entry = totals[getattr(w, field) or "unknown"]
+                entry[0] += w.cores
+                entry[1] += 1
+                entry[2] += w.mnps
+            parts[key] = {name: [cores, count, round(mnps, 1)]
+                          for name, (cores, count, mnps) in totals.items()}
     return parts
 
 
@@ -120,22 +124,30 @@ def update_breakdown(data_dir: Path, parts: dict[str, dict], now: datetime, hour
     hourly.append({"time": iso(now), **parts})
     write_jsonl(data_dir, HOURLY_FILE, hourly)
 
-    daily = {(r["date"], r["kind"], r["name"]): [float(r["core_hours"]), float(r["count_hours"] or 0)]
+    daily = {(r["date"], r["kind"], r["name"]): [float(r["core_hours"]), float(r["count_hours"] or 0),
+                                                 float(r["mnps_hours"]) if r.get("mnps_hours") else None]
              for r in read_rows(data_dir, DAILY_FILE)}
     today = now.date().isoformat()
+    mnps_seen = False
     for kind, key in (("author", "authors"), ("contributor", "contributors"), ("arch", "arches"),
                       ("compiler", "compilers")):
         if key not in parts:
             continue  # e.g. the machines page could not be read this time
         # Hours this kind was observed, so daily averages divide by its own coverage.
-        daily.setdefault((today, "hours", kind), [0.0, 0.0])[0] += hours
-        for name, (cores, count) in parts[key].items():
-            totals = daily.setdefault((today, kind, name), [0.0, 0.0])
-            totals[0] += cores * hours
-            totals[1] += count * hours
-    rows = [{"date": d, "kind": k, "name": n, "core_hours": f"{c:.1f}", "count_hours": f"{t:.1f}"}
-            for (d, k, n), (c, t) in sorted(daily.items(), key=lambda kv: (kv[0][0], kv[0][1],
-                                                                           kv[0][2].lower()))]
+        daily.setdefault((today, "hours", kind), [0.0, 0.0, None])[0] += hours
+        for name, values in parts[key].items():
+            totals = daily.setdefault((today, kind, name), [0.0, 0.0, None])
+            totals[0] += values[0] * hours
+            totals[1] += values[1] * hours
+            if len(values) > 2:
+                totals[2] = (totals[2] or 0.0) + values[2] * hours
+                mnps_seen = True
+    if mnps_seen:
+        daily.setdefault((today, "hours", "mnps"), [0.0, 0.0, None])[0] += hours
+    rows = [{"date": d, "kind": k, "name": n, "core_hours": f"{c:.1f}", "count_hours": f"{t:.1f}",
+             "mnps_hours": f"{m:.1f}" if m is not None else ""}
+            for (d, k, n), (c, t, m) in sorted(daily.items(), key=lambda kv: (kv[0][0], kv[0][1],
+                                                                              kv[0][2].lower()))]
     write_rows(data_dir, DAILY_FILE, DAILY_FIELDS, rows)
 
 

@@ -1189,38 +1189,60 @@ def authors_chart(active: list[dict[str, str]], theme: Theme, top_n: int = 15) -
                       "No tests are running right now.")
 
 
+def _float(row: dict[str, str], key: str) -> float:
+    return float(row[key]) if row.get(key) else 0.0
+
+
+def mnps_label(value: float) -> str:
+    return f"{value:,.0f}" if value >= 10 else f"{value:.1f}"
+
+
 def contributors_chart(workers: list[dict[str, str]], active: list[dict[str, str]], theme: Theme,
-                       top_n: int = 15) -> str:
-    """Cores each user's workers contribute, split by the type of test they are playing."""
+                       top_n: int = 15, measure: str = "cores") -> str:
+    """Cores (or MNps, with measure="mnps") each user's workers contribute, split by the
+    type of test they are playing."""
+    mnps = measure == "mnps"
     run_type = {r["id"]: TYPE_INDEX[r["type"]] for r in active if r.get("type") in TYPE_INDEX}
     by_user: dict[str, dict] = {}
     for w in workers:
-        u = by_user.setdefault(w["username"], {"parts": [0] * (_N + 1), "workers": 0})
-        u["parts"][run_type.get(w["run"], _N)] += _int(w, "cores")
+        u = by_user.setdefault(w["username"], {"parts": [0] * (_N + 1), "workers": 0, "cores": 0})
+        u["parts"][run_type.get(w["run"], _N)] += _float(w, "mnps") if mnps else _int(w, "cores")
         u["workers"] += 1
+        u["cores"] += _int(w, "cores")
+    by_user = {name: u for name, u in by_user.items() if sum(u["parts"])}
     ranked = sorted(by_user.items(), key=lambda kv: (-sum(kv[1]["parts"]), kv[0].lower()))
     total = sum(sum(u["parts"]) for _, u in ranked)
+    fmt = mnps_label if mnps else (lambda v: f"{v:,}")
+    unit = "MNps" if mnps else "cores"
 
     def label(k: int) -> str:
         return TEST_TYPES[k] if k < _N else "other"
 
     rows = []
     for name, u in ranked[:top_n]:
-        cores = sum(u["parts"])
+        value = sum(u["parts"])
+        split = ", ".join(f"{fmt(u['parts'][k])} {label(k)}" for k in range(_N + 1) if u["parts"][k])
         count = f"{u['workers']} {'worker' if u['workers'] == 1 else 'workers'}"
-        split = ", ".join(f"{u['parts'][k]:,} {label(k)}" for k in range(_N + 1) if u["parts"][k])
-        rows.append(BarRow(name, "", u["parts"], f"{cores:,}", f"  {count}",
-                           f"{name} — {cores:,} cores on {count}, playing {split}"))
+        if mnps:
+            cores = f"{u['cores']:,} {'core' if u['cores'] == 1 else 'cores'}"
+            rows.append(BarRow(name, "", u["parts"], fmt(value), f"  {cores}",
+                               f"{name} — {fmt(value)} MNps from {cores} on {count} "
+                               f"({value / (u['cores'] or 1):.2f} MNps per core), playing {split}"))
+        else:
+            rows.append(BarRow(name, "", u["parts"], fmt(value), f"  {count}",
+                               f"{name} — {value:,} cores on {count}, playing {split}"))
 
     top3 = sum(sum(u["parts"]) for _, u in ranked[:3])
-    header = (f"{len(ranked)} contributors · top 3 give {100 * top3 / total:.0f}% of cores"
+    people = f"{len(ranked)} {'contributor' if len(ranked) == 1 else 'contributors'}"
+    header = (f"{people} · top 3 give {100 * top3 / total:.0f}% of {unit}"
               if total else "")
     rest = ranked[top_n:]
     footer = (f"+ {len(rest)} more {'contributor' if len(rest) == 1 else 'contributors'} with "
-              f"{sum(sum(u['parts']) for _, u in rest):,} cores") if rest else ""
+              f"{fmt(sum(sum(u['parts']) for _, u in rest))} {unit}") if rest else ""
     present = {k for _, u in ranked for k in range(_N + 1) if u["parts"][k]}
     return _bar_chart(theme, rows, present, header, footer,
-                      f"Cores contributed per user, top {min(top_n, len(ranked))} of {len(ranked)}",
+                      f"{'MNps' if mnps else 'Cores'} contributed per user, "
+                      f"top {min(top_n, len(ranked))} of {len(ranked)}",
                       "No workers are connected right now.")
 
 
@@ -1656,12 +1678,14 @@ def runtime_trend_chart(finished: dict[str, dict[str, str]], now: datetime, them
 # ---------------------------------------------------------------- all charts
 
 def _hourly_series(hourly: list[dict], key: str, index: int) -> dict[str, dict[datetime, float]]:
-    """name -> {time: value} from the hourly breakdown (index 0 = cores, 1 = tests/workers)."""
+    """name -> {time: value} from the hourly breakdown (index 0 = cores, 1 = tests/workers,
+    2 = MNps, which older rows do not have)."""
     series: dict[str, dict[datetime, float]] = defaultdict(dict)
     for row in hourly:
         t = parse_iso(row["time"])
         for name, values in row.get(key, {}).items():
-            series[name][t] = values[index]
+            if len(values) > index:
+                series[name][t] = values[index]
     return series
 
 
@@ -1690,12 +1714,15 @@ def _kind_hours(daily: list[dict[str, str]], checks: list[Check], kind: str) -> 
 
 def _daily_series(daily: list[dict[str, str]], checks: list[Check], kind: str, column: str,
                   rename: Callable[[str], str] = lambda name: name,
-                  now: datetime | None = None) -> dict[str, dict[datetime, float]]:
-    """name -> {middle of the day (or now, for today): average over the hours observed}."""
-    hours = _kind_hours(daily, checks, kind)
+                  now: datetime | None = None,
+                  hours_kind: str | None = None) -> dict[str, dict[datetime, float]]:
+    """name -> {middle of the day (or now, for today): average over the hours observed}.
+    `hours_kind` names the "hours" rows to divide by when the column was recorded for
+    fewer hours than the kind itself (MNps)."""
+    hours = _kind_hours(daily, checks, hours_kind or kind)
     series: dict[str, dict[datetime, float]] = defaultdict(lambda: defaultdict(float))
     for r in daily:
-        if r["kind"] != kind or not r[column]:
+        if r["kind"] != kind or not r.get(column):
             continue
         day = date.fromisoformat(r["date"])
         t = datetime(day.year, day.month, day.day, 12, tzinfo=UTC)
@@ -1742,6 +1769,8 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
     authors_cores = _hourly_series(h.hourly, "authors", 0)
     authors_tests = _hourly_series(h.hourly, "authors", 1)
     contributors = _hourly_series(h.hourly, "contributors", 0)
+    contributors_mnps = _hourly_series(h.hourly, "contributors", 2)
+    mnps_times = sorted({t for values in contributors_mnps.values() for t in values})
     long = has_long_history(h.checks)
     if long:
         days = daily_means(h.checks)
@@ -1749,12 +1778,17 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
         long_authors = _daily_series(h.daily, h.checks, "author", "core_hours")
         long_tests = _daily_series(h.daily, h.checks, "author", "count_hours")
         long_contributors = _daily_series(h.daily, h.checks, "contributor", "core_hours")
+        long_contributors_mnps = _daily_series(h.daily, h.checks, "contributor", "mnps_hours",
+                                               hours_kind="mnps")
+        mnps_days = sorted({t for values in long_contributors_mnps.values() for t in values})
 
     files = {}
     for mode, theme in THEMES.items():
         files[f"tests-{mode}.svg"] = tests_chart(h.active, theme)
         files[f"authors-{mode}.svg"] = authors_chart(h.active, theme)
         files[f"contributors-{mode}.svg"] = contributors_chart(h.workers, h.active, theme)
+        files[f"contributors-mnps-{mode}.svg"] = contributors_chart(h.workers, h.active, theme,
+                                                                    measure="mnps")
         files[f"runtime-{mode}.svg"] = runtime_chart(h.active, now, theme)
         files[f"throughput-{mode}.svg"] = throughput_chart(h.finished, now, theme)
         files[f"runtime-trend-{mode}.svg"] = runtime_trend_chart(h.finished, now, theme)
@@ -1782,6 +1816,9 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
         files[f"contributors-trend-{mode}.svg"] = entity_trend_chart(
             contributors, hourly_times, now, theme, days=14, max_gap=MAX_GAP, what="contributors",
             unit="cores", label="Cores contributed per user over the last 14 days")
+        files[f"contributors-mnps-trend-{mode}.svg"] = entity_trend_chart(
+            contributors_mnps, mnps_times, now, theme, days=14, max_gap=MAX_GAP,
+            what="contributors", unit="MNps", label="MNps contributed per user over the last 14 days")
         for kind, what, rename in (("arch", "architectures", lambda n: n),
                                    ("compiler", "compilers", compiler_major)):
             name = "arch" if kind == "arch" else "compiler"
@@ -1807,4 +1844,7 @@ def render_all(history: History, now: datetime) -> dict[str, str]:
             files[f"long-contributors-{mode}.svg"] = entity_trend_chart(
                 long_contributors, day_times, now, theme, days=365, max_gap=DAILY_GAP,
                 what="contributors", unit="cores", label="Average cores contributed per user per day")
+            files[f"long-contributors-mnps-{mode}.svg"] = entity_trend_chart(
+                long_contributors_mnps, mnps_days, now, theme, days=365, max_gap=DAILY_GAP,
+                what="contributors", unit="MNps", label="Average MNps contributed per user per day")
     return files

@@ -16,12 +16,14 @@ WORKERS_FILE = "workers.csv"  # active workers at the latest run: owner, cores, 
 HOURLY_FILE = "hourly_breakdown.jsonl"  # per-test/author/contributor numbers, last 15 days
 DAILY_FILE = "daily_breakdown.csv"  # core-hours and test-hours per author/contributor per day
 LLR_FILE = "llr_distribution.csv"  # running SPRT tests binned by LLR, one row per run
-WORKER_FIELDS = ["username", "cores", "run", "arch", "compiler"]
+WORKER_FIELDS = ["username", "cores", "run", "arch", "compiler", "mnps"]
 LLR_FIELDS = ["time", "tests", "median", "counts"]  # counts: space-separated, low LLR first
-DAILY_FIELDS = ["date", "kind", "name", "core_hours", "count_hours"]
+DAILY_FIELDS = ["date", "kind", "name", "core_hours", "count_hours", "mnps_hours"]
 # kind: author, contributor, arch or compiler. count_hours: test-hours for authors (running
-# tests x hours), worker-hours for everything else. Rows of kind "hours" record, under
-# core_hours, how many hours each kind (named in `name`) was observed that day.
+# tests x hours), worker-hours for everything else. mnps_hours: MNps x hours, for the kinds
+# read from the machines page (empty before it was recorded). Rows of kind "hours" record,
+# under core_hours, how many hours each kind (named in `name`) was observed that day; the
+# one named "mnps" counts the hours MNps was recorded.
 
 
 def parse_iso(value: str) -> datetime:

@@ -42,6 +42,7 @@ class Worker:
     key: str = ""  # short worker id shown on the page, only used to drop duplicates
     arch: str = ""  # Stockfish build the worker uses, e.g. x86-64-avx512
     compiler: str = ""  # e.g. g++ 16.2.0
+    mnps: float = 0.0  # the whole worker's speed: cores x the page's MNps per core
 
 
 # ---------------------------------------------------------------- proof of work
@@ -134,8 +135,8 @@ def parse_workers(page: str) -> list[Worker]:
     """Workers from the machines table: username, cores and current test.
 
     Columns follow fishtest's machines_fragment template: username, cores
-    (after a country flag), worker, MNps, memory, system, arch, compiler,
-    python, worker version, run/task, last active.
+    (after a country flag), worker, MNps (per core), memory, system, arch,
+    compiler, python, worker version, run/task, last active.
     """
     parser = _MachineRows()
     parser.feed(page)
@@ -147,9 +148,13 @@ def parse_workers(page: str) -> list[Worker]:
         run = _RUN_ID.search(row[10]["href"])
         if not cores.isdigit():
             raise FetchError(f"unexpected machines table layout (cores cell {cores!r})")
+        try:
+            per_core = float(row[3]["text"].strip())
+        except ValueError:
+            per_core = 0.0  # no speed reported yet
         workers.append(Worker(row[0]["text"].strip(), int(cores), run.group(1) if run else "",
                               row[2]["text"].strip(), row[6]["text"].strip(),
-                              " ".join(row[7]["text"].split())))
+                              " ".join(row[7]["text"].split()), int(cores) * per_core))
     if not workers and "No machines running" not in page:
         raise FetchError("machines table not found")
     return workers

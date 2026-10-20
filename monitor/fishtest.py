@@ -311,10 +311,17 @@ class Snapshot:
     pending_hours: float
 
 
+def is_paused(run: dict) -> bool:
+    """Priority -1 or lower: the test is parked, not waiting for workers."""
+    return (run["args"].get("priority") or 0) < 0
+
+
 def summarize(runs: dict) -> Snapshot:
-    """Aggregate /api/active_runs the way the fishtest homepage does."""
+    """Aggregate /api/active_runs the way the fishtest homepage does, except that paused
+    tests do not count as waiting."""
     unfinished = [r for r in runs.values() if not r.get("finished")]
     active = [r for r in unfinished if r.get("workers", 0) > 0]
+    waiting = [r for r in unfinished if r.get("workers", 0) <= 0 and not is_paused(r)]
 
     cores = sum(r.get("cores", 0) for r in active)
     pending_hours = 0.0
@@ -332,7 +339,7 @@ def summarize(runs: dict) -> Snapshot:
 
     return Snapshot(
         tests_active=len(active),
-        tests_pending=len(unfinished) - len(active),
+        tests_pending=len(waiting),
         authors_active=len({r["args"].get("username") for r in active}),
         workers=sum(r.get("workers", 0) for r in active),
         cores=cores,
