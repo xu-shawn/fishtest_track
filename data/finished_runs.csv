@@ -8730,3 +8730,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6abdf8c8c109910452a9acc4,2026-10-20T16:11:22Z,2026-10-01T06:08:08Z,Vizvezdenec,mcpScaler1,VVLTC,0,60+0.6,8,0,2,stopped,164014,0.49,0.70,67600.0
 6ad436cf733e627f7058c6c2,2026-10-20T17:28:24Z,2026-10-18T03:02:39Z,AdrianStockfish,v,STC,0,10+0.1,1,0,2,passed,74528,1.65,1.22,639.9
 6accdecc733e627f7058be53,2026-10-20T18:32:05Z,2026-10-12T13:21:16Z,sg,avoid_razor_for_singular,STC,0,10+0.1,1,0,2,rejected,251872,0.14,0.66,2162.7
+6ad76f0b733e627f7058ce00,2026-10-20T18:50:22Z,2026-10-20T13:39:23Z,luozichen,speed-sparse-unroll,STC,0,10+0.1,1,0,2,stopped,6400,3.53,4.05,55.0
+6ad7af95733e627f7058ce4c,2026-10-20T19:12:05Z,2026-10-20T18:14:45Z,bigpen0r,malusHyst,STC,0,10+0.1,1,0,2,stopped,1920,-5.43,7.59,16.5
