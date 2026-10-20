@@ -8733,3 +8733,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad76f0b733e627f7058ce00,2026-10-20T18:50:22Z,2026-10-20T13:39:23Z,luozichen,speed-sparse-unroll,STC,0,10+0.1,1,0,2,stopped,6400,3.53,4.05,55.0
 6ad7af95733e627f7058ce4c,2026-10-20T19:12:05Z,2026-10-20T18:14:45Z,bigpen0r,malusHyst,STC,0,10+0.1,1,0,2,stopped,1920,-5.43,7.59,16.5
 6ad7acb5733e627f7058ce46,2026-10-20T19:48:42Z,2026-10-20T18:02:29Z,bigpen0r,bayesStepH,STC,0,10+0.1,1,0,2,stopped,2304,-4.98,6.64,19.8
+6ad7ab8d733e627f7058ce44,2026-10-20T20:44:41Z,2026-10-20T17:57:33Z,bigpen0r,largeCubicH,STC,0,10+0.1,1,0,2,stopped,4128,-2.61,5.24,35.4
+6ad405d1733e627f7058c69d,2026-10-20T20:44:59Z,2026-10-17T23:33:37Z,lsst,depth-avg-2param,STC,0,10+0.1,1,0,2,rejected,73856,-0.68,1.16,634.2
