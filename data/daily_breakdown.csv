@@ -263,24 +263,24 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-21,arch,x86-64-avx2,3657.1,175.7,2247.4
 2026-10-21,arch,x86-64-avx512,5618.1,656.1,2745.9
 2026-10-21,arch,x86-64-avx512icl,837.8,133.6,840.0
-2026-10-21,arch,x86-64-avxvnni,958.6,111.7,581.6
-2026-10-21,arch,x86-64-bmi2,4232.9,472.6,2312.4
+2026-10-21,arch,x86-64-avxvnni,964.9,112.7,584.2
+2026-10-21,arch,x86-64-bmi2,4233.9,473.6,2312.9
 2026-10-21,arch,x86-64-sse41-popcnt,337.1,44.9,90.8
 2026-10-21,author,0x539,573.0,9.9,
 2026-10-21,author,AdrianStockfish,998.0,45.7,
 2026-10-21,author,AriaKafie,177.4,9.9,
 2026-10-21,author,DeadK1ng,3008.3,9.9,
 2026-10-21,author,Dubslow,621.9,20.2,
-2026-10-21,author,Elhamuddin,449.5,14.8,
-2026-10-21,author,fauzi2,676.3,49.6,
-2026-10-21,author,Fisherman,704.3,29.8,
+2026-10-21,author,Elhamuddin,454.8,15.3,
+2026-10-21,author,fauzi2,677.3,50.1,
+2026-10-21,author,Fisherman,704.8,30.3,
 2026-10-21,author,Gruenerapfel,2169.8,39.1,
 2026-10-21,author,HappyNoah,211.5,9.9,
 2026-10-21,author,jayc,235.9,9.9,
 2026-10-21,author,Kinatic11,61.2,3.5,
 2026-10-21,author,linrock,708.6,30.2,
 2026-10-21,author,lsst,702.5,39.7,
-2026-10-21,author,luozichen,418.7,18.1,
+2026-10-21,author,luozichen,419.2,18.6,
 2026-10-21,author,rn,794.8,17.7,
 2026-10-21,author,rustamcpp,256.8,9.9,
 2026-10-21,author,sg,1276.9,58.5,
@@ -296,11 +296,11 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-21,compiler,g++ 10.2.1,178.9,6.4,63.9
 2026-10-21,compiler,g++ 11.4.0,171.9,35.6,82.9
 2026-10-21,compiler,g++ 12.2.0,405.3,27.7,206.0
-2026-10-21,compiler,g++ 13.3.0,6954.7,918.3,3540.1
+2026-10-21,compiler,g++ 13.3.0,6960.5,919.3,3542.7
 2026-10-21,compiler,g++ 13.3.1,158.5,9.9,93.0
-2026-10-21,compiler,g++ 14.2.0,2456.6,119.2,1116.8
+2026-10-21,compiler,g++ 14.2.0,2457.6,119.7,1117.1
 2026-10-21,compiler,g++ 15.1.0,109.0,9.9,125.0
-2026-10-21,compiler,g++ 15.2.0,1144.4,217.2,871.1
+2026-10-21,compiler,g++ 15.2.0,1144.9,217.7,871.3
 2026-10-21,compiler,g++ 16.0.1,40.7,2.5,27.2
 2026-10-21,compiler,g++ 16.1.0,488.5,48.9,207.9
 2026-10-21,compiler,g++ 16.2.0,845.8,121.7,694.3
@@ -311,7 +311,7 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-21,contributor,alexjfisher,32.0,2.0,53.0
 2026-10-21,contributor,ali-al-zhrani,9.8,9.8,4.7
 2026-10-21,contributor,amicic,59.0,9.8,35.3
-2026-10-21,contributor,AngelBePro,9.8,9.8,3.2
+2026-10-21,contributor,AngelBePro,10.3,10.3,3.4
 2026-10-21,contributor,Angelkld,63.3,15.9,25.5
 2026-10-21,contributor,Antihistamine,138.4,29.7,129.9
 2026-10-21,contributor,beginnerchess10002551,777.2,194.3,575.3
@@ -329,8 +329,8 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-21,contributor,Epic29,60.1,7.5,78.1
 2026-10-21,contributor,Erravle,39.7,9.9,41.9
 2026-10-21,contributor,EWouters,178.3,19.8,94.7
-2026-10-21,contributor,fogleman,324.9,29.6,173.7
-2026-10-21,contributor,fungiblemoose,19.8,9.9,5.8
+2026-10-21,contributor,fogleman,330.2,30.1,176.0
+2026-10-21,contributor,fungiblemoose,20.8,10.4,6.1
 2026-10-21,contributor,Goatminola,7.0,1.0,11.1
 2026-10-21,contributor,goyosFishTest,9.2,4.6,4.2
 2026-10-21,contributor,gvreuls,158.5,9.9,93.0
@@ -353,7 +353,7 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-21,contributor,PluckyPizzicato,65.8,9.4,96.8
 2026-10-21,contributor,Poly,200.3,16.8,229.7
 2026-10-21,contributor,qgluca,39.7,9.9,65.1
-2026-10-21,contributor,RickGroszkiewicz,9.9,9.9,6.9
+2026-10-21,contributor,RickGroszkiewicz,10.4,10.4,7.2
 2026-10-21,contributor,rieger,10.3,10.3,4.7
 2026-10-21,contributor,rn,75.1,9.4,86.9
 2026-10-21,contributor,robal,109.0,9.9,125.0
@@ -375,8 +375,8 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-21,contributor,zeryl,128.7,9.9,77.6
 2026-10-21,contributor,Zirie,282.8,22.0,201.7
 2026-10-21,contributor,zoe,120.6,20.2,48.9
-2026-10-21,hours,arch,10.3,0.0,
-2026-10-21,hours,author,10.3,0.0,
-2026-10-21,hours,compiler,10.3,0.0,
-2026-10-21,hours,contributor,10.3,0.0,
-2026-10-21,hours,mnps,10.3,0.0,
+2026-10-21,hours,arch,10.8,0.0,
+2026-10-21,hours,author,10.8,0.0,
+2026-10-21,hours,compiler,10.8,0.0,
+2026-10-21,hours,contributor,10.8,0.0,
+2026-10-21,hours,mnps,10.8,0.0,
