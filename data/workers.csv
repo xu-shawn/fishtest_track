@@ -1,4 +1,14 @@
 username,cores,run,arch,compiler,mnps
-AngelBePro,1,6ad4872d733e627f7058c70c,x86-64-bmi2,g++ 15.2.0,0.33
-RickGroszkiewicz,1,6ad439a8733e627f7058c6ca,x86-64-bmi2,g++ 13.3.0,0.66
-tastedcheese,3,6ad439a8733e627f7058c6ca,x86-64-sse41-popcnt,g++ 15.2.0,0.51
+Angelkld,4,6acd3124733e627f7058be80,x86-64-bmi2,g++ 11.4.0,1.44
+Angelkld,4,6ad5b435733e627f7058c8b2,x86-64-bmi2,g++ 11.4.0,1.48
+Angelkld,4,6ad70610733e627f7058cd9c,x86-64-avx2,g++ 11.4.0,1.92
+beginnerchess10002551,4,6acb549e5349156614d94440,x86-64-bmi2,g++ 13.3.0,2.32
+ChessDBCN,8,6ad61a09733e627f7058c8f7,x86-64-avx512,g++ 13.3.0,3.76
+kirabrassdaze,8,6ad093f0733e627f7058c29d,x86-64-avx512,g++ 16.2.0,5.52
+markkulix,1,6ad6bdbf733e627f7058cb36,x86-64-bmi2,g++ 16.2.1,1.01
+maximmasiutin,1,6ad263a2733e627f7058c476,x86-64-avx512icl,g++ 14.2.0,1.29
+rieger,1,6acc48cb20d2b3b562a7e94f,x86-64-sse41-popcnt,g++ 16.2.0,0.45
+sebastronomy,24,6ad71654733e627f7058cdb5,x86-64-avx2,clang++ 17.0.6,22.08
+Spprtr,7,6ad5c8af733e627f7058c8be,x86-64-bmi2,g++ 16.2.0,6.65
+Squidroot,2,6ad1fcfc733e627f7058c41f,armv8-dotprod,g++ 15.2.0,0.76
+zoe,4,6acdb8ef733e627f7058bed1,armv8-dotprod,g++ 15.2.0,1.00

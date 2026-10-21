@@ -256,3 +256,41 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-20,hours,compiler,23.5,0.0,
 2026-10-20,hours,contributor,23.5,0.0,
 2026-10-20,hours,mnps,16.5,0.0,
+2026-10-21,arch,armv8-dotprod,2.5,0.8,0.8
+2026-10-21,arch,x86-64-avx2,11.7,0.8,10.0
+2026-10-21,arch,x86-64-avx512,6.7,0.8,3.9
+2026-10-21,arch,x86-64-avx512icl,0.4,0.4,0.5
+2026-10-21,arch,x86-64-bmi2,8.3,2.1,5.4
+2026-10-21,arch,x86-64-sse41-popcnt,0.4,0.4,0.2
+2026-10-21,author,Dubslow,2.9,0.4,
+2026-10-21,author,Elhamuddin,0.4,0.4,
+2026-10-21,author,Gruenerapfel,4.2,0.8,
+2026-10-21,author,linrock,0.4,0.4,
+2026-10-21,author,rn,1.7,0.4,
+2026-10-21,author,sg,0.4,0.4,
+2026-10-21,author,shawnxu,1.7,0.4,
+2026-10-21,author,vdv,3.3,0.8,
+2026-10-21,author,Vizvezdenec,1.7,0.4,
+2026-10-21,compiler,clang++ 17.0.6,10.0,0.4,9.2
+2026-10-21,compiler,g++ 11.4.0,5.0,1.3,2.0
+2026-10-21,compiler,g++ 13.3.0,5.0,0.8,2.5
+2026-10-21,compiler,g++ 14.2.0,0.4,0.4,0.5
+2026-10-21,compiler,g++ 15.2.0,2.5,0.8,0.8
+2026-10-21,compiler,g++ 16.2.0,6.7,1.3,5.3
+2026-10-21,compiler,g++ 16.2.1,0.4,0.4,0.4
+2026-10-21,contributor,Angelkld,5.0,1.3,2.0
+2026-10-21,contributor,beginnerchess10002551,1.7,0.4,1.0
+2026-10-21,contributor,ChessDBCN,3.3,0.4,1.6
+2026-10-21,contributor,kirabrassdaze,3.3,0.4,2.3
+2026-10-21,contributor,markkulix,0.4,0.4,0.4
+2026-10-21,contributor,maximmasiutin,0.4,0.4,0.5
+2026-10-21,contributor,rieger,0.4,0.4,0.2
+2026-10-21,contributor,sebastronomy,10.0,0.4,9.2
+2026-10-21,contributor,Spprtr,2.9,0.4,2.8
+2026-10-21,contributor,Squidroot,0.8,0.4,0.3
+2026-10-21,contributor,zoe,1.7,0.4,0.4
+2026-10-21,hours,arch,0.4,0.0,
+2026-10-21,hours,author,0.4,0.0,
+2026-10-21,hours,compiler,0.4,0.0,
+2026-10-21,hours,contributor,0.4,0.0,
+2026-10-21,hours,mnps,0.4,0.0,
