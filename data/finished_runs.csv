@@ -8748,3 +8748,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad44115733e627f7058c6d1,2026-10-21T10:28:31Z,2026-10-18T03:46:29Z,Fisherman,HoistingTest,STC,0,10+0.1,1,0,2,passed,126080,1.14,0.91,1082.6
 6ad5251c733e627f7058c77e,2026-10-21T12:07:15Z,2026-10-18T19:59:24Z,rustamcpp,test17,STC,0,10+0.1,1,0,2,rejected,118496,-0.25,0.97,1017.5
 6ad7b7bb733e627f7058ce54,2026-10-21T12:37:58Z,2026-10-20T18:49:31Z,luozichen,speed-sparse-unroll,STC,0,10+0.1,1,0,2,rejected,40864,-1.58,1.60,350.9
+6ad70610733e627f7058cd9c,2026-10-21T14:17:25Z,2026-10-20T06:11:28Z,shawnxu,test1734,Nodestime,1,50+0.5,1,0,2,passed,185982,1.05,0.85,7984.8
