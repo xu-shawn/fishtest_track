@@ -256,41 +256,105 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-20,hours,compiler,23.5,0.0,
 2026-10-20,hours,contributor,23.5,0.0,
 2026-10-20,hours,mnps,16.5,0.0,
-2026-10-21,arch,armv8-dotprod,2.5,0.8,0.8
-2026-10-21,arch,x86-64-avx2,11.7,0.8,10.0
-2026-10-21,arch,x86-64-avx512,6.7,0.8,3.9
-2026-10-21,arch,x86-64-avx512icl,0.4,0.4,0.5
-2026-10-21,arch,x86-64-bmi2,8.3,2.1,5.4
-2026-10-21,arch,x86-64-sse41-popcnt,0.4,0.4,0.2
-2026-10-21,author,Dubslow,2.9,0.4,
-2026-10-21,author,Elhamuddin,0.4,0.4,
-2026-10-21,author,Gruenerapfel,4.2,0.8,
-2026-10-21,author,linrock,0.4,0.4,
-2026-10-21,author,rn,1.7,0.4,
-2026-10-21,author,sg,0.4,0.4,
-2026-10-21,author,shawnxu,1.7,0.4,
-2026-10-21,author,vdv,3.3,0.8,
-2026-10-21,author,Vizvezdenec,1.7,0.4,
-2026-10-21,compiler,clang++ 17.0.6,10.0,0.4,9.2
-2026-10-21,compiler,g++ 11.4.0,5.0,1.3,2.0
-2026-10-21,compiler,g++ 13.3.0,5.0,0.8,2.5
-2026-10-21,compiler,g++ 14.2.0,0.4,0.4,0.5
-2026-10-21,compiler,g++ 15.2.0,2.5,0.8,0.8
-2026-10-21,compiler,g++ 16.2.0,6.7,1.3,5.3
-2026-10-21,compiler,g++ 16.2.1,0.4,0.4,0.4
-2026-10-21,contributor,Angelkld,5.0,1.3,2.0
-2026-10-21,contributor,beginnerchess10002551,1.7,0.4,1.0
-2026-10-21,contributor,ChessDBCN,3.3,0.4,1.6
-2026-10-21,contributor,kirabrassdaze,3.3,0.4,2.3
-2026-10-21,contributor,markkulix,0.4,0.4,0.4
-2026-10-21,contributor,maximmasiutin,0.4,0.4,0.5
-2026-10-21,contributor,rieger,0.4,0.4,0.2
-2026-10-21,contributor,sebastronomy,10.0,0.4,9.2
-2026-10-21,contributor,Spprtr,2.9,0.4,2.8
-2026-10-21,contributor,Squidroot,0.8,0.4,0.3
-2026-10-21,contributor,zoe,1.7,0.4,0.4
-2026-10-21,hours,arch,0.4,0.0,
-2026-10-21,hours,author,0.4,0.0,
-2026-10-21,hours,compiler,0.4,0.0,
-2026-10-21,hours,contributor,0.4,0.0,
-2026-10-21,hours,mnps,0.4,0.0,
+2026-10-21,arch,apple-silicon,1.1,0.2,1.3
+2026-10-21,arch,armv8,0.8,0.1,0.4
+2026-10-21,arch,armv8-dotprod,5.2,1.4,2.0
+2026-10-21,arch,loongarch64-lasx,2.9,0.1,1.0
+2026-10-21,arch,x86-64-avx2,44.6,2.3,30.5
+2026-10-21,arch,x86-64-avx512,41.4,4.9,20.8
+2026-10-21,arch,x86-64-avx512icl,7.2,1.4,6.6
+2026-10-21,arch,x86-64-avxvnni,5.0,0.8,3.2
+2026-10-21,arch,x86-64-bmi2,44.1,5.0,24.5
+2026-10-21,arch,x86-64-sse41-popcnt,3.9,0.8,1.1
+2026-10-21,author,0x539,3.8,0.1,
+2026-10-21,author,AdrianStockfish,3.8,0.4,
+2026-10-21,author,AriaKafie,1.5,0.1,
+2026-10-21,author,DeadK1ng,17.8,0.1,
+2026-10-21,author,Dubslow,7.0,0.6,
+2026-10-21,author,Elhamuddin,2.4,0.5,
+2026-10-21,author,fauzi2,12.7,0.5,
+2026-10-21,author,Fisherman,5.6,0.3,
+2026-10-21,author,Gruenerapfel,16.3,1.1,
+2026-10-21,author,HappyNoah,1.2,0.1,
+2026-10-21,author,jayc,6.0,0.1,
+2026-10-21,author,linrock,3.8,0.7,
+2026-10-21,author,lsst,8.5,0.4,
+2026-10-21,author,luozichen,3.4,0.2,
+2026-10-21,author,rn,8.2,0.6,
+2026-10-21,author,rustamcpp,1.4,0.1,
+2026-10-21,author,sg,12.5,1.0,
+2026-10-21,author,shawnxu,13.3,0.8,
+2026-10-21,author,vdv,6.8,1.0,
+2026-10-21,author,Vizvezdenec,6.5,0.9,
+2026-10-21,compiler,clang++ 17.0.0,0.7,0.1,0.6
+2026-10-21,compiler,clang++ 17.0.6,12.3,0.5,10.8
+2026-10-21,compiler,clang++ 21.0.0,0.4,0.1,0.6
+2026-10-21,compiler,clang++ 22.1.8,1.1,0.1,0.5
+2026-10-21,compiler,clang++ 23.1.3,0.7,0.1,0.5
+2026-10-21,compiler,g++ 10.2.1,2.7,0.1,1.1
+2026-10-21,compiler,g++ 11.4.0,7.3,1.8,3.0
+2026-10-21,compiler,g++ 12.2.0,4.2,0.2,1.6
+2026-10-21,compiler,g++ 13.3.0,49.6,6.5,25.4
+2026-10-21,compiler,g++ 13.3.1,1.5,0.1,0.9
+2026-10-21,compiler,g++ 14.2.0,23.9,1.5,11.6
+2026-10-21,compiler,g++ 15.1.0,1.1,0.1,1.1
+2026-10-21,compiler,g++ 15.2.0,10.2,2.3,5.5
+2026-10-21,compiler,g++ 16.1.0,0.4,0.1,0.3
+2026-10-21,compiler,g++ 16.2.0,12.7,2.2,10.5
+2026-10-21,compiler,g++ 16.2.1,27.5,1.4,17.1
+2026-10-21,contributor,0x539,2.9,0.1,0.7
+2026-10-21,contributor,23jyang5614,0.4,0.1,0.3
+2026-10-21,contributor,Angelkld,6.5,1.7,2.7
+2026-10-21,contributor,Antihistamine,1.1,0.2,1.1
+2026-10-21,contributor,beginnerchess10002551,5.5,1.4,3.7
+2026-10-21,contributor,Blatantly1900,0.3,0.1,0.4
+2026-10-21,contributor,Calis007,1.3,0.1,0.9
+2026-10-21,contributor,ChessDBCN,32.4,4.0,14.5
+2026-10-21,contributor,chunter18,1.7,0.2,1.0
+2026-10-21,contributor,CypressChess,3.1,0.4,1.6
+2026-10-21,contributor,DMBK,0.8,0.1,0.6
+2026-10-21,contributor,Dubslow,1.2,0.1,1.2
+2026-10-21,contributor,Erravle,0.4,0.1,0.4
+2026-10-21,contributor,EWouters,1.7,0.2,1.0
+2026-10-21,contributor,fogleman,1.1,0.1,0.6
+2026-10-21,contributor,fungiblemoose,0.2,0.1,0.0
+2026-10-21,contributor,goyosFishTest,0.2,0.1,0.1
+2026-10-21,contributor,gvreuls,1.5,0.1,0.9
+2026-10-21,contributor,javran,0.8,0.1,0.8
+2026-10-21,contributor,Kataiser,0.3,0.1,0.1
+2026-10-21,contributor,kirabrassdaze,4.8,0.6,3.1
+2026-10-21,contributor,Lavis,0.2,0.1,0.2
+2026-10-21,contributor,markkulix,0.5,0.5,0.5
+2026-10-21,contributor,maximmasiutin,1.2,0.7,0.9
+2026-10-21,contributor,mgd,1.3,0.1,1.1
+2026-10-21,contributor,niklasf,18.1,0.3,10.1
+2026-10-21,contributor,OCISHI,0.2,0.1,0.1
+2026-10-21,contributor,okrout,7.3,0.4,5.0
+2026-10-21,contributor,PluckyPizzicato,0.7,0.1,1.0
+2026-10-21,contributor,Poly,0.4,0.1,0.4
+2026-10-21,contributor,qgluca,0.4,0.1,0.6
+2026-10-21,contributor,RickGroszkiewicz,0.1,0.1,0.1
+2026-10-21,contributor,rieger,0.5,0.5,0.2
+2026-10-21,contributor,rn,0.8,0.1,0.9
+2026-10-21,contributor,robal,1.1,0.1,1.1
+2026-10-21,contributor,sebastronomy,12.3,0.5,10.8
+2026-10-21,contributor,Serpensin,0.4,0.1,0.3
+2026-10-21,contributor,Spprtr,3.6,0.5,3.4
+2026-10-21,contributor,Squidroot,1.0,0.5,0.4
+2026-10-21,contributor,sylvek,0.9,0.2,0.7
+2026-10-21,contributor,tastedcheese,0.3,0.1,0.0
+2026-10-21,contributor,technologov,4.2,0.2,2.0
+2026-10-21,contributor,tolkki963,0.8,0.1,0.2
+2026-10-21,contributor,Torom,2.3,0.1,2.0
+2026-10-21,contributor,Wencey,13.6,0.3,4.5
+2026-10-21,contributor,wizzouk,8.3,0.3,4.6
+2026-10-21,contributor,WoodMan777,0.8,0.1,1.1
+2026-10-21,contributor,YvesKn,1.5,0.1,0.8
+2026-10-21,contributor,zeryl,1.2,0.1,0.8
+2026-10-21,contributor,Zirie,1.2,0.1,0.9
+2026-10-21,contributor,zoe,2.9,0.6,0.9
+2026-10-21,hours,arch,0.5,0.0,
+2026-10-21,hours,author,0.5,0.0,
+2026-10-21,hours,compiler,0.5,0.0,
+2026-10-21,hours,contributor,0.5,0.0,
+2026-10-21,hours,mnps,0.5,0.0,
