@@ -361,6 +361,35 @@ class Panel:
     value_text: Callable[[float], str]  # formats the latest value in the header
     integer: bool = True
     tick_text: Callable[[float], str] = compact  # formats y-axis ticks
+    # Checks that may set the y-axis; values of the others can go off the top.
+    sets_scale: Callable[[Check], bool] | None = None
+
+
+def _off_scale_labels(theme: Theme, frame: Frame, points: list[tuple[datetime, float | None]],
+                      text: Callable[[float], str]) -> list[str]:
+    """Label each run of points above the y-axis with its peak, just under the top edge."""
+    peaks: list[tuple[datetime, float]] = []
+    run: list[tuple[datetime, float]] = []
+    for t, v in points + [(frame.t1, None)]:
+        if v is not None and v > frame.y_max:
+            run.append((t, v))
+        elif run:
+            peaks.append(max(run, key=lambda p: p[1]))
+            run = []
+    labels: list[tuple[float, float, str, float]] = []  # left, right, text, value
+    for t, v in peaks:
+        s = f"\u2191 {text(v)}"
+        w = text_width(s, 11)
+        x = frame.x(t)
+        left = x + 5 if x + 5 + w <= frame.right else x - 5 - w
+        if labels and left < labels[-1][1] + 6:  # overlapping: keep the higher peak
+            if v <= labels[-1][3]:
+                continue
+            labels.pop()
+        labels.append((left, left + w, s, v))
+    return [f'<text x="{_n(left)}" y="{_n(frame.top + 12)}" fill="{theme.muted}" font-size="11" '
+            f'stroke="{theme.surface}" stroke-width="3" paint-order="stroke">{escape(s)}</text>'
+            for left, _, s, _ in labels]
 
 
 def _line_panel(theme: Theme, checks: list[Check], panel: Panel, x, y, w, h,
@@ -374,16 +403,22 @@ def _line_panel(theme: Theme, checks: list[Check], panel: Panel, x, y, w, h,
         latest = next(v for _, v in reversed(points) if v is not None)
         out.append(_text(x + w, y + 13, panel.value_text(latest), theme.ink, 13, 600, "end"))
 
-    ticks = nice_ticks(max(values, default=0), panel.integer)
+    scaled = [getattr(c, panel.attr) for c in checks if c.time >= t0
+              and getattr(c, panel.attr) is not None
+              and (panel.sets_scale is None or panel.sets_scale(c))]
+    ticks = nice_ticks(max(scaled or values, default=0), panel.integer)
     frame = Frame(x + 44, x + w - 8, y + 32, y + h - 22, t0, t1, ticks[-1])
     out += _frame(theme, frame, ticks, panel.tick_text, x, x + w, _outages(checks, t0))
 
+    def py(v: float) -> float:
+        return frame.y(min(v, frame.y_max))  # values above the axis run along its top
+
     for seg in _segments(points, max_gap):
         if len(seg) == 1:
-            out.append(f'<circle cx="{_n(frame.x(seg[0][0]))}" cy="{_n(frame.y(seg[0][1]))}" '
+            out.append(f'<circle cx="{_n(frame.x(seg[0][0]))}" cy="{_n(py(seg[0][1]))}" '
                        f'r="2.5" fill="{color}"/>')
             continue
-        coords = " ".join(f"{_n(frame.x(t))},{_n(frame.y(v))}" for t, v in seg)
+        coords = " ".join(f"{_n(frame.x(t))},{_n(py(v))}" for t, v in seg)
         x_first, x_last = _n(frame.x(seg[0][0])), _n(frame.x(seg[-1][0]))
         base = _n(frame.bottom)
         out.append(f'<path d="M{x_first},{base} L{coords} L{x_last},{base} Z" '
@@ -392,15 +427,24 @@ def _line_panel(theme: Theme, checks: list[Check], panel: Panel, x, y, w, h,
                    f'stroke-linejoin="round" stroke-linecap="round"/>')
     last = next(((t, v) for t, v in reversed(points) if v is not None), None)
     if last:
-        out.append(f'<circle cx="{_n(frame.x(last[0]))}" cy="{_n(frame.y(last[1]))}" r="4" '
+        out.append(f'<circle cx="{_n(frame.x(last[0]))}" cy="{_n(py(last[1]))}" r="4" '
                    f'fill="{color}" stroke="{theme.surface}" stroke-width="2"/>')
-    return out
+    return out + _off_scale_labels(theme, frame, points, panel.value_text)
 
 
 def activity_chart(checks: list[Check], now: datetime, theme: Theme, days: int = 14,
                    max_gap: timedelta = MAX_GAP) -> str:
     def whole(v: float) -> str:
         return f"{v:,.0f}"
+
+    t0, t1 = _window(checks, now, days)
+    window_cores = [c.cores for c in checks if c.time >= t0 and c.cores]
+    usual_cores = statistics.median(window_cores) if window_cores else 0
+
+    def enough_cores(c: Check) -> bool:
+        # fishtest divides the queued work by the cores connected at that moment, so its
+        # estimate explodes while workers reconnect after an outage
+        return (c.cores or 0) >= usual_cores / 2
 
     panels = [
         Panel("Tests running", "tests_active", whole),
@@ -412,9 +456,8 @@ def activity_chart(checks: list[Check], now: datetime, theme: Theme, days: int =
               tick_text=lambda v: compact(v * 1e6), integer=False),
         Panel("Games per minute", "games_per_min", whole),
         Panel("Pending hours (fishtest estimate)", "pending_hours", lambda v: f"{v:,.0f} h",
-              integer=False),
+              integer=False, sets_scale=enough_cores),
     ]
-    t0, t1 = _window(checks, now, days)
     gap_x, gap_y, panel_h = 32, 24, 184
     panel_w = (WIDTH - 2 * PAD - gap_x) / 2
     body: list[str] = []
@@ -901,12 +944,19 @@ def daily_means(checks: list[Check]) -> list[Check]:
     days = []
     for day, group in sorted(by_day.items()):
         values = {}
+        # Pending hours are queued core-hours / cores, so the day's value is the mean
+        # queue over the mean cores: checks with few cores connected barely count.
+        weighted = [(c.pending_hours, c.cores) for c in group
+                    if c.pending_hours is not None and c.cores]
         for name in CHECK_FIELDS:
             if name in _TEXT_FIELDS:
                 continue
             present = [getattr(c, name) for c in group if getattr(c, name) is not None]
             if not present:
                 values[name] = None
+            elif name == "pending_hours" and weighted:
+                values[name] = round(sum(p * n for p, n in weighted)
+                                     / sum(n for _, n in weighted), 1)
             elif name in _FLOAT_FIELDS:
                 values[name] = round(sum(present) / len(present), 1)
             else:

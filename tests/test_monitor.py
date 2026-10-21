@@ -536,6 +536,22 @@ class Charts(unittest.TestCase):
         # Oct 18: 2,400 core-hours over 24 covered hours = 100 cores; nothing today.
         self.assertIn("a: 0 cores now, peak 100", files["long-authors-light.svg"])
 
+    def test_pending_hours_scale_ignores_reconnects(self):
+        # During a restart fishtest divides the whole queue by the few cores already back.
+        checks = [make_check(h, workers=90, pending_hours=100.0 + h) for h in range(48, 0, -1)]
+        checks[30] = make_check(18, cores=5, pending_hours=32000.0)
+        checks[31] = make_check(17, cores=40, pending_hours=4000.0)
+        svg = charts.activity_chart(checks, NOW, charts.THEMES["light"])
+        ET.fromstring(svg)
+        self.assertIn(">150<", svg)  # axis fits the normal values
+        self.assertNotIn(">40K<", svg)
+        self.assertEqual(svg.count("\u2191 "), 1)  # one label for the run, at its peak
+        self.assertIn("\u2191 32,000 h", svg)
+
+        days = charts.daily_means(checks)
+        # 32,000 h with 5 cores is a small part of the queue, not a third of the day.
+        self.assertLess(days[-1].pending_hours, 200)
+
     def test_neighbor_shades(self):
         # a, b, c are one type, x another. b ends before c starts, so at some point
         # a sits directly under c: all three must differ, while x needs no contrast.

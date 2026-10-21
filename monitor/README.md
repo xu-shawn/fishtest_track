@@ -35,6 +35,8 @@ Test types are checked in this order:
 
 Pending hours, Elo and the game-length estimate behind core-hours are ports of fishtest's code and match the numbers on its website.
 
+fishtest divides the queued work by the cores connected at that moment, so pending hours shoot up while workers reconnect after an outage. The chart's axis ignores checks taken with fewer than half the usual cores (higher values run along the top, labelled with their peak), and daily averages weight each check by its cores.
+
 Tests are also split into net tests, whose new side plays with different NNUE networks than the base (`new_nets` differs from `base_nets`), and search tests: every other test, i.e. code changes.
 
 Finished tests are also split by their SPRT bounds: gainer bounds have a lower bound of 0 or more (such as [0, 2] and [0.5, 2.5]); simplification bounds have a negative lower bound (such as [-1.75, 0.25]).
