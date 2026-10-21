@@ -8739,3 +8739,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad81e3c733e627f7058cf65,2026-10-21T02:06:52Z,2026-10-21T02:06:52Z,Gruenerapfel,retry_ema_history_simplification,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6ad439a8733e627f7058c6ca,2026-10-21T04:00:26Z,2026-10-18T03:14:48Z,lsst,depth-avg-2param,STC,0,10+0.1,1,0,2,stopped,80416,-0.03,1.13,690.5
 6ad4872d733e627f7058c70c,2026-10-21T06:22:30Z,2026-10-18T08:45:33Z,Vizvezdenec,histInPC2,STC,0,10+0.1,1,0,2,rejected,61728,-0.93,1.35,530.0
+6acd3124733e627f7058be80,2026-10-21T07:39:38Z,2026-10-12T19:12:36Z,vdv,fix1c-sprt,STC,0,10+0.1,1,-1.75,0.25,passed,344864,-0.11,0.56,2961.2
