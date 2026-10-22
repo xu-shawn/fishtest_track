@@ -8784,3 +8784,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ada5d6b733e627f7058d2a3,2026-10-22T19:09:17Z,2026-10-22T19:00:59Z,feeling4vibes,simpler-optimism-evaluation,STC,0,10+0.1,1,-1.75,0.25,stopped,64,5.43,38.49,0.5
 6ad79f55733e627f7058ce38,2026-10-22T20:41:34Z,2026-10-20T17:05:25Z,Vizvezdenec,mcpScaler2,STC,0,10+0.1,1,0,2,rejected,72864,-0.70,1.24,625.7
 6ad09c97733e627f7058c2a4,2026-10-22T21:10:02Z,2026-10-15T09:27:51Z,AdrianStockfish,statScoreParent2,STC,0,10+0.1,1,0,2,rejected,292768,0.19,0.62,2513.9
+6ad61a09733e627f7058c8f7,2026-10-22T22:04:53Z,2026-10-19T13:24:25Z,Gruenerapfel,main_thread_nps_scaling,SMP,0,20+0.2,8,0.5,2.5,rejected,69016,-0.48,1.16,9481.9
