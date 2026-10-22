@@ -8770,3 +8770,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad4b06b733e627f7058c736,2026-10-22T08:21:39Z,2026-10-18T11:41:31Z,Dubslow,nettest-518-s2,STC,1,10+0.1,1,0,2,stopped,157696,0.27,0.86,1354.1
 6ad1f9e8733e627f7058c419,2026-10-22T09:23:49Z,2026-10-16T10:18:16Z,Gruenerapfel,consistent_iterative_deepening_recovery,STC,0,10+0.1,1,0,2,rejected,269152,0.17,0.65,2311.1
 6ad45478733e627f7058c6f3,2026-10-22T10:01:49Z,2026-10-18T05:09:12Z,Fisherman,CaseAttacks,STC,0,10+0.1,1,0,2,rejected,187712,0.02,0.73,1611.8
+6ad5cde9733e627f7058c8c1,2026-10-22T11:04:37Z,2026-10-19T07:59:37Z,luozichen,corrhist-queen-presence,STC,0,10+0.1,1,0,2,rejected,155840,-0.07,0.85,1338.1
