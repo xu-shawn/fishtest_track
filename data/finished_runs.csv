@@ -8768,3 +8768,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6acc48cb20d2b3b562a7e94f,2026-10-22T05:06:55Z,2026-10-12T02:41:15Z,linrock,rm-tt-pre,STC,0,10+0.1,1,-1.75,0.25,passed,496736,-0.18,0.45,4265.3
 6ad263a2733e627f7058c476,2026-10-22T08:20:21Z,2026-10-16T17:49:22Z,sg,lmr_rescale_reduction,LTC,0,60+0.6,1,0.5,2.5,rejected,89052,-0.23,1.05,4588.0
 6ad4b06b733e627f7058c736,2026-10-22T08:21:39Z,2026-10-18T11:41:31Z,Dubslow,nettest-518-s2,STC,1,10+0.1,1,0,2,stopped,157696,0.27,0.86,1354.1
+6ad1f9e8733e627f7058c419,2026-10-22T09:23:49Z,2026-10-16T10:18:16Z,Gruenerapfel,consistent_iterative_deepening_recovery,STC,0,10+0.1,1,0,2,rejected,269152,0.17,0.65,2311.1
