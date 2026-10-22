@@ -8786,3 +8786,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad09c97733e627f7058c2a4,2026-10-22T21:10:02Z,2026-10-15T09:27:51Z,AdrianStockfish,statScoreParent2,STC,0,10+0.1,1,0,2,rejected,292768,0.19,0.62,2513.9
 6ad61a09733e627f7058c8f7,2026-10-22T22:04:53Z,2026-10-19T13:24:25Z,Gruenerapfel,main_thread_nps_scaling,SMP,0,20+0.2,8,0.5,2.5,rejected,69016,-0.48,1.16,9481.9
 6ad71654733e627f7058cdb5,2026-10-22T22:33:38Z,2026-10-20T07:20:52Z,0x539,tt-swar,SMP,0,5+0.05,8,-1.75,0.25,passed,107224,0.44,1.01,3682.8
+6ad43985733e627f7058c6c8,2026-10-22T23:25:56Z,2026-10-18T03:14:13Z,lsst,depth-avg-2param,STC,0,10+0.1,1,0,2,rejected,187904,0.02,0.74,1613.5
