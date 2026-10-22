@@ -8759,3 +8759,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6acdb8ef733e627f7058bed1,2026-10-21T23:02:24Z,2026-10-13T04:51:59Z,vdv,ghiwins-sprt,STC,0,10+0.1,1,-1.75,0.25,rejected,375392,-0.60,0.55,3223.4
 6ad54ddb733e627f7058c7ae,2026-10-21T23:02:52Z,2026-10-18T22:53:15Z,shawnxu,test1734,STC,1,10+0.1,1,0,2,rejected,106560,-0.33,1.04,915.0
 6ad68f6a733e627f7058c93f,2026-10-22T00:38:05Z,2026-10-19T21:45:14Z,linrock,ft-lut-3,STC,0,10+0.1,1,-1.75,0.25,passed,81856,0.67,1.12,702.9
+6ad83864733e627f7058cf7c,2026-10-22T01:16:45Z,2026-10-21T03:58:28Z,lsst,depth-avg-1,STC,0,10+0.1,1,0,2,stopped,29152,-1.57,1.86,250.3
