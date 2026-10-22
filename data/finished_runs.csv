@@ -8764,3 +8764,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad86811733e627f7058cfa9,2026-10-22T03:14:50Z,2026-10-21T07:21:53Z,Kinatic11,no-unroll,STC,0,10+0.1,1,0,2,stopped,33568,0.01,1.72,288.2
 6ad981ee733e627f7058d14f,2026-10-22T03:24:30Z,2026-10-22T03:24:30Z,lsst,depth-avg-2param,LTC,0,60+0.6,1,0.5,2.5,stopped,0,,,0.0
 6ad90724733e627f7058d0f4,2026-10-22T03:29:40Z,2026-10-21T18:40:36Z,anurag2801,eval-scale750,STC,0,10+0.1,1,0,2,rejected,12992,-6.29,2.97,111.6
+6ad5c8af733e627f7058c8be,2026-10-22T04:21:44Z,2026-10-19T07:37:19Z,Dubslow,nettest-518-s2,LTC,1,60+0.6,1,0.5,2.5,rejected,42414,-1.25,1.53,2185.2
