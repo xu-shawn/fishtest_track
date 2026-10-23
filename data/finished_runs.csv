@@ -8790,3 +8790,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6acd0e70733e627f7058be69,2026-10-23T02:16:09Z,2026-10-12T16:44:32Z,sg,lmr_capture_statscore,STC,0,10+0.1,1,0,2,rejected,336672,0.22,0.55,2890.9
 6ad921e7733e627f7058d10e,2026-10-23T03:32:46Z,2026-10-21T20:34:47Z,amberg12,deserved-reduction-rfp,STC,0,10+0.1,1,0,2,rejected,67136,-0.80,1.29,576.5
 6ad8b4e9733e627f7058d0b8,2026-10-23T03:47:29Z,2026-10-21T12:49:45Z,sg,lmr_rescale_reduction3,LTC,0,60+0.6,1,0.5,2.5,rejected,36228,-1.56,1.63,1866.5
+6ada0114733e627f7058d1bc,2026-10-23T04:11:13Z,2026-10-22T12:27:00Z,AdrianStockfish,lmrScale,STC,0,10+0.1,1,-1.75,0.25,rejected,25376,-3.85,2.12,217.9
