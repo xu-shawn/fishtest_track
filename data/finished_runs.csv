@@ -8793,3 +8793,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ada0114733e627f7058d1bc,2026-10-23T04:11:13Z,2026-10-22T12:27:00Z,AdrianStockfish,lmrScale,STC,0,10+0.1,1,-1.75,0.25,rejected,25376,-3.85,2.12,217.9
 6ada19c8733e627f7058d1c7,2026-10-23T05:32:56Z,2026-10-22T14:12:24Z,Gruenerapfel,delta-diff-history,STC,0,10+0.1,1,0,2,rejected,23424,-3.20,2.16,201.1
 6ad6bdbf733e627f7058cb36,2026-10-23T06:11:40Z,2026-10-20T01:02:55Z,Elhamuddin,futility_mult_tune,SPSA,0,60+0.6,1,,,stopped,42984,-1.05,1.50,2214.5
+6ad8218b733e627f7058cf6a,2026-10-23T10:39:22Z,2026-10-21T02:20:59Z,AdrianStockfish,v,LTC,0,60+0.6,1,0.5,2.5,rejected,55326,-0.78,1.33,2850.4
