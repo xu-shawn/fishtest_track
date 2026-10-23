@@ -8800,3 +8800,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adaa881733e627f7058d2ec,2026-10-23T17:49:39Z,2026-10-23T00:21:21Z,AdrianStockfish,noPVprobcut,STC,0,10+0.1,1,0,2,rejected,31200,-2.28,1.88,267.9
 6ad917b5733e627f7058d105,2026-10-23T19:13:38Z,2026-10-21T19:51:17Z,anurag2801,eval-scale950,STC,0,10+0.1,1,0,2,passed,104064,1.33,1.04,893.6
 6adbb2c9733e627f7058d411,2026-10-23T19:17:29Z,2026-10-23T19:17:29Z,anurag2801,eval-scale950,LTC,0,60+0.6,1,0.5,2.5,stopped,0,,,0.0
+6adba8d5733e627f7058d406,2026-10-23T21:24:58Z,2026-10-23T18:35:01Z,Elhamuddin,io_margin,SPSA,0,10+0.1,1,,,stopped,4306,0.32,4.95,37.0
