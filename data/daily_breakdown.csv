@@ -543,26 +543,26 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-23,arch,x86-64-avxvnni,1454.4,175.1,871.5
 2026-10-23,arch,x86-64-bmi2,5721.1,762.5,3320.0
 2026-10-23,arch,x86-64-sse41-popcnt,119.9,45.0,31.6
-2026-10-23,author,0x539,1112.0,12.0,
-2026-10-23,author,AdrianStockfish,1497.7,44.5,
+2026-10-23,author,0x539,1159.4,12.4,
+2026-10-23,author,AdrianStockfish,1518.3,45.3,
 2026-10-23,author,amberg12,97.7,3.0,
-2026-10-23,author,anurag2801,436.5,15.0,
+2026-10-23,author,anurag2801,453.0,15.4,
 2026-10-23,author,AriaKafie,487.7,14.0,
-2026-10-23,author,DeadK1ng,5896.3,15.0,
-2026-10-23,author,Elhamuddin,799.3,29.0,
-2026-10-23,author,fauzi2,1858.3,60.0,
+2026-10-23,author,DeadK1ng,6081.9,15.4,
+2026-10-23,author,Elhamuddin,821.2,29.8,
+2026-10-23,author,fauzi2,1921.8,61.6,
 2026-10-23,author,feeling4vibes,355.4,15.0,
-2026-10-23,author,Gruenerapfel,2329.0,35.2,
-2026-10-23,author,HappyNoah,633.1,15.0,
-2026-10-23,author,jayc,1629.2,30.0,
-2026-10-23,author,Kaarssteun,294.1,13.0,
-2026-10-23,author,linrock,1336.7,30.0,
-2026-10-23,author,lsst,1568.6,45.0,
-2026-10-23,author,rjhanson,724.8,29.0,
-2026-10-23,author,rn,643.6,15.0,
-2026-10-23,author,sg,968.3,26.6,
-2026-10-23,author,shawnxu,544.9,15.0,
-2026-10-23,author,Vizvezdenec,1112.5,10.0,
+2026-10-23,author,Gruenerapfel,2399.9,36.0,
+2026-10-23,author,HappyNoah,652.5,15.4,
+2026-10-23,author,jayc,1681.2,30.8,
+2026-10-23,author,Kaarssteun,306.9,13.4,
+2026-10-23,author,linrock,1372.2,30.8,
+2026-10-23,author,lsst,1618.1,46.2,
+2026-10-23,author,rjhanson,747.9,29.8,
+2026-10-23,author,rn,663.4,15.4,
+2026-10-23,author,sg,1000.1,27.8,
+2026-10-23,author,shawnxu,562.6,15.4,
+2026-10-23,author,Vizvezdenec,1169.8,10.4,
 2026-10-23,compiler,clang++ 17.0.0,224.9,30.0,252.3
 2026-10-23,compiler,clang++ 17.0.6,359.8,15.0,306.1
 2026-10-23,compiler,clang++ 21.0.0,161.4,41.5,169.9
@@ -652,7 +652,7 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-23,contributor,Zirie,419.8,30.0,292.9
 2026-10-23,contributor,zoe,179.9,30.0,71.4
 2026-10-23,hours,arch,15.0,0.0,
-2026-10-23,hours,author,15.0,0.0,
+2026-10-23,hours,author,15.4,0.0,
 2026-10-23,hours,compiler,15.0,0.0,
 2026-10-23,hours,contributor,15.0,0.0,
 2026-10-23,hours,mnps,15.0,0.0,
