@@ -8753,7 +8753,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad8bc8b733e627f7058d0bb,2026-10-21T17:52:30Z,2026-10-21T13:22:19Z,fauzi2,cachs4d,STC,0,10+0.1,1,0,2,stopped,5440,-10.41,4.65,46.7
 6ad49320733e627f7058c713,2026-10-21T20:42:03Z,2026-10-18T09:36:32Z,Fisherman,HoistingTest2,STC,0,10+0.1,1,0,2,passed,139616,1.06,0.85,1198.8
 6acb549e5349156614d94440,2026-10-21T21:31:51Z,2026-10-11T09:19:26Z,Vizvezdenec,lowDeltaPvRed2,STC,0,10+0.1,1,0,2,rejected,344480,0.24,0.57,2957.9
-6ad5b855733e627f7058c8b8,2026-10-21T22:10:55Z,2026-10-19T06:27:33Z,rn,bestmove-change-take2,STC,0,10+0.1,1,0,2,failed,116992,0.63,0.98,1004.6
 6ad6b08c733e627f7058ca85,2026-10-21T22:23:10Z,2026-10-20T00:06:36Z,fauzi2,cachs4,STC,0,10+0.1,1,0,2,stopped,49504,-0.60,1.49,425.1
 6ad3a2d2733e627f7058c639,2026-10-21T22:28:33Z,2026-10-17T16:31:14Z,linrock,acc-hoist-re,STC,0,10+0.1,1,-1.75,0.25,passed,185248,0.10,0.74,1590.7
 6acdb8ef733e627f7058bed1,2026-10-21T23:02:24Z,2026-10-13T04:51:59Z,vdv,ghiwins-sprt,STC,0,10+0.1,1,-1.75,0.25,rejected,375392,-0.60,0.55,3223.4
@@ -8797,3 +8796,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad7ab51733e627f7058ce42,2026-10-23T13:47:29Z,2026-10-20T17:56:33Z,AriaKafie,lazy_blockers,STC,0,10+0.1,1,0,2,rejected,154656,-0.07,0.81,1328.0
 6adb6692733e627f7058d383,2026-10-23T13:52:18Z,2026-10-23T13:52:18Z,AdrianStockfish,antiScaleDetect1,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6ada618b733e627f7058d2a9,2026-10-23T14:47:57Z,2026-10-22T19:18:35Z,feeling4vibes,simpler-optimism-evaluation,STC,0,10+0.1,1,-1.75,0.25,passed,40672,1.79,1.68,349.2
+6ad5b855733e627f7058c8b8,2026-10-23T16:36:21Z,2026-10-19T06:27:33Z,rn,bestmove-change-take2,STC,0,10+0.1,1,0,2,rejected,249984,0.14,0.67,2146.5
