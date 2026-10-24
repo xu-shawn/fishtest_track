@@ -8806,3 +8806,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adab849733e627f7058d2f6,2026-10-23T23:56:43Z,2026-10-23T01:28:41Z,Kaarssteun,mt1-single-reply,STC,0,10+0.1,1,-1.75,0.25,rejected,46080,-2.14,1.47,395.7
 6adbf376733e627f7058d49a,2026-10-24T02:15:01Z,2026-10-23T23:53:26Z,Elhamuddin,r_scale_improving,SPSA,0,10+0.1,1,,,stopped,2860,3.04,6.06,24.6
 6ada95e4733e627f7058d2df,2026-10-24T02:44:05Z,2026-10-22T23:01:56Z,linrock,smp-vote-avgscore,SMP,0,5+0.05,8,0,2,stopped,39072,-0.24,1.67,1342.0
+6ad40087733e627f7058c695,2026-10-24T04:09:20Z,2026-10-17T23:11:03Z,lsst,depth-avg-2param,STC,0,10+0.1,1,0,2,rejected,273792,0.16,0.61,2351.0
