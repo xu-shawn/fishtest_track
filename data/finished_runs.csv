@@ -8813,3 +8813,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad405a3733e627f7058c69b,2026-10-24T08:49:31Z,2026-10-17T23:32:51Z,lsst,depth-avg-2param,STC,0,10+0.1,1,0,2,rejected,291296,0.18,0.59,2501.3
 6ad9824e733e627f7058d152,2026-10-24T12:58:03Z,2026-10-22T03:26:06Z,lsst,depth-avg-2param,LTC,0,60+0.6,1,0.5,2.5,stopped,37146,-0.86,1.55,1913.8
 6adbb8fd733e627f7058d41c,2026-10-24T13:07:50Z,2026-10-23T19:43:57Z,bigpen0r,largeBonusH,STC,0,10+0.1,1,0,2,stopped,28064,-0.67,2.01,241.0
+6adcb506733e627f7058d5e6,2026-10-24T14:21:39Z,2026-10-24T13:39:18Z,0x539,nmpMeme,STC,0,10+0.1,1,0,2,stopped,992,-3.85,11.09,8.5
