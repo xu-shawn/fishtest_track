@@ -8808,3 +8808,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ada95e4733e627f7058d2df,2026-10-24T02:44:05Z,2026-10-22T23:01:56Z,linrock,smp-vote-avgscore,SMP,0,5+0.05,8,0,2,stopped,39072,-0.24,1.67,1342.0
 6ad40087733e627f7058c695,2026-10-24T04:09:20Z,2026-10-17T23:11:03Z,lsst,depth-avg-2param,STC,0,10+0.1,1,0,2,rejected,273792,0.16,0.61,2351.0
 6ad79a91733e627f7058ce33,2026-10-24T05:18:17Z,2026-10-20T16:45:05Z,sg,lmr_rescale_reduction3b,STC,0,10+0.1,1,0,2,passed,158432,1.05,0.84,1360.4
+6adae037733e627f7058d31e,2026-10-24T07:02:20Z,2026-10-23T04:19:03Z,Vizvezdenec,mcpScaler2,VVLTC,0,60+0.6,8,0.5,2.5,stopped,5128,-4.20,3.97,2113.6
