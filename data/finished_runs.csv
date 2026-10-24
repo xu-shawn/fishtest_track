@@ -8804,3 +8804,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ada1bcb733e627f7058d1cc,2026-10-23T21:48:20Z,2026-10-22T14:20:59Z,Gruenerapfel,consistent_iterative_deepening_recovery,STC,0,10+0.1,1,0,2,rejected,61056,-0.94,1.36,524.3
 6adbc721733e627f7058d436,2026-10-23T22:12:49Z,2026-10-23T20:44:17Z,Elhamuddin,ttcut_beta_blend,SPSA,0,10+0.1,1,,,stopped,1616,-0.21,8.27,13.9
 6adab849733e627f7058d2f6,2026-10-23T23:56:43Z,2026-10-23T01:28:41Z,Kaarssteun,mt1-single-reply,STC,0,10+0.1,1,-1.75,0.25,rejected,46080,-2.14,1.47,395.7
+6adbf376733e627f7058d49a,2026-10-24T02:15:01Z,2026-10-23T23:53:26Z,Elhamuddin,r_scale_improving,SPSA,0,10+0.1,1,,,stopped,2860,3.04,6.06,24.6
+6ada95e4733e627f7058d2df,2026-10-24T02:44:05Z,2026-10-22T23:01:56Z,linrock,smp-vote-avgscore,SMP,0,5+0.05,8,0,2,stopped,39072,-0.24,1.67,1342.0
