@@ -8817,3 +8817,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adcd1a4733e627f7058d63a,2026-10-24T16:01:59Z,2026-10-24T15:41:24Z,linrock,rm-simdw,STC,0,10+0.1,1,0,2,stopped,224,29.54,20.28,1.9
 6adc1d46733e627f7058d4ea,2026-10-24T16:13:44Z,2026-10-24T02:51:50Z,Kinatic11,arena/24174198-stockfish,STC,0,10+0.1,1,0,2,stopped,24256,0.39,2.05,208.3
 6ad997ce733e627f7058d176,2026-10-24T16:20:27Z,2026-10-22T04:57:50Z,Elhamuddin,tt_move_history,STC,0,10+0.1,1,0,2,rejected,132928,-0.16,0.92,1141.4
+6adbbbfe733e627f7058d427,2026-10-24T17:52:47Z,2026-10-23T19:56:46Z,bigpen0r,reversalSafeH,STC,0,10+0.1,1,0,2,stopped,38592,-0.30,1.70,331.4
+6adc27fe733e627f7058d4f0,2026-10-24T18:38:42Z,2026-10-24T03:37:34Z,Elhamuddin,oppw_reduction,SPSA,0,10+0.1,1,,,stopped,25738,0.22,2.09,221.0
