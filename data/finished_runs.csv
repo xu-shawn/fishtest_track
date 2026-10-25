@@ -8833,3 +8833,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad1fcfc733e627f7058c41f,2026-10-25T14:40:22Z,2026-10-16T10:31:24Z,Gruenerapfel,main_thread_nps_scaling,LTC,0,60+0.6,1,0.5,2.5,rejected,218928,0.31,0.65,11279.2
 6addebd1733e627f7058d849,2026-10-25T15:10:24Z,2026-10-25T11:45:21Z,Gruenerapfel,dynamic_bias_skip_accumulator,STC,1,10+0.1,1,0,2,rejected,7584,-11.18,3.90,65.1
 6add404d733e627f7058d738,2026-10-25T16:04:04Z,2026-10-24T23:33:33Z,Munzzyy,lmr-critical-ply,STC,0,10+0.1,1,0,2,rejected,30016,-2.38,1.91,257.7
+6ade3f342338a45b841f5b89,2026-10-25T17:41:08Z,2026-10-25T17:41:08Z,feeling4vibes,test/probcut-depth-depending-on-static-eval,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
