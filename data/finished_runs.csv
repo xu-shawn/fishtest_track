@@ -8824,3 +8824,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6add11ed733e627f7058d6c9,2026-10-24T20:15:41Z,2026-10-24T20:15:41Z,Elhamuddin,my_test,STC,0,10+0.1,1,0,2,failed,0,,,0.0
 6add3547733e627f7058d720,2026-10-24T22:46:31Z,2026-10-24T22:46:31Z,jayc,IZ-142M,STC,1,10+0.1,1,0,2,stopped,0,,,0.0
 6ad70b25733e627f7058cda3,2026-10-25T00:19:29Z,2026-10-20T06:33:09Z,0x539,tt-swar,LTC,0,60+0.6,1,-1.75,0.25,passed,71394,0.79,1.17,3678.2
+6adb6558733e627f7058d380,2026-10-25T05:03:23Z,2026-10-23T13:47:04Z,sg,best_move_history_update,STC,0,10+0.1,1,0,2,rejected,66560,-0.81,1.29,571.5
