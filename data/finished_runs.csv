@@ -8843,3 +8843,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adbba10733e627f7058d41e,2026-10-25T19:41:02Z,2026-10-23T19:48:32Z,bigpen0r,CMHMalusCap,STC,0,10+0.1,1,0,2,stopped,93664,0.17,1.09,804.3
 6adc8f95733e627f7058d5b5,2026-10-25T20:02:01Z,2026-10-24T10:59:33Z,Vizvezdenec,histInPC4,STC,0,10+0.1,1,0,2,stopped,43200,-1.28,1.61,370.9
 6ade127b2338a45b841f5b2d,2026-10-25T21:32:49Z,2026-10-25T14:30:19Z,lsst,bench/b05-23-psq-empty-half,STC,0,10+0.1,1,0,2,stopped,22464,2.12,2.15,192.9
+6adcec59733e627f7058d671,2026-10-25T22:15:57Z,2026-10-24T17:35:21Z,efoo,fpcorr-submit,STC,0,10+0.1,1,0,2,stopped,51840,0.23,1.47,445.1
+6add2046733e627f7058d6f1,2026-10-25T22:16:35Z,2026-10-24T21:16:54Z,efoo,corradj-submit,STC,0,10+0.1,1,-1.75,0.25,stopped,45760,-1.18,1.51,392.9
