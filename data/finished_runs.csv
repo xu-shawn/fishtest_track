@@ -8834,3 +8834,10 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6addebd1733e627f7058d849,2026-10-25T15:10:24Z,2026-10-25T11:45:21Z,Gruenerapfel,dynamic_bias_skip_accumulator,STC,1,10+0.1,1,0,2,rejected,7584,-11.18,3.90,65.1
 6add404d733e627f7058d738,2026-10-25T16:04:04Z,2026-10-24T23:33:33Z,Munzzyy,lmr-critical-ply,STC,0,10+0.1,1,0,2,rejected,30016,-2.38,1.91,257.7
 6ade3f342338a45b841f5b89,2026-10-25T17:41:08Z,2026-10-25T17:41:08Z,feeling4vibes,test/probcut-depth-depending-on-static-eval,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
+6ade516c2338a45b841f5ba1,2026-10-25T18:58:52Z,2026-10-25T18:58:52Z,Fisherman,BypassTiling,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6adc2d2b733e627f7058d4f8,2026-10-25T19:08:38Z,2026-10-24T03:59:39Z,amberg12,deserved-reduction-rfp2,STC,0,10+0.1,1,0,2,rejected,90720,-0.47,1.11,779.0
+6adde91b733e627f7058d846,2026-10-25T19:11:47Z,2026-10-25T11:33:47Z,Vizvezdenec,corrhistTtUpd1,STC,0,10+0.1,1,0,2,rejected,9760,-8.37,3.36,83.8
+6adc7af4733e627f7058d58d,2026-10-25T19:18:31Z,2026-10-24T09:31:32Z,shawnxu,test1741,STC,1,10+0.1,1,0,2,passed,46144,2.42,1.58,396.2
+6add1909733e627f7058d6e4,2026-10-25T19:30:01Z,2026-10-24T20:46:01Z,Elhamuddin,my_test,STC,0,10+0.1,1,0,2,rejected,44352,-1.48,1.60,380.8
+6ade59822338a45b841f5c40,2026-10-25T19:33:22Z,2026-10-25T19:33:22Z,shawnxu,test1741,STC,1,10+0.1,1,0.5,2.5,stopped,0,,,0.0
+6adbba10733e627f7058d41e,2026-10-25T19:41:02Z,2026-10-23T19:48:32Z,bigpen0r,CMHMalusCap,STC,0,10+0.1,1,0,2,stopped,93664,0.17,1.09,804.3
