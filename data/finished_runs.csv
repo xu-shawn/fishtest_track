@@ -8831,3 +8831,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6addf25e733e627f7058d85c,2026-10-25T12:13:18Z,2026-10-25T12:13:18Z,0x539,tt-nmp,STC,0,10+0.1,1,0,2,failed,0,,,0.0
 6add3611733e627f7058d725,2026-10-25T13:45:10Z,2026-10-24T22:49:53Z,jayc,E-111-01,STC,1,10+0.1,1,0,2,rejected,21792,-3.51,2.27,187.1
 6ad1fcfc733e627f7058c41f,2026-10-25T14:40:22Z,2026-10-16T10:31:24Z,Gruenerapfel,main_thread_nps_scaling,LTC,0,60+0.6,1,0.5,2.5,rejected,218928,0.31,0.65,11279.2
+6addebd1733e627f7058d849,2026-10-25T15:10:24Z,2026-10-25T11:45:21Z,Gruenerapfel,dynamic_bias_skip_accumulator,STC,1,10+0.1,1,0,2,rejected,7584,-11.18,3.90,65.1
