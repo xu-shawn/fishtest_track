@@ -8827,3 +8827,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adaa7d0733e627f7058d2ea,2026-10-25T08:51:31Z,2026-10-23T00:18:24Z,AdrianStockfish,moreNMP,STC,0,10+0.1,1,-1.75,0.25,passed,116256,0.38,0.98,998.3
 6adb76af733e627f7058d394,2026-10-25T10:35:14Z,2026-10-23T15:01:03Z,feeling4vibes,simpler-optimism-evaluation,LTC,0,60+0.6,1,-1.75,0.25,passed,63192,0.95,1.25,3255.7
 6adc9011733e627f7058d5b8,2026-10-25T11:17:46Z,2026-10-24T11:01:37Z,Vizvezdenec,histInPC5,STC,0,10+0.1,1,0,2,rejected,30112,-2.41,1.95,258.6
+6ad093f0733e627f7058c29d,2026-10-25T11:53:38Z,2026-10-15T08:50:56Z,DeadK1ng,smp-nmp-odd-less-v2,SMP,0,20+0.2,8,0.5,2.5,passed,328158,0.91,0.53,45084.5
+6addf25e733e627f7058d85c,2026-10-25T12:13:18Z,2026-10-25T12:13:18Z,0x539,tt-nmp,STC,0,10+0.1,1,0,2,failed,0,,,0.0
