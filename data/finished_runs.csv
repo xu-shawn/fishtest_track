@@ -8841,3 +8841,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6add1909733e627f7058d6e4,2026-10-25T19:30:01Z,2026-10-24T20:46:01Z,Elhamuddin,my_test,STC,0,10+0.1,1,0,2,rejected,44352,-1.48,1.60,380.8
 6ade59822338a45b841f5c40,2026-10-25T19:33:22Z,2026-10-25T19:33:22Z,shawnxu,test1741,STC,1,10+0.1,1,0.5,2.5,stopped,0,,,0.0
 6adbba10733e627f7058d41e,2026-10-25T19:41:02Z,2026-10-23T19:48:32Z,bigpen0r,CMHMalusCap,STC,0,10+0.1,1,0,2,stopped,93664,0.17,1.09,804.3
+6adc8f95733e627f7058d5b5,2026-10-25T20:02:01Z,2026-10-24T10:59:33Z,Vizvezdenec,histInPC4,STC,0,10+0.1,1,0,2,stopped,43200,-1.28,1.61,370.9
