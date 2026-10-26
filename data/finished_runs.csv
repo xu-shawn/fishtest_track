@@ -8863,3 +8863,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad8bc9e733e627f7058d0bd,2026-10-26T14:50:29Z,2026-10-21T13:22:38Z,fauzi2,cachs4e,STC,0,10+0.1,1,0,2,rejected,258880,0.15,0.63,2222.9
 6adf650920cd2dc3f03d02b4,2026-10-26T15:22:55Z,2026-10-26T14:34:49Z,feeling4vibes,test/probcut-depth-based-on-qsearch-value,STC,0,10+0.1,1,0,2,stopped,1760,-7.31,7.97,15.1
 6ad67dc7733e627f7058c938,2026-10-26T16:09:03Z,2026-10-19T20:29:59Z,HappyNoah,optimize-seekmate-current,STC,0,10+0.1,1,0,2,rejected,520672,0.31,0.44,4470.8
+6add35fc733e627f7058d723,2026-10-26T17:13:43Z,2026-10-24T22:49:32Z,jayc,IZ-142M,STC,1,10+0.1,1,0,2,stopped,88224,0.06,1.13,757.6
+6add05b6733e627f7058d690,2026-10-26T17:20:42Z,2026-10-24T19:23:34Z,shawnxu,test1742,STC,0,10+0.1,1,0,2,rejected,65056,-0.86,1.31,558.6
