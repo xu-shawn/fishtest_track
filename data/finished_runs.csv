@@ -8850,3 +8850,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adcd2da733e627f7058d63e,2026-10-26T02:17:55Z,2026-10-24T15:46:34Z,rn,tt-clamp-decisive,STC,0,10+0.1,1,-1.75,0.25,passed,78784,0.74,1.20,676.5
 6adcb8c4733e627f7058d5ec,2026-10-26T02:39:21Z,2026-10-24T13:55:16Z,AdrianStockfish,scale,STC,0,10+0.1,1,0,2,rejected,65504,-0.83,1.31,562.5
 6adc103e733e627f7058d4aa,2026-10-26T06:12:19Z,2026-10-24T01:56:14Z,linrock,time-reduc-fhr,STC,0,10+0.1,1,0,2,rejected,90272,-0.47,1.09,775.1
+6adcbd30733e627f7058d5f5,2026-10-26T06:59:00Z,2026-10-24T14:14:08Z,AdrianStockfish,improvScale2,STC,0,10+0.1,1,0,2,rejected,68768,-0.78,1.28,590.5
+6ad71376733e627f7058cdad,2026-10-26T07:03:19Z,2026-10-20T07:08:38Z,0x539,tt-swar,SMP,0,20+0.2,8,-1.75,0.25,stopped,2770,0.13,6.24,380.6
+6adbb488733e627f7058d416,2026-10-26T07:30:58Z,2026-10-23T19:24:56Z,anurag2801,eval-scale950,LTC,0,60+0.6,1,0.5,2.5,rejected,90144,-0.22,1.04,4644.2
