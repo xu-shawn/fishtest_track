@@ -8847,3 +8847,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6add2046733e627f7058d6f1,2026-10-25T22:16:35Z,2026-10-24T21:16:54Z,efoo,corradj-submit,STC,0,10+0.1,1,-1.75,0.25,stopped,45760,-1.18,1.51,392.9
 6adcf595733e627f7058d67d,2026-10-25T22:54:51Z,2026-10-24T18:14:45Z,Elhamuddin,prior_reduction,SPSA,0,10+0.1,1,,,stopped,54182,-1.05,1.44,465.2
 6ada2e00733e627f7058d1d9,2026-10-25T23:12:04Z,2026-10-22T15:38:40Z,jayc,nn-b30be07c86e7,LTC,1,60+0.6,1,0.5,2.5,rejected,114978,-0.02,0.92,5923.7
+6adcd2da733e627f7058d63e,2026-10-26T02:17:55Z,2026-10-24T15:46:34Z,rn,tt-clamp-decisive,STC,0,10+0.1,1,-1.75,0.25,passed,78784,0.74,1.20,676.5
+6adcb8c4733e627f7058d5ec,2026-10-26T02:39:21Z,2026-10-24T13:55:16Z,AdrianStockfish,scale,STC,0,10+0.1,1,0,2,rejected,65504,-0.83,1.31,562.5
