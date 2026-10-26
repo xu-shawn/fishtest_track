@@ -8860,3 +8860,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adba527733e627f7058d402,2026-10-26T10:39:01Z,2026-10-23T18:19:19Z,efoo,spd-accum-submit,STC,0,10+0.1,1,0,2,passed,173568,0.95,0.77,1490.4
 6add1ac6733e627f7058d6eb,2026-10-26T12:32:06Z,2026-10-24T20:53:26Z,Fisherman,SpecializeUpdates2,STC,0,10+0.1,1,0,2,passed,71776,1.62,1.19,616.3
 6adbbaf3733e627f7058d422,2026-10-26T13:31:27Z,2026-10-23T19:52:19Z,bigpen0r,LMRHistGate,STC,0,10+0.1,1,0,2,stopped,157888,0.20,0.84,1355.7
+6ad8bc9e733e627f7058d0bd,2026-10-26T14:50:29Z,2026-10-21T13:22:38Z,fauzi2,cachs4e,STC,0,10+0.1,1,0,2,rejected,258880,0.15,0.63,2222.9
+6adf650920cd2dc3f03d02b4,2026-10-26T15:22:55Z,2026-10-26T14:34:49Z,feeling4vibes,test/probcut-depth-based-on-qsearch-value,STC,0,10+0.1,1,0,2,stopped,1760,-7.31,7.97,15.1
