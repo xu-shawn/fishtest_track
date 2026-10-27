@@ -8869,3 +8869,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6add36b3733e627f7058d728,2026-10-26T21:44:07Z,2026-10-24T22:52:35Z,Munzzyy,lmr-reckless,STC,0,10+0.1,1,0,2,passed,112896,1.26,1.00,969.4
 6ade0afd2338a45b841f5b15,2026-10-26T22:08:13Z,2026-10-25T13:58:21Z,0x539,tt-nmp,STC,0,10+0.1,1,0,2,rejected,72544,-0.72,1.24,622.9
 6adb381f733e627f7058d35f,2026-10-26T23:46:02Z,2026-10-23T10:34:07Z,sg,pv_history_update,STC,0,10+0.1,1,0,2,rejected,165760,-0.03,0.82,1423.3
+6ade83172338a45b841f5d80,2026-10-27T02:39:47Z,2026-10-25T22:30:47Z,feeling4vibes,test/probcut-depth-based-on-static-eval,STC,0,10+0.1,1,0,2,stopped,64864,-0.10,1.31,557.0
