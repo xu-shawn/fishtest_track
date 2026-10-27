@@ -8871,3 +8871,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adb381f733e627f7058d35f,2026-10-26T23:46:02Z,2026-10-23T10:34:07Z,sg,pv_history_update,STC,0,10+0.1,1,0,2,rejected,165760,-0.03,0.82,1423.3
 6ade83172338a45b841f5d80,2026-10-27T02:39:47Z,2026-10-25T22:30:47Z,feeling4vibes,test/probcut-depth-based-on-static-eval,STC,0,10+0.1,1,0,2,stopped,64864,-0.10,1.31,557.0
 6adf2a4a2338a45b841f5eb5,2026-10-27T03:29:15Z,2026-10-26T10:24:10Z,Gruenerapfel,implement_ghost_pawn_threats,Nodestime,1,100+1,1,0,2,passed,20228,4.95,2.42,1736.9
+6ada47cc733e627f7058d298,2026-10-27T03:51:10Z,2026-10-22T17:28:44Z,jayc,nn-79f87c2590f6,STC,1,10+0.1,1,0,2,rejected,303744,0.20,0.61,2608.1
