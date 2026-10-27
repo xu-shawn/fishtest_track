@@ -8877,3 +8877,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae05d2e20cd2dc3f03d062d,2026-10-27T09:16:17Z,2026-10-27T08:13:34Z,Gruenerapfel,implement_ghost_pawn_threats,Nodestime,1,600+6,1,0,2,stopped,80,-276.97,112.17,41.2
 6ad9b859733e627f7058d188,2026-10-27T10:26:13Z,2026-10-22T07:16:41Z,linrock,time-advantage,STC,0,10+0.1,1,0,2,rejected,343072,0.22,0.54,2945.8
 6adc8ec0733e627f7058d5b2,2026-10-27T11:26:58Z,2026-10-24T10:56:00Z,Vizvezdenec,histInPC3,STC,0,10+0.1,1,0,2,rejected,102080,-0.37,1.05,876.5
+6adbd77f733e627f7058d475,2026-10-27T13:47:05Z,2026-10-23T21:54:07Z,shawnxu,test1739,STC,0,10+0.1,1,0,2,passed,158720,1.04,0.84,1362.9
+6ade59c52338a45b841f5c44,2026-10-27T14:33:40Z,2026-10-25T19:34:29Z,shawnxu,test1741,LTC,1,60+0.6,1,0.5,2.5,passed,41256,2.69,1.56,2125.5
