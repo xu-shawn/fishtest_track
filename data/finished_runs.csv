@@ -8884,3 +8884,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae0a8c020cd2dc3f03d0702,2026-10-27T17:50:06Z,2026-10-27T13:36:00Z,AdrianStockfish,moreSE,STC,0,10+0.1,1,0,2,rejected,9344,-8.81,3.43,80.2
 6adfd6e320cd2dc3f03d043b,2026-10-27T18:21:35Z,2026-10-26T22:40:35Z,Fisherman,LftTri,STC,0,10+0.1,1,0,2,rejected,27424,-2.66,2.00,235.5
 6adb92e3733e627f7058d3f4,2026-10-27T18:27:56Z,2026-10-23T17:01:23Z,sg,best_move_history_update2,STC,0,10+0.1,1,0,2,passed,198144,0.93,0.75,1701.4
+6ae10c2720cd2dc3f03d07f9,2026-10-27T20:40:07Z,2026-10-27T20:40:07Z,feeling4vibes,tune/improvement-metric-in-lmr,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
+6ae0064120cd2dc3f03d046a,2026-10-27T20:57:40Z,2026-10-27T02:02:41Z,efoo,makefile-hardening,STC,0,10+0.1,1,0,2,stopped,40224,0.55,1.58,345.4
+6addecde733e627f7058d84f,2026-10-27T21:14:12Z,2026-10-25T11:49:50Z,HappyNoah,null-move-blocker-cache-clean,STC,0,10+0.1,1,0,2,rejected,177248,-0.00,0.76,1522.0
