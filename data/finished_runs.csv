@@ -8874,3 +8874,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ada47cc733e627f7058d298,2026-10-27T03:51:10Z,2026-10-22T17:28:44Z,jayc,nn-79f87c2590f6,STC,1,10+0.1,1,0,2,rejected,303744,0.20,0.61,2608.1
 6adda45d733e627f7058d7c5,2026-10-27T08:01:16Z,2026-10-25T06:40:29Z,linrock,mp-disc-chk,STC,0,10+0.1,1,0,2,rejected,85120,-0.53,1.14,730.9
 6ade7aa32338a45b841f5d57,2026-10-27T08:14:12Z,2026-10-25T21:54:43Z,lsst,bench/b05-23-psq-empty-half-rebased,STC,0,10+0.1,1,0,2,rejected,117248,-0.24,0.93,1006.8
+6ae05d2e20cd2dc3f03d062d,2026-10-27T09:16:17Z,2026-10-27T08:13:34Z,Gruenerapfel,implement_ghost_pawn_threats,Nodestime,1,600+6,1,0,2,stopped,80,-276.97,112.17,41.2
