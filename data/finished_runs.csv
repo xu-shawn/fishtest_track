@@ -8887,3 +8887,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae10c2720cd2dc3f03d07f9,2026-10-27T20:40:07Z,2026-10-27T20:40:07Z,feeling4vibes,tune/improvement-metric-in-lmr,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
 6ae0064120cd2dc3f03d046a,2026-10-27T20:57:40Z,2026-10-27T02:02:41Z,efoo,makefile-hardening,STC,0,10+0.1,1,0,2,stopped,40224,0.55,1.58,345.4
 6addecde733e627f7058d84f,2026-10-27T21:14:12Z,2026-10-25T11:49:50Z,HappyNoah,null-move-blocker-cache-clean,STC,0,10+0.1,1,0,2,rejected,177248,-0.00,0.76,1522.0
+6adfedb520cd2dc3f03d0456,2026-10-27T22:01:10Z,2026-10-27T00:17:57Z,shawnxu,test1741pr,STC,1,10+0.1,1,-1.75,0.25,stopped,40320,0.48,1.57,346.2
+6ada31bd733e627f7058d1e0,2026-10-27T22:13:13Z,2026-10-22T15:54:37Z,fauzi2,tarht3a,STC,0,10+0.1,1,0,2,failed,322560,0.60,0.59,2769.7
+6adf5c7220cd2dc3f03d02a9,2026-10-27T22:38:22Z,2026-10-26T13:58:10Z,bigpen0r,tTBoundCal,STC,0,10+0.1,1,0,2,stopped,54688,-0.34,1.42,469.6
