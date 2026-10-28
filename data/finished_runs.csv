@@ -8896,3 +8896,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adccb6e733e627f7058d612,2026-10-28T00:44:04Z,2026-10-24T15:14:54Z,rn,tt-clamp-decisive,STC,0,10+0.1,1,-1.75,0.25,passed,235872,0.00,0.69,2025.4
 6ae0dc3720cd2dc3f03d0785,2026-10-28T02:10:21Z,2026-10-27T17:15:35Z,feeling4vibes,test/probcut-depth-based-on-qsearch-score-2,STC,0,10+0.1,1,0,2,stopped,20896,-1.93,2.32,179.4
 6ae11f9f20cd2dc3f03d086e,2026-10-28T02:36:56Z,2026-10-27T22:03:11Z,efoo,ghost-incremental,STC,0,10+0.1,1,0,2,passed,6656,13.53,4.05,57.2
+6adfae5b20cd2dc3f03d03fd,2026-10-28T05:11:26Z,2026-10-26T19:47:39Z,sg,best_move_history_update_depth,STC,0,10+0.1,1,0,2,rejected,40960,-1.64,1.65,351.7
