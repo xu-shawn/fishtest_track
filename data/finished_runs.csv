@@ -8904,3 +8904,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6addec16733e627f7058d84b,2026-10-28T10:40:59Z,2026-10-25T11:46:30Z,Gruenerapfel,dynamic_bias_skip_accumulator,Nodestime,1,100+1,1,0,2,passed,150356,1.10,0.89,12910.6
 6adcbc27733e627f7058d5f2,2026-10-28T11:09:25Z,2026-10-24T14:09:43Z,AdrianStockfish,improvScale1,STC,0,10+0.1,1,0,2,rejected,263232,0.16,0.65,2260.3
 6ade57d12338a45b841f5c3a,2026-10-28T11:14:38Z,2026-10-25T19:26:09Z,Fisherman,CombineLeftover,STC,0,10+0.1,1,0,2,passed,115072,1.18,0.93,988.1
+6ade8fa62338a45b841f5d9a,2026-10-28T12:45:47Z,2026-10-25T23:24:22Z,sg,best_move_history_update3,STC,0,10+0.1,1,0,2,rejected,91424,-0.46,1.09,785.0
