@@ -8910,3 +8910,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adbaf26733e627f7058d40d,2026-10-28T20:56:00Z,2026-10-23T19:01:58Z,shawnxu,test1738,STC,1,10+0.1,1,0,2,rejected,261152,0.16,0.66,2242.4
 6addf111733e627f7058d855,2026-10-28T21:42:47Z,2026-10-25T12:07:45Z,AdrianStockfish,noCUTnmpReb,LTC,0,60+0.6,1,-1.75,0.25,passed,127326,0.30,0.88,6559.8
 6adef14c2338a45b841f5e23,2026-10-28T21:43:25Z,2026-10-26T06:21:00Z,bigpen0r,allNodeSign,STC,0,10+0.1,1,0,2,passed,133632,1.14,0.91,1147.5
+6ae148a820cd2dc3f03d08e1,2026-10-28T22:30:37Z,2026-10-28T00:58:16Z,shawnxu,test1744,STC,0,10+0.1,1,0,2,rejected,28448,-2.54,1.95,244.3
