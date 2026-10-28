@@ -8905,3 +8905,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adcbc27733e627f7058d5f2,2026-10-28T11:09:25Z,2026-10-24T14:09:43Z,AdrianStockfish,improvScale1,STC,0,10+0.1,1,0,2,rejected,263232,0.16,0.65,2260.3
 6ade57d12338a45b841f5c3a,2026-10-28T11:14:38Z,2026-10-25T19:26:09Z,Fisherman,CombineLeftover,STC,0,10+0.1,1,0,2,passed,115072,1.18,0.93,988.1
 6ade8fa62338a45b841f5d9a,2026-10-28T12:45:47Z,2026-10-25T23:24:22Z,sg,best_move_history_update3,STC,0,10+0.1,1,0,2,rejected,91424,-0.46,1.09,785.0
+6adbd79a733e627f7058d477,2026-10-28T16:03:31Z,2026-10-23T21:54:34Z,shawnxu,test1740,STC,0,10+0.1,1,0,2,rejected,237792,0.12,0.69,2041.8
