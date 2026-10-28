@@ -8902,3 +8902,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ade78fc2338a45b841f5d51,2026-10-28T09:30:44Z,2026-10-25T21:47:40Z,lsst,bench/b05-23-psq-empty-half-rebased,STC,0,10+0.1,1,0,2,rejected,157184,-0.07,0.80,1349.7
 6adc917c733e627f7058d5be,2026-10-28T09:48:16Z,2026-10-24T11:07:40Z,Vizvezdenec,priorCaptTT1,STC,0,10+0.1,1,0,2,rejected,155936,-0.07,0.85,1339.0
 6addec16733e627f7058d84b,2026-10-28T10:40:59Z,2026-10-25T11:46:30Z,Gruenerapfel,dynamic_bias_skip_accumulator,Nodestime,1,100+1,1,0,2,passed,150356,1.10,0.89,12910.6
+6adcbc27733e627f7058d5f2,2026-10-28T11:09:25Z,2026-10-24T14:09:43Z,AdrianStockfish,improvScale1,STC,0,10+0.1,1,0,2,rejected,263232,0.16,0.65,2260.3
+6ade57d12338a45b841f5c3a,2026-10-28T11:14:38Z,2026-10-25T19:26:09Z,Fisherman,CombineLeftover,STC,0,10+0.1,1,0,2,passed,115072,1.18,0.93,988.1
