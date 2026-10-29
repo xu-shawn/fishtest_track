@@ -8916,3 +8916,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae259d120cd2dc3f03d0b47,2026-10-29T05:39:33Z,2026-10-28T20:23:45Z,fury,simp_alpha_raise_no_cutoff_red,STC,0,10+0.1,1,-1.75,0.25,rejected,17952,-5.25,2.51,154.1
 6ae25dc020cd2dc3f03d0b53,2026-10-29T06:13:07Z,2026-10-28T20:40:32Z,fury,alpha_raise_lmr_and_simp,STC,0,10+0.1,1,0,2,rejected,17216,-4.66,2.59,147.8
 6adf68c020cd2dc3f03d02bd,2026-10-29T06:48:28Z,2026-10-26T14:50:40Z,Gruenerapfel,K32H3_power_tweak,STC,1,10+0.1,1,0,2,rejected,149120,-0.09,0.86,1280.4
+6adf5b6b20cd2dc3f03d02a6,2026-10-29T08:03:01Z,2026-10-26T13:53:47Z,bigpen0r,chainCap,STC,0,10+0.1,1,0,2,stopped,143328,0.06,0.88,1230.7
+6ae1d0c420cd2dc3f03d0a3b,2026-10-29T08:31:20Z,2026-10-28T10:39:00Z,shawnxu,test1748,STC,1,10+0.1,1,0,2,passed,35328,2.99,1.80,303.3
+6ae275aa20cd2dc3f03d0bf0,2026-10-29T08:40:08Z,2026-10-28T22:22:34Z,feeling4vibes,test/probcut-depth-based-on-qsearch-score-3,STC,0,10+0.1,1,0,2,stopped,20032,-1.01,2.36,172.0
