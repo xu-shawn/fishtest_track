@@ -8919,3 +8919,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adf5b6b20cd2dc3f03d02a6,2026-10-29T08:03:01Z,2026-10-26T13:53:47Z,bigpen0r,chainCap,STC,0,10+0.1,1,0,2,stopped,143328,0.06,0.88,1230.7
 6ae1d0c420cd2dc3f03d0a3b,2026-10-29T08:31:20Z,2026-10-28T10:39:00Z,shawnxu,test1748,STC,1,10+0.1,1,0,2,passed,35328,2.99,1.80,303.3
 6ae275aa20cd2dc3f03d0bf0,2026-10-29T08:40:08Z,2026-10-28T22:22:34Z,feeling4vibes,test/probcut-depth-based-on-qsearch-score-3,STC,0,10+0.1,1,0,2,stopped,20032,-1.01,2.36,172.0
+6ae0825a20cd2dc3f03d06a9,2026-10-29T13:11:40Z,2026-10-27T10:52:10Z,Gruenerapfel,implement_ghost_pawn_threats,Nodestime,1,1000+10,1,0,2,passed,30554,3.14,1.79,26235.7
