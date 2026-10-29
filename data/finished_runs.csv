@@ -8928,3 +8928,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae1164820cd2dc3f03d081e,2026-10-29T16:40:01Z,2026-10-27T21:23:20Z,DeadK1ng,smp-lmp-wider-v2,SMP,0,5+0.05,8,0,2,rejected,92056,-0.45,1.09,3161.8
 6ae3249920cd2dc3f03d0e35,2026-10-29T16:43:14Z,2026-10-29T10:48:57Z,bigpen0r,nominalGate,STC,0,10+0.1,1,0,2,stopped,9504,-2.30,3.45,81.6
 6ad8e151733e627f7058d0cf,2026-10-29T16:58:05Z,2026-10-21T15:59:13Z,rjhanson,evasion-history,STC,0,10+0.1,1,0,2,passed,665984,0.62,0.41,5718.6
+6ae37c6920cd2dc3f03d0f55,2026-10-29T18:47:46Z,2026-10-29T17:03:37Z,anurag2801,quad-ext-shallow,LTC,1,60+0.6,1,0.5,2.5,stopped,516,-6.06,13.12,26.6
