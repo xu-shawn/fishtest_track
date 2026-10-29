@@ -8915,3 +8915,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adf87b720cd2dc3f03d02fd,2026-10-29T04:01:07Z,2026-10-26T17:02:47Z,Vizvezdenec,nmpEvalN5,STC,0,10+0.1,1,0,2,rejected,89184,-0.48,1.11,765.8
 6ae259d120cd2dc3f03d0b47,2026-10-29T05:39:33Z,2026-10-28T20:23:45Z,fury,simp_alpha_raise_no_cutoff_red,STC,0,10+0.1,1,-1.75,0.25,rejected,17952,-5.25,2.51,154.1
 6ae25dc020cd2dc3f03d0b53,2026-10-29T06:13:07Z,2026-10-28T20:40:32Z,fury,alpha_raise_lmr_and_simp,STC,0,10+0.1,1,0,2,rejected,17216,-4.66,2.59,147.8
+6adf68c020cd2dc3f03d02bd,2026-10-29T06:48:28Z,2026-10-26T14:50:40Z,Gruenerapfel,K32H3_power_tweak,STC,1,10+0.1,1,0,2,rejected,149120,-0.09,0.86,1280.4
