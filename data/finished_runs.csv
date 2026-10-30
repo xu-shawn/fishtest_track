@@ -8946,3 +8946,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae4a2a820cd2dc3f03d1200,2026-10-30T14:25:08Z,2026-10-30T13:59:04Z,feeling4vibes,test/capture-hist-bonus-in-fail-high-ttmoves,STC,0,10+0.1,1,0,2,stopped,352,-18.77,18.32,3.0
 6ae323d720cd2dc3f03d0e32,2026-10-30T14:26:23Z,2026-10-29T10:45:43Z,bigpen0r,checkEvalCal,STC,0,10+0.1,1,0,2,stopped,44928,-0.29,1.57,385.8
 6ae1f7a220cd2dc3f03d0a89,2026-10-30T14:45:22Z,2026-10-28T13:24:50Z,fauzi2,plyroot,STC,0,10+0.1,1,-1.75,0.25,rejected,80928,-1.45,1.17,694.9
+6ae4b8ce20cd2dc3f03d121c,2026-10-30T15:33:34Z,2026-10-30T15:33:34Z,octopusprime,partial_sort,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
