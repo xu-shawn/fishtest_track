@@ -8938,3 +8938,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ada31bd733e627f7058d1e0,2026-10-30T04:22:11Z,2026-10-22T15:54:37Z,fauzi2,tarht3a,STC,0,10+0.1,1,0,2,passed,495104,0.67,0.48,4251.3
 6ae3e0a020cd2dc3f03d10ed,2026-10-30T05:08:42Z,2026-10-30T00:11:12Z,shawnxu,test1749,SMP,0,5+0.05,8,0,2,stopped,4960,-11.56,4.66,170.4
 6ae1827a20cd2dc3f03d0990,2026-10-30T05:26:42Z,2026-10-28T05:04:58Z,shawnxu,test1745,LTC,1,60+0.6,1,0.5,2.5,rejected,53796,-0.84,1.36,2771.6
+6ae38fc220cd2dc3f03d104c,2026-10-30T10:20:20Z,2026-10-29T18:26:10Z,bigpen0r,orderConfirm,STC,0,10+0.1,1,0,2,stopped,23712,-2.27,2.15,203.6
