@@ -8889,7 +8889,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6addecde733e627f7058d84f,2026-10-27T21:14:12Z,2026-10-25T11:49:50Z,HappyNoah,null-move-blocker-cache-clean,STC,0,10+0.1,1,0,2,rejected,177248,-0.00,0.76,1522.0
 6ae1178220cd2dc3f03d0821,2026-10-27T21:28:34Z,2026-10-27T21:28:34Z,AriaKafie,simplify_pinned_movegen,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6adfedb520cd2dc3f03d0456,2026-10-27T22:01:10Z,2026-10-27T00:17:57Z,shawnxu,test1741pr,STC,1,10+0.1,1,-1.75,0.25,stopped,40320,0.48,1.57,346.2
-6ada31bd733e627f7058d1e0,2026-10-27T22:13:13Z,2026-10-22T15:54:37Z,fauzi2,tarht3a,STC,0,10+0.1,1,0,2,failed,322560,0.60,0.59,2769.7
 6adf5c7220cd2dc3f03d02a9,2026-10-27T22:38:22Z,2026-10-26T13:58:10Z,bigpen0r,tTBoundCal,STC,0,10+0.1,1,0,2,stopped,54688,-0.34,1.42,469.6
 6ade60332338a45b841f5c53,2026-10-27T22:52:01Z,2026-10-25T20:01:55Z,Vizvezdenec,nmpEvalN2,STC,0,10+0.1,1,0,2,rejected,80608,-0.59,1.15,692.2
 6ae0322120cd2dc3f03d0530,2026-10-28T00:01:13Z,2026-10-27T05:09:53Z,shawnxu,test1741pr_alt,STC,1,10+0.1,1,-1.75,0.25,passed,72704,0.80,1.19,624.3
@@ -8935,3 +8934,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adab68b733e627f7058d2f3,2026-10-29T19:37:16Z,2026-10-23T01:21:15Z,rjhanson,incheck-stale-eval,STC,0,10+0.1,1,0,2,rejected,562752,0.34,0.45,4832.2
 6add476a733e627f7058d742,2026-10-29T19:38:22Z,2026-10-25T00:03:54Z,Munzzyy,nmp-null-faillow-deeper,STC,0,10+0.1,1,0,2,rejected,405568,0.28,0.53,3482.5
 6ae2439320cd2dc3f03d0b2e,2026-10-30T02:18:10Z,2026-10-28T18:48:51Z,Fisherman,SomeSimpl,STC,0,10+0.1,1,-1.75,0.25,passed,56000,1.12,1.34,480.9
+6ae38ecc20cd2dc3f03d104a,2026-10-30T04:12:51Z,2026-10-29T18:22:04Z,bigpen0r,tTWindowIIR,STC,0,10+0.1,1,0,2,stopped,13824,-1.83,2.83,118.7
+6ada31bd733e627f7058d1e0,2026-10-30T04:22:11Z,2026-10-22T15:54:37Z,fauzi2,tarht3a,STC,0,10+0.1,1,0,2,passed,495104,0.67,0.48,4251.3
