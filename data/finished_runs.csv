@@ -8951,3 +8951,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae3a55e20cd2dc3f03d1089,2026-10-30T20:03:58Z,2026-10-29T19:58:22Z,jayc,nn-cd7b66acac99,STC,1,10+0.1,1,0,2,rejected,54560,-1.11,1.43,468.5
 6adfd3ce20cd2dc3f03d0434,2026-10-30T21:03:29Z,2026-10-26T22:27:26Z,Fisherman,LftTri,STC,0,10+0.1,1,0,2,rejected,194880,0.04,0.73,1673.4
 6ae50db720cd2dc3f03d129a,2026-10-30T21:35:51Z,2026-10-30T21:35:51Z,olaugh,neon-movesorter,STC,0,10+0.1,1,-1.75,0.25,stopped,0,,,0.0
+6ae3d00520cd2dc3f03d10c8,2026-10-30T22:09:13Z,2026-10-29T23:00:21Z,DeadK1ng,smp-probcut-odd-v2,SMP,0,5+0.05,8,0,2,rejected,39688,-1.70,1.67,1363.2
+6ad6b210733e627f7058ca8f,2026-10-30T22:44:01Z,2026-10-20T00:13:04Z,fauzi2,cachs4c,STC,0,10+0.1,1,0,2,rejected,686976,0.37,0.40,5898.8
