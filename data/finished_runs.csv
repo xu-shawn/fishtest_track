@@ -8941,3 +8941,8 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae38fc220cd2dc3f03d104c,2026-10-30T10:20:20Z,2026-10-29T18:26:10Z,bigpen0r,orderConfirm,STC,0,10+0.1,1,0,2,stopped,23712,-2.27,2.15,203.6
 6ae0052f20cd2dc3f03d0467,2026-10-30T11:42:22Z,2026-10-27T01:58:07Z,efoo,spd-accum-pr,STC,0,10+0.1,1,0,2,passed,250784,0.80,0.64,2153.4
 6adfe41820cd2dc3f03d044a,2026-10-30T11:55:31Z,2026-10-26T23:36:56Z,sg,best_move_history_update_depth2,STC,0,10+0.1,1,0,2,rejected,121024,-0.23,0.96,1039.2
+6ae335a420cd2dc3f03d0e69,2026-10-30T13:51:56Z,2026-10-29T12:01:40Z,bigpen0r,heavyProbe,STC,0,10+0.1,1,0,2,stopped,40992,-1.28,1.64,352.0
+6ae3293220cd2dc3f03d0e51,2026-10-30T13:52:27Z,2026-10-29T11:08:34Z,bigpen0r,tTEvalUncert,STC,0,10+0.1,1,0,2,stopped,42624,-0.70,1.62,366.0
+6ae4a2a820cd2dc3f03d1200,2026-10-30T14:25:08Z,2026-10-30T13:59:04Z,feeling4vibes,test/capture-hist-bonus-in-fail-high-ttmoves,STC,0,10+0.1,1,0,2,stopped,352,-18.77,18.32,3.0
+6ae323d720cd2dc3f03d0e32,2026-10-30T14:26:23Z,2026-10-29T10:45:43Z,bigpen0r,checkEvalCal,STC,0,10+0.1,1,0,2,stopped,44928,-0.29,1.57,385.8
+6ae1f7a220cd2dc3f03d0a89,2026-10-30T14:45:22Z,2026-10-28T13:24:50Z,fauzi2,plyroot,STC,0,10+0.1,1,-1.75,0.25,rejected,80928,-1.45,1.17,694.9
