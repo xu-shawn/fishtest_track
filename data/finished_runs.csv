@@ -8934,3 +8934,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae1942f20cd2dc3f03d09b2,2026-10-29T19:32:24Z,2026-10-28T06:20:31Z,Vizvezdenec,nmpThSmp1,SMP,0,5+0.05,8,0,2,stopped,46288,-1.13,1.55,1589.8
 6adab68b733e627f7058d2f3,2026-10-29T19:37:16Z,2026-10-23T01:21:15Z,rjhanson,incheck-stale-eval,STC,0,10+0.1,1,0,2,rejected,562752,0.34,0.45,4832.2
 6add476a733e627f7058d742,2026-10-29T19:38:22Z,2026-10-25T00:03:54Z,Munzzyy,nmp-null-faillow-deeper,STC,0,10+0.1,1,0,2,rejected,405568,0.28,0.53,3482.5
+6ae2439320cd2dc3f03d0b2e,2026-10-30T02:18:10Z,2026-10-28T18:48:51Z,Fisherman,SomeSimpl,STC,0,10+0.1,1,-1.75,0.25,passed,56000,1.12,1.34,480.9
