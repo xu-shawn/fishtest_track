@@ -1470,24 +1470,24 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-30,arch,x86-64-avxvnni,695.7,78.9,488.1
 2026-10-30,arch,x86-64-bmi2,3100.6,407.3,1561.9
 2026-10-30,arch,x86-64-sse41-popcnt,35.9,14.0,10.6
-2026-10-30,author,AdrianStockfish,155.7,6.0,
-2026-10-30,author,anurag2801,545.0,24.0,
-2026-10-30,author,AriaKafie,165.7,6.0,
-2026-10-30,author,bigpen0r,463.2,28.0,
-2026-10-30,author,DeadK1ng,475.2,6.0,
-2026-10-30,author,efoo,299.4,6.0,
-2026-10-30,author,Elhamuddin,304.5,6.0,
-2026-10-30,author,fauzi2,1454.2,22.0,
-2026-10-30,author,Fisherman,650.9,20.0,
-2026-10-30,author,jayc,159.7,6.0,
-2026-10-30,author,linrock,332.5,12.0,
-2026-10-30,author,Nonlinear,368.3,18.0,
-2026-10-30,author,rjhanson,764.8,18.0,
-2026-10-30,author,rn,1252.0,6.0,
-2026-10-30,author,sg,915.3,36.0,
-2026-10-30,author,shawnxu,1618.2,23.0,
-2026-10-30,author,Vizvezdenec,926.5,36.0,
-2026-10-30,author,xoto,163.7,6.0,
+2026-10-30,author,AdrianStockfish,160.6,6.2,
+2026-10-30,author,anurag2801,563.2,24.8,
+2026-10-30,author,AriaKafie,171.0,6.2,
+2026-10-30,author,bigpen0r,479.6,28.8,
+2026-10-30,author,DeadK1ng,492.4,6.2,
+2026-10-30,author,efoo,310.3,6.2,
+2026-10-30,author,Elhamuddin,314.6,6.2,
+2026-10-30,author,fauzi2,1510.9,22.6,
+2026-10-30,author,Fisherman,672.8,20.6,
+2026-10-30,author,jayc,165.2,6.2,
+2026-10-30,author,linrock,343.8,12.4,
+2026-10-30,author,Nonlinear,380.9,18.6,
+2026-10-30,author,rjhanson,790.9,18.6,
+2026-10-30,author,rn,1288.3,6.2,
+2026-10-30,author,sg,947.1,37.2,
+2026-10-30,author,shawnxu,1662.6,23.6,
+2026-10-30,author,Vizvezdenec,957.3,37.2,
+2026-10-30,author,xoto,168.8,6.2,
 2026-10-30,compiler,clang++ 17.0.0,89.9,12.0,96.5
 2026-10-30,compiler,clang++ 17.0.6,143.7,6.0,128.6
 2026-10-30,compiler,clang++ 21.0.0,65.9,18.0,68.0
@@ -1571,7 +1571,7 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-10-30,contributor,Zirie,173.7,14.0,119.8
 2026-10-30,contributor,zoe,71.9,12.0,28.3
 2026-10-30,hours,arch,6.0,0.0,
-2026-10-30,hours,author,6.0,0.0,
+2026-10-30,hours,author,6.2,0.0,
 2026-10-30,hours,compiler,6.0,0.0,
 2026-10-30,hours,contributor,6.0,0.0,
 2026-10-30,hours,mnps,6.0,0.0,
