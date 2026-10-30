@@ -8954,3 +8954,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae3d00520cd2dc3f03d10c8,2026-10-30T22:09:13Z,2026-10-29T23:00:21Z,DeadK1ng,smp-probcut-odd-v2,SMP,0,5+0.05,8,0,2,rejected,39688,-1.70,1.67,1363.2
 6ad6b210733e627f7058ca8f,2026-10-30T22:44:01Z,2026-10-20T00:13:04Z,fauzi2,cachs4c,STC,0,10+0.1,1,0,2,rejected,686976,0.37,0.40,5898.8
 6ae35aba20cd2dc3f03d0eb4,2026-10-30T23:00:54Z,2026-10-29T14:39:54Z,xoto,tmpc1,SPSA,0,10+0.1,1,,,stopped,72540,0.61,1.24,622.9
+6ae4d36320cd2dc3f03d1247,2026-10-30T23:35:18Z,2026-10-30T17:26:59Z,fwoodruff,downside-futility,STC,0,10+0.1,1,0,2,rejected,10272,-7.92,3.27,88.2
+6ade403f2338a45b841f5b8f,2026-10-30T23:45:16Z,2026-10-25T17:45:35Z,sg,pv_history_update2,STC,0,10+0.1,1,0,2,rejected,246624,0.13,0.67,2117.7
