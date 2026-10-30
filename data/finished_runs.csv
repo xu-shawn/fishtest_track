@@ -8940,3 +8940,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae1827a20cd2dc3f03d0990,2026-10-30T05:26:42Z,2026-10-28T05:04:58Z,shawnxu,test1745,LTC,1,60+0.6,1,0.5,2.5,rejected,53796,-0.84,1.36,2771.6
 6ae38fc220cd2dc3f03d104c,2026-10-30T10:20:20Z,2026-10-29T18:26:10Z,bigpen0r,orderConfirm,STC,0,10+0.1,1,0,2,stopped,23712,-2.27,2.15,203.6
 6ae0052f20cd2dc3f03d0467,2026-10-30T11:42:22Z,2026-10-27T01:58:07Z,efoo,spd-accum-pr,STC,0,10+0.1,1,0,2,passed,250784,0.80,0.64,2153.4
+6adfe41820cd2dc3f03d044a,2026-10-30T11:55:31Z,2026-10-26T23:36:56Z,sg,best_move_history_update_depth2,STC,0,10+0.1,1,0,2,rejected,121024,-0.23,0.96,1039.2
