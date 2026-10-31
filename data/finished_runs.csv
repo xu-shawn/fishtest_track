@@ -8956,3 +8956,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae35aba20cd2dc3f03d0eb4,2026-10-30T23:00:54Z,2026-10-29T14:39:54Z,xoto,tmpc1,SPSA,0,10+0.1,1,,,stopped,72540,0.61,1.24,622.9
 6ae4d36320cd2dc3f03d1247,2026-10-30T23:35:18Z,2026-10-30T17:26:59Z,fwoodruff,downside-futility,STC,0,10+0.1,1,0,2,rejected,10272,-7.92,3.27,88.2
 6ade403f2338a45b841f5b8f,2026-10-30T23:45:16Z,2026-10-25T17:45:35Z,sg,pv_history_update2,STC,0,10+0.1,1,0,2,rejected,246624,0.13,0.67,2117.7
+6ae4b0a820cd2dc3f03d1214,2026-10-30T23:51:08Z,2026-10-30T14:58:48Z,AdrianStockfish,lmrMoveCNT,STC,0,10+0.1,1,0,2,rejected,14784,-5.36,2.73,126.9
+6ae3845f20cd2dc3f03d1005,2026-10-31T00:31:59Z,2026-10-29T17:37:35Z,anurag2801,root-effort-lowply,STC,0,10+0.1,1,0,2,rejected,49728,-1.26,1.50,427.0
