@@ -8978,3 +8978,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae6368620cd2dc3f03d14a4,2026-10-31T18:42:14Z,2026-10-31T18:42:14Z,asherhawk,ttpv-less-pruning,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6ae58a4120cd2dc3f03d137f,2026-10-31T19:14:41Z,2026-10-31T06:27:13Z,shawnxu,test1752,STC,1,10+0.1,1,0,2,rejected,18368,-4.24,2.46,157.7
 6ae5b66220cd2dc3f03d13bb,2026-10-31T20:02:13Z,2026-10-31T09:35:30Z,fwoodruff,upside-razor-tune,SPSA,0,10+0.1,1,,,stopped,12850,-5.03,2.96,110.3
+6ae64c2920cd2dc3f03d14b9,2026-10-31T20:14:33Z,2026-10-31T20:14:33Z,fwoodruff,upside-razor-gate,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
+6ae3c80d20cd2dc3f03d10bf,2026-10-31T21:36:50Z,2026-10-29T22:26:21Z,Nonlinear,add-reduction-history,STC,0,10+0.1,1,0,2,rejected,96032,-0.42,1.08,824.6
