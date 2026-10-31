@@ -8963,3 +8963,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae39ea720cd2dc3f03d1072,2026-10-31T04:19:45Z,2026-10-29T19:29:43Z,Vizvezdenec,ttpvBonusScale3,STC,0,10+0.1,1,0,2,rejected,39712,-1.73,1.67,341.0
 6ade5cbd2338a45b841f5c4b,2026-10-31T04:56:03Z,2026-10-25T19:47:09Z,Fisherman,SimpWidening,STC,0,10+0.1,1,0,2,rejected,45952,-1.35,1.50,394.6
 6ae38cce20cd2dc3f03d1046,2026-10-31T05:20:24Z,2026-10-29T18:13:34Z,Vizvezdenec,nmpThSmp2,SMP,0,5+0.05,8,0,2,rejected,34000,-2.06,1.80,1167.8
+6ae455cf20cd2dc3f03d118b,2026-10-31T07:03:14Z,2026-10-30T08:31:11Z,feeling4vibes,test/dont-update-quiet-history-in-checks,STC,0,10+0.1,1,0,2,rejected,46240,-1.39,1.56,397.0
