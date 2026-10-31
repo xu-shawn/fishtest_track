@@ -8959,3 +8959,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae4b0a820cd2dc3f03d1214,2026-10-30T23:51:08Z,2026-10-30T14:58:48Z,AdrianStockfish,lmrMoveCNT,STC,0,10+0.1,1,0,2,rejected,14784,-5.36,2.73,126.9
 6ae3845f20cd2dc3f03d1005,2026-10-31T00:31:59Z,2026-10-29T17:37:35Z,anurag2801,root-effort-lowply,STC,0,10+0.1,1,0,2,rejected,49728,-1.26,1.50,427.0
 6ade8c5d2338a45b841f5d93,2026-10-31T01:30:15Z,2026-10-25T23:10:21Z,Elhamuddin,hindsight,STC,0,10+0.1,1,0,2,rejected,416672,0.28,0.52,3577.8
+6ae2d18520cd2dc3f03d0cd4,2026-10-31T03:12:33Z,2026-10-29T04:54:29Z,linrock,k32h3-blk,STC,0,10+0.1,1,-1.75,0.25,passed,106176,0.43,0.97,911.7
