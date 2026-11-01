@@ -8989,3 +8989,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae2236020cd2dc3f03d0acd,2026-11-01T07:00:32Z,2026-10-28T16:31:28Z,Vizvezdenec,nmpEvalNReb1,LTC,0,60+0.6,1,0.5,2.5,rejected,84012,-0.28,1.07,4328.3
 6ae5e1f820cd2dc3f03d140b,2026-11-01T07:26:17Z,2026-10-31T12:41:28Z,feeling4vibes,test/8-ply-continuation-correction-history-2,STC,0,10+0.1,1,0,2,stopped,38368,-0.47,1.70,329.5
 6ae39e0a20cd2dc3f03d106f,2026-11-01T07:32:46Z,2026-10-29T19:27:06Z,Vizvezdenec,ttpvBonusScale2,STC,0,10+0.1,1,0,2,rejected,79456,-0.60,1.18,682.3
+6ae62e6420cd2dc3f03d1490,2026-11-01T09:05:07Z,2026-10-31T18:07:32Z,fwoodruff,eval-risk-complexity,SPSA,0,10+0.1,1,,,stopped,27408,-0.96,2.00,235.3
+6ae66b7020cd2dc3f03d14f5,2026-11-01T09:05:20Z,2026-10-31T22:28:00Z,fwoodruff,magnitude-correction,SPSA,0,10+0.1,1,,,stopped,15944,-1.37,2.67,136.9
+6ae52bd220cd2dc3f03d12eb,2026-11-01T09:28:26Z,2026-10-30T23:44:18Z,fauzi2,plyroot1,STC,0,10+0.1,1,-1.75,0.25,passed,50144,1.37,1.48,430.6
