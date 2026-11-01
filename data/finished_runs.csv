@@ -8986,3 +8986,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae5e56420cd2dc3f03d1413,2026-11-01T03:53:55Z,2026-10-31T12:56:04Z,jayc,nn-2ef07408d767,STC,1,10+0.1,1,0,2,rejected,33440,-2.14,1.83,287.1
 6ae56d9b20cd2dc3f03d1350,2026-11-01T05:53:43Z,2026-10-31T04:24:59Z,Fisherman,pp3ShareICL_V2,STC,0,10+0.1,1,-1.75,0.25,passed,46208,1.44,1.47,396.8
 6ae2d00520cd2dc3f03d0ccb,2026-11-01T06:09:03Z,2026-10-29T04:48:05Z,linrock,tt-faster,STC,0,10+0.1,1,0,2,rejected,207680,0.07,0.69,1783.3
+6ae2236020cd2dc3f03d0acd,2026-11-01T07:00:32Z,2026-10-28T16:31:28Z,Vizvezdenec,nmpEvalNReb1,LTC,0,60+0.6,1,0.5,2.5,rejected,84012,-0.28,1.07,4328.3
+6ae5e1f820cd2dc3f03d140b,2026-11-01T07:26:17Z,2026-10-31T12:41:28Z,feeling4vibes,test/8-ply-continuation-correction-history-2,STC,0,10+0.1,1,0,2,stopped,38368,-0.47,1.70,329.5
+6ae39e0a20cd2dc3f03d106f,2026-11-01T07:32:46Z,2026-10-29T19:27:06Z,Vizvezdenec,ttpvBonusScale2,STC,0,10+0.1,1,0,2,rejected,79456,-0.60,1.18,682.3
