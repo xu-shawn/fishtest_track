@@ -8984,3 +8984,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae545ab20cd2dc3f03d1306,2026-11-01T00:26:45Z,2026-10-31T01:34:35Z,feeling4vibes,test/8-ply-continuation-correction-history,STC,0,10+0.1,1,0,2,stopped,50272,0.39,1.49,431.7
 6ae3aab420cd2dc3f03d1092,2026-11-01T00:30:24Z,2026-10-29T20:21:08Z,AriaKafie,consolidate_pins_and_sliders,STC,0,10+0.1,1,0,2,rejected,127840,-0.19,0.93,1097.7
 6ae5e56420cd2dc3f03d1413,2026-11-01T03:53:55Z,2026-10-31T12:56:04Z,jayc,nn-2ef07408d767,STC,1,10+0.1,1,0,2,rejected,33440,-2.14,1.83,287.1
+6ae56d9b20cd2dc3f03d1350,2026-11-01T05:53:43Z,2026-10-31T04:24:59Z,Fisherman,pp3ShareICL_V2,STC,0,10+0.1,1,-1.75,0.25,passed,46208,1.44,1.47,396.8
+6ae2d00520cd2dc3f03d0ccb,2026-11-01T06:09:03Z,2026-10-29T04:48:05Z,linrock,tt-faster,STC,0,10+0.1,1,0,2,rejected,207680,0.07,0.69,1783.3
