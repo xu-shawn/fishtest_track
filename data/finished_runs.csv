@@ -8994,3 +8994,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae52bd220cd2dc3f03d12eb,2026-11-01T09:28:26Z,2026-10-30T23:44:18Z,fauzi2,plyroot1,STC,0,10+0.1,1,-1.75,0.25,passed,50144,1.37,1.48,430.6
 6ae3e25020cd2dc3f03d10f1,2026-11-01T14:28:35Z,2026-10-30T00:18:24Z,AdrianStockfish,razorCorrValue,STC,0,10+0.1,1,0,2,rejected,155232,-0.07,0.85,1332.9
 6ae595a220cd2dc3f03d138a,2026-11-01T15:01:22Z,2026-10-31T07:15:46Z,Elhamuddin,reduction_tune,SPSA,0,10+0.1,1,,,completed,60000,0.04,1.37,515.2
+6ae6b44420cd2dc3f03d1574,2026-11-01T15:59:28Z,2026-11-01T03:38:44Z,AriaKafie,consolidate_sliders,STC,0,10+0.1,1,0,2,rejected,26432,-2.89,2.05,227.0
