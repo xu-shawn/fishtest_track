@@ -9015,3 +9015,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae7b90120cd2dc3f03d16e5,2026-11-02T15:06:22Z,2026-11-01T22:11:13Z,xoto,tmpc1,STC,0,10+0.1,1,0,2,rejected,37632,-1.80,1.71,323.1
 6ae3b2fd20cd2dc3f03d1099,2026-11-02T16:49:40Z,2026-10-29T20:56:29Z,rjhanson,evasion-history-ltc,LTC,0,60+0.6,1,0.5,2.5,rejected,137340,0.10,0.84,7075.8
 6ae80efc20cd2dc3f03d1779,2026-11-02T19:01:21Z,2026-11-02T04:18:04Z,feeling4vibes,test/adjust-fail-high-blending-3,STC,0,10+0.1,1,0,2,stopped,24224,-1.29,2.14,208.0
+6ae80ade20cd2dc3f03d1772,2026-11-02T21:55:18Z,2026-11-02T04:00:30Z,xoto,tmpc1,SPSA,0,20+0.2,1,,,stopped,32638,-1.97,1.80,560.5
+6ae70cfd20cd2dc3f03d15eb,2026-11-02T22:14:01Z,2026-11-01T09:57:17Z,fwoodruff,simplify-futility-corr,STC,0,10+0.1,1,-1.75,0.25,rejected,76544,-1.50,1.21,657.3
+6ae7182f20cd2dc3f03d160c,2026-11-02T22:18:30Z,2026-11-01T10:45:03Z,Vizvezdenec,probCutDV3,STC,0,10+0.1,1,0,2,rejected,52160,-1.20,1.46,447.9
