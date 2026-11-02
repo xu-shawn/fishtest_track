@@ -9012,3 +9012,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae3c7a020cd2dc3f03d10bd,2026-11-02T09:09:42Z,2026-10-29T22:24:32Z,Nonlinear,add-reduction-history,STC,0,10+0.1,1,0,2,rejected,244256,0.14,0.68,2097.3
 6ae3d19420cd2dc3f03d10df,2026-11-02T09:18:45Z,2026-10-29T23:07:00Z,rjhanson,root-avgscore-hygiene,STC,0,10+0.1,1,0,2,passed,221760,0.88,0.71,1904.2
 6ae697de20cd2dc3f03d1530,2026-11-02T14:40:55Z,2026-11-01T01:37:34Z,sg,positive_history_bonus,STC,0,10+0.1,1,0,2,rejected,48416,-1.31,1.52,415.7
+6ae7b90120cd2dc3f03d16e5,2026-11-02T15:06:22Z,2026-11-01T22:11:13Z,xoto,tmpc1,STC,0,10+0.1,1,0,2,rejected,37632,-1.80,1.71,323.1
