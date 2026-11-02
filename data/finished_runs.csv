@@ -9003,3 +9003,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae4e1f120cd2dc3f03d1283,2026-11-01T22:32:18Z,2026-10-30T18:29:05Z,DeadK1ng,smp-negext-odd,SMP,0,5+0.05,8,0,2,rejected,118232,-0.24,0.97,4060.9
 6ae4d2f820cd2dc3f03d1245,2026-11-01T23:32:02Z,2026-10-30T17:25:12Z,sg,best_move_history_update4,LTC,0,60+0.6,1,0.5,2.5,rejected,50538,-0.92,1.38,2603.7
 6ae4ac5e20cd2dc3f03d120e,2026-11-02T00:46:55Z,2026-10-30T14:40:30Z,AdrianStockfish,ttpv1,STC,0,10+0.1,1,0,2,rejected,147520,-0.10,0.87,1266.7
+6ae5312520cd2dc3f03d12f3,2026-11-02T00:55:19Z,2026-10-31T00:07:01Z,Gruenerapfel,experiment/endgame-psq,Nodestime,1,100+1,1,0,2,passed,56828,2.07,1.43,4879.6
