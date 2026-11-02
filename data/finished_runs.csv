@@ -8992,6 +8992,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae62e6420cd2dc3f03d1490,2026-11-01T09:05:07Z,2026-10-31T18:07:32Z,fwoodruff,eval-risk-complexity,SPSA,0,10+0.1,1,,,stopped,27408,-0.96,2.00,235.3
 6ae66b7020cd2dc3f03d14f5,2026-11-01T09:05:20Z,2026-10-31T22:28:00Z,fwoodruff,magnitude-correction,SPSA,0,10+0.1,1,,,stopped,15944,-1.37,2.67,136.9
 6ae52bd220cd2dc3f03d12eb,2026-11-01T09:28:26Z,2026-10-30T23:44:18Z,fauzi2,plyroot1,STC,0,10+0.1,1,-1.75,0.25,passed,50144,1.37,1.48,430.6
+6ae6894320cd2dc3f03d1524,2026-11-01T13:51:19Z,2026-11-01T00:35:15Z,feeling4vibes,test/8-ply-continuation-correction-history-3,STC,0,10+0.1,1,0,2,stopped,24928,0.13,2.12,214.0
 6ae3e25020cd2dc3f03d10f1,2026-11-01T14:28:35Z,2026-10-30T00:18:24Z,AdrianStockfish,razorCorrValue,STC,0,10+0.1,1,0,2,rejected,155232,-0.07,0.85,1332.9
 6ae595a220cd2dc3f03d138a,2026-11-01T15:01:22Z,2026-10-31T07:15:46Z,Elhamuddin,reduction_tune,SPSA,0,10+0.1,1,,,completed,60000,0.04,1.37,515.2
 6ae6b44420cd2dc3f03d1574,2026-11-01T15:59:28Z,2026-11-01T03:38:44Z,AriaKafie,consolidate_sliders,STC,0,10+0.1,1,0,2,rejected,26432,-2.89,2.05,227.0
@@ -9004,3 +9005,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae4d2f820cd2dc3f03d1245,2026-11-01T23:32:02Z,2026-10-30T17:25:12Z,sg,best_move_history_update4,LTC,0,60+0.6,1,0.5,2.5,rejected,50538,-0.92,1.38,2603.7
 6ae4ac5e20cd2dc3f03d120e,2026-11-02T00:46:55Z,2026-10-30T14:40:30Z,AdrianStockfish,ttpv1,STC,0,10+0.1,1,0,2,rejected,147520,-0.10,0.87,1266.7
 6ae5312520cd2dc3f03d12f3,2026-11-02T00:55:19Z,2026-10-31T00:07:01Z,Gruenerapfel,experiment/endgame-psq,Nodestime,1,100+1,1,0,2,passed,56828,2.07,1.43,4879.6
+6ae5247520cd2dc3f03d12db,2026-11-02T03:46:10Z,2026-10-30T23:12:53Z,xoto,tmpc1,SPSA,0,10+0.1,1,,,stopped,124748,-0.22,0.94,1071.2
+6ae51a9920cd2dc3f03d12bc,2026-11-02T04:06:37Z,2026-10-30T22:30:49Z,anurag2801,alpha-raise-lmr-2,STC,0,10+0.1,1,0,2,rejected,102336,-0.36,1.04,878.7
+6ae70afd20cd2dc3f03d15d7,2026-11-02T04:35:54Z,2026-11-01T09:48:45Z,fwoodruff,error-size-margins,STC,0,10+0.1,1,0,2,rejected,34368,-2.03,1.80,295.1
