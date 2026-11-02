@@ -9009,3 +9009,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae51a9920cd2dc3f03d12bc,2026-11-02T04:06:37Z,2026-10-30T22:30:49Z,anurag2801,alpha-raise-lmr-2,STC,0,10+0.1,1,0,2,rejected,102336,-0.36,1.04,878.7
 6ae70afd20cd2dc3f03d15d7,2026-11-02T04:35:54Z,2026-11-01T09:48:45Z,fwoodruff,error-size-margins,STC,0,10+0.1,1,0,2,rejected,34368,-2.03,1.80,295.1
 6ae8268a20cd2dc3f03d17a3,2026-11-02T05:58:34Z,2026-11-02T05:58:34Z,shawnxu,test1755,STC,1,10+0.1,1,0,2,stopped,0,,,0.0
+6ae3c7a020cd2dc3f03d10bd,2026-11-02T09:09:42Z,2026-10-29T22:24:32Z,Nonlinear,add-reduction-history,STC,0,10+0.1,1,0,2,rejected,244256,0.14,0.68,2097.3
+6ae3d19420cd2dc3f03d10df,2026-11-02T09:18:45Z,2026-10-29T23:07:00Z,rjhanson,root-avgscore-hygiene,STC,0,10+0.1,1,0,2,passed,221760,0.88,0.71,1904.2
