@@ -9014,3 +9014,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae697de20cd2dc3f03d1530,2026-11-02T14:40:55Z,2026-11-01T01:37:34Z,sg,positive_history_bonus,STC,0,10+0.1,1,0,2,rejected,48416,-1.31,1.52,415.7
 6ae7b90120cd2dc3f03d16e5,2026-11-02T15:06:22Z,2026-11-01T22:11:13Z,xoto,tmpc1,STC,0,10+0.1,1,0,2,rejected,37632,-1.80,1.71,323.1
 6ae3b2fd20cd2dc3f03d1099,2026-11-02T16:49:40Z,2026-10-29T20:56:29Z,rjhanson,evasion-history-ltc,LTC,0,60+0.6,1,0.5,2.5,rejected,137340,0.10,0.84,7075.8
+6ae80efc20cd2dc3f03d1779,2026-11-02T19:01:21Z,2026-11-02T04:18:04Z,feeling4vibes,test/adjust-fail-high-blending-3,STC,0,10+0.1,1,0,2,stopped,24224,-1.29,2.14,208.0
