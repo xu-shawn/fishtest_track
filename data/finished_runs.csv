@@ -9002,3 +9002,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae39da420cd2dc3f03d106d,2026-11-01T21:32:15Z,2026-10-29T19:25:24Z,Vizvezdenec,ttpvBonusScale1,STC,0,10+0.1,1,0,2,rejected,104576,-0.34,1.03,898.0
 6ae4e1f120cd2dc3f03d1283,2026-11-01T22:32:18Z,2026-10-30T18:29:05Z,DeadK1ng,smp-negext-odd,SMP,0,5+0.05,8,0,2,rejected,118232,-0.24,0.97,4060.9
 6ae4d2f820cd2dc3f03d1245,2026-11-01T23:32:02Z,2026-10-30T17:25:12Z,sg,best_move_history_update4,LTC,0,60+0.6,1,0.5,2.5,rejected,50538,-0.92,1.38,2603.7
+6ae4ac5e20cd2dc3f03d120e,2026-11-02T00:46:55Z,2026-10-30T14:40:30Z,AdrianStockfish,ttpv1,STC,0,10+0.1,1,0,2,rejected,147520,-0.10,0.87,1266.7
