@@ -9030,3 +9030,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ade6c4f2338a45b841f5d42,2026-11-03T12:46:14Z,2026-10-25T20:53:35Z,Fisherman,TT21,STC,0,10+0.1,1,0,2,passed,572384,0.61,0.42,4914.9
 6ae7341c20cd2dc3f03d1634,2026-11-03T15:07:20Z,2026-11-01T12:44:12Z,fwoodruff,lmr-alpha-eval-range,STC,0,10+0.1,1,0,2,rejected,110976,-0.29,1.00,952.9
 6ae3962120cd2dc3f03d1056,2026-11-03T15:19:57Z,2026-10-29T18:53:21Z,anurag2801,quad-ext-shallow-rebased,LTC,0,60+0.6,1,0.5,2.5,rejected,92502,-0.19,1.02,4765.7
+6ae5cbe620cd2dc3f03d13ff,2026-11-03T16:14:09Z,2026-10-31T11:07:18Z,fauzi2,scscs,SPSA,0,180+1.8,1,,,stopped,23756,0.16,1.90,3671.7
