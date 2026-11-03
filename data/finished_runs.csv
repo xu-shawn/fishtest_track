@@ -9040,3 +9040,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae4a64920cd2dc3f03d1205,2026-11-03T19:02:30Z,2026-10-30T14:14:33Z,Gruenerapfel,moe6,Nodestime,1,100+1,1,0,2,stopped,136520,0.23,0.93,11722.5
 6ae6b9d720cd2dc3f03d157a,2026-11-03T19:04:54Z,2026-11-01T04:02:31Z,Kinatic11,arena/cc3ec2c5-stockfish,STC,0,10+0.1,1,0,2,rejected,164096,-0.04,0.78,1409.0
 6ae6601820cd2dc3f03d14e4,2026-11-03T19:56:33Z,2026-10-31T21:39:36Z,fauzi2,plyroot1,LTC,0,60+0.6,1,-1.75,0.25,passed,61344,0.98,1.26,3160.4
+6ae7a5f420cd2dc3f03d16c2,2026-11-03T21:38:12Z,2026-11-01T20:49:56Z,AriaKafie,consolidate_sliders,STC,0,10+0.1,1,0,2,rejected,138656,-0.14,0.90,1190.6
