@@ -9027,3 +9027,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae93c3b20cd2dc3f03d1948,2026-11-03T06:59:22Z,2026-11-03T01:43:23Z,mid,LLM-edit-weights,STC,1,10+0.1,1,0,2,stopped,7904,-0.26,3.75,67.9
 6ae97fcb20cd2dc3f03d19ba,2026-11-03T07:11:28Z,2026-11-03T06:31:39Z,Mishapolk,submit/conthist-pruning-mainhist-guard,STC,0,10+0.1,1,0,2,stopped,1440,-6.27,9.02,12.4
 6ae879ea20cd2dc3f03d184a,2026-11-03T08:48:29Z,2026-11-02T11:54:18Z,AdrianStockfish,lmpElo,STC,0,10+0.1,1,,,stopped,19198,-7.26,2.43,164.8
+6ade6c4f2338a45b841f5d42,2026-11-03T12:46:14Z,2026-10-25T20:53:35Z,Fisherman,TT21,STC,0,10+0.1,1,0,2,passed,572384,0.61,0.42,4914.9
