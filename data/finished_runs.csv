@@ -9019,3 +9019,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae70cfd20cd2dc3f03d15eb,2026-11-02T22:14:01Z,2026-11-01T09:57:17Z,fwoodruff,simplify-futility-corr,STC,0,10+0.1,1,-1.75,0.25,rejected,76544,-1.50,1.21,657.3
 6ae7182f20cd2dc3f03d160c,2026-11-02T22:18:30Z,2026-11-01T10:45:03Z,Vizvezdenec,probCutDV3,STC,0,10+0.1,1,0,2,rejected,52160,-1.20,1.46,447.9
 6ae868ce20cd2dc3f03d181b,2026-11-03T00:07:41Z,2026-11-02T10:41:18Z,AdrianStockfish,betrayalIncrease2,STC,0,10+0.1,1,0,2,rejected,20320,-3.81,2.34,174.5
+6ae82eb120cd2dc3f03d17b0,2026-11-03T01:27:53Z,2026-11-02T06:33:21Z,shawnxu,test1755,STC,1,10+0.1,1,0,2,passed,36512,2.93,1.79,313.5
