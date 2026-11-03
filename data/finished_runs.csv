@@ -9034,3 +9034,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aea0c2020cd2dc3f03d1a36,2026-11-03T16:55:07Z,2026-11-03T16:30:24Z,fauzi2,scscs1,STC,0,10+0.1,1,0,2,stopped,736,-5.67,12.06,6.3
 6ae704a120cd2dc3f03d15d1,2026-11-03T17:31:30Z,2026-11-01T09:21:37Z,0x539,tweakhybrid,STC,0,10+0.1,1,0,2,rejected,66752,-0.78,1.22,573.2
 6ae5b20e20cd2dc3f03d13b2,2026-11-03T17:37:50Z,2026-10-31T09:17:02Z,Vizvezdenec,ttpvBonusScale5,STC,0,10+0.1,1,0,2,passed,133792,1.14,0.91,1148.8
+6ae5b2d420cd2dc3f03d13b4,2026-11-03T17:59:45Z,2026-10-31T09:20:20Z,Vizvezdenec,probCutDV1,STC,0,10+0.1,1,0,2,rejected,138880,-0.14,0.90,1192.5
+6aea132220cd2dc3f03d1a4a,2026-11-03T18:32:43Z,2026-11-03T17:00:18Z,vdv,fix3Fold,STC,0,10+0.1,1,-1.75,0.25,stopped,2848,3.66,5.91,24.5
