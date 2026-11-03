@@ -9031,3 +9031,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae7341c20cd2dc3f03d1634,2026-11-03T15:07:20Z,2026-11-01T12:44:12Z,fwoodruff,lmr-alpha-eval-range,STC,0,10+0.1,1,0,2,rejected,110976,-0.29,1.00,952.9
 6ae3962120cd2dc3f03d1056,2026-11-03T15:19:57Z,2026-10-29T18:53:21Z,anurag2801,quad-ext-shallow-rebased,LTC,0,60+0.6,1,0.5,2.5,rejected,92502,-0.19,1.02,4765.7
 6ae5cbe620cd2dc3f03d13ff,2026-11-03T16:14:09Z,2026-10-31T11:07:18Z,fauzi2,scscs,SPSA,0,180+1.8,1,,,stopped,23756,0.16,1.90,3671.7
+6aea0c2020cd2dc3f03d1a36,2026-11-03T16:55:07Z,2026-11-03T16:30:24Z,fauzi2,scscs1,STC,0,10+0.1,1,0,2,stopped,736,-5.67,12.06,6.3
+6ae704a120cd2dc3f03d15d1,2026-11-03T17:31:30Z,2026-11-01T09:21:37Z,0x539,tweakhybrid,STC,0,10+0.1,1,0,2,rejected,66752,-0.78,1.22,573.2
+6ae5b20e20cd2dc3f03d13b2,2026-11-03T17:37:50Z,2026-10-31T09:17:02Z,Vizvezdenec,ttpvBonusScale5,STC,0,10+0.1,1,0,2,passed,133792,1.14,0.91,1148.8
