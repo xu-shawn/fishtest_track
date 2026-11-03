@@ -9022,6 +9022,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae82eb120cd2dc3f03d17b0,2026-11-03T01:27:53Z,2026-11-02T06:33:21Z,shawnxu,test1755,STC,1,10+0.1,1,0,2,passed,36512,2.93,1.79,313.5
 6ae7cfcb20cd2dc3f03d1713,2026-11-03T02:35:42Z,2026-11-01T23:48:27Z,linrock,avx512-nnue-prop,STC,0,10+0.1,1,0,2,rejected,52608,-1.09,1.37,451.7
 6ae2634920cd2dc3f03d0b5e,2026-11-03T03:10:44Z,2026-10-28T21:04:09Z,sg,best_move_history_update5,STC,0,10+0.1,1,0,2,rejected,205792,0.07,0.74,1767.1
+6ae7b2ad20cd2dc3f03d16d6,2026-11-03T04:18:15Z,2026-11-01T21:44:13Z,feeling4vibes,test/adjust-fail-high-blending-2,STC,0,10+0.1,1,0,2,stopped,65792,-0.14,1.30,564.9
 6ae50ed820cd2dc3f03d129f,2026-11-03T05:44:42Z,2026-10-30T21:40:40Z,olaugh,neon-movesorter,STC,0,10+0.1,1,0,2,rejected,246240,0.13,0.64,2114.4
 6ae93c3b20cd2dc3f03d1948,2026-11-03T06:59:22Z,2026-11-03T01:43:23Z,mid,LLM-edit-weights,STC,1,10+0.1,1,0,2,stopped,7904,-0.26,3.75,67.9
 6ae97fcb20cd2dc3f03d19ba,2026-11-03T07:11:28Z,2026-11-03T06:31:39Z,Mishapolk,submit/conthist-pruning-mainhist-guard,STC,0,10+0.1,1,0,2,stopped,1440,-6.27,9.02,12.4
