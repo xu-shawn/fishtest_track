@@ -9025,3 +9025,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae50ed820cd2dc3f03d129f,2026-11-03T05:44:42Z,2026-10-30T21:40:40Z,olaugh,neon-movesorter,STC,0,10+0.1,1,0,2,rejected,246240,0.13,0.64,2114.4
 6ae93c3b20cd2dc3f03d1948,2026-11-03T06:59:22Z,2026-11-03T01:43:23Z,mid,LLM-edit-weights,STC,1,10+0.1,1,0,2,stopped,7904,-0.26,3.75,67.9
 6ae97fcb20cd2dc3f03d19ba,2026-11-03T07:11:28Z,2026-11-03T06:31:39Z,Mishapolk,submit/conthist-pruning-mainhist-guard,STC,0,10+0.1,1,0,2,stopped,1440,-6.27,9.02,12.4
+6ae879ea20cd2dc3f03d184a,2026-11-03T08:48:29Z,2026-11-02T11:54:18Z,AdrianStockfish,lmpElo,STC,0,10+0.1,1,,,stopped,19198,-7.26,2.43,164.8
