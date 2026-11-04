@@ -9056,3 +9056,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ad9ece9733e627f7058d1b3,2026-11-04T09:41:22Z,2026-10-22T11:00:57Z,fauzi2,cachs4b,LTC,0,60+0.6,1,0.5,2.5,rejected,499506,0.53,0.44,25734.5
 6ae85afb20cd2dc3f03d17fe,2026-11-04T09:56:47Z,2026-11-02T09:42:19Z,AdrianStockfish,betrayalIncrease,STC,0,10+0.1,1,0,2,rejected,107328,-0.32,1.01,921.6
 6ae477d920cd2dc3f03d11c5,2026-11-04T11:40:22Z,2026-10-30T10:56:25Z,fauzi2,tarht3a,LTC,0,60+0.6,1,0.5,2.5,rejected,138864,0.10,0.83,7154.3
+6ae7175420cd2dc3f03d1609,2026-11-04T12:49:06Z,2026-11-01T10:41:24Z,Vizvezdenec,probCutDV2,STC,0,10+0.1,1,0,2,rejected,127616,-0.19,0.94,1095.8
