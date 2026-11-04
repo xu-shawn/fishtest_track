@@ -9058,3 +9058,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae477d920cd2dc3f03d11c5,2026-11-04T11:40:22Z,2026-10-30T10:56:25Z,fauzi2,tarht3a,LTC,0,60+0.6,1,0.5,2.5,rejected,138864,0.10,0.83,7154.3
 6ae7175420cd2dc3f03d1609,2026-11-04T12:49:06Z,2026-11-01T10:41:24Z,Vizvezdenec,probCutDV2,STC,0,10+0.1,1,0,2,rejected,127616,-0.19,0.94,1095.8
 6aea67e920cd2dc3f03d1b09,2026-11-04T14:04:39Z,2026-11-03T23:02:01Z,sanityeclipse000,ft-row-prefetch,STC,0,10+0.1,1,0,2,rejected,42176,-1.52,1.57,362.2
+6ae8f34120cd2dc3f03d18e0,2026-11-04T16:02:54Z,2026-11-02T20:32:01Z,Mishapolk,submit/candidate-71-threat-by-lesser-24,STC,0,10+0.1,1,0,2,stopped,121472,-0.03,0.96,1043.0
+6aea110520cd2dc3f03d1a44,2026-11-04T16:03:40Z,2026-11-03T16:51:17Z,Mishapolk,submit/stc-42-lmr-pv-discount-448,STC,0,10+0.1,1,0,2,stopped,60416,-0.18,1.36,518.8
+6ae47f0420cd2dc3f03d11e2,2026-11-04T16:15:58Z,2026-10-30T11:27:00Z,fauzi2,pvsim,STC,0,10+0.1,1,-1.75,0.25,rejected,272800,-0.69,0.64,2342.4
+6ae6425d20cd2dc3f03d14af,2026-11-04T16:30:16Z,2026-10-31T19:32:45Z,sg,pv_history_update3,STC,0,10+0.1,1,0,2,rejected,131744,-0.17,0.92,1131.2
