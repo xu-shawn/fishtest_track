@@ -9050,3 +9050,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae39f9c20cd2dc3f03d107b,2026-11-04T01:32:33Z,2026-10-29T19:33:48Z,sg,best_move_history_update6,STC,0,10+0.1,1,0,2,rejected,180768,0.01,0.78,1552.2
 6ae906a320cd2dc3f03d1905,2026-11-04T01:59:23Z,2026-11-02T21:54:43Z,fwoodruff,qsearch-futility-see,STC,0,10+0.1,1,0,2,rejected,64704,-0.87,1.31,555.6
 6ae7b40b20cd2dc3f03d16da,2026-11-04T02:49:16Z,2026-11-01T21:50:03Z,shawnxu,test1754,STC,1,10+0.1,1,-1.75,0.25,passed,98912,0.52,1.07,849.3
+6ae9753f20cd2dc3f03d197e,2026-11-04T08:12:39Z,2026-11-03T05:46:39Z,feeling4vibes,test/improvement-metric-in-null-move-search,STC,0,10+0.1,1,0,2,rejected,49440,-1.26,1.50,424.5
+6add1a9a733e627f7058d6e9,2026-11-04T08:27:06Z,2026-10-24T20:52:42Z,Fisherman,BypassTiling,STC,0,10+0.1,1,0,2,rejected,87552,-0.48,1.08,751.8
