@@ -9072,3 +9072,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae9752e20cd2dc3f03d197c,2026-11-05T00:15:33Z,2026-11-03T05:46:22Z,xoto,tmpc1,SPSA,0,10+0.1,1,,,stopped,130328,0.11,0.92,1119.1
 6aeb211e20cd2dc3f03d1ca1,2026-11-05T05:17:19Z,2026-11-04T12:12:14Z,feeling4vibes,test/improvement-metric-in-lmr-4,STC,0,10+0.1,1,0,2,rejected,41984,-1.58,1.63,360.5
 6ae5f81320cd2dc3f03d1422,2026-11-05T05:36:39Z,2026-10-31T14:15:47Z,Gruenerapfel,advanced_pawn_piece_pairs,Nodestime,1,100+1,1,0,2,rejected,186796,0.02,0.79,16039.5
+6aea898c20cd2dc3f03d1b9c,2026-11-05T07:25:07Z,2026-11-04T01:25:32Z,AdrianStockfish,lmr,STC,0,10+0.1,1,-1.75,0.25,rejected,80832,-1.44,1.17,694.1
+6ae8583920cd2dc3f03d17f9,2026-11-05T07:29:40Z,2026-11-02T09:30:33Z,AdrianStockfish,rootNodeSimp,STC,0,10+0.1,1,-1.75,0.25,passed,200544,0.07,0.71,1722.0
