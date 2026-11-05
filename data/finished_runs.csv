@@ -9079,3 +9079,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aeb533320cd2dc3f03d1cef,2026-11-05T12:25:59Z,2026-11-04T15:45:55Z,jayc,nn-6831a0797456,STC,1,10+0.1,1,0,2,rejected,65568,-0.83,1.30,563.0
 6aec7ca620cd2dc3f03d1ebd,2026-11-05T14:58:31Z,2026-11-05T12:55:02Z,AdrianStockfish,SEscaler,STC,0,10+0.1,1,-1.75,0.25,rejected,3776,-23.68,5.39,32.4
 6ae75bf920cd2dc3f03d164e,2026-11-05T15:35:02Z,2026-11-01T15:34:17Z,Elhamuddin,reduction_tune,STC,0,10+0.1,1,0,2,rejected,394112,0.27,0.53,3384.1
+6ae84ece20cd2dc3f03d17dd,2026-11-05T16:52:24Z,2026-11-02T08:50:22Z,sg,positive_history_bonus3,STC,0,10+0.1,1,0,2,rejected,91008,-0.46,1.10,781.5
+6aebc0a220cd2dc3f03d1d95,2026-11-05T17:31:02Z,2026-11-04T23:32:50Z,Nonlinear,add-reduction-history,STC,0,10+0.1,1,0,2,rejected,56096,-1.06,1.40,481.7
