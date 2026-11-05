@@ -9081,3 +9081,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae75bf920cd2dc3f03d164e,2026-11-05T15:35:02Z,2026-11-01T15:34:17Z,Elhamuddin,reduction_tune,STC,0,10+0.1,1,0,2,rejected,394112,0.27,0.53,3384.1
 6ae84ece20cd2dc3f03d17dd,2026-11-05T16:52:24Z,2026-11-02T08:50:22Z,sg,positive_history_bonus3,STC,0,10+0.1,1,0,2,rejected,91008,-0.46,1.10,781.5
 6aebc0a220cd2dc3f03d1d95,2026-11-05T17:31:02Z,2026-11-04T23:32:50Z,Nonlinear,add-reduction-history,STC,0,10+0.1,1,0,2,rejected,56096,-1.06,1.40,481.7
+6aea20ab20cd2dc3f03d1a81,2026-11-05T18:02:48Z,2026-11-03T17:58:03Z,Vizvezdenec,ttpvBonusScale5,LTC,0,60+0.6,1,0.5,2.5,rejected,60276,-0.66,1.27,3105.4
+6aebbff820cd2dc3f03d1d93,2026-11-05T18:08:02Z,2026-11-04T23:30:00Z,Nonlinear,add-reduction-history,STC,0,10+0.1,1,0,2,rejected,54048,-1.11,1.44,464.1
+6aeb16fc20cd2dc3f03d1c85,2026-11-05T18:26:26Z,2026-11-04T11:29:00Z,sanityeclipse000,remove-optimism,STC,0,10+0.1,1,-1.75,0.25,passed,101664,0.49,1.05,873.0
