@@ -9074,3 +9074,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae5f81320cd2dc3f03d1422,2026-11-05T05:36:39Z,2026-10-31T14:15:47Z,Gruenerapfel,advanced_pawn_piece_pairs,Nodestime,1,100+1,1,0,2,rejected,186796,0.02,0.79,16039.5
 6aea898c20cd2dc3f03d1b9c,2026-11-05T07:25:07Z,2026-11-04T01:25:32Z,AdrianStockfish,lmr,STC,0,10+0.1,1,-1.75,0.25,rejected,80832,-1.44,1.17,694.1
 6ae8583920cd2dc3f03d17f9,2026-11-05T07:29:40Z,2026-11-02T09:30:33Z,AdrianStockfish,rootNodeSimp,STC,0,10+0.1,1,-1.75,0.25,passed,200544,0.07,0.71,1722.0
+6aebbe8b20cd2dc3f03d1d91,2026-11-05T08:48:50Z,2026-11-04T23:23:55Z,Nonlinear,add-reduction-history,STC,0,10+0.1,1,0,2,rejected,28928,-2.50,1.95,248.4
