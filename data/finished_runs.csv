@@ -9075,3 +9075,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aea898c20cd2dc3f03d1b9c,2026-11-05T07:25:07Z,2026-11-04T01:25:32Z,AdrianStockfish,lmr,STC,0,10+0.1,1,-1.75,0.25,rejected,80832,-1.44,1.17,694.1
 6ae8583920cd2dc3f03d17f9,2026-11-05T07:29:40Z,2026-11-02T09:30:33Z,AdrianStockfish,rootNodeSimp,STC,0,10+0.1,1,-1.75,0.25,passed,200544,0.07,0.71,1722.0
 6aebbe8b20cd2dc3f03d1d91,2026-11-05T08:48:50Z,2026-11-04T23:23:55Z,Nonlinear,add-reduction-history,STC,0,10+0.1,1,0,2,rejected,28928,-2.50,1.95,248.4
+6aec3ae620cd2dc3f03d1e3d,2026-11-05T11:01:08Z,2026-11-05T08:14:30Z,fwoodruff,phase-futility-spsa,SPSA,0,10+0.1,1,,,stopped,1562,-0.89,8.68,13.4
