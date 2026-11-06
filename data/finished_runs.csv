@@ -9096,3 +9096,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae61ea620cd2dc3f03d147b,2026-11-06T09:09:12Z,2026-10-31T17:00:22Z,sg,simple_pv_history_update,STC,0,10+0.1,1,-1.75,0.25,passed,229312,0.01,0.70,1969.0
 6ae75eca20cd2dc3f03d1654,2026-11-06T09:58:04Z,2026-11-01T15:46:18Z,sg,positive_history_bonus2,STC,0,10+0.1,1,0,2,rejected,228768,0.11,0.70,1964.4
 6aec5dab20cd2dc3f03d1e81,2026-11-06T10:58:51Z,2026-11-05T10:42:51Z,sanityeclipse000,qs-no-quiet-tt,STC,0,10+0.1,1,0,2,rejected,75808,-0.66,1.21,650.9
+6aedafe920cd2dc3f03d20bf,2026-11-06T12:02:25Z,2026-11-06T10:46:01Z,sg,simple_pv_history_update,STC,0,10+0.1,1,-1.75,0.25,stopped,1216,-2.00,9.29,10.4
