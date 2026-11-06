@@ -9088,3 +9088,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6adeffcd2338a45b841f5e38,2026-11-05T22:37:20Z,2026-10-26T07:22:53Z,rn,tt-clamp-decisive,LTC,0,60+0.6,1,-1.75,0.25,rejected,629832,-0.48,0.40,32448.9
 6aea35ea20cd2dc3f03d1ae4,2026-11-06T04:33:01Z,2026-11-03T19:28:42Z,shawnxu,test1757,STC,1,10+0.1,1,0,2,passed,145120,1.10,0.88,1246.1
 6aec986620cd2dc3f03d1ed8,2026-11-06T04:46:04Z,2026-11-05T14:53:26Z,feeling4vibes,test/improvement-metric-in-lmr-6,STC,0,10+0.1,1,0,2,rejected,45568,-1.41,1.56,391.3
+6aea301a20cd2dc3f03d1ab9,2026-11-06T06:12:35Z,2026-11-03T19:03:54Z,Gruenerapfel,moe8,Nodestime,1,100+1,1,0,2,passed,119800,1.25,0.99,10286.8
+6aed115b20cd2dc3f03d1f95,2026-11-06T06:27:48Z,2026-11-05T23:29:31Z,fwoodruff,lmr-qsearch-probe,STC,0,10+0.1,1,0,2,rejected,20544,-3.69,2.30,176.4
