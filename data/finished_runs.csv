@@ -9113,3 +9113,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aee4d6b20cd2dc3f03d2207,2026-11-06T21:58:03Z,2026-11-06T21:58:03Z,Disservin,master,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6aece4d720cd2dc3f03d1f68,2026-11-06T22:10:01Z,2026-11-05T20:19:35Z,sanityeclipse000,remove-optimism,LTC,0,60+0.6,1,-1.75,0.25,stopped,54228,-1.20,1.33,2793.8
 6aecf50320cd2dc3f03d1f7a,2026-11-06T22:11:07Z,2026-11-05T21:28:35Z,HappyNoah,spsa-lmr-divisor,SPSA,0,10+0.1,1,,,failed,50990,0.78,1.47,437.8
+6aebe80820cd2dc3f03d1dc7,2026-11-06T23:27:31Z,2026-11-05T02:20:56Z,rjhanson,speedup-full-threats-v2,STC,0,10+0.1,1,-1.75,0.25,passed,147776,0.21,0.83,1268.9
