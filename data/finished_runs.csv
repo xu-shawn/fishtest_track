@@ -9098,3 +9098,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aec5dab20cd2dc3f03d1e81,2026-11-06T10:58:51Z,2026-11-05T10:42:51Z,sanityeclipse000,qs-no-quiet-tt,STC,0,10+0.1,1,0,2,rejected,75808,-0.66,1.21,650.9
 6aedafe920cd2dc3f03d20bf,2026-11-06T12:02:25Z,2026-11-06T10:46:01Z,sg,simple_pv_history_update,STC,0,10+0.1,1,-1.75,0.25,stopped,1216,-2.00,9.29,10.4
 6aeb390220cd2dc3f03d1ccc,2026-11-06T13:18:38Z,2026-11-04T13:54:10Z,fauzi2,cachst,SPSA,0,60+0.6,1,,,stopped,40694,0.37,1.54,2096.6
+6aed0ced20cd2dc3f03d1f8f,2026-11-06T14:09:05Z,2026-11-05T23:10:37Z,fwoodruff,lmr-outcome-memory,STC,0,10+0.1,1,0,2,rejected,42752,-1.56,1.61,367.1
