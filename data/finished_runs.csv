@@ -9101,3 +9101,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aed0ced20cd2dc3f03d1f8f,2026-11-06T14:09:05Z,2026-11-05T23:10:37Z,fwoodruff,lmr-outcome-memory,STC,0,10+0.1,1,0,2,rejected,42752,-1.56,1.61,367.1
 6aead12120cd2dc3f03d1c1f,2026-11-06T16:38:07Z,2026-11-04T06:30:57Z,rjhanson,simplify-update-piece-threats,STC,0,10+0.1,1,-1.75,0.25,rejected,380928,-0.57,0.52,3270.9
 6aead0de20cd2dc3f03d1c1d,2026-11-06T17:37:53Z,2026-11-04T06:29:50Z,rjhanson,simplify-update-piece-threats,STC,0,10+0.1,1,-1.75,0.25,stopped,195520,-0.39,0.72,1678.9
+6aed89b920cd2dc3f03d2076,2026-11-06T17:55:30Z,2026-11-06T08:03:05Z,fwoodruff,lmr-qsearch-probe-clean,STC,0,10+0.1,1,0,2,rejected,17856,-4.36,2.48,153.3
