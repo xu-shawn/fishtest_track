@@ -9105,3 +9105,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aee1b3a20cd2dc3f03d2191,2026-11-06T18:23:54Z,2026-11-06T18:23:54Z,fwoodruff,lmr-alpha-eval-range,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
 6aee1b6e20cd2dc3f03d2194,2026-11-06T18:24:46Z,2026-11-06T18:24:46Z,fwoodruff,lmr-alpha-eval-tune,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
 6aec531520cd2dc3f03d1e62,2026-11-06T18:36:55Z,2026-11-05T09:57:41Z,feeling4vibes,test/reduce-nmp-depth-if-improving,STC,0,10+0.1,1,0,2,rejected,112384,-0.28,1.00,965.0
+6aed8caa20cd2dc3f03d207b,2026-11-06T19:05:05Z,2026-11-06T08:15:38Z,Disservin,lucky-net,STC,1,10+0.1,1,0,2,rejected,26784,-2.83,2.08,230.0
+6aee2af820cd2dc3f03d21d6,2026-11-06T19:31:04Z,2026-11-06T19:31:04Z,fwoodruff,lmr-gated-unreduce,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
