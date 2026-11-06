@@ -9094,3 +9094,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aed8e7320cd2dc3f03d207d,2026-11-06T08:23:15Z,2026-11-06T08:23:15Z,sanityeclipse000,ft-row-prefetch-avx2,STC,0,10+0.1,1,-1.75,0.25,stopped,0,,,0.0
 6aec640420cd2dc3f03d1e98,2026-11-06T09:06:35Z,2026-11-05T11:09:56Z,fwoodruff,phase-futility-spsa2,SPSA,0,10+0.1,1,,,stopped,55494,0.29,1.41,476.5
 6ae61ea620cd2dc3f03d147b,2026-11-06T09:09:12Z,2026-10-31T17:00:22Z,sg,simple_pv_history_update,STC,0,10+0.1,1,-1.75,0.25,passed,229312,0.01,0.70,1969.0
+6ae75eca20cd2dc3f03d1654,2026-11-06T09:58:04Z,2026-11-01T15:46:18Z,sg,positive_history_bonus2,STC,0,10+0.1,1,0,2,rejected,228768,0.11,0.70,1964.4
