@@ -9116,3 +9116,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aebe80820cd2dc3f03d1dc7,2026-11-06T23:27:31Z,2026-11-05T02:20:56Z,rjhanson,speedup-full-threats-v2,STC,0,10+0.1,1,-1.75,0.25,passed,147776,0.21,0.83,1268.9
 6aec858a20cd2dc3f03d1ec9,2026-11-07T02:50:38Z,2026-11-05T13:32:58Z,xoto,tmpc1,SPSA,0,10+0.1,1,,,stopped,132384,0.14,0.91,1136.7
 6aee935420cd2dc3f03d22af,2026-11-07T02:56:20Z,2026-11-07T02:56:20Z,xoto,tmpc1,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6aee2b5420cd2dc3f03d21db,2026-11-07T06:00:55Z,2026-11-06T19:32:36Z,fwoodruff,lmr-gated-unreduce,STC,0,10+0.1,1,0,2,rejected,22400,-3.40,2.24,192.3
