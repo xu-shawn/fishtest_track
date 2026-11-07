@@ -9139,4 +9139,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aedd6aa20cd2dc3f03d2113,2026-11-07T17:40:10Z,2026-11-06T13:31:22Z,AdrianStockfish,checkWorsenFix,STC,0,10+0.1,1,0,2,rejected,61696,-0.93,1.35,529.8
 6aeeb56520cd2dc3f03d2306,2026-11-07T17:49:35Z,2026-11-07T05:21:41Z,Kaz,rm-contcorr,STC,0,10+0.1,1,-1.75,0.25,rejected,29088,-3.37,1.96,249.8
 6aef563c20cd2dc3f03d241e,2026-11-07T20:41:39Z,2026-11-07T16:47:56Z,fwoodruff,error-size-m64,STC,0,10+0.1,1,0,2,rejected,5472,-15.63,4.52,47.0
+6aef995620cd2dc3f03d249a,2026-11-07T21:34:14Z,2026-11-07T21:34:14Z,rawbee,idea-op-history-1,STC,0,10+0.1,1,-1.75,0.25,stopped,0,,,0.0
 6aed58c220cd2dc3f03d1ffb,2026-11-07T21:53:01Z,2026-11-06T04:34:10Z,shawnxu,test1757,LTC,1,60+0.6,1,0.5,2.5,passed,57942,2.11,1.31,2985.2
