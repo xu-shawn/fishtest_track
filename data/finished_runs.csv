@@ -9136,3 +9136,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aef44d820cd2dc3f03d2401,2026-11-07T15:33:44Z,2026-11-07T15:33:44Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,failed,0,,,0.0
 6aed993520cd2dc3f03d208e,2026-11-07T16:23:57Z,2026-11-06T09:09:09Z,fwoodruff,futility-stability,STC,0,10+0.1,1,0,2,rejected,79616,-0.61,1.18,683.6
 6aeeddb920cd2dc3f03d2338,2026-11-07T16:36:21Z,2026-11-07T08:13:45Z,fwoodruff,qsearch-threat-standpat,SPSA,0,10+0.1,1,,,stopped,12800,1.33,2.97,109.9
+6aedd6aa20cd2dc3f03d2113,2026-11-07T17:40:10Z,2026-11-06T13:31:22Z,AdrianStockfish,checkWorsenFix,STC,0,10+0.1,1,0,2,rejected,61696,-0.93,1.35,529.8
