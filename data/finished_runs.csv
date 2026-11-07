@@ -9130,3 +9130,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aee5b7220cd2dc3f03d2223,2026-11-07T13:38:11Z,2026-11-06T22:57:54Z,sanityeclipse000,qs-count-searched,STC,0,10+0.1,1,0,2,rejected,37568,-1.83,1.73,322.6
 6aeb99ab20cd2dc3f03d1d73,2026-11-07T13:49:38Z,2026-11-04T20:46:35Z,Vizvezdenec,alphaEvalTw2,STC,0,10+0.1,1,0,2,rejected,139360,-0.13,0.90,1196.6
 6aef2e6220cd2dc3f03d23e2,2026-11-07T13:57:54Z,2026-11-07T13:57:54Z,feeling4vibes,test/include-kings-in-minor-piece-hash,STC,0,10+0.1,1,-1.75,0.25,stopped,0,,,0.0
+6aef424920cd2dc3f03d23f6,2026-11-07T15:22:49Z,2026-11-07T15:22:49Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6aef44b220cd2dc3f03d23fc,2026-11-07T15:33:06Z,2026-11-07T15:33:06Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
