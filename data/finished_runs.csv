@@ -9121,3 +9121,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aee302720cd2dc3f03d21e8,2026-11-07T08:27:39Z,2026-11-06T19:53:11Z,fwoodruff,kurtosis-tune,SPSA,0,10+0.1,1,,,stopped,25076,-1.39,2.10,215.3
 6aee442e20cd2dc3f03d21ff,2026-11-07T10:38:26Z,2026-11-06T21:18:38Z,sanityeclipse000,prefetch-next-tile-pext,STC,0,10+0.1,1,0,2,passed,40128,2.55,1.60,344.6
 6ae9dc1e20cd2dc3f03d1a0a,2026-11-07T11:16:21Z,2026-11-03T13:05:34Z,Vizvezdenec,IIRscaler1,STC,0,10+0.1,1,0,2,rejected,224960,0.11,0.70,1931.7
+6aee1fd020cd2dc3f03d219b,2026-11-07T11:47:01Z,2026-11-06T18:43:28Z,fwoodruff,lmr-alpha-eval-tune,SPSA,0,10+0.1,1,,,stopped,36770,-0.74,1.74,315.7
+6aef150e20cd2dc3f03d23b0,2026-11-07T12:09:50Z,2026-11-07T12:09:50Z,feeling4vibes,tune/improvement-metric-in-lmr,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
+6aedd59d20cd2dc3f03d2110,2026-11-07T12:39:29Z,2026-11-06T13:26:53Z,fauzi2,cachst1,STC,0,10+0.1,1,0,2,rejected,60096,-0.95,1.36,516.0
