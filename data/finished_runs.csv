@@ -9119,3 +9119,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aee2b5420cd2dc3f03d21db,2026-11-07T06:00:55Z,2026-11-06T19:32:36Z,fwoodruff,lmr-gated-unreduce,STC,0,10+0.1,1,0,2,rejected,22400,-3.40,2.24,192.3
 6aed868f20cd2dc3f03d2073,2026-11-07T06:58:13Z,2026-11-06T07:49:35Z,feeling4vibes,test/reduce-nmp-depth-if-improving-2,STC,0,10+0.1,1,0,2,rejected,65280,-0.84,1.31,560.5
 6aee302720cd2dc3f03d21e8,2026-11-07T08:27:39Z,2026-11-06T19:53:11Z,fwoodruff,kurtosis-tune,SPSA,0,10+0.1,1,,,stopped,25076,-1.39,2.10,215.3
+6aee442e20cd2dc3f03d21ff,2026-11-07T10:38:26Z,2026-11-06T21:18:38Z,sanityeclipse000,prefetch-next-tile-pext,STC,0,10+0.1,1,0,2,passed,40128,2.55,1.60,344.6
