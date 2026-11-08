@@ -9153,3 +9153,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae9fa1b20cd2dc3f03d1a29,2026-11-08T12:48:54Z,2026-11-03T15:13:31Z,sg,positive_history_bonus2b,STC,0,10+0.1,1,0,2,passed,285024,0.79,0.63,2447.4
 6af08c7889c6931c272dea91,2026-11-08T14:51:36Z,2026-11-08T14:51:36Z,rjhanson,simplify-worker-do-move,STC,0,10+0.1,1,-1.75,0.25,stopped,0,,,0.0
 6aecd1a420cd2dc3f03d1f21,2026-11-08T15:22:21Z,2026-11-05T18:57:40Z,sawmaker,arena/1bb8d275-stockfish,STC,0,10+0.1,1,0,2,rejected,250336,0.14,0.66,2149.6
+6af0981b89c6931c272deaa8,2026-11-08T15:41:15Z,2026-11-08T15:41:15Z,sawmaker,arena/02e6f91c-stockfish,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
