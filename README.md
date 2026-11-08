@@ -1,6 +1,6 @@
 # Fishtest status
 
-<sub>Updated Sun 08 Nov 2026, 17:45 UTC</sub>
+<sub>Updated Sun 08 Nov 2026, 18:45 UTC</sub>
 
 ## Trends
 
@@ -9,85 +9,85 @@
 #### Cores by test type
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/types-dark.svg">
-  <img alt="Stacked area of cores used by each test type (STC, LTC, VLTC, VVLTC, SMP, progtest, nodestime, SPSA) over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/types-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/types-dark.svg">
+  <img alt="Stacked area of cores used by each test type (STC, LTC, VLTC, VVLTC, SMP, progtest, nodestime, SPSA) over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/types-light.svg" width="100%">
 </picture>
 
 #### Tests by type
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/type-counts-dark.svg">
-  <img alt="Stacked area of running tests by test type over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/type-counts-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/type-counts-dark.svg">
+  <img alt="Stacked area of running tests by test type over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/type-counts-light.svg" width="100%">
 </picture>
 
 #### Net tests and search tests
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/net-search-trend-dark.svg">
-  <img alt="Stacked bands of running search tests and net tests over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/net-search-trend-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/net-search-trend-dark.svg">
+  <img alt="Stacked bands of running search tests and net tests over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/net-search-trend-light.svg" width="100%">
 </picture>
 
 #### Gainer and simplification bounds
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/bounds-trend-dark.svg">
-  <img alt="Stacked bands of running tests with gainer bounds, simplification bounds and no SPRT bounds over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/bounds-trend-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/bounds-trend-dark.svg">
+  <img alt="Stacked bands of running tests with gainer bounds, simplification bounds and no SPRT bounds over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/bounds-trend-light.svg" width="100%">
 </picture>
 
 #### Cores by test
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/tests-trend-dark.svg">
-  <img alt="Stacked bands of cores per test over the last 14 days, one band per test, colored by test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/tests-trend-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/tests-trend-dark.svg">
+  <img alt="Stacked bands of cores per test over the last 14 days, one band per test, colored by test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/tests-trend-light.svg" width="100%">
 </picture>
 
 #### Cores by author
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/authors-trend-dark.svg">
-  <img alt="Stacked bands of cores per author over the last 14 days, the top 8 authors labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/authors-trend-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/authors-trend-dark.svg">
+  <img alt="Stacked bands of cores per author over the last 14 days, the top 8 authors labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/authors-trend-light.svg" width="100%">
 </picture>
 
 #### Tests per author
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/author-tests-trend-dark.svg">
-  <img alt="Stacked bands of running tests per author over the last 14 days, the top 8 authors labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/author-tests-trend-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/author-tests-trend-dark.svg">
+  <img alt="Stacked bands of running tests per author over the last 14 days, the top 8 authors labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/author-tests-trend-light.svg" width="100%">
 </picture>
 
 #### Cores contributed by user
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/contributors-trend-dark.svg">
-  <img alt="Stacked bands of cores contributed per user over the last 14 days, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/contributors-trend-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/contributors-trend-dark.svg">
+  <img alt="Stacked bands of cores contributed per user over the last 14 days, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/contributors-trend-light.svg" width="100%">
 </picture>
 
 #### MNps contributed by user
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/contributors-mnps-trend-dark.svg">
-  <img alt="Stacked bands of the speed, in million nodes per second, each user&#x27;s workers contributed over the last 14 days, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/contributors-mnps-trend-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/contributors-mnps-trend-dark.svg">
+  <img alt="Stacked bands of the speed, in million nodes per second, each user&#x27;s workers contributed over the last 14 days, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/contributors-mnps-trend-light.svg" width="100%">
 </picture>
 
 #### Tests, authors, contributors and throughput
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/activity-dark.svg">
-  <img alt="Line charts of tests running, authors, cores, workers, contributors, nodes per second, games per minute and pending hours over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/activity-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/activity-dark.svg">
+  <img alt="Line charts of tests running, authors, cores, workers, contributors, nodes per second, games per minute and pending hours over the last 14 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/activity-light.svg" width="100%">
 </picture>
 
 #### Tests finished per hour
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/throughput-dark.svg">
-  <img alt="Faint columns of tests finished in each hour over the last 14 days, with a line for the trailing 24-hour average." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/throughput-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/throughput-dark.svg">
+  <img alt="Faint columns of tests finished in each hour over the last 14 days, with a line for the trailing 24-hour average." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/throughput-light.svg" width="100%">
 </picture>
 
 #### LLR distribution of running tests
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/llr-dark.svg">
-  <img alt="Heatmap of where the LLRs of running SPRT tests sit between -2.94 (reject) and +2.94 (pass), one column per hour, with the median as a line." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/llr-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/llr-dark.svg">
+  <img alt="Heatmap of where the LLRs of running SPRT tests sit between -2.94 (reject) and +2.94 (pass), one column per hour, with the median as a line." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/llr-light.svg" width="100%">
 </picture>
 
 ### Last 30 days
@@ -95,24 +95,24 @@
 #### Finished tests per day
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/finished-dark.svg">
-  <img alt="Stacked columns of tests finished per day, split into gainers passed, simplifications passed, rejected and other." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/finished-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/finished-dark.svg">
+  <img alt="Stacked columns of tests finished per day, split into gainers passed, simplifications passed, rejected and other." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/finished-light.svg" width="100%">
 </picture>
 
-Last 7 days: **160 tests** finished, 15.2M games. **24 passed** (19 STC, 3 LTC, 2 nodestime), 86 rejected, 48 stopped, 0 completed (SPSA or fixed games), 2 failed. SPRT pass rate 21.8%: 17.0% for gainers (94), 50.0% for simplifications (16); 63.6% for net tests (11), 17.2% for search tests (99).
+Last 7 days: **160 tests** finished, 15.1M games. **24 passed** (19 STC, 3 LTC, 2 nodestime), 86 rejected, 48 stopped, 0 completed (SPSA or fixed games), 2 failed. SPRT pass rate 21.8%: 17.0% for gainers (94), 50.0% for simplifications (16); 63.6% for net tests (11), 17.2% for search tests (99).
 
 #### Cores by architecture
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/monthly-arch-dark.svg">
-  <img alt="Stacked bands of the average cores per day by worker architecture over the last 30 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/monthly-arch-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/monthly-arch-dark.svg">
+  <img alt="Stacked bands of the average cores per day by worker architecture over the last 30 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/monthly-arch-light.svg" width="100%">
 </picture>
 
 #### Cores by compiler
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/monthly-compiler-dark.svg">
-  <img alt="Stacked bands of the average cores per day by compiler and major version over the last 30 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/monthly-compiler-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/monthly-compiler-dark.svg">
+  <img alt="Stacked bands of the average cores per day by compiler and major version over the last 30 days." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/monthly-compiler-light.svg" width="100%">
 </picture>
 
 ### Last year
@@ -120,64 +120,64 @@ Last 7 days: **160 tests** finished, 15.2M games. **24 passed** (19 STC, 3 LTC, 
 #### Finished tests per week
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-finished-dark.svg">
-  <img alt="Stacked columns of tests finished per week over the last year, split into gainers passed, simplifications passed, rejected and other." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-finished-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-finished-dark.svg">
+  <img alt="Stacked columns of tests finished per week over the last year, split into gainers passed, simplifications passed, rejected and other." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-finished-light.svg" width="100%">
 </picture>
 
 #### Runtime of finished tests
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/runtime-trend-dark.svg">
-  <img alt="Heatmap of how long the tests finished each week ran, from submission to finish on a log scale from 15 minutes to 6 weeks, with the weekly median as a line." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/runtime-trend-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/runtime-trend-dark.svg">
+  <img alt="Heatmap of how long the tests finished each week ran, from submission to finish on a log scale from 15 minutes to 6 weeks, with the weekly median as a line." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/runtime-trend-light.svg" width="100%">
 </picture>
 
 #### Average cores per week by test type
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-types-dark.svg">
-  <img alt="Stacked columns of the average cores each test type used per week, measured from the hourly snapshots." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-types-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-types-dark.svg">
+  <img alt="Stacked columns of the average cores each test type used per week, measured from the hourly snapshots." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-types-light.svg" width="100%">
 </picture>
 
 #### Cores by architecture
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/yearly-arch-dark.svg">
-  <img alt="Stacked bands of the average cores per week by worker architecture over the last year." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/yearly-arch-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/yearly-arch-dark.svg">
+  <img alt="Stacked bands of the average cores per week by worker architecture over the last year." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/yearly-arch-light.svg" width="100%">
 </picture>
 
 #### Cores by compiler
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/yearly-compiler-dark.svg">
-  <img alt="Stacked bands of the average cores per week by compiler and major version over the last year." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/yearly-compiler-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/yearly-compiler-dark.svg">
+  <img alt="Stacked bands of the average cores per week by compiler and major version over the last year." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/yearly-compiler-light.svg" width="100%">
 </picture>
 
 #### Gainer bounds
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-gainers-dark.svg">
-  <img alt="Stacked columns of tests with gainer bounds (such as [0, 2] and [0.5, 2.5]) finished per week." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-gainers-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-gainers-dark.svg">
+  <img alt="Stacked columns of tests with gainer bounds (such as [0, 2] and [0.5, 2.5]) finished per week." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-gainers-light.svg" width="100%">
 </picture>
 
 #### Simplification bounds
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-simplifications-dark.svg">
-  <img alt="Stacked columns of tests with simplification bounds (such as [-1.75, 0.25]) finished per week." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-simplifications-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-simplifications-dark.svg">
+  <img alt="Stacked columns of tests with simplification bounds (such as [-1.75, 0.25]) finished per week." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-simplifications-light.svg" width="100%">
 </picture>
 
 #### Net tests
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-net-dark.svg">
-  <img alt="Stacked columns of tests of new networks finished per week." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-net-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-net-dark.svg">
+  <img alt="Stacked columns of tests of new networks finished per week." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-net-light.svg" width="100%">
 </picture>
 
 #### Search tests
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-search-dark.svg">
-  <img alt="Stacked columns of tests of code changes (not new networks) finished per week." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/weekly-search-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-search-dark.svg">
+  <img alt="Stacked columns of tests of code changes (not new networks) finished per week." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/weekly-search-light.svg" width="100%">
 </picture>
 
 ### Since 19 Oct 2026, daily averages
@@ -185,95 +185,95 @@ Last 7 days: **160 tests** finished, 15.2M games. **24 passed** (19 STC, 3 LTC, 
 #### Cores by test type
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-types-dark.svg">
-  <img alt="Stacked area of the daily average cores used by each test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-types-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-types-dark.svg">
+  <img alt="Stacked area of the daily average cores used by each test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-types-light.svg" width="100%">
 </picture>
 
 #### Cores by author
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-authors-dark.svg">
-  <img alt="Stacked bands of the daily average cores per author, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-authors-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-authors-dark.svg">
+  <img alt="Stacked bands of the daily average cores per author, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-authors-light.svg" width="100%">
 </picture>
 
 #### Tests per author
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-author-tests-dark.svg">
-  <img alt="Stacked bands of the daily average running tests per author, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-author-tests-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-author-tests-dark.svg">
+  <img alt="Stacked bands of the daily average running tests per author, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-author-tests-light.svg" width="100%">
 </picture>
 
 #### Cores contributed by user
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-contributors-dark.svg">
-  <img alt="Stacked bands of the daily average cores contributed per user, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-contributors-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-contributors-dark.svg">
+  <img alt="Stacked bands of the daily average cores contributed per user, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-contributors-light.svg" width="100%">
 </picture>
 
 #### MNps contributed by user
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-contributors-mnps-dark.svg">
-  <img alt="Stacked bands of the daily average speed, in million nodes per second, contributed per user, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-contributors-mnps-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-contributors-mnps-dark.svg">
+  <img alt="Stacked bands of the daily average speed, in million nodes per second, contributed per user, the top 8 labelled." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-contributors-mnps-light.svg" width="100%">
 </picture>
 
 #### Tests, authors, contributors and throughput
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-activity-dark.svg">
-  <img alt="Line charts of the daily averages of tests, authors, cores, workers, contributors, nodes per second, games per minute and pending hours." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/long-activity-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-activity-dark.svg">
+  <img alt="Line charts of the daily averages of tests, authors, cores, workers, contributors, nodes per second, games per minute and pending hours." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/long-activity-light.svg" width="100%">
 </picture>
 
 ## Right now
 
-**42 tests** from **16 authors** are running on **1,927 cores** (219 workers from 63 contributors). 3 tests are waiting for workers, and about 76 hours of work is queued.
+**44 tests** from **18 authors** are running on **1,684 cores** (169 workers from 61 contributors). About 84 hours of work is queued.
 
 | | Now | 24 h avg | 7 d avg | 30 d avg |
 |:--|--:|--:|--:|--:|
-| Tests running | 42 | 43 | 41 | 44 |
-| Authors with running tests | 16 | 17 | 17 | 18 |
-| Cores | 1,927 | 1,835 | 1,808 | 1,769 |
-| Workers | 219 | 205 | 206 | 201 |
-| Contributors with workers | 63 | 61 | 61 | 61 |
+| Tests running | 44 | 43 | 41 | 44 |
+| Authors with running tests | 18 | 17 | 17 | 18 |
+| Cores | 1,684 | 1,836 | 1,807 | 1,769 |
+| Workers | 169 | 205 | 206 | 201 |
+| Contributors with workers | 61 | 61 | 61 | 61 |
 | Net tests running | 5 | 6 | 6 | 5 |
-| Cores on net tests | 248 | 381 | 310 | 233 |
-| Nodes per second | 1.09G | 1.03G | 984M | 979M |
-| Games per minute | 1,741 | 1,646 | 1,760 | 1,623 |
-| Pending hours | 76 h | 113 h | 80 h | 170 h |
+| Cores on net tests | 217 | 374 | 311 | 233 |
+| Nodes per second | 930M | 1.03G | 983M | 978M |
+| Games per minute | 1,476 | 1,652 | 1,761 | 1,623 |
+| Pending hours | 84 h | 111 h | 81 h | 170 h |
 
 ### Cores by test
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/tests-dark.svg">
-  <img alt="Horizontal bars of cores per running test, largest first, colored by test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/tests-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/tests-dark.svg">
+  <img alt="Horizontal bars of cores per running test, largest first, colored by test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/tests-light.svg" width="100%">
 </picture>
 
 ### Runtime of running tests
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/runtime-dark.svg">
-  <img alt="Columns of running tests by how long ago they were submitted, from under an hour to over two weeks, stacked by test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/runtime-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/runtime-dark.svg">
+  <img alt="Columns of running tests by how long ago they were submitted, from under an hour to over two weeks, stacked by test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/runtime-light.svg" width="100%">
 </picture>
 
 ### Cores by author
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/authors-dark.svg">
-  <img alt="Horizontal bars of cores per author, largest first, split by test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/authors-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/authors-dark.svg">
+  <img alt="Horizontal bars of cores per author, largest first, split by test type." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/authors-light.svg" width="100%">
 </picture>
 
 ### Cores contributed by user
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/contributors-dark.svg">
-  <img alt="Horizontal bars of cores contributed per user, largest first, split by the type of test their workers play." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/contributors-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/contributors-dark.svg">
+  <img alt="Horizontal bars of cores contributed per user, largest first, split by the type of test their workers play." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/contributors-light.svg" width="100%">
 </picture>
 
 ### MNps contributed by user
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/contributors-mnps-dark.svg">
-  <img alt="Horizontal bars of the speed, in million nodes per second, each user&#x27;s workers contribute, largest first, split by the type of test they play." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/40ffa63f27ddd5e6687edc0d67c4c52ca6926061/contributors-mnps-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/contributors-mnps-dark.svg">
+  <img alt="Horizontal bars of the speed, in million nodes per second, each user&#x27;s workers contribute, largest first, split by the type of test they play." src="https://raw.githubusercontent.com/xu-shawn/fishtest_track/5c958b9806ac3c02ac540dc09f4999ce408146c8/contributors-mnps-light.svg" width="100%">
 </picture>
 
 ## Last 30 days in detail
@@ -301,12 +301,12 @@ Last 7 days: **160 tests** finished, 15.2M games. **24 passed** (19 STC, 3 LTC, 
 |:--|--:|--:|--:|--:|--:|
 | [Gruenerapfel](https://tests.stockfishchess.org/tests/user/Gruenerapfel) | 43 | 11 | 0 | 149,657 | 13.8% |
 | [fauzi2](https://tests.stockfishchess.org/tests/user/fauzi2) | 27 | 5 | 3 | 140,643 | 12.9% |
-| [Vizvezdenec](https://tests.stockfishchess.org/tests/user/Vizvezdenec) | 47 | 3 | 5 | 123,305 | 11.4% |
+| [Vizvezdenec](https://tests.stockfishchess.org/tests/user/Vizvezdenec) | 47 | 3 | 5 | 123,305 | 11.3% |
 | [sg](https://tests.stockfishchess.org/tests/user/sg) | 44 | 9 | 6 | 82,909 | 7.6% |
 | [shawnxu](https://tests.stockfishchess.org/tests/user/shawnxu) | 48 | 17 | 3 | 74,737 | 6.9% |
 | [DeadK1ng](https://tests.stockfishchess.org/tests/user/DeadK1ng) | 5 | 2 | 0 | 63,262 | 5.8% |
 | [rn](https://tests.stockfishchess.org/tests/user/rn) | 19 | 2 | 1 | 53,360 | 4.9% |
-| [vdv](https://tests.stockfishchess.org/tests/user/vdv) | 9 | 3 | 1 | 48,349 | 4.5% |
+| [vdv](https://tests.stockfishchess.org/tests/user/vdv) | 9 | 3 | 1 | 48,349 | 4.4% |
 | [AdrianStockfish](https://tests.stockfishchess.org/tests/user/AdrianStockfish) | 47 | 4 | 6 | 40,043 | 3.7% |
 | [linrock](https://tests.stockfishchess.org/tests/user/linrock) | 27 | 10 | 0 | 36,077 | 3.3% |
 
@@ -314,13 +314,13 @@ Last 7 days: **160 tests** finished, 15.2M games. **24 passed** (19 STC, 3 LTC, 
 
 | Contributor | Core-hours | Share | Cores now | MNps now | Workers now |
 |:--|--:|--:|--:|--:|--:|
-| [ChessDBCN](https://tests.stockfishchess.org/tests/user/ChessDBCN) | 224,474 | 26.1% | 456 | 184 | 57 |
-| [niklasf](https://tests.stockfishchess.org/tests/user/niklasf) | 89,347 | 10.4% | 189 | 101 | 3 |
-| [Wencey](https://tests.stockfishchess.org/tests/user/Wencey) | 71,884 | 8.4% | 150 | 42 | 4 |
-| [MediumBerry5575](https://tests.stockfishchess.org/tests/user/MediumBerry5575) | 54,801 | 6.4% | 192 | 146 | 48 |
-| [wizzouk](https://tests.stockfishchess.org/tests/user/wizzouk) | 43,646 | 5.1% | 87 | 35 | 3 |
-| [okrout](https://tests.stockfishchess.org/tests/user/okrout) | 43,626 | 5.1% | 76 | 48 | 4 |
-| [beginnerchess10002551](https://tests.stockfishchess.org/tests/user/beginnerchess10002551) | 37,504 | 4.4% | 80 | 62 | 20 |
-| [CypressChess](https://tests.stockfishchess.org/tests/user/CypressChess) | 19,080 | 2.2% | 40 | 16 | 5 |
-| [fogleman](https://tests.stockfishchess.org/tests/user/fogleman) | 15,813 | 1.8% | 33 | 15 | 3 |
-| [technologov](https://tests.stockfishchess.org/tests/user/technologov) | 15,802 | 1.8% | 16 | 8.6 | 1 |
+| [ChessDBCN](https://tests.stockfishchess.org/tests/user/ChessDBCN) | 224,930 | 26.1% | 456 | 184 | 57 |
+| [niklasf](https://tests.stockfishchess.org/tests/user/niklasf) | 89,536 | 10.4% | 189 | 94 | 3 |
+| [Wencey](https://tests.stockfishchess.org/tests/user/Wencey) | 72,034 | 8.4% | 150 | 46 | 4 |
+| [MediumBerry5575](https://tests.stockfishchess.org/tests/user/MediumBerry5575) | 54,801 | 6.4% | 0 | 0.0 | 0 |
+| [wizzouk](https://tests.stockfishchess.org/tests/user/wizzouk) | 43,732 | 5.1% | 87 | 35 | 3 |
+| [okrout](https://tests.stockfishchess.org/tests/user/okrout) | 43,702 | 5.1% | 76 | 50 | 4 |
+| [beginnerchess10002551](https://tests.stockfishchess.org/tests/user/beginnerchess10002551) | 37,580 | 4.4% | 76 | 60 | 19 |
+| [CypressChess](https://tests.stockfishchess.org/tests/user/CypressChess) | 19,120 | 2.2% | 40 | 15 | 5 |
+| [fogleman](https://tests.stockfishchess.org/tests/user/fogleman) | 15,846 | 1.8% | 33 | 16 | 3 |
+| [technologov](https://tests.stockfishchess.org/tests/user/technologov) | 15,818 | 1.8% | 16 | 8.6 | 1 |
