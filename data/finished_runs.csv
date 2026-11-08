@@ -9142,3 +9142,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aef995620cd2dc3f03d249a,2026-11-07T21:34:14Z,2026-11-07T21:34:14Z,rawbee,idea-op-history-1,STC,0,10+0.1,1,-1.75,0.25,stopped,0,,,0.0
 6aed58c220cd2dc3f03d1ffb,2026-11-07T21:53:01Z,2026-11-06T04:34:10Z,shawnxu,test1757,LTC,1,60+0.6,1,0.5,2.5,passed,57942,2.11,1.31,2985.2
 6aef56e220cd2dc3f03d2420,2026-11-08T00:32:27Z,2026-11-07T16:50:42Z,fwoodruff,error-size-m32,STC,0,10+0.1,1,0,2,rejected,13248,-6.08,2.89,113.8
+6aecd83c20cd2dc3f03d1f3a,2026-11-08T01:32:15Z,2026-11-05T19:25:48Z,Vizvezdenec,pvnodeLmrExt1,STC,0,10+0.1,1,0,2,passed,114592,1.25,0.99,984.0
