@@ -9160,3 +9160,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aef509c20cd2dc3f03d2410,2026-11-08T18:12:44Z,2026-11-07T16:23:56Z,0x539,mp-sort2,STC,0,10+0.1,1,0,2,rejected,55424,-1.07,1.41,475.9
 6aef8fac20cd2dc3f03d2490,2026-11-08T19:01:19Z,2026-11-07T20:53:00Z,rawbee,idea-078-lmrRe-node,STC,0,10+0.1,1,0,2,rejected,50592,-1.23,1.48,434.4
 6aef9fd120cd2dc3f03d24a4,2026-11-08T19:42:53Z,2026-11-07T22:01:53Z,shawnxu,test1757,STC,1,10+0.1,1,0,2,passed,37792,2.82,1.74,324.5
+6aefea2b20cd2dc3f03d2550,2026-11-08T20:44:52Z,2026-11-08T03:19:07Z,AdrianStockfish,harshSE3,STC,0,10+0.1,1,0,2,rejected,14720,-5.45,2.77,126.4
