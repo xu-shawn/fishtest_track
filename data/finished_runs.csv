@@ -9162,3 +9162,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aef9fd120cd2dc3f03d24a4,2026-11-08T19:42:53Z,2026-11-07T22:01:53Z,shawnxu,test1757,STC,1,10+0.1,1,0,2,passed,37792,2.82,1.74,324.5
 6aefea2b20cd2dc3f03d2550,2026-11-08T20:44:52Z,2026-11-08T03:19:07Z,AdrianStockfish,harshSE3,STC,0,10+0.1,1,0,2,rejected,14720,-5.45,2.77,126.4
 6aee75b420cd2dc3f03d2262,2026-11-08T20:54:39Z,2026-11-07T00:49:56Z,Disservin,net-validation,LTC,1,60+0.6,1,0.5,2.5,rejected,36960,-1.53,1.65,1904.2
+6aeef24b20cd2dc3f03d2358,2026-11-08T22:04:53Z,2026-11-07T09:41:31Z,fwoodruff,futility-threat-class,STC,0,10+0.1,1,0,2,passed,83520,1.54,1.16,717.2
