@@ -9144,3 +9144,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aef56e220cd2dc3f03d2420,2026-11-08T00:32:27Z,2026-11-07T16:50:42Z,fwoodruff,error-size-m32,STC,0,10+0.1,1,0,2,rejected,13248,-6.08,2.89,113.8
 6aecd83c20cd2dc3f03d1f3a,2026-11-08T01:32:15Z,2026-11-05T19:25:48Z,Vizvezdenec,pvnodeLmrExt1,STC,0,10+0.1,1,0,2,passed,114592,1.25,0.99,984.0
 6aefd3f020cd2dc3f03d250b,2026-11-08T04:17:27Z,2026-11-08T01:44:16Z,AdrianStockfish,seCook,STC,0,10+0.1,1,0,2,rejected,3712,-23.53,5.46,31.9
+6aef43d720cd2dc3f03d23fa,2026-11-08T05:21:43Z,2026-11-07T15:29:27Z,jayc,nn-5147936be1b0,STC,1,10+0.1,1,0,2,rejected,28160,-2.60,1.97,241.8
+6aefeb4620cd2dc3f03d2552,2026-11-08T05:28:38Z,2026-11-08T03:23:50Z,AdrianStockfish,harshSE4,STC,0,10+0.1,1,0,2,rejected,1440,-89.77,8.21,12.4
