@@ -9158,3 +9158,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6ae97b8e20cd2dc3f03d19a2,2026-11-08T16:22:28Z,2026-11-03T06:13:34Z,shawnxu,test1755,LTC,1,60+0.6,1,0.5,2.5,passed,252534,1.02,0.63,13010.6
 6af07fc862f6cb91130d20a2,2026-11-08T17:32:19Z,2026-11-08T13:57:28Z,xoto,tmpc1,SPSA,0,10+0.1,1,,,stopped,8250,-3.24,3.67,70.8
 6aef509c20cd2dc3f03d2410,2026-11-08T18:12:44Z,2026-11-07T16:23:56Z,0x539,mp-sort2,STC,0,10+0.1,1,0,2,rejected,55424,-1.07,1.41,475.9
+6aef8fac20cd2dc3f03d2490,2026-11-08T19:01:19Z,2026-11-07T20:53:00Z,rawbee,idea-078-lmrRe-node,STC,0,10+0.1,1,0,2,rejected,50592,-1.23,1.48,434.4
+6aef9fd120cd2dc3f03d24a4,2026-11-08T19:42:53Z,2026-11-07T22:01:53Z,shawnxu,test1757,STC,1,10+0.1,1,0,2,passed,37792,2.82,1.74,324.5
