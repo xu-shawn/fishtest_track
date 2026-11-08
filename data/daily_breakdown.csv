@@ -2692,24 +2692,25 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-11-08,arch,x86-64-avxvnni,1773.4,198.9,1198.5
 2026-11-08,arch,x86-64-bmi2,6738.3,795.3,3299.1
 2026-11-08,arch,x86-64-sse41-popcnt,472.9,61.0,130.6
-2026-11-08,author,0x539,860.3,37.0,
-2026-11-08,author,AdrianStockfish,1581.5,87.9,
-2026-11-08,author,Disservin,1549.2,30.0,
-2026-11-08,author,Elhamuddin,525.8,15.1,
-2026-11-08,author,fauzi2,4789.0,45.0,
-2026-11-08,author,feeling4vibes,825.2,30.0,
+2026-11-08,author,0x539,898.1,38.7,
+2026-11-08,author,AdrianStockfish,1647.4,91.3,
+2026-11-08,author,Disservin,1618.5,31.1,
+2026-11-08,author,Elhamuddin,544.1,15.7,
+2026-11-08,author,fauzi2,4961.4,46.7,
+2026-11-08,author,feeling4vibes,857.3,31.1,
 2026-11-08,author,Fisherman,765.4,22.0,
-2026-11-08,author,fwoodruff,560.1,18.1,
+2026-11-08,author,fwoodruff,591.6,19.2,
 2026-11-08,author,jayc,157.4,5.1,
-2026-11-08,author,Kaz,1248.4,30.0,
-2026-11-08,author,rawbee,743.3,30.0,
-2026-11-08,author,rn,2597.8,15.1,
-2026-11-08,author,sawmaker,1316.5,30.0,
-2026-11-08,author,sg,3122.9,88.9,
-2026-11-08,author,shawnxu,3861.5,60.0,
-2026-11-08,author,vdv,738.0,15.1,
-2026-11-08,author,Vizvezdenec,1954.3,81.9,
-2026-11-08,author,xoto,486.8,15.1,
+2026-11-08,author,Kaz,1291.4,31.1,
+2026-11-08,author,rawbee,774.2,31.1,
+2026-11-08,author,rjhanson,49.3,1.1,
+2026-11-08,author,rn,2679.1,15.7,
+2026-11-08,author,sawmaker,1360.6,31.1,
+2026-11-08,author,sg,3246.0,92.3,
+2026-11-08,author,shawnxu,4041.4,62.3,
+2026-11-08,author,vdv,773.5,15.7,
+2026-11-08,author,Vizvezdenec,2040.8,84.8,
+2026-11-08,author,xoto,500.5,15.7,
 2026-11-08,compiler,clang++ 17.0.0,224.8,30.0,235.9
 2026-11-08,compiler,clang++ 17.0.6,359.8,15.1,293.2
 2026-11-08,compiler,clang++ 19.1.7,14.0,2.0,14.6
@@ -2801,7 +2802,7 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-11-08,contributor,Zirie,452.8,41.0,307.6
 2026-11-08,contributor,zoe,180.0,30.0,69.2
 2026-11-08,hours,arch,15.1,0.0,
-2026-11-08,hours,author,15.1,0.0,
+2026-11-08,hours,author,15.7,0.0,
 2026-11-08,hours,compiler,15.1,0.0,
 2026-11-08,hours,contributor,15.1,0.0,
 2026-11-08,hours,mnps,15.1,0.0,
