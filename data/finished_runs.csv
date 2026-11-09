@@ -9172,3 +9172,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af16e648e7fb2e78bc1cb09,2026-11-09T06:55:32Z,2026-11-09T06:55:32Z,0mis,research/test1757-prefetch-bench,STC,1,10+0.1,1,0,2,stopped,0,,,0.0
 6aee680620cd2dc3f03d2246,2026-11-09T07:35:14Z,2026-11-06T23:51:34Z,Disservin,nnue-lab/king-pins,Nodestime,1,360+3.6,1,0,2,stopped,181396,0.27,0.86,56073.1
 6af193228e7fb2e78bc1cb24,2026-11-09T09:32:18Z,2026-11-09T09:32:18Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6aef079f20cd2dc3f03d2387,2026-11-09T10:44:55Z,2026-11-07T11:12:31Z,Kaz,key-stack-contcorr-01,SMP,0,5+0.05,8,0,2,passed,45016,2.43,1.58,1546.1
