@@ -9167,3 +9167,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aeb97e820cd2dc3f03d1d6d,2026-11-09T02:12:39Z,2026-11-04T20:39:04Z,Vizvezdenec,ttpvBonusScale6,STC,0,10+0.1,1,0,2,rejected,231712,0.12,0.69,1989.6
 6af063756368262d071de9f8,2026-11-09T03:36:24Z,2026-11-08T11:56:37Z,fwoodruff,futility-threat-aware,STC,0,10+0.1,1,0,2,passed,38592,2.74,1.70,331.4
 6aed815b20cd2dc3f03d206c,2026-11-09T03:55:31Z,2026-11-06T07:27:23Z,rn,tt-clamp-decisive,LTC,0,60+0.6,1,-1.75,0.25,rejected,147666,-0.90,0.81,7607.8
+6af0b20889c6931c272deabe,2026-11-09T05:16:44Z,2026-11-08T17:31:52Z,vsnehank,rfp-winning-capture,STC,0,10+0.1,1,0,2,rejected,25856,-2.86,2.07,222.0
