@@ -9173,3 +9173,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aee680620cd2dc3f03d2246,2026-11-09T07:35:14Z,2026-11-06T23:51:34Z,Disservin,nnue-lab/king-pins,Nodestime,1,360+3.6,1,0,2,stopped,181396,0.27,0.86,56073.1
 6af193228e7fb2e78bc1cb24,2026-11-09T09:32:18Z,2026-11-09T09:32:18Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6aef079f20cd2dc3f03d2387,2026-11-09T10:44:55Z,2026-11-07T11:12:31Z,Kaz,key-stack-contcorr-01,SMP,0,5+0.05,8,0,2,passed,45016,2.43,1.58,1546.1
+6af11de38e7fb2e78bc1ca69,2026-11-09T12:09:16Z,2026-11-09T01:12:03Z,feeling4vibes,test/fewer-neg-extensions-on-cut-nodes,STC,0,10+0.1,1,0,2,stopped,17888,-1.40,2.51,153.6
