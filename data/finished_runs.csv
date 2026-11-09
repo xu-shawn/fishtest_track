@@ -9169,3 +9169,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aed815b20cd2dc3f03d206c,2026-11-09T03:55:31Z,2026-11-06T07:27:23Z,rn,tt-clamp-decisive,LTC,0,60+0.6,1,-1.75,0.25,rejected,147666,-0.90,0.81,7607.8
 6af0b20889c6931c272deabe,2026-11-09T05:16:44Z,2026-11-08T17:31:52Z,vsnehank,rfp-winning-capture,STC,0,10+0.1,1,0,2,rejected,25856,-2.86,2.07,222.0
 6aef54f320cd2dc3f03d2417,2026-11-09T06:33:27Z,2026-11-07T16:42:27Z,Vizvezdenec,pvnodeLmrExt2,STC,0,10+0.1,1,0,2,rejected,56960,-1.03,1.40,489.1
+6af16e648e7fb2e78bc1cb09,2026-11-09T06:55:32Z,2026-11-09T06:55:32Z,0mis,research/test1757-prefetch-bench,STC,1,10+0.1,1,0,2,stopped,0,,,0.0
+6aee680620cd2dc3f03d2246,2026-11-09T07:35:14Z,2026-11-06T23:51:34Z,Disservin,nnue-lab/king-pins,Nodestime,1,360+3.6,1,0,2,stopped,181396,0.27,0.86,56073.1
