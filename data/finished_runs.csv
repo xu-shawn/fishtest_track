@@ -9172,6 +9172,8 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af16e648e7fb2e78bc1cb09,2026-11-09T06:55:32Z,2026-11-09T06:55:32Z,0mis,research/test1757-prefetch-bench,STC,1,10+0.1,1,0,2,stopped,0,,,0.0
 6aee680620cd2dc3f03d2246,2026-11-09T07:35:14Z,2026-11-06T23:51:34Z,Disservin,nnue-lab/king-pins,Nodestime,1,360+3.6,1,0,2,stopped,181396,0.27,0.86,56073.1
 6af193228e7fb2e78bc1cb24,2026-11-09T09:32:18Z,2026-11-09T09:32:18Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6af19afb8e7fb2e78bc1cb30,2026-11-09T10:05:47Z,2026-11-09T10:05:47Z,0mis,nnue-test1757-ridge-d5c257728ba5,STC,1,10+0.1,1,0,2,stopped,0,,,0.0
 6aef079f20cd2dc3f03d2387,2026-11-09T10:44:55Z,2026-11-07T11:12:31Z,Kaz,key-stack-contcorr-01,SMP,0,5+0.05,8,0,2,passed,45016,2.43,1.58,1546.1
 6af11de38e7fb2e78bc1ca69,2026-11-09T12:09:16Z,2026-11-09T01:12:03Z,feeling4vibes,test/fewer-neg-extensions-on-cut-nodes,STC,0,10+0.1,1,0,2,stopped,17888,-1.40,2.51,153.6
 6ae99ca220cd2dc3f03d19cb,2026-11-09T13:30:38Z,2026-11-03T08:34:42Z,shawnxu,test1756,STC,1,10+0.1,1,-1.75,0.25,passed,376512,-0.14,0.55,3233.0
+6aefe24b20cd2dc3f03d2517,2026-11-09T13:52:31Z,2026-11-08T02:45:31Z,AdrianStockfish,moreSE2,STC,0,10+0.1,1,0,2,rejected,50912,-1.21,1.48,437.2
