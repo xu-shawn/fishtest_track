@@ -9165,3 +9165,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aeef24b20cd2dc3f03d2358,2026-11-08T22:04:53Z,2026-11-07T09:41:31Z,fwoodruff,futility-threat-class,STC,0,10+0.1,1,0,2,passed,83520,1.54,1.16,717.2
 6aefe26620cd2dc3f03d2519,2026-11-09T01:50:59Z,2026-11-08T02:45:58Z,AdrianStockfish,harshSE1,STC,0,10+0.1,1,-1.75,0.25,rejected,3424,-27.05,5.76,29.4
 6aeb97e820cd2dc3f03d1d6d,2026-11-09T02:12:39Z,2026-11-04T20:39:04Z,Vizvezdenec,ttpvBonusScale6,STC,0,10+0.1,1,0,2,rejected,231712,0.12,0.69,1989.6
+6af063756368262d071de9f8,2026-11-09T03:36:24Z,2026-11-08T11:56:37Z,fwoodruff,futility-threat-aware,STC,0,10+0.1,1,0,2,passed,38592,2.74,1.70,331.4
