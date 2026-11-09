@@ -9177,3 +9177,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af11de38e7fb2e78bc1ca69,2026-11-09T12:09:16Z,2026-11-09T01:12:03Z,feeling4vibes,test/fewer-neg-extensions-on-cut-nodes,STC,0,10+0.1,1,0,2,stopped,17888,-1.40,2.51,153.6
 6ae99ca220cd2dc3f03d19cb,2026-11-09T13:30:38Z,2026-11-03T08:34:42Z,shawnxu,test1756,STC,1,10+0.1,1,-1.75,0.25,passed,376512,-0.14,0.55,3233.0
 6aefe24b20cd2dc3f03d2517,2026-11-09T13:52:31Z,2026-11-08T02:45:31Z,AdrianStockfish,moreSE2,STC,0,10+0.1,1,0,2,rejected,50912,-1.21,1.48,437.2
+6aec7f3920cd2dc3f03d1ec3,2026-11-09T15:16:32Z,2026-11-05T13:06:01Z,AdrianStockfish,noDepthIncrease,STC,0,10+0.1,1,-1.75,0.25,rejected,273472,-0.69,0.64,2348.2
+6aefe92f20cd2dc3f03d2541,2026-11-09T15:16:43Z,2026-11-08T03:14:55Z,AdrianStockfish,harshSE2,STC,0,10+0.1,1,0,2,passed,53664,2.11,1.44,460.8
