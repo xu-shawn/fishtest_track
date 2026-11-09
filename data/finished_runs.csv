@@ -9179,3 +9179,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aefe24b20cd2dc3f03d2517,2026-11-09T13:52:31Z,2026-11-08T02:45:31Z,AdrianStockfish,moreSE2,STC,0,10+0.1,1,0,2,rejected,50912,-1.21,1.48,437.2
 6aec7f3920cd2dc3f03d1ec3,2026-11-09T15:16:32Z,2026-11-05T13:06:01Z,AdrianStockfish,noDepthIncrease,STC,0,10+0.1,1,-1.75,0.25,rejected,273472,-0.69,0.64,2348.2
 6aefe92f20cd2dc3f03d2541,2026-11-09T15:16:43Z,2026-11-08T03:14:55Z,AdrianStockfish,harshSE2,STC,0,10+0.1,1,0,2,passed,53664,2.11,1.44,460.8
+6af1273d8e7fb2e78bc1ca70,2026-11-09T17:11:32Z,2026-11-09T01:51:57Z,shawnxu,test1758,STC,1,10+0.1,1,0,2,passed,24864,4.04,2.14,213.5
