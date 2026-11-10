@@ -9189,3 +9189,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af2be718e7fb2e78bc1ccbd,2026-11-10T07:31:26Z,2026-11-10T06:49:21Z,0x539,tt-stm,STC,0,10+0.1,1,0,2,stopped,320,-6.52,18.30,2.7
 6af2dde88e7fb2e78bc1cd0e,2026-11-10T09:03:36Z,2026-11-10T09:03:36Z,sawmaker,arena/f4242ee7-stockfish,LTC,0,60+0.6,1,0.5,2.5,stopped,0,,,0.0
 6af10a258e7fb2e78bc1ca5c,2026-11-10T11:56:18Z,2026-11-08T23:47:49Z,0mis,nnue-fcbaf7d2197c,STC,1,10+0.1,1,0,2,rejected,71424,-0.74,1.26,613.3
+6aea326120cd2dc3f03d1ac0,2026-11-10T14:28:10Z,2026-11-03T19:13:37Z,fauzi2,plyroot1,VVLTC,0,60+0.6,8,-1.75,0.25,stopped,34764,-1.53,1.51,14328.3
