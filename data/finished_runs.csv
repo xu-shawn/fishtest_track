@@ -9196,3 +9196,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af19ef98e7fb2e78bc1cb42,2026-11-10T18:17:23Z,2026-11-09T10:22:49Z,vsnehank,lmr-deep-reductions,STC,0,10+0.1,1,0,2,rejected,55104,-1.10,1.43,473.2
 6ae828fd20cd2dc3f03d17ac,2026-11-10T19:03:13Z,2026-11-02T06:09:01Z,shawnxu,test1755,STC,1,10+0.1,1,-1.75,0.25,passed,553568,-0.21,0.45,4753.3
 6af34b228e7fb2e78bc1cd8e,2026-11-10T19:32:39Z,2026-11-10T16:49:38Z,rn,fix-multipv-tm,STC,0,10+0.1,1,0,2,passed,4032,24.51,5.78,34.6
+6af21cff8e7fb2e78bc1cbd8,2026-11-10T20:04:25Z,2026-11-09T19:20:31Z,xoto,tmpc1,STC,0,10+0.1,1,0,2,rejected,35808,-1.89,1.73,307.5
+6af16e498e7fb2e78bc1cb07,2026-11-10T20:11:43Z,2026-11-09T06:55:05Z,rn,tt-clamp-decisive,STC,0,10+0.1,1,-1.75,0.25,passed,68928,0.89,1.27,591.9
