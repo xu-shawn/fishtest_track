@@ -9200,3 +9200,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af21cff8e7fb2e78bc1cbd8,2026-11-10T20:04:25Z,2026-11-09T19:20:31Z,xoto,tmpc1,STC,0,10+0.1,1,0,2,rejected,35808,-1.89,1.73,307.5
 6af16e498e7fb2e78bc1cb07,2026-11-10T20:11:43Z,2026-11-09T06:55:05Z,rn,tt-clamp-decisive,STC,0,10+0.1,1,-1.75,0.25,passed,68928,0.89,1.27,591.9
 6af302068e7fb2e78bc1cd26,2026-11-10T21:13:27Z,2026-11-10T11:37:42Z,feeling4vibes,test/only-apply-drawish-scale-when-adjusted,STC,0,10+0.1,1,0,2,rejected,11008,-7.26,3.11,94.5
+6af09ff989c6931c272deab3,2026-11-10T22:36:07Z,2026-11-08T16:14:49Z,lsst,analysis-avoid-repetition,STC,0,10+0.1,1,0,2,rejected,115936,-0.25,0.97,995.5
