@@ -9183,3 +9183,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aef555920cd2dc3f03d241a,2026-11-09T18:20:11Z,2026-11-07T16:44:09Z,Vizvezdenec,pvnodeLmrExt3,STC,0,10+0.1,1,0,2,rejected,79200,-0.60,1.18,680.1
 6aef55e920cd2dc3f03d241c,2026-11-10T01:03:28Z,2026-11-07T16:46:33Z,Vizvezdenec,pvnodeLmrExt4,STC,0,10+0.1,1,0,2,rejected,86432,-0.51,1.14,742.2
 6af09f2189c6931c272deab0,2026-11-10T02:20:30Z,2026-11-08T16:11:13Z,sawmaker,arena/f4242ee7-stockfish,STC,0,10+0.1,1,0,2,passed,55968,1.99,1.37,480.6
+6af16d888e7fb2e78bc1cb05,2026-11-10T03:13:00Z,2026-11-09T06:51:52Z,sawmaker,arena/6f5ad51b-stockfish,STC,0,10+0.1,1,0,2,rejected,22688,-3.35,2.22,194.8
+6af0eb628e7fb2e78bc1ca2a,2026-11-10T03:34:08Z,2026-11-08T21:36:34Z,sawmaker,arena/6a143864-stockfish,STC,0,10+0.1,1,0,2,rejected,44160,-1.49,1.58,379.2
