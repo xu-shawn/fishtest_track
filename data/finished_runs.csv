@@ -9192,3 +9192,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aea326120cd2dc3f03d1ac0,2026-11-10T14:28:10Z,2026-11-03T19:13:37Z,fauzi2,plyroot1,VVLTC,0,60+0.6,8,-1.75,0.25,stopped,34764,-1.53,1.51,14328.3
 6af2cd978e7fb2e78bc1ccf0,2026-11-10T16:56:02Z,2026-11-10T07:53:59Z,sawmaker,arena/26cb4e23-stockfish,STC,0,10+0.1,1,0,2,rejected,8800,-9.52,3.59,75.6
 6af207e98e7fb2e78bc1cbc2,2026-11-10T17:08:40Z,2026-11-09T17:50:33Z,shawnxu,test1758,LTC,1,60+0.6,1,0.5,2.5,passed,18042,5.30,2.36,929.5
+6aefb36520cd2dc3f03d24c9,2026-11-10T18:17:17Z,2026-11-07T23:25:25Z,rawbee,idea-op-history-1,STC,0,10+0.1,1,0,2,rejected,171648,-0.02,0.81,1473.9
+6af19ef98e7fb2e78bc1cb42,2026-11-10T18:17:23Z,2026-11-09T10:22:49Z,vsnehank,lmr-deep-reductions,STC,0,10+0.1,1,0,2,rejected,55104,-1.10,1.43,473.2
