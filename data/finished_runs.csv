@@ -9190,6 +9190,9 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af2dde88e7fb2e78bc1cd0e,2026-11-10T09:03:36Z,2026-11-10T09:03:36Z,sawmaker,arena/f4242ee7-stockfish,LTC,0,60+0.6,1,0.5,2.5,stopped,0,,,0.0
 6af10a258e7fb2e78bc1ca5c,2026-11-10T11:56:18Z,2026-11-08T23:47:49Z,0mis,nnue-fcbaf7d2197c,STC,1,10+0.1,1,0,2,rejected,71424,-0.74,1.26,613.3
 6aea326120cd2dc3f03d1ac0,2026-11-10T14:28:10Z,2026-11-03T19:13:37Z,fauzi2,plyroot1,VVLTC,0,60+0.6,8,-1.75,0.25,stopped,34764,-1.53,1.51,14328.3
+6af331a58e7fb2e78bc1cd67,2026-11-10T15:00:53Z,2026-11-10T15:00:53Z,sawmaker,arena/d884ea7a-stockfish,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6af33be28e7fb2e78bc1cd71,2026-11-10T15:44:34Z,2026-11-10T15:44:34Z,sawmaker,arena/2aec7724-stockfish,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6af33c668e7fb2e78bc1cd75,2026-11-10T15:46:46Z,2026-11-10T15:46:46Z,sawmaker,arena/e5a95167-stockfish,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6af2cd978e7fb2e78bc1ccf0,2026-11-10T16:56:02Z,2026-11-10T07:53:59Z,sawmaker,arena/26cb4e23-stockfish,STC,0,10+0.1,1,0,2,rejected,8800,-9.52,3.59,75.6
 6af207e98e7fb2e78bc1cbc2,2026-11-10T17:08:40Z,2026-11-09T17:50:33Z,shawnxu,test1758,LTC,1,60+0.6,1,0.5,2.5,passed,18042,5.30,2.36,929.5
 6aefb36520cd2dc3f03d24c9,2026-11-10T18:17:17Z,2026-11-07T23:25:25Z,rawbee,idea-op-history-1,STC,0,10+0.1,1,0,2,rejected,171648,-0.02,0.81,1473.9
@@ -9205,7 +9208,10 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af2a0378e7fb2e78bc1cc87,2026-11-11T03:08:40Z,2026-11-10T04:40:23Z,AdrianStockfish,SEscaler2,STC,0,10+0.1,1,-1.75,0.25,rejected,15104,-6.14,2.73,129.7
 6af2734f8e7fb2e78bc1cc5a,2026-11-11T06:01:50Z,2026-11-10T01:28:47Z,Fisherman,VecChanIndICL,STC,0,10+0.1,1,0,2,rejected,47168,-1.28,1.46,405.0
 6aee975f20cd2dc3f03d22b2,2026-11-11T07:00:13Z,2026-11-07T03:13:35Z,Elhamuddin,worsening-adj,SPSA,0,10+0.1,1,,,stopped,292416,-0.50,0.62,2510.9
+6af3e2fb8e7fb2e78bc1ce77,2026-11-11T07:31:25Z,2026-11-11T03:37:31Z,lsst,analysis-avoid-repetition,LTC,0,60+0.6,1,-1.75,0.25,stopped,948,-10.26,9.71,48.8
 6aef4eea20cd2dc3f03d240a,2026-11-11T08:35:44Z,2026-11-07T16:16:42Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,rejected,203776,0.06,0.74,1749.8
 6aeb4dfb20cd2dc3f03d1ce7,2026-11-11T08:46:57Z,2026-11-04T15:23:39Z,vdv,constexprZobrist,STC,0,10+0.1,1,-1.75,0.25,rejected,649728,-0.48,0.40,5579.0
 6af2eeb28e7fb2e78bc1cd1a,2026-11-11T09:12:41Z,2026-11-10T10:15:14Z,sanityeclipse000,prefetch-next-tile-v4,STC,0,10+0.1,1,0,2,passed,34496,2.91,1.73,296.2
 6af222798e7fb2e78bc1cbdf,2026-11-11T09:58:14Z,2026-11-09T19:43:53Z,fwoodruff,futility-class-tune,SPSA,0,60+0.6,1,,,stopped,14712,0.50,2.51,758.0
+6af466158e7fb2e78bc1cf91,2026-11-11T14:46:51Z,2026-11-11T12:56:53Z,AdrianStockfish,evalSort,STC,0,10+0.1,1,0,2,rejected,2496,-34.35,6.47,21.4
+6af482a18e7fb2e78bc1cfe9,2026-11-11T14:58:41Z,2026-11-11T14:58:41Z,lsst,analysis-avoid-repetition,LTC,0,60+0.6,1,-1.75,0.25,stopped,0,,,0.0
