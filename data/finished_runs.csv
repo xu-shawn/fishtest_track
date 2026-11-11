@@ -9215,3 +9215,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af222798e7fb2e78bc1cbdf,2026-11-11T09:58:14Z,2026-11-09T19:43:53Z,fwoodruff,futility-class-tune,SPSA,0,60+0.6,1,,,stopped,14712,0.50,2.51,758.0
 6af466158e7fb2e78bc1cf91,2026-11-11T14:46:51Z,2026-11-11T12:56:53Z,AdrianStockfish,evalSort,STC,0,10+0.1,1,0,2,rejected,2496,-34.35,6.47,21.4
 6af482a18e7fb2e78bc1cfe9,2026-11-11T14:58:41Z,2026-11-11T14:58:41Z,lsst,analysis-avoid-repetition,LTC,0,60+0.6,1,-1.75,0.25,stopped,0,,,0.0
+6af127488e7fb2e78bc1ca72,2026-11-11T15:37:18Z,2026-11-09T01:52:08Z,shawnxu,test1759,STC,1,10+0.1,1,0,2,rejected,85600,-0.54,1.15,735.0
