@@ -9206,3 +9206,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af2734f8e7fb2e78bc1cc5a,2026-11-11T06:01:50Z,2026-11-10T01:28:47Z,Fisherman,VecChanIndICL,STC,0,10+0.1,1,0,2,rejected,47168,-1.28,1.46,405.0
 6aee975f20cd2dc3f03d22b2,2026-11-11T07:00:13Z,2026-11-07T03:13:35Z,Elhamuddin,worsening-adj,SPSA,0,10+0.1,1,,,stopped,292416,-0.50,0.62,2510.9
 6aef4eea20cd2dc3f03d240a,2026-11-11T08:35:44Z,2026-11-07T16:16:42Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,rejected,203776,0.06,0.74,1749.8
+6aeb4dfb20cd2dc3f03d1ce7,2026-11-11T08:46:57Z,2026-11-04T15:23:39Z,vdv,constexprZobrist,STC,0,10+0.1,1,-1.75,0.25,rejected,649728,-0.48,0.40,5579.0
+6af2eeb28e7fb2e78bc1cd1a,2026-11-11T09:12:41Z,2026-11-10T10:15:14Z,sanityeclipse000,prefetch-next-tile-v4,STC,0,10+0.1,1,0,2,passed,34496,2.91,1.73,296.2
