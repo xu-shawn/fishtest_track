@@ -9224,6 +9224,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af0916a89c6931c272deaa0,2026-11-12T01:02:20Z,2026-11-08T15:12:42Z,rjhanson,capture-history-slot-align,STC,0,10+0.1,1,0,2,rejected,172000,-0.02,0.80,1476.9
 6af549a48e7fb2e78bc1d127,2026-11-12T05:07:48Z,2026-11-12T05:07:48Z,shreyanh,eval-reliability,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6aef1cf420cd2dc3f03d23b9,2026-11-12T05:19:12Z,2026-11-07T12:43:32Z,feeling4vibes,tune/improvement-metric-in-lmr,SPSA,0,10+0.1,1,,,completed,252000,-0.14,0.66,2163.8
+6af3205d8e7fb2e78bc1cd58,2026-11-12T06:48:18Z,2026-11-10T13:47:09Z,fauzi2,plyroot2,STC,0,10+0.1,1,-1.75,0.25,stopped,48288,1.03,1.51,414.6
 6af233188e7fb2e78bc1cc09,2026-11-12T06:52:03Z,2026-11-09T20:54:48Z,vdv,master,Progtest,1,60+0.6,1,,,completed,60000,20.92,1.29,3091.2
 6af2d8418e7fb2e78bc1cd00,2026-11-12T07:09:38Z,2026-11-10T08:39:29Z,sgtqwq,lmp_improvement,STC,0,10+0.1,1,0,2,rejected,66784,-0.81,1.28,573.5
 6aefc25920cd2dc3f03d24fa,2026-11-12T07:38:23Z,2026-11-08T00:29:13Z,fauzi2,nmpli,STC,0,10+0.1,1,0,2,rejected,221248,0.09,0.67,1899.8
