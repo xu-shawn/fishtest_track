@@ -9220,3 +9220,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aedc23d20cd2dc3f03d20fb,2026-11-11T20:17:48Z,2026-11-06T12:04:13Z,sg,simple_pv_history_update,LTC,0,60+0.6,1,-1.75,0.25,passed,130734,0.28,0.86,6735.4
 6af342e68e7fb2e78bc1cd86,2026-11-11T23:58:51Z,2026-11-10T16:14:30Z,rn,fix-multipv-tm,STC,0,10+0.1,1,-1.75,0.25,passed,43968,1.52,1.50,377.5
 6aeab87a20cd2dc3f03d1bf6,2026-11-12T00:04:13Z,2026-11-04T04:45:46Z,anematode,fix3FoldTweak,STC,0,10+0.1,1,-1.75,0.25,rejected,127072,-1.01,0.89,1091.1
+6af0916a89c6931c272deaa0,2026-11-12T01:02:20Z,2026-11-08T15:12:42Z,rjhanson,capture-history-slot-align,STC,0,10+0.1,1,0,2,rejected,172000,-0.02,0.80,1476.9
