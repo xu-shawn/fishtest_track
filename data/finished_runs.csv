@@ -9233,3 +9233,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af45b3f8e7fb2e78bc1cf67,2026-11-12T11:21:30Z,2026-11-11T12:10:39Z,shawnxu,test1760,Nodestime,1,100+1,1,0,2,passed,19676,5.03,2.43,1689.5
 6af2728a8e7fb2e78bc1cc58,2026-11-12T11:56:44Z,2026-11-10T01:25:30Z,AriaKafie,simplify-ep-movegen,STC,0,10+0.1,1,0,2,rejected,90144,-0.45,1.05,774.0
 6ae9231b20cd2dc3f03d1933,2026-11-12T12:01:54Z,2026-11-02T23:56:11Z,feeling4vibes,test/adjust-fail-high-blending-4,STC,0,10+0.1,1,0,2,stopped,70016,0.48,1.26,601.2
+6af5a0f88e7fb2e78bc1d1cd,2026-11-12T15:24:17Z,2026-11-12T11:20:24Z,rn,fix-multipv-tm,STC,0,10+0.1,1,0,2,passed,3136,30.88,6.42,26.9
