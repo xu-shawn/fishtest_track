@@ -9229,3 +9229,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aefc25920cd2dc3f03d24fa,2026-11-12T07:38:23Z,2026-11-08T00:29:13Z,fauzi2,nmpli,STC,0,10+0.1,1,0,2,rejected,221248,0.09,0.67,1899.8
 6af45b278e7fb2e78bc1cf65,2026-11-12T09:15:06Z,2026-11-11T12:10:15Z,shawnxu,test1760,STC,1,10+0.1,1,0,2,rejected,22144,-3.48,2.27,190.1
 6af0dcd98e7fb2e78bc1ca1b,2026-11-12T09:39:11Z,2026-11-08T20:34:33Z,Vizvezdenec,pvnodeLmrExt5,STC,0,10+0.1,1,0,2,passed,107072,1.30,1.02,919.4
+6af45b3f8e7fb2e78bc1cf67,2026-11-12T11:21:30Z,2026-11-11T12:10:39Z,shawnxu,test1760,Nodestime,1,100+1,1,0,2,passed,19676,5.03,2.43,1689.5
