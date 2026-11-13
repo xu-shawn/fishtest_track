@@ -9243,3 +9243,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af3ee9a8e7fb2e78bc1ce8c,2026-11-13T00:47:46Z,2026-11-11T04:27:06Z,AdrianStockfish,8plyContHist,STC,0,10+0.1,1,0,2,rejected,55136,-1.09,1.42,473.4
 6af2ce368e7fb2e78bc1ccf5,2026-11-13T00:59:48Z,2026-11-10T07:56:38Z,sawmaker,arena/485852d5-stockfish,STC,0,10+0.1,1,0,2,rejected,58272,-1.01,1.37,500.4
 6af64a208e7fb2e78bc1d2e8,2026-11-13T01:07:23Z,2026-11-12T23:22:08Z,shreyanh,tuned-values,STC,0,10+0.1,1,0,2,stopped,1536,6.79,8.66,13.2
+6af667928e7fb2e78bc1d336,2026-11-13T01:27:46Z,2026-11-13T01:27:46Z,shreyanh,tuned-values,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
