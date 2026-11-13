@@ -9238,7 +9238,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af5c6958e7fb2e78bc1d21f,2026-11-12T18:27:17Z,2026-11-12T14:00:53Z,fauzi2,simpr7,STC,0,10+0.1,1,-1.75,0.25,stopped,3264,-8.84,5.81,28.0
 6af61c118e7fb2e78bc1d2a5,2026-11-12T20:05:37Z,2026-11-12T20:05:37Z,Martin,master,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6af61f168e7fb2e78bc1d2aa,2026-11-12T20:18:30Z,2026-11-12T20:18:30Z,Martin,master,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
-6af0914289c6931c272dea9e,2026-11-12T22:11:24Z,2026-11-08T15:12:02Z,rjhanson,movepick-hoist-histories,STC,0,10+0.1,1,0,2,failed,237408,0.62,0.65,2038.5
 6af3c92e8e7fb2e78bc1ce60,2026-11-13T00:03:54Z,2026-11-11T01:47:26Z,tsoj,root-effort-ordering,STC,0,10+0.1,1,0,2,stopped,75040,-0.26,1.22,644.3
 6af3ee9a8e7fb2e78bc1ce8c,2026-11-13T00:47:46Z,2026-11-11T04:27:06Z,AdrianStockfish,8plyContHist,STC,0,10+0.1,1,0,2,rejected,55136,-1.09,1.42,473.4
 6af2ce368e7fb2e78bc1ccf5,2026-11-13T00:59:48Z,2026-11-10T07:56:38Z,sawmaker,arena/485852d5-stockfish,STC,0,10+0.1,1,0,2,rejected,58272,-1.01,1.37,500.4
@@ -9267,3 +9266,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af62b038e7fb2e78bc1d2c7,2026-11-13T18:49:41Z,2026-11-12T21:09:23Z,fwoodruff,futility-ttpv,STC,0,10+0.1,1,0,2,rejected,37760,-1.81,1.72,324.2
 6af244298e7fb2e78bc1cc2d,2026-11-13T19:15:22Z,2026-11-09T22:07:37Z,sawmaker,arena/2fc68a36-stockfish,STC,0,10+0.1,1,0,2,rejected,109376,-0.30,1.01,939.2
 6aef5b8220cd2dc3f03d242b,2026-11-13T19:17:13Z,2026-11-07T17:10:26Z,sg,history_update_stat_score,STC,0,10+0.1,1,0,2,rejected,195424,0.04,0.75,1678.0
+6af0914289c6931c272dea9e,2026-11-13T19:47:32Z,2026-11-08T15:12:02Z,rjhanson,movepick-hoist-histories,STC,0,10+0.1,1,0,2,passed,292192,0.75,0.59,2509.0
