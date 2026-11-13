@@ -9260,3 +9260,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af5cc958e7fb2e78bc1d22d,2026-11-13T11:39:27Z,2026-11-12T14:26:29Z,fauzi2,ontopof1,STC,0,10+0.1,1,0,2,stopped,20032,-2.03,2.34,172.0
 6af5cc8d8e7fb2e78bc1d22b,2026-11-13T11:40:23Z,2026-11-12T14:26:21Z,fauzi2,ontopof,STC,0,10+0.1,1,0,2,stopped,17024,-2.14,2.56,146.2
 6af5ca368e7fb2e78bc1d226,2026-11-13T12:57:00Z,2026-11-12T14:16:22Z,fauzi2,tarhta1,STC,0,10+0.1,1,0,2,stopped,18976,-1.79,2.40,162.9
+6af16c0d8e7fb2e78bc1caf3,2026-11-13T13:45:56Z,2026-11-09T06:45:33Z,sawmaker,arena/2e65071e-stockfish,STC,0,10+0.1,1,0,2,rejected,133632,-0.15,0.87,1147.5
+6aef805320cd2dc3f03d2486,2026-11-13T14:38:55Z,2026-11-07T19:47:31Z,sg,history_update_stat_score2,STC,0,10+0.1,1,0,2,rejected,187008,0.02,0.77,1605.8
