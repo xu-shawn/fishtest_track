@@ -9248,3 +9248,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af64e098e7fb2e78bc1d2ee,2026-11-13T05:22:55Z,2026-11-12T23:38:49Z,rjhanson,movepick-hoist-histories,STC,0,10+0.1,1,0,2,stopped,7872,3.97,3.58,67.6
 6af51f768e7fb2e78bc1d0e8,2026-11-13T05:37:55Z,2026-11-12T02:07:50Z,Elhamuddin,iop-interaction,SPSA,0,10+0.1,1,,,stopped,37910,-0.27,1.72,325.5
 6af2bdfc8e7fb2e78bc1ccbb,2026-11-13T05:39:40Z,2026-11-10T06:47:24Z,Elhamuddin,improving-depth-margin,SPSA,0,10+0.1,1,,,stopped,91874,-0.11,1.10,788.9
+6af54df78e7fb2e78bc1d12d,2026-11-13T06:20:13Z,2026-11-12T05:26:15Z,shreyanh,eval-reliability,STC,0,10+0.1,1,0,2,rejected,43424,-1.50,1.59,372.9
