@@ -9255,3 +9255,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aef2b8220cd2dc3f03d23d6,2026-11-13T07:44:54Z,2026-11-07T13:45:38Z,sg,positive_history_bonus4,LTC,0,60+0.6,1,0.5,2.5,stopped,112986,0.73,0.93,5821.0
 6af1b7748e7fb2e78bc1cb78,2026-11-13T09:41:22Z,2026-11-09T12:07:16Z,vsnehank,corrhist-fresh-eval,STC,0,10+0.1,1,0,2,rejected,180672,0.01,0.79,1551.4
 6af48c858e7fb2e78bc1cff8,2026-11-13T10:31:58Z,2026-11-11T15:40:53Z,feeling4vibes,test/countermove-capthist-bonus-by-depth-2,STC,0,10+0.1,1,0,2,stopped,63872,-0.44,1.32,548.4
+6af233258e7fb2e78bc1cc0b,2026-11-13T11:29:35Z,2026-11-09T20:55:01Z,vdv,master,Progtest,1,60+0.6,8,,,completed,60000,13.08,1.16,24729.6
+6af41cb88e7fb2e78bc1ceee,2026-11-13T11:39:17Z,2026-11-11T07:43:52Z,sanityeclipse000,probcut-refuted-late,STC,0,10+0.1,1,0,2,rejected,86624,-0.52,1.14,743.8
+6af5cc958e7fb2e78bc1d22d,2026-11-13T11:39:27Z,2026-11-12T14:26:29Z,fauzi2,ontopof1,STC,0,10+0.1,1,0,2,stopped,20032,-2.03,2.34,172.0
+6af5cc8d8e7fb2e78bc1d22b,2026-11-13T11:40:23Z,2026-11-12T14:26:21Z,fauzi2,ontopof,STC,0,10+0.1,1,0,2,stopped,17024,-2.14,2.56,146.2
