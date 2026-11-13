@@ -9254,3 +9254,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af082a362f6cb91130d20a6,2026-11-13T07:43:32Z,2026-11-08T14:09:39Z,sg,positive_history_bonus2b,LTC,0,60+0.6,1,0.5,2.5,stopped,84414,0.55,1.07,4349.0
 6aef2b8220cd2dc3f03d23d6,2026-11-13T07:44:54Z,2026-11-07T13:45:38Z,sg,positive_history_bonus4,LTC,0,60+0.6,1,0.5,2.5,stopped,112986,0.73,0.93,5821.0
 6af1b7748e7fb2e78bc1cb78,2026-11-13T09:41:22Z,2026-11-09T12:07:16Z,vsnehank,corrhist-fresh-eval,STC,0,10+0.1,1,0,2,rejected,180672,0.01,0.79,1551.4
+6af48c858e7fb2e78bc1cff8,2026-11-13T10:31:58Z,2026-11-11T15:40:53Z,feeling4vibes,test/countermove-capthist-bonus-by-depth-2,STC,0,10+0.1,1,0,2,stopped,63872,-0.44,1.32,548.4
