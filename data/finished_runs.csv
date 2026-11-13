@@ -9249,3 +9249,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af51f768e7fb2e78bc1d0e8,2026-11-13T05:37:55Z,2026-11-12T02:07:50Z,Elhamuddin,iop-interaction,SPSA,0,10+0.1,1,,,stopped,37910,-0.27,1.72,325.5
 6af2bdfc8e7fb2e78bc1ccbb,2026-11-13T05:39:40Z,2026-11-10T06:47:24Z,Elhamuddin,improving-depth-margin,SPSA,0,10+0.1,1,,,stopped,91874,-0.11,1.10,788.9
 6af54df78e7fb2e78bc1d12d,2026-11-13T06:20:13Z,2026-11-12T05:26:15Z,shreyanh,eval-reliability,STC,0,10+0.1,1,0,2,rejected,43424,-1.50,1.59,372.9
+6af6b2508e7fb2e78bc1d39b,2026-11-13T06:46:40Z,2026-11-13T06:46:40Z,Elhamuddin,iop-bias,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6af27f9a8e7fb2e78bc1cc68,2026-11-13T06:49:34Z,2026-11-10T02:21:14Z,AdrianStockfish,HarshSEreb,LTC,0,60+0.6,1,0.5,2.5,rejected,42312,-1.22,1.51,2179.9
+6af082a362f6cb91130d20a6,2026-11-13T07:43:32Z,2026-11-08T14:09:39Z,sg,positive_history_bonus2b,LTC,0,60+0.6,1,0.5,2.5,stopped,84414,0.55,1.07,4349.0
+6aef2b8220cd2dc3f03d23d6,2026-11-13T07:44:54Z,2026-11-07T13:45:38Z,sg,positive_history_bonus4,LTC,0,60+0.6,1,0.5,2.5,stopped,112986,0.73,0.93,5821.0
