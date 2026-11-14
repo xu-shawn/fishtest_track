@@ -9292,3 +9292,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af6f7f48e7fb2e78bc1d409,2026-11-14T16:20:32Z,2026-11-13T11:43:48Z,fwoodruff,futility-class-history,STC,0,10+0.1,1,0,2,rejected,61120,-0.93,1.35,524.8
 6af4e6868e7fb2e78bc1d089,2026-11-14T16:22:31Z,2026-11-11T22:04:54Z,Fisherman,CapNullRed,STC,0,10+0.1,1,0,2,rejected,125280,-0.20,0.92,1075.7
 6af212f28e7fb2e78bc1cbcf,2026-11-14T16:33:26Z,2026-11-09T18:37:38Z,Vizvezdenec,alphabetaEval3,STC,0,10+0.1,1,0,2,passed,147328,1.08,0.87,1265.1
+6af7f6b58e7fb2e78bc1d5a5,2026-11-14T18:16:38Z,2026-11-14T05:50:45Z,rjhanson,movegen-lazy-king-threats,STC,0,10+0.1,1,0,2,passed,30528,3.16,1.81,262.1
+6aea12c720cd2dc3f03d1a48,2026-11-14T18:18:39Z,2026-11-03T16:58:47Z,fauzi2,scscs1,STC,0,10+0.1,1,0,2,rejected,824544,0.39,0.37,7080.1
