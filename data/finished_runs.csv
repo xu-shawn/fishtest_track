@@ -9277,3 +9277,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af274708e7fb2e78bc1cc5d,2026-11-14T03:30:48Z,2026-11-10T01:33:36Z,Fisherman,ATICL,STC,0,10+0.1,1,0,2,rejected,63328,-0.83,1.24,543.8
 6aed8fac20cd2dc3f03d2083,2026-11-14T04:19:56Z,2026-11-06T08:28:28Z,AdrianStockfish,lmrFix,STC,0,10+0.1,1,-1.75,0.25,rejected,380448,-0.60,0.54,3266.8
 6af211f98e7fb2e78bc1cbcb,2026-11-14T05:02:57Z,2026-11-09T18:33:29Z,Vizvezdenec,alphabetaEval1,STC,0,10+0.1,1,0,2,rejected,128320,-0.19,0.93,1101.8
+6af519ee8e7fb2e78bc1d0df,2026-11-14T07:12:10Z,2026-11-12T01:44:14Z,Fisherman,DeepNullMinPc,STC,0,10+0.1,1,0,2,rejected,94752,-0.41,1.04,813.6
