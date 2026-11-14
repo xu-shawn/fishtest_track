@@ -9268,3 +9268,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aef5b8220cd2dc3f03d242b,2026-11-13T19:17:13Z,2026-11-07T17:10:26Z,sg,history_update_stat_score,STC,0,10+0.1,1,0,2,rejected,195424,0.04,0.75,1678.0
 6af0914289c6931c272dea9e,2026-11-13T19:47:32Z,2026-11-08T15:12:02Z,rjhanson,movepick-hoist-histories,STC,0,10+0.1,1,0,2,passed,292192,0.75,0.59,2509.0
 6af69ddd8e7fb2e78bc1d375,2026-11-13T23:37:40Z,2026-11-13T05:19:25Z,AdrianStockfish,orderCheck,STC,0,10+0.1,1,0,2,rejected,23392,-3.22,2.17,200.9
+6af4e3ed8e7fb2e78bc1d081,2026-11-14T00:07:37Z,2026-11-11T21:53:49Z,Fisherman,MinorKing,STC,0,10+0.1,1,0,2,stopped,30016,-1.54,1.92,257.7
+6af5f7ab8e7fb2e78bc1d26d,2026-11-14T00:14:13Z,2026-11-12T17:30:19Z,sg,nm_refutation,STC,0,10+0.1,1,0,2,rejected,33504,-2.09,1.82,287.7
