@@ -9275,3 +9275,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af16ab58e7fb2e78bc1caf0,2026-11-14T02:44:26Z,2026-11-09T06:39:49Z,fwoodruff,futility-threat-aware,LTC,0,60+0.6,1,0.5,2.5,rejected,139158,0.10,0.84,7169.4
 6af38c538e7fb2e78bc1ce09,2026-11-14T03:05:29Z,2026-11-10T21:27:47Z,Vizvezdenec,pvnodeLmrExt6,STC,0,10+0.1,1,0,2,rejected,92224,-0.45,1.10,791.9
 6af274708e7fb2e78bc1cc5d,2026-11-14T03:30:48Z,2026-11-10T01:33:36Z,Fisherman,ATICL,STC,0,10+0.1,1,0,2,rejected,63328,-0.83,1.24,543.8
+6aed8fac20cd2dc3f03d2083,2026-11-14T04:19:56Z,2026-11-06T08:28:28Z,AdrianStockfish,lmrFix,STC,0,10+0.1,1,-1.75,0.25,rejected,380448,-0.60,0.54,3266.8
