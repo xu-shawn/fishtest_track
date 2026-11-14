@@ -9287,3 +9287,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af7979e8e7fb2e78bc1d512,2026-11-14T12:33:14Z,2026-11-13T23:05:02Z,shawnxu,test1762,STC,1,10+0.1,1,0,2,passed,28160,3.64,2.03,241.8
 6af520a18e7fb2e78bc1d0ea,2026-11-14T12:59:10Z,2026-11-12T02:12:49Z,0x539,tt-stm,LTC,0,60+0.6,1,-1.75,0.25,passed,72060,0.78,1.16,3712.5
 6af756408e7fb2e78bc1d46c,2026-11-14T13:23:38Z,2026-11-13T18:26:08Z,Elhamuddin,guard_rfp,STC,0,10+0.1,1,0,2,rejected,40064,-1.61,1.61,344.0
+6af86b4d8e7fb2e78bc1d67f,2026-11-14T14:08:13Z,2026-11-14T14:08:13Z,fwoodruff,futility-threat-class-rebase,STC,0,10+0.1,1,0.5,2.5,stopped,0,,,0.0
