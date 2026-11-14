@@ -9279,3 +9279,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af211f98e7fb2e78bc1cbcb,2026-11-14T05:02:57Z,2026-11-09T18:33:29Z,Vizvezdenec,alphabetaEval1,STC,0,10+0.1,1,0,2,rejected,128320,-0.19,0.93,1101.8
 6af519ee8e7fb2e78bc1d0df,2026-11-14T07:12:10Z,2026-11-12T01:44:14Z,Fisherman,DeepNullMinPc,STC,0,10+0.1,1,0,2,rejected,94752,-0.41,1.04,813.6
 6af819458e7fb2e78bc1d5d0,2026-11-14T08:18:13Z,2026-11-14T08:18:13Z,Elhamuddin,quiet-follows-capture,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
+6af2753f8e7fb2e78bc1cc61,2026-11-14T09:48:58Z,2026-11-10T01:37:03Z,Fisherman,PP3PrefetchICL,STC,0,10+0.1,1,0,2,rejected,105440,-0.32,0.97,905.4
