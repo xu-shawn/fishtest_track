@@ -9281,3 +9281,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af819458e7fb2e78bc1d5d0,2026-11-14T08:18:13Z,2026-11-14T08:18:13Z,Elhamuddin,quiet-follows-capture,SPSA,0,10+0.1,1,,,stopped,0,,,0.0
 6af2753f8e7fb2e78bc1cc61,2026-11-14T09:48:58Z,2026-11-10T01:37:03Z,Fisherman,PP3PrefetchICL,STC,0,10+0.1,1,0,2,rejected,105440,-0.32,0.97,905.4
 6af5cca48e7fb2e78bc1d22f,2026-11-14T11:03:48Z,2026-11-12T14:26:44Z,fauzi2,ontopof2,STC,0,10+0.1,1,0,2,stopped,61856,-0.82,1.35,531.1
+6af84cca8e7fb2e78bc1d63a,2026-11-14T11:58:02Z,2026-11-14T11:58:02Z,Gruenerapfel,lmr_pair_feature-a,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6af84cd78e7fb2e78bc1d63c,2026-11-14T11:58:15Z,2026-11-14T11:58:15Z,Gruenerapfel,lmr_pair_feature-b,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6af6b8b28e7fb2e78bc1d3a4,2026-11-14T12:21:57Z,2026-11-13T07:13:54Z,Elhamuddin,iop-bias,STC,0,10+0.1,1,0,2,rejected,62304,-0.91,1.34,535.0
+6af7979e8e7fb2e78bc1d512,2026-11-14T12:33:14Z,2026-11-13T23:05:02Z,shawnxu,test1762,STC,1,10+0.1,1,0,2,passed,28160,3.64,2.03,241.8
