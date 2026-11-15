@@ -9302,3 +9302,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af533468e7fb2e78bc1d0fd,2026-11-15T01:36:56Z,2026-11-12T03:32:22Z,Dubslow,rm-optimism,STC,0,10+0.1,1,-1.75,0.25,passed,164768,0.16,0.82,1414.8
 6af5ccb28e7fb2e78bc1d231,2026-11-15T04:33:06Z,2026-11-12T14:26:58Z,fauzi2,ontopof3,STC,0,10+0.1,1,0,2,rejected,104768,-0.34,1.04,899.6
 6af1a4d68e7fb2e78bc1cb59,2026-11-15T06:36:09Z,2026-11-09T10:47:50Z,Kaz,key-stack-contcorr-01,SMP,0,20+0.2,8,0.5,2.5,passed,86886,1.58,1.03,11937.0
+6af447668e7fb2e78bc1cf4b,2026-11-15T07:10:33Z,2026-11-11T10:45:58Z,Gruenerapfel,recipe-simp,STC,1,10+0.1,1,-1.75,0.25,passed,220800,0.03,0.72,1895.9
+6af895d48e7fb2e78bc1d6ae,2026-11-15T07:34:41Z,2026-11-14T17:09:40Z,Elhamuddin,quiet-follows-capture,STC,0,10+0.1,1,0,2,rejected,29952,-2.45,1.93,257.2
+6af5ca428e7fb2e78bc1d228,2026-11-15T07:44:12Z,2026-11-12T14:16:34Z,fauzi2,tarhta2,STC,0,10+0.1,1,0,2,rejected,121632,-0.23,0.96,1044.4
