@@ -9300,6 +9300,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af5c0668e7fb2e78bc1d214,2026-11-15T01:12:38Z,2026-11-12T13:34:30Z,Disservin,nnue-test-77,STC,1,10+0.1,1,0,2,rejected,155200,-0.08,0.85,1332.7
 6af907d38e7fb2e78bc1d785,2026-11-15T01:29:15Z,2026-11-15T01:16:03Z,feeling4vibes,test/calculate-slider-blockers-if-needed,STC,0,10+0.1,1,0,2,failed,224,-4.65,21.73,1.9
 6af533468e7fb2e78bc1d0fd,2026-11-15T01:36:56Z,2026-11-12T03:32:22Z,Dubslow,rm-optimism,STC,0,10+0.1,1,-1.75,0.25,passed,164768,0.16,0.82,1414.8
+6af702348e7fb2e78bc1d410,2026-11-15T02:00:59Z,2026-11-13T12:27:32Z,feeling4vibes,test/higher-small-probcut-beta-for-high-depth-2,STC,0,10+0.1,1,0,2,stopped,73056,-0.46,1.23,627.3
 6af5ccb28e7fb2e78bc1d231,2026-11-15T04:33:06Z,2026-11-12T14:26:58Z,fauzi2,ontopof3,STC,0,10+0.1,1,0,2,rejected,104768,-0.34,1.04,899.6
 6af1a4d68e7fb2e78bc1cb59,2026-11-15T06:36:09Z,2026-11-09T10:47:50Z,Kaz,key-stack-contcorr-01,SMP,0,20+0.2,8,0.5,2.5,passed,86886,1.58,1.03,11937.0
 6af447668e7fb2e78bc1cf4b,2026-11-15T07:10:33Z,2026-11-11T10:45:58Z,Gruenerapfel,recipe-simp,STC,1,10+0.1,1,-1.75,0.25,passed,220800,0.03,0.72,1895.9
@@ -9309,3 +9310,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af844dd8e7fb2e78bc1d630,2026-11-15T11:43:01Z,2026-11-14T11:24:13Z,sg,nm_refutation_order3,STC,0,10+0.1,1,0,2,rejected,29024,-2.50,1.94,249.2
 6af71a288e7fb2e78bc1d435,2026-11-15T11:59:29Z,2026-11-13T14:09:44Z,AdrianStockfish,lessR,STC,0,10+0.1,1,0,2,rejected,77056,-0.63,1.20,661.7
 6af8dcea8e7fb2e78bc1d735,2026-11-15T12:45:32Z,2026-11-14T22:12:58Z,fauzi2,xdiii1,STC,0,10+0.1,1,0,2,stopped,23680,-1.42,2.15,203.3
+6af8c2248e7fb2e78bc1d71a,2026-11-15T14:06:38Z,2026-11-14T20:18:44Z,fwoodruff,correction-pawn-values,STC,0,10+0.1,1,0,2,rejected,30368,-2.35,1.90,260.8
+6af538978e7fb2e78bc1d103,2026-11-15T14:15:30Z,2026-11-12T03:55:03Z,Dubslow,rm-optimism-2,STC,0,10+0.1,1,-1.75,0.25,rejected,214592,-0.77,0.72,1842.6
+6af91b8f8e7fb2e78bc1d792,2026-11-15T14:36:07Z,2026-11-15T02:40:15Z,tsoj,tree_node_effort_ordering,STC,0,10+0.1,1,0,2,stopped,24192,-1.92,2.14,207.7
