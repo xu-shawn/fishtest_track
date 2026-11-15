@@ -9320,3 +9320,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af998288e7fb2e78bc1d872,2026-11-15T18:36:49Z,2026-11-15T11:31:52Z,fauzi2,xdiii4,STC,0,10+0.1,1,0,2,stopped,8992,-4.68,3.45,77.2
 6af71c408e7fb2e78bc1d438,2026-11-15T18:44:43Z,2026-11-13T14:18:40Z,AdrianStockfish,boundScale1,STC,0,10+0.1,1,0,2,rejected,87264,-0.50,1.12,749.3
 6af8cc988e7fb2e78bc1d724,2026-11-15T19:24:49Z,2026-11-14T21:03:20Z,Gruenerapfel,claude/clip-split-interp,STC,0,10+0.1,1,0,2,rejected,30080,-2.36,1.90,258.3
+6af8e27a8e7fb2e78bc1d741,2026-11-15T21:12:11Z,2026-11-14T22:36:42Z,fwoodruff,correction-pawn-standin2x,STC,0,10+0.1,1,0,2,rejected,36640,-1.88,1.73,314.6
