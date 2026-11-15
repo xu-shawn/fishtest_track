@@ -9316,3 +9316,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af0209220cd2dc3f03d259c,2026-11-15T14:50:52Z,2026-11-08T07:11:14Z,0x539,tweakhybrid2,STC,0,10+0.1,1,0,2,rejected,332800,0.22,0.56,2857.6
 6af96f478e7fb2e78bc1d824,2026-11-15T15:40:14Z,2026-11-15T08:37:27Z,Kaz,kaz-contcorr02,SMP,0,5+0.05,8,0,2,stopped,11920,-5.07,3.04,409.4
 6af825ff8e7fb2e78bc1d5e0,2026-11-15T17:18:24Z,2026-11-14T09:12:31Z,sg,nm_refutation_order,STC,0,10+0.1,1,0,2,rejected,36800,-1.87,1.74,316.0
+6af983508e7fb2e78bc1d841,2026-11-15T18:01:25Z,2026-11-15T10:02:56Z,Kaz,kaz-contcorr02,SMP,0,5+0.05,8,0,2,stopped,12464,-3.90,2.96,428.1
+6af998288e7fb2e78bc1d872,2026-11-15T18:36:49Z,2026-11-15T11:31:52Z,fauzi2,xdiii4,STC,0,10+0.1,1,0,2,stopped,8992,-4.68,3.45,77.2
+6af71c408e7fb2e78bc1d438,2026-11-15T18:44:43Z,2026-11-13T14:18:40Z,AdrianStockfish,boundScale1,STC,0,10+0.1,1,0,2,rejected,87264,-0.50,1.12,749.3
