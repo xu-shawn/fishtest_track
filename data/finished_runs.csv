@@ -9300,3 +9300,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af5c0668e7fb2e78bc1d214,2026-11-15T01:12:38Z,2026-11-12T13:34:30Z,Disservin,nnue-test-77,STC,1,10+0.1,1,0,2,rejected,155200,-0.08,0.85,1332.7
 6af907d38e7fb2e78bc1d785,2026-11-15T01:29:15Z,2026-11-15T01:16:03Z,feeling4vibes,test/calculate-slider-blockers-if-needed,STC,0,10+0.1,1,0,2,failed,224,-4.65,21.73,1.9
 6af533468e7fb2e78bc1d0fd,2026-11-15T01:36:56Z,2026-11-12T03:32:22Z,Dubslow,rm-optimism,STC,0,10+0.1,1,-1.75,0.25,passed,164768,0.16,0.82,1414.8
+6af5ccb28e7fb2e78bc1d231,2026-11-15T04:33:06Z,2026-11-12T14:26:58Z,fauzi2,ontopof3,STC,0,10+0.1,1,0,2,rejected,104768,-0.34,1.04,899.6
