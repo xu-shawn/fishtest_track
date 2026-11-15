@@ -9315,3 +9315,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af91b8f8e7fb2e78bc1d792,2026-11-15T14:36:07Z,2026-11-15T02:40:15Z,tsoj,tree_node_effort_ordering,STC,0,10+0.1,1,0,2,stopped,24192,-1.92,2.14,207.7
 6af0209220cd2dc3f03d259c,2026-11-15T14:50:52Z,2026-11-08T07:11:14Z,0x539,tweakhybrid2,STC,0,10+0.1,1,0,2,rejected,332800,0.22,0.56,2857.6
 6af96f478e7fb2e78bc1d824,2026-11-15T15:40:14Z,2026-11-15T08:37:27Z,Kaz,kaz-contcorr02,SMP,0,5+0.05,8,0,2,stopped,11920,-5.07,3.04,409.4
+6af825ff8e7fb2e78bc1d5e0,2026-11-15T17:18:24Z,2026-11-14T09:12:31Z,sg,nm_refutation_order,STC,0,10+0.1,1,0,2,rejected,36800,-1.87,1.74,316.0
