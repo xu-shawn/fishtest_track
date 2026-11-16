@@ -9335,3 +9335,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af963b58e7fb2e78bc1d817,2026-11-16T13:40:48Z,2026-11-15T07:48:05Z,Lucario6607,bidoof,STC,0,10+0.1,1,0,2,rejected,72864,-0.71,1.24,625.7
 6af6e7338e7fb2e78bc1d3da,2026-11-16T13:53:38Z,2026-11-13T10:32:19Z,feeling4vibes,test/higher-small-probcut-beta-for-high-depth,STC,0,10+0.1,1,0,2,rejected,159808,-0.06,0.83,1372.2
 6afb07a18e7fb2e78bc1da98,2026-11-16T14:04:49Z,2026-11-16T13:39:45Z,0x539,mp-sort2,STC,0,10+0.1,1,0,2,stopped,1888,2.58,7.60,16.2
+6af91cd08e7fb2e78bc1d795,2026-11-16T15:21:47Z,2026-11-15T02:45:36Z,Bush3r,nmp-count-fail-high-once,STC,0,10+0.1,1,-1.75,0.25,passed,80032,0.69,1.12,687.2
