@@ -9329,3 +9329,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af858648e7fb2e78bc1d669,2026-11-16T10:01:45Z,2026-11-14T12:47:32Z,Gruenerapfel,reduce-evasions-less,STC,0,10+0.1,1,0,2,rejected,61824,-0.92,1.33,530.9
 6af6206b8e7fb2e78bc1d2bd,2026-11-16T11:32:14Z,2026-11-12T20:24:11Z,Martin,master,STC,0,10+0.1,1,-1.75,0.25,passed,272160,-0.05,0.61,2336.9
 6af8f5718e7fb2e78bc1d752,2026-11-16T12:45:32Z,2026-11-14T23:57:37Z,shawnxu,test1763,STC,0,10+0.1,1,0,2,rejected,65728,-0.83,1.30,564.4
+6af84e348e7fb2e78bc1d643,2026-11-16T13:02:34Z,2026-11-14T12:04:04Z,Gruenerapfel,lmr_pair_feature-b,STC,0,10+0.1,1,0,2,rejected,50656,-1.21,1.47,435.0
+6afb010f8e7fb2e78bc1da91,2026-11-16T13:11:43Z,2026-11-16T13:11:43Z,0x539,mp-sort2,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6af9981f8e7fb2e78bc1d870,2026-11-16T13:23:51Z,2026-11-15T11:31:43Z,fauzi2,xdiii3,STC,0,10+0.1,1,0,2,stopped,46112,-1.03,1.56,395.9
+6af963b58e7fb2e78bc1d817,2026-11-16T13:40:48Z,2026-11-15T07:48:05Z,Lucario6607,bidoof,STC,0,10+0.1,1,0,2,rejected,72864,-0.71,1.24,625.7
