@@ -9323,3 +9323,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af8e27a8e7fb2e78bc1d741,2026-11-15T21:12:11Z,2026-11-14T22:36:42Z,fwoodruff,correction-pawn-standin2x,STC,0,10+0.1,1,0,2,rejected,36640,-1.88,1.73,314.6
 6af82da18e7fb2e78bc1d5fa,2026-11-15T22:43:14Z,2026-11-14T09:45:05Z,sg,nm_refutation_order2,STC,0,10+0.1,1,0,2,rejected,46464,-1.42,1.54,399.0
 6af93c7d8e7fb2e78bc1d7e8,2026-11-16T01:11:59Z,2026-11-15T05:00:45Z,Elhamuddin,quiet-follows-capture512,STC,0,10+0.1,1,0,2,rejected,38240,-1.77,1.69,328.4
+6af7eb248e7fb2e78bc1d588,2026-11-16T04:14:03Z,2026-11-14T05:01:24Z,AdrianStockfish,ttDataMove,STC,0,10+0.1,1,0,2,rejected,84704,-0.53,1.15,727.3
