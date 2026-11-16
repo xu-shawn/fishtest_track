@@ -9339,3 +9339,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af9966d8e7fb2e78bc1d86d,2026-11-16T17:27:45Z,2026-11-15T11:24:29Z,fauzi2,xdiii2,STC,0,10+0.1,1,0,2,stopped,57376,-0.61,1.40,492.7
 6af8991e8e7fb2e78bc1d6b6,2026-11-16T17:38:36Z,2026-11-14T17:23:42Z,Gruenerapfel,claude/flattened-four-band-patch-d33b27,STC,0,10+0.1,1,0,2,rejected,63680,-0.88,1.32,546.8
 6af8f5da8e7fb2e78bc1d754,2026-11-16T17:55:41Z,2026-11-14T23:59:22Z,shawnxu,test1764,STC,0,10+0.1,1,0,2,passed,79296,1.58,1.18,680.9
+6af8dce38e7fb2e78bc1d733,2026-11-16T18:45:36Z,2026-11-14T22:12:51Z,fauzi2,xdiii,STC,0,10+0.1,1,0,2,stopped,84096,-0.12,1.14,722.1
+6afb583e8e7fb2e78bc1db44,2026-11-16T19:41:58Z,2026-11-16T19:23:42Z,fwoodruff,neuron-bias,STC,0,10+0.1,1,0,2,stopped,288,-52.26,17.82,2.5
