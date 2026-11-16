@@ -9327,3 +9327,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af6bf028e7fb2e78bc1d3ad,2026-11-16T05:52:57Z,2026-11-13T07:40:50Z,sg,nm_refutation2,STC,0,10+0.1,1,0,2,failed,56096,-0.09,1.35,481.7
 6af84e298e7fb2e78bc1d641,2026-11-16T08:35:12Z,2026-11-14T12:03:53Z,Gruenerapfel,lmr_pair_feature-a,STC,0,10+0.1,1,0,2,rejected,56832,-1.03,1.39,488.0
 6af858648e7fb2e78bc1d669,2026-11-16T10:01:45Z,2026-11-14T12:47:32Z,Gruenerapfel,reduce-evasions-less,STC,0,10+0.1,1,0,2,rejected,61824,-0.92,1.33,530.9
+6af6206b8e7fb2e78bc1d2bd,2026-11-16T11:32:14Z,2026-11-12T20:24:11Z,Martin,master,STC,0,10+0.1,1,-1.75,0.25,passed,272160,-0.05,0.61,2336.9
