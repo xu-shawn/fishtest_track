@@ -9341,3 +9341,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af8f5da8e7fb2e78bc1d754,2026-11-16T17:55:41Z,2026-11-14T23:59:22Z,shawnxu,test1764,STC,0,10+0.1,1,0,2,passed,79296,1.58,1.18,680.9
 6af8dce38e7fb2e78bc1d733,2026-11-16T18:45:36Z,2026-11-14T22:12:51Z,fauzi2,xdiii,STC,0,10+0.1,1,0,2,stopped,84096,-0.12,1.14,722.1
 6afb583e8e7fb2e78bc1db44,2026-11-16T19:41:58Z,2026-11-16T19:23:42Z,fwoodruff,neuron-bias,STC,0,10+0.1,1,0,2,stopped,288,-52.26,17.82,2.5
+6af8a7238e7fb2e78bc1d6dc,2026-11-16T19:57:00Z,2026-11-14T18:23:31Z,Vizvezdenec,alphabetaEvalReb1,LTC,0,60+0.6,1,0.5,2.5,rejected,39456,-1.37,1.56,2032.8
