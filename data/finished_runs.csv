@@ -9349,3 +9349,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af9b46a8e7fb2e78bc1d8a2,2026-11-17T07:40:57Z,2026-11-15T13:32:26Z,fwoodruff,futility-calm-prune,STC,0,10+0.1,1,0,2,stopped,81888,0.33,1.17,703.1
 6af9a3098e7fb2e78bc1d890,2026-11-17T07:41:20Z,2026-11-15T12:18:17Z,fwoodruff,futility-threat-prune,STC,0,10+0.1,1,0,2,stopped,89088,0.31,1.12,765.0
 6af776548e7fb2e78bc1d4d2,2026-11-17T08:01:14Z,2026-11-13T20:43:00Z,sg,nm_refutation_x2,STC,0,10+0.1,1,0,2,rejected,137568,-0.14,0.90,1181.3
+6aefd3d220cd2dc3f03d2509,2026-11-17T12:06:14Z,2026-11-08T01:43:46Z,Vizvezdenec,pvnodeLmrExtReb1,LTC,0,60+0.6,1,0.5,2.5,rejected,233634,0.34,0.64,12036.8
+6afabccd8e7fb2e78bc1d9f5,2026-11-17T12:15:36Z,2026-11-16T08:20:29Z,penneponne,c2s/24-se-margin-history,STC,0,10+0.1,1,0,2,passed,23744,4.14,2.16,203.9
+6af9f2278e7fb2e78bc1d8df,2026-11-17T12:25:10Z,2026-11-15T17:55:51Z,sanityeclipse000,simp-ttmovehist-pv,STC,0,10+0.1,1,-1.75,0.25,rejected,101696,-1.22,1.04,873.2
+6af388dc8e7fb2e78bc1ce03,2026-11-17T12:40:48Z,2026-11-10T21:13:00Z,rn,tt-clamp-decisive,LTC,0,60+0.6,1,-1.75,0.25,rejected,264090,-0.65,0.61,13605.9
