@@ -9345,3 +9345,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af9f43f8e7fb2e78bc1d8e4,2026-11-17T02:01:57Z,2026-11-15T18:04:47Z,Kaz,kaz-contcorr02,SMP,0,5+0.05,8,0,2,rejected,55176,-1.07,1.40,1895.1
 6af93cd28e7fb2e78bc1d7ea,2026-11-17T03:02:09Z,2026-11-15T05:02:10Z,Elhamuddin,quiet-follows-capture256,STC,0,10+0.1,1,0,2,rejected,96320,-0.41,1.07,827.1
 6afaf19d8e7fb2e78bc1da6a,2026-11-17T04:48:14Z,2026-11-16T12:05:49Z,penneponne,c2s/19-tm-ta-score,STC,0,10+0.1,1,0,2,rejected,9248,-8.72,3.39,79.4
+6afb6f708e7fb2e78bc1db99,2026-11-17T07:08:02Z,2026-11-16T21:02:40Z,fwoodruff,neuron-drift,STC,0,10+0.1,1,0,2,stopped,2944,-4.72,6.11,25.3
+6af9b46a8e7fb2e78bc1d8a2,2026-11-17T07:40:57Z,2026-11-15T13:32:26Z,fwoodruff,futility-calm-prune,STC,0,10+0.1,1,0,2,stopped,81888,0.33,1.17,703.1
+6af9a3098e7fb2e78bc1d890,2026-11-17T07:41:20Z,2026-11-15T12:18:17Z,fwoodruff,futility-threat-prune,STC,0,10+0.1,1,0,2,stopped,89088,0.31,1.12,765.0
