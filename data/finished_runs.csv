@@ -9348,3 +9348,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afb6f708e7fb2e78bc1db99,2026-11-17T07:08:02Z,2026-11-16T21:02:40Z,fwoodruff,neuron-drift,STC,0,10+0.1,1,0,2,stopped,2944,-4.72,6.11,25.3
 6af9b46a8e7fb2e78bc1d8a2,2026-11-17T07:40:57Z,2026-11-15T13:32:26Z,fwoodruff,futility-calm-prune,STC,0,10+0.1,1,0,2,stopped,81888,0.33,1.17,703.1
 6af9a3098e7fb2e78bc1d890,2026-11-17T07:41:20Z,2026-11-15T12:18:17Z,fwoodruff,futility-threat-prune,STC,0,10+0.1,1,0,2,stopped,89088,0.31,1.12,765.0
+6af776548e7fb2e78bc1d4d2,2026-11-17T08:01:14Z,2026-11-13T20:43:00Z,sg,nm_refutation_x2,STC,0,10+0.1,1,0,2,rejected,137568,-0.14,0.90,1181.3
