@@ -9362,3 +9362,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afc919e8e7fb2e78bc1dd05,2026-11-17T17:40:46Z,2026-11-17T17:40:46Z,luozichen,opt-lmr-fastdiv,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6af9bd9d8e7fb2e78bc1d8ac,2026-11-17T17:44:06Z,2026-11-15T14:11:41Z,feeling4vibes,test/robinhood-hashing,STC,0,10+0.1,1,0,2,passed,85344,1.45,1.09,732.8
 6afc5ed88e7fb2e78bc1dcd5,2026-11-17T18:27:37Z,2026-11-17T14:04:08Z,Gruenerapfel,futility-score-a,STC,0,10+0.1,1,0,2,rejected,7872,-10.73,3.81,67.6
+6afcaa1b8e7fb2e78bc1dd2c,2026-11-17T19:53:12Z,2026-11-17T19:25:15Z,fwoodruff,correction-rfp-scale,STC,0,10+0.1,1,0,2,stopped,1312,-10.33,9.13,11.3
