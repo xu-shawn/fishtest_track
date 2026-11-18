@@ -9379,3 +9379,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af212708e7fb2e78bc1cbcd,2026-11-18T13:13:54Z,2026-11-09T18:35:28Z,Vizvezdenec,alphabetaEval2,STC,0,10+0.1,1,0,2,rejected,343040,0.24,0.57,2945.6
 6afbc3f68e7fb2e78bc1dbfb,2026-11-18T14:45:31Z,2026-11-17T03:03:18Z,kokodio,nullthreat,STC,0,10+0.1,1,0,2,rejected,67040,-0.80,1.29,575.7
 6af5a0c58e7fb2e78bc1d1cb,2026-11-18T15:13:24Z,2026-11-12T11:19:33Z,rn,fix-multipv-tm,STC,0,10+0.1,1,-1.75,0.25,passed,449344,-0.16,0.47,3858.4
+6afb64038e7fb2e78bc1db61,2026-11-18T18:45:31Z,2026-11-16T20:13:55Z,kokodio,nmhist,STC,0,10+0.1,1,0,2,passed,92128,1.44,1.10,791.1
