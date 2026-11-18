@@ -9366,3 +9366,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afcc7bf2ff81bd6a6344092,2026-11-17T21:31:43Z,2026-11-17T21:31:43Z,fwoodruff,correction-cost-weight-inv,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6afadcdc8e7fb2e78bc1da3f,2026-11-17T23:21:02Z,2026-11-16T10:37:16Z,penneponne,c2s/26-lmr-check,STC,0,10+0.1,1,0,2,rejected,31776,-2.25,1.89,272.8
 6afcb87f2ff81bd6a634404d,2026-11-18T00:51:51Z,2026-11-17T20:26:39Z,fwoodruff,correction-rfp-scale,STC,0,10+0.1,1,0,2,rejected,7168,-11.73,3.97,61.5
+6afabc6b8e7fb2e78bc1d9f1,2026-11-18T01:57:49Z,2026-11-16T08:18:51Z,penneponne,c2s/22-se-frame-restore,STC,0,10+0.1,1,0,2,rejected,33312,-2.14,1.84,286.0
