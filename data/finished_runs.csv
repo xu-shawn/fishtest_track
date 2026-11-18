@@ -9324,7 +9324,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af82da18e7fb2e78bc1d5fa,2026-11-15T22:43:14Z,2026-11-14T09:45:05Z,sg,nm_refutation_order2,STC,0,10+0.1,1,0,2,rejected,46464,-1.42,1.54,399.0
 6af93c7d8e7fb2e78bc1d7e8,2026-11-16T01:11:59Z,2026-11-15T05:00:45Z,Elhamuddin,quiet-follows-capture512,STC,0,10+0.1,1,0,2,rejected,38240,-1.77,1.69,328.4
 6af7eb248e7fb2e78bc1d588,2026-11-16T04:14:03Z,2026-11-14T05:01:24Z,AdrianStockfish,ttDataMove,STC,0,10+0.1,1,0,2,rejected,84704,-0.53,1.15,727.3
-6af6bf028e7fb2e78bc1d3ad,2026-11-16T05:52:57Z,2026-11-13T07:40:50Z,sg,nm_refutation2,STC,0,10+0.1,1,0,2,failed,56096,-0.09,1.35,481.7
 6af84e298e7fb2e78bc1d641,2026-11-16T08:35:12Z,2026-11-14T12:03:53Z,Gruenerapfel,lmr_pair_feature-a,STC,0,10+0.1,1,0,2,rejected,56832,-1.03,1.39,488.0
 6af858648e7fb2e78bc1d669,2026-11-16T10:01:45Z,2026-11-14T12:47:32Z,Gruenerapfel,reduce-evasions-less,STC,0,10+0.1,1,0,2,rejected,61824,-0.92,1.33,530.9
 6af6206b8e7fb2e78bc1d2bd,2026-11-16T11:32:14Z,2026-11-12T20:24:11Z,Martin,master,STC,0,10+0.1,1,-1.75,0.25,passed,272160,-0.05,0.61,2336.9
@@ -9369,3 +9368,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afabc6b8e7fb2e78bc1d9f1,2026-11-18T01:57:49Z,2026-11-16T08:18:51Z,penneponne,c2s/22-se-frame-restore,STC,0,10+0.1,1,0,2,rejected,33312,-2.14,1.84,286.0
 6afc91ee8e7fb2e78bc1dd08,2026-11-18T04:06:44Z,2026-11-17T17:42:06Z,Vizvezdenec,qsSimpCiek2,STC,0,10+0.1,1,-1.75,0.25,rejected,12160,-7.52,3.02,104.4
 6af901128e7fb2e78bc1d77e,2026-11-18T04:55:08Z,2026-11-15T00:47:14Z,sgtqwq,probcut_quiet_tt_guard,STC,0,10+0.1,1,0,2,rejected,194752,0.04,0.75,1672.3
+6af6bf028e7fb2e78bc1d3ad,2026-11-18T05:55:16Z,2026-11-13T07:40:50Z,sg,nm_refutation2,STC,0,10+0.1,1,0,2,rejected,133440,-0.15,0.88,1145.8
+6afb343b8e7fb2e78bc1db07,2026-11-18T06:23:37Z,2026-11-16T16:50:03Z,feeling4vibes,test/higher-small-probcut-beta-for-high-depth-5,STC,0,10+0.1,1,0,2,rejected,68128,-0.78,1.28,585.0
+6af98d908e7fb2e78bc1d869,2026-11-18T06:40:16Z,2026-11-15T10:46:40Z,feeling4vibes,test/multi-cut-beta-blending,STC,0,10+0.1,1,0,2,rejected,132992,-0.17,0.92,1142.0
