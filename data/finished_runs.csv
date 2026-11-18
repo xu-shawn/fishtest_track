@@ -9373,3 +9373,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af98d908e7fb2e78bc1d869,2026-11-18T06:40:16Z,2026-11-15T10:46:40Z,feeling4vibes,test/multi-cut-beta-blending,STC,0,10+0.1,1,0,2,rejected,132992,-0.17,0.92,1142.0
 6afd4ce32ff81bd6a6344169,2026-11-18T06:59:47Z,2026-11-18T06:59:47Z,Elhamuddin,window-distance-hindsight,STC,0,10+0.1,1,0,2,failed,0,,,0.0
 6af84cc08e7fb2e78bc1d638,2026-11-18T07:13:42Z,2026-11-14T11:57:52Z,Gruenerapfel,lmr_pair_feature,STC,0,10+0.1,1,0,2,rejected,77984,-0.63,1.19,669.6
+6afd54362ff81bd6a6344175,2026-11-18T07:53:04Z,2026-11-18T07:31:02Z,shawnxu,test1767,LTC,1,60+0.6,1,0,2,stopped,150,13.90,21.12,7.7
+6afcbbb62ff81bd6a6344055,2026-11-18T08:19:31Z,2026-11-17T20:40:22Z,fwoodruff,correction-cost-weight,STC,0,10+0.1,1,0,2,rejected,24576,-3.05,2.14,211.0
+6afaf15e8e7fb2e78bc1da60,2026-11-18T08:23:24Z,2026-11-16T12:04:46Z,penneponne,c2s/21-pawnhist-king-key,STC,0,10+0.1,1,0,2,rejected,31840,-2.24,1.87,273.4
