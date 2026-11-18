@@ -9371,3 +9371,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af6bf028e7fb2e78bc1d3ad,2026-11-18T05:55:16Z,2026-11-13T07:40:50Z,sg,nm_refutation2,STC,0,10+0.1,1,0,2,rejected,133440,-0.15,0.88,1145.8
 6afb343b8e7fb2e78bc1db07,2026-11-18T06:23:37Z,2026-11-16T16:50:03Z,feeling4vibes,test/higher-small-probcut-beta-for-high-depth-5,STC,0,10+0.1,1,0,2,rejected,68128,-0.78,1.28,585.0
 6af98d908e7fb2e78bc1d869,2026-11-18T06:40:16Z,2026-11-15T10:46:40Z,feeling4vibes,test/multi-cut-beta-blending,STC,0,10+0.1,1,0,2,rejected,132992,-0.17,0.92,1142.0
+6afd4ce32ff81bd6a6344169,2026-11-18T06:59:47Z,2026-11-18T06:59:47Z,Elhamuddin,window-distance-hindsight,STC,0,10+0.1,1,0,2,failed,0,,,0.0
+6af84cc08e7fb2e78bc1d638,2026-11-18T07:13:42Z,2026-11-14T11:57:52Z,Gruenerapfel,lmr_pair_feature,STC,0,10+0.1,1,0,2,rejected,77984,-0.63,1.19,669.6
