@@ -9399,3 +9399,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aff01742ff81bd6a63443d4,2026-11-19T14:27:37Z,2026-11-19T14:02:28Z,fauzi2,altro,STC,0,10+0.1,1,0,2,stopped,1408,-17.53,8.89,12.1
 6afe15252ff81bd6a6344294,2026-11-19T17:00:10Z,2026-11-18T21:14:13Z,feeling4vibes,test/correction-scaled-on-nonpawn-material,STC,0,10+0.1,1,0,2,rejected,30560,-2.36,1.92,262.4
 6afcca942ff81bd6a6344098,2026-11-19T18:05:12Z,2026-11-17T21:43:48Z,fwoodruff,correction-cost-weight-centred,STC,0,10+0.1,1,0,2,rejected,71328,-0.73,1.25,612.5
+6afacf628e7fb2e78bc1da14,2026-11-19T19:38:20Z,2026-11-16T09:39:46Z,xoto,tmpc1,SPSA,0,10+0.1,1,,,completed,207000,0.10,0.72,1777.4
