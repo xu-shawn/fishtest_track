@@ -9396,3 +9396,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afecec22ff81bd6a6344358,2026-11-19T12:11:21Z,2026-11-19T10:26:10Z,vdv,NMPStaticTrust^^,STC,0,10+0.1,1,-1.75,0.25,stopped,1376,1.51,9.13,11.8
 6afececc2ff81bd6a634435a,2026-11-19T12:12:38Z,2026-11-19T10:26:20Z,vdv,NMPStaticTrust^,STC,0,10+0.1,1,-1.75,0.25,stopped,1376,0.25,8.76,11.8
 6afef9932ff81bd6a63443bf,2026-11-19T13:28:51Z,2026-11-19T13:28:51Z,sg,cram_i8_move_order,Nodestime,0,100+1,1,0,2,failed,0,,,0.0
+6aff01742ff81bd6a63443d4,2026-11-19T14:27:37Z,2026-11-19T14:02:28Z,fauzi2,altro,STC,0,10+0.1,1,0,2,stopped,1408,-17.53,8.89,12.1
