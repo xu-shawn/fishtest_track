@@ -9384,3 +9384,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aeb03ef20cd2dc3f03d1c55,2026-11-18T22:54:14Z,2026-11-04T10:07:43Z,sg,positive_history_bonus2c,STC,0,10+0.1,1,0,2,rejected,715200,0.37,0.39,6141.2
 6af195588e7fb2e78bc1cb27,2026-11-19T00:25:04Z,2026-11-09T09:41:44Z,0x539,mp-sort,LTC,0,60+0.6,1,0.5,2.5,rejected,174642,0.22,0.75,8997.6
 6afe50ab2ff81bd6a63442cb,2026-11-19T01:28:11Z,2026-11-19T01:28:11Z,Gruenerapfel,codex/nmp-pawn-king-mobility,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6af8f6718e7fb2e78bc1d758,2026-11-19T01:55:07Z,2026-11-15T00:01:53Z,shawnxu,test1765,STC,0,10+0.1,1,0,2,rejected,183680,0.01,0.78,1577.2
+6afe60132ff81bd6a63442dc,2026-11-19T02:33:55Z,2026-11-19T02:33:55Z,0x539,mp-sort3,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
