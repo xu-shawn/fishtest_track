@@ -9392,3 +9392,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af9d2b68e7fb2e78bc1d8c0,2026-11-19T08:02:20Z,2026-11-15T15:41:42Z,Kaz,kaz-contcorr02,SMP,0,5+0.05,8,0,2,stopped,168376,0.38,0.80,5783.2
 6afd423f2ff81bd6a634414a,2026-11-19T08:51:14Z,2026-11-18T06:14:23Z,fwoodruff,correction-cost-weight-centred-inv,STC,0,10+0.1,1,0,2,rejected,44608,-1.46,1.58,383.0
 6afd5e4d2ff81bd6a634418a,2026-11-19T09:54:30Z,2026-11-18T08:14:05Z,Elhamuddin,window-distance-hindsight,STC,0,10+0.1,1,0,2,rejected,49984,-1.25,1.49,429.2
+6afecec22ff81bd6a6344358,2026-11-19T12:11:21Z,2026-11-19T10:26:10Z,vdv,NMPStaticTrust^^,STC,0,10+0.1,1,-1.75,0.25,stopped,1376,1.51,9.13,11.8
+6afececc2ff81bd6a634435a,2026-11-19T12:12:38Z,2026-11-19T10:26:20Z,vdv,NMPStaticTrust^,STC,0,10+0.1,1,-1.75,0.25,stopped,1376,0.25,8.76,11.8
