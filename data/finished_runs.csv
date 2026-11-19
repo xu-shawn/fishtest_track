@@ -9390,3 +9390,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afd53fb2ff81bd6a6344172,2026-11-19T02:56:43Z,2026-11-18T07:30:03Z,shawnxu,test1767,Nodestime,1,100+1,1,0,2,passed,14928,6.49,2.81,1281.8
 6afabcb48e7fb2e78bc1d9f3,2026-11-19T03:50:25Z,2026-11-16T08:20:04Z,penneponne,c2s/12-low-depth-se,STC,0,10+0.1,1,0,2,rejected,60160,-0.96,1.37,516.6
 6af9d2b68e7fb2e78bc1d8c0,2026-11-19T08:02:20Z,2026-11-15T15:41:42Z,Kaz,kaz-contcorr02,SMP,0,5+0.05,8,0,2,stopped,168376,0.38,0.80,5783.2
+6afd423f2ff81bd6a634414a,2026-11-19T08:51:14Z,2026-11-18T06:14:23Z,fwoodruff,correction-cost-weight-centred-inv,STC,0,10+0.1,1,0,2,rejected,44608,-1.46,1.58,383.0
