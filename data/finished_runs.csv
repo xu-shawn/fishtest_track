@@ -9388,3 +9388,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afe60132ff81bd6a63442dc,2026-11-19T02:33:55Z,2026-11-19T02:33:55Z,0x539,mp-sort3,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6afe5d362ff81bd6a63442d8,2026-11-19T02:51:13Z,2026-11-19T02:21:42Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,stopped,1408,-5.43,8.91,12.1
 6afd53fb2ff81bd6a6344172,2026-11-19T02:56:43Z,2026-11-18T07:30:03Z,shawnxu,test1767,Nodestime,1,100+1,1,0,2,passed,14928,6.49,2.81,1281.8
+6afabcb48e7fb2e78bc1d9f3,2026-11-19T03:50:25Z,2026-11-16T08:20:04Z,penneponne,c2s/12-low-depth-se,STC,0,10+0.1,1,0,2,rejected,60160,-0.96,1.37,516.6
