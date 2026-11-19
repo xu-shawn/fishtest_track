@@ -9400,3 +9400,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afe15252ff81bd6a6344294,2026-11-19T17:00:10Z,2026-11-18T21:14:13Z,feeling4vibes,test/correction-scaled-on-nonpawn-material,STC,0,10+0.1,1,0,2,rejected,30560,-2.36,1.92,262.4
 6afcca942ff81bd6a6344098,2026-11-19T18:05:12Z,2026-11-17T21:43:48Z,fwoodruff,correction-cost-weight-centred,STC,0,10+0.1,1,0,2,rejected,71328,-0.73,1.25,612.5
 6afacf628e7fb2e78bc1da14,2026-11-19T19:38:20Z,2026-11-16T09:39:46Z,xoto,tmpc1,SPSA,0,10+0.1,1,,,completed,207000,0.10,0.72,1777.4
+6afde0d32ff81bd6a6344227,2026-11-19T20:14:42Z,2026-11-18T17:30:59Z,Cowboybeblop,corrhist-rule50,STC,0,10+0.1,1,0,2,stopped,49472,-0.12,1.46,424.8
+6afcc6412ff81bd6a6344090,2026-11-19T20:15:57Z,2026-11-17T21:25:21Z,Cowboybeblop,corrhist-own-nonpawn,STC,0,10+0.1,1,0,2,stopped,84896,-0.05,1.14,729.0
+6afb26608e7fb2e78bc1daf1,2026-11-19T20:29:31Z,2026-11-16T15:50:56Z,0x539,mp-sort2,STC,0,10+0.1,1,0,2,rejected,172608,-0.01,0.80,1482.1
