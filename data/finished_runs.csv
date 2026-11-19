@@ -9403,3 +9403,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afde0d32ff81bd6a6344227,2026-11-19T20:14:42Z,2026-11-18T17:30:59Z,Cowboybeblop,corrhist-rule50,STC,0,10+0.1,1,0,2,stopped,49472,-0.12,1.46,424.8
 6afcc6412ff81bd6a6344090,2026-11-19T20:15:57Z,2026-11-17T21:25:21Z,Cowboybeblop,corrhist-own-nonpawn,STC,0,10+0.1,1,0,2,stopped,84896,-0.05,1.14,729.0
 6afb26608e7fb2e78bc1daf1,2026-11-19T20:29:31Z,2026-11-16T15:50:56Z,0x539,mp-sort2,STC,0,10+0.1,1,0,2,rejected,172608,-0.01,0.80,1482.1
+6af87aaf8e7fb2e78bc1d697,2026-11-19T21:45:32Z,2026-11-14T15:13:51Z,Vizvezdenec,rzrFr1,STC,0,10+0.1,1,0,2,stopped,171264,0.11,0.80,1470.6
+6afc938d8e7fb2e78bc1dd15,2026-11-19T21:46:14Z,2026-11-17T17:49:01Z,Vizvezdenec,rzrFr3,STC,0,10+0.1,1,0,2,stopped,58112,-0.65,1.38,499.0
