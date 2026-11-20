@@ -9407,3 +9407,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afc938d8e7fb2e78bc1dd15,2026-11-19T21:46:14Z,2026-11-17T17:49:01Z,Vizvezdenec,rzrFr3,STC,0,10+0.1,1,0,2,stopped,58112,-0.65,1.38,499.0
 6afadd608e7fb2e78bc1da41,2026-11-19T23:04:38Z,2026-11-16T10:39:28Z,AdrianStockfish,anotherOne,STC,0,10+0.1,1,0,2,rejected,171168,-0.02,0.81,1469.8
 6afaf13f8e7fb2e78bc1da5c,2026-11-19T23:13:07Z,2026-11-16T12:04:15Z,penneponne,c2s/17-refresh-empty-diff,STC,0,10+0.1,1,0,2,rejected,68896,-0.73,1.21,591.6
+6aff6a852ff81bd6a6344486,2026-11-20T00:06:55Z,2026-11-19T21:30:45Z,Cowboybeblop,lmr-passed-pawn,STC,0,10+0.1,1,0,2,failed,3200,0.76,5.88,27.5
