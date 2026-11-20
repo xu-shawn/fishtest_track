@@ -9422,3 +9422,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af313b18e7fb2e78bc1cd4e,2026-11-20T10:57:14Z,2026-11-10T12:53:05Z,AdrianStockfish,static,STC,0,10+0.1,1,0,2,rejected,413024,0.28,0.52,3546.5
 6b002a602ff81bd6a6344571,2026-11-20T11:09:20Z,2026-11-20T11:09:20Z,sg,cram_i8_embed_move_order2,Nodestime,0,100+1,1,0,2,failed,0,,,0.0
 6aff1b2c2ff81bd6a63443fd,2026-11-20T11:27:59Z,2026-11-19T15:52:12Z,fauzi2,altre2,STC,0,10+0.1,1,0,2,stopped,15936,-2.75,2.64,136.8
+6afe3fa22ff81bd6a63442be,2026-11-20T15:18:01Z,2026-11-19T00:15:30Z,Gruenerapfel,codex/nmp-legal-mobility,STC,0,10+0.1,1,-1.75,0.25,rejected,51744,-1.95,1.40,444.3
