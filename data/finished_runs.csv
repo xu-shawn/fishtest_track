@@ -9395,6 +9395,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afd5e4d2ff81bd6a634418a,2026-11-19T09:54:30Z,2026-11-18T08:14:05Z,Elhamuddin,window-distance-hindsight,STC,0,10+0.1,1,0,2,rejected,49984,-1.25,1.49,429.2
 6afecec22ff81bd6a6344358,2026-11-19T12:11:21Z,2026-11-19T10:26:10Z,vdv,NMPStaticTrust^^,STC,0,10+0.1,1,-1.75,0.25,stopped,1376,1.51,9.13,11.8
 6afececc2ff81bd6a634435a,2026-11-19T12:12:38Z,2026-11-19T10:26:20Z,vdv,NMPStaticTrust^,STC,0,10+0.1,1,-1.75,0.25,stopped,1376,0.25,8.76,11.8
+6afdac2b2ff81bd6a63441de,2026-11-19T12:22:37Z,2026-11-18T13:46:19Z,fauzi2,vftcv,STC,0,10+0.1,1,0,2,stopped,18144,-1.05,2.46,155.8
 6afef9932ff81bd6a63443bf,2026-11-19T13:28:51Z,2026-11-19T13:28:51Z,sg,cram_i8_move_order,Nodestime,0,100+1,1,0,2,failed,0,,,0.0
 6aff01742ff81bd6a63443d4,2026-11-19T14:27:37Z,2026-11-19T14:02:28Z,fauzi2,altro,STC,0,10+0.1,1,0,2,stopped,1408,-17.53,8.89,12.1
 6afe15252ff81bd6a6344294,2026-11-19T17:00:10Z,2026-11-18T21:14:13Z,feeling4vibes,test/correction-scaled-on-nonpawn-material,STC,0,10+0.1,1,0,2,rejected,30560,-2.36,1.92,262.4
@@ -9408,6 +9409,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afadd608e7fb2e78bc1da41,2026-11-19T23:04:38Z,2026-11-16T10:39:28Z,AdrianStockfish,anotherOne,STC,0,10+0.1,1,0,2,rejected,171168,-0.02,0.81,1469.8
 6afaf13f8e7fb2e78bc1da5c,2026-11-19T23:13:07Z,2026-11-16T12:04:15Z,penneponne,c2s/17-refresh-empty-diff,STC,0,10+0.1,1,0,2,rejected,68896,-0.73,1.21,591.6
 6aff6a852ff81bd6a6344486,2026-11-20T00:06:55Z,2026-11-19T21:30:45Z,Cowboybeblop,lmr-passed-pawn,STC,0,10+0.1,1,0,2,failed,3200,0.76,5.88,27.5
+6aff32e02ff81bd6a6344427,2026-11-20T01:25:00Z,2026-11-19T17:33:20Z,fauzi2,altre3,STC,0,10+0.1,1,0,2,stopped,6400,-4.18,4.17,55.0
 6afdf32f2ff81bd6a6344241,2026-11-20T03:59:28Z,2026-11-18T18:49:19Z,kokodio,nmhist,LTC,0,60+0.6,1,0.5,2.5,rejected,37584,-1.49,1.61,1936.3
 6afb6ef98e7fb2e78bc1db95,2026-11-20T04:02:23Z,2026-11-16T21:00:41Z,rawbee,idea-smp-pcdepth,SMP,0,5+0.05,8,0,2,rejected,91672,-0.45,1.08,3148.6
 6aff28372ff81bd6a6344404,2026-11-20T04:58:56Z,2026-11-19T16:47:51Z,sscg13,nonpawn-history-2048,STC,0,10+0.1,1,0,2,rejected,20672,-3.71,2.33,177.5
@@ -9417,3 +9419,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afd3e182ff81bd6a6344137,2026-11-20T09:02:54Z,2026-11-18T05:56:40Z,Vizvezdenec,futMultSC1,STC,0,10+0.1,1,0,2,rejected,56384,-1.05,1.40,484.2
 6aff965a2ff81bd6a63444d2,2026-11-20T09:30:35Z,2026-11-20T00:37:46Z,fauzi2,altre4,STC,0,10+0.1,1,0,2,rejected,9248,-9.02,3.48,79.4
 6afe39aa2ff81bd6a63442b8,2026-11-20T09:36:08Z,2026-11-18T23:50:02Z,Gruenerapfel,alternative-failhighrecover,STC,0,10+0.1,1,0,2,passed,43200,2.51,1.60,370.9
+6af313b18e7fb2e78bc1cd4e,2026-11-20T10:57:14Z,2026-11-10T12:53:05Z,AdrianStockfish,static,STC,0,10+0.1,1,0,2,rejected,413024,0.28,0.52,3546.5
+6b002a602ff81bd6a6344571,2026-11-20T11:09:20Z,2026-11-20T11:09:20Z,sg,cram_i8_embed_move_order2,Nodestime,0,100+1,1,0,2,failed,0,,,0.0
+6aff1b2c2ff81bd6a63443fd,2026-11-20T11:27:59Z,2026-11-19T15:52:12Z,fauzi2,altre2,STC,0,10+0.1,1,0,2,stopped,15936,-2.75,2.64,136.8
