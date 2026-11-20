@@ -9408,3 +9408,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afadd608e7fb2e78bc1da41,2026-11-19T23:04:38Z,2026-11-16T10:39:28Z,AdrianStockfish,anotherOne,STC,0,10+0.1,1,0,2,rejected,171168,-0.02,0.81,1469.8
 6afaf13f8e7fb2e78bc1da5c,2026-11-19T23:13:07Z,2026-11-16T12:04:15Z,penneponne,c2s/17-refresh-empty-diff,STC,0,10+0.1,1,0,2,rejected,68896,-0.73,1.21,591.6
 6aff6a852ff81bd6a6344486,2026-11-20T00:06:55Z,2026-11-19T21:30:45Z,Cowboybeblop,lmr-passed-pawn,STC,0,10+0.1,1,0,2,failed,3200,0.76,5.88,27.5
+6afdf32f2ff81bd6a6344241,2026-11-20T03:59:28Z,2026-11-18T18:49:19Z,kokodio,nmhist,LTC,0,60+0.6,1,0.5,2.5,rejected,37584,-1.49,1.61,1936.3
+6afb6ef98e7fb2e78bc1db95,2026-11-20T04:02:23Z,2026-11-16T21:00:41Z,rawbee,idea-smp-pcdepth,SMP,0,5+0.05,8,0,2,rejected,91672,-0.45,1.08,3148.6
