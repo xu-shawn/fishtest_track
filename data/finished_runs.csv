@@ -9411,3 +9411,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afdf32f2ff81bd6a6344241,2026-11-20T03:59:28Z,2026-11-18T18:49:19Z,kokodio,nmhist,LTC,0,60+0.6,1,0.5,2.5,rejected,37584,-1.49,1.61,1936.3
 6afb6ef98e7fb2e78bc1db95,2026-11-20T04:02:23Z,2026-11-16T21:00:41Z,rawbee,idea-smp-pcdepth,SMP,0,5+0.05,8,0,2,rejected,91672,-0.45,1.08,3148.6
 6aff28372ff81bd6a6344404,2026-11-20T04:58:56Z,2026-11-19T16:47:51Z,sscg13,nonpawn-history-2048,STC,0,10+0.1,1,0,2,rejected,20672,-3.71,2.33,177.5
+6afaf1a88e7fb2e78bc1da6c,2026-11-20T07:12:44Z,2026-11-16T12:06:00Z,penneponne,c2s/06-king-escape-lmr,STC,0,10+0.1,1,0,2,rejected,74432,-0.66,1.19,639.1
+6aff6a402ff81bd6a6344483,2026-11-20T07:33:24Z,2026-11-19T21:29:36Z,Cowboybeblop,simp-futility-lmrdepth,STC,0,10+0.1,1,-1.75,0.25,stopped,18528,-2.34,2.44,159.1
