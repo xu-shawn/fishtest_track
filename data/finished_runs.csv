@@ -9443,3 +9443,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afead0f2ff81bd6a634433e,2026-11-21T08:19:10Z,2026-11-19T08:02:23Z,Kaz,kaz-contcorr02,STC,0,10+0.1,1,0,2,passed,94048,1.41,1.09,807.6
 6b005f232ff81bd6a63445d6,2026-11-21T08:33:53Z,2026-11-20T14:54:27Z,fwoodruff,qsearch-parent-blend,STC,0,10+0.1,1,0,2,stopped,18208,-0.02,2.48,156.3
 6b015150b9d0e035d605f820,2026-11-21T08:53:23Z,2026-11-21T08:07:44Z,noobpwnftw,simplify-hyperbola,STC,0,10+0.1,1,-1.75,0.25,stopped,1792,-2.71,7.29,15.4
+6afd547a2ff81bd6a6344177,2026-11-21T09:56:43Z,2026-11-18T07:32:10Z,fwoodruff,correction-rfp-scale-08,STC,0,10+0.1,1,0,2,passed,126880,1.17,0.94,1089.5
+6b002f8d2ff81bd6a634458f,2026-11-21T10:19:26Z,2026-11-20T11:31:25Z,fauzi2,altre5,SMP,0,5+0.05,8,0,2,stopped,10720,-2.59,3.13,368.2
+6afefe3e2ff81bd6a63443cf,2026-11-21T10:20:14Z,2026-11-19T13:48:46Z,vdv,NMPStaticTrustDyn,STC,0,10+0.1,1,-1.75,0.25,passed,69440,0.90,1.26,596.3
+6b017191b9d0e035d605f874,2026-11-21T10:25:21Z,2026-11-21T10:25:21Z,vdv,NMPStaticTrustDynReb,STC,0,10+0.1,1,-1.75,0.25,stopped,0,,,0.0
