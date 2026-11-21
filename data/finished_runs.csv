@@ -9397,6 +9397,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afececc2ff81bd6a634435a,2026-11-19T12:12:38Z,2026-11-19T10:26:20Z,vdv,NMPStaticTrust^,STC,0,10+0.1,1,-1.75,0.25,stopped,1376,0.25,8.76,11.8
 6afdac2b2ff81bd6a63441de,2026-11-19T12:22:37Z,2026-11-18T13:46:19Z,fauzi2,vftcv,STC,0,10+0.1,1,0,2,stopped,18144,-1.05,2.46,155.8
 6afef9932ff81bd6a63443bf,2026-11-19T13:28:51Z,2026-11-19T13:28:51Z,sg,cram_i8_move_order,Nodestime,0,100+1,1,0,2,failed,0,,,0.0
+6afdb2e02ff81bd6a63441e9,2026-11-19T14:20:23Z,2026-11-18T14:14:56Z,fauzi2,vftcv2,STC,0,10+0.1,1,0,2,stopped,23520,-0.03,2.19,202.0
 6aff01742ff81bd6a63443d4,2026-11-19T14:27:37Z,2026-11-19T14:02:28Z,fauzi2,altro,STC,0,10+0.1,1,0,2,stopped,1408,-17.53,8.89,12.1
 6afe15252ff81bd6a6344294,2026-11-19T17:00:10Z,2026-11-18T21:14:13Z,feeling4vibes,test/correction-scaled-on-nonpawn-material,STC,0,10+0.1,1,0,2,rejected,30560,-2.36,1.92,262.4
 6afcca942ff81bd6a6344098,2026-11-19T18:05:12Z,2026-11-17T21:43:48Z,fwoodruff,correction-cost-weight-centred,STC,0,10+0.1,1,0,2,rejected,71328,-0.73,1.25,612.5
@@ -9431,3 +9432,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afc85e88e7fb2e78bc1dcf5,2026-11-20T23:08:45Z,2026-11-17T16:50:48Z,kokodio,risingEval,STC,0,10+0.1,1,0,2,rejected,167456,-0.04,0.78,1437.9
 6b00e102b9d0e035d605f771,2026-11-21T00:14:25Z,2026-11-21T00:08:34Z,Fisherman,FuseThreatCapture,STC,0,10+0.1,1,0,2,stopped,32,54.71,40.69,0.3
 6afaf1918e7fb2e78bc1da68,2026-11-21T00:17:18Z,2026-11-16T12:05:37Z,penneponne,c2s/11-tt-beta-cut,STC,0,10+0.1,1,0,2,rejected,88032,-0.49,1.12,755.9
+6b00bbe6b9d0e035d605f73b,2026-11-21T00:46:36Z,2026-11-20T21:30:14Z,anematode,arch-detect,STC,0,0.5+0.005,1,,,completed,100000,0.17,1.42,42.9
+6afec7432ff81bd6a6344351,2026-11-21T01:43:06Z,2026-11-19T09:54:11Z,AdrianStockfish,pvNode,STC,0,10+0.1,1,0,2,rejected,59232,-0.97,1.37,508.6
