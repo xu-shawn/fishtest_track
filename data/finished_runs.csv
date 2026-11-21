@@ -9373,7 +9373,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af98d908e7fb2e78bc1d869,2026-11-18T06:40:16Z,2026-11-15T10:46:40Z,feeling4vibes,test/multi-cut-beta-blending,STC,0,10+0.1,1,0,2,rejected,132992,-0.17,0.92,1142.0
 6afd4ce32ff81bd6a6344169,2026-11-18T06:59:47Z,2026-11-18T06:59:47Z,Elhamuddin,window-distance-hindsight,STC,0,10+0.1,1,0,2,failed,0,,,0.0
 6af84cc08e7fb2e78bc1d638,2026-11-18T07:13:42Z,2026-11-14T11:57:52Z,Gruenerapfel,lmr_pair_feature,STC,0,10+0.1,1,0,2,rejected,77984,-0.63,1.19,669.6
-6afd54362ff81bd6a6344175,2026-11-18T07:53:04Z,2026-11-18T07:31:02Z,shawnxu,test1767,LTC,1,60+0.6,1,0,2,stopped,150,13.90,21.12,7.7
 6afcbbb62ff81bd6a6344055,2026-11-18T08:19:31Z,2026-11-17T20:40:22Z,fwoodruff,correction-cost-weight,STC,0,10+0.1,1,0,2,rejected,24576,-3.05,2.14,211.0
 6afaf15e8e7fb2e78bc1da60,2026-11-18T08:23:24Z,2026-11-16T12:04:46Z,penneponne,c2s/21-pawnhist-king-key,STC,0,10+0.1,1,0,2,rejected,31840,-2.24,1.87,273.4
 6af212708e7fb2e78bc1cbcd,2026-11-18T13:13:54Z,2026-11-09T18:35:28Z,Vizvezdenec,alphabetaEval2,STC,0,10+0.1,1,0,2,rejected,343040,0.24,0.57,2945.6
@@ -9456,3 +9455,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b012c19b9d0e035d605f7fd,2026-11-21T13:29:22Z,2026-11-21T05:28:57Z,shawnxu,test1768,STC,0,10+0.1,1,0,2,rejected,11936,-6.93,3.07,102.5
 6b001e092ff81bd6a6344567,2026-11-21T14:11:31Z,2026-11-20T10:16:41Z,fwoodruff,correction-consistency,STC,0,10+0.1,1,0,2,rejected,15168,-5.38,2.72,130.2
 6afeced52ff81bd6a634435c,2026-11-21T14:23:06Z,2026-11-19T10:26:29Z,vdv,NMPStaticTrust,STC,0,10+0.1,1,-1.75,0.25,rejected,74944,-1.50,1.20,643.5
+6afd54362ff81bd6a6344175,2026-11-21T14:47:44Z,2026-11-18T07:31:02Z,shawnxu,test1767,LTC,1,60+0.6,1,0,2,rejected,37674,-1.72,1.62,1941.0
+6afddfae2ff81bd6a634421e,2026-11-21T14:58:05Z,2026-11-18T17:26:06Z,fauzi2,dopde,STC,0,10+0.1,1,0,2,stopped,82464,0.04,1.14,708.1
+6aff3e7b2ff81bd6a6344431,2026-11-21T15:31:29Z,2026-11-19T18:22:51Z,RodrigoSambade,experiment/quiet-discovered-checks-2026-11,STC,0,10+0.1,1,0,2,rejected,99232,-0.39,1.06,852.1
+6afd59f42ff81bd6a6344184,2026-11-21T15:41:18Z,2026-11-18T07:55:32Z,shawnxu,test1767,VVLTC,1,60+0.6,8,0.5,2.5,rejected,31450,-1.72,1.59,12962.4
