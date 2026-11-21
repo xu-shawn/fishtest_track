@@ -9478,3 +9478,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0021632ff81bd6a634456b,2026-11-21T20:43:08Z,2026-11-20T10:30:59Z,fwoodruff,correction-junk-up,STC,0,10+0.1,1,0,2,rejected,62400,-0.90,1.34,535.8
 6afaf10f8e7fb2e78bc1da56,2026-11-21T21:07:18Z,2026-11-16T12:03:27Z,penneponne,c2s/16-ttmove-child-prefetch,STC,0,10+0.1,1,0,2,rejected,119424,-0.23,0.92,1025.5
 6afeb69c2ff81bd6a6344345,2026-11-21T22:27:21Z,2026-11-19T08:43:08Z,Fisherman,PawnPairCache,STC,0,10+0.1,1,0,2,passed,90272,1.38,1.05,775.1
+6b0171a3b9d0e035d605f877,2026-11-21T23:14:49Z,2026-11-21T10:25:39Z,vdv,NMPStaticTrustDynReb,LTC,0,60+0.6,1,-1.75,0.25,passed,137244,0.25,0.84,7070.8
+6afb6ecd8e7fb2e78bc1db93,2026-11-21T23:35:11Z,2026-11-16T20:59:57Z,rawbee,idea-smp-sedepth,SMP,0,5+0.05,8,0,2,rejected,215800,0.09,0.70,7412.0
