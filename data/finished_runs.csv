@@ -9450,3 +9450,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aff041d2ff81bd6a63443e3,2026-11-21T10:53:22Z,2026-11-19T14:13:49Z,fwoodruff,quiet-threat-order,STC,0,10+0.1,1,0,2,rejected,50336,-1.22,1.47,432.2
 6af775908e7fb2e78bc1d4ce,2026-11-21T10:57:22Z,2026-11-13T20:39:44Z,sg,nm_refutation_x,STC,0,10+0.1,1,0,2,rejected,340288,0.23,0.57,2921.9
 6afaf14d8e7fb2e78bc1da5e,2026-11-21T10:59:57Z,2026-11-16T12:04:29Z,penneponne,c2s/14-qs-implied-see,STC,0,10+0.1,1,0,2,rejected,106432,-0.31,0.98,913.9
+6b003c5d2ff81bd6a63445b3,2026-11-21T12:29:16Z,2026-11-20T12:26:05Z,AdrianStockfish,moreFP,STC,0,10+0.1,1,-1.75,0.25,passed,38688,1.89,1.69,332.2
+6afefe352ff81bd6a63443cd,2026-11-21T12:34:49Z,2026-11-19T13:48:37Z,vdv,NMPStaticTrustDyn^,STC,0,10+0.1,1,-1.75,0.25,rejected,67712,-1.65,1.29,581.4
