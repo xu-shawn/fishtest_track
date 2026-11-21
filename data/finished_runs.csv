@@ -9459,3 +9459,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afddfae2ff81bd6a634421e,2026-11-21T14:58:05Z,2026-11-18T17:26:06Z,fauzi2,dopde,STC,0,10+0.1,1,0,2,stopped,82464,0.04,1.14,708.1
 6aff3e7b2ff81bd6a6344431,2026-11-21T15:31:29Z,2026-11-19T18:22:51Z,RodrigoSambade,experiment/quiet-discovered-checks-2026-11,STC,0,10+0.1,1,0,2,rejected,99232,-0.39,1.06,852.1
 6afd59f42ff81bd6a6344184,2026-11-21T15:41:18Z,2026-11-18T07:55:32Z,shawnxu,test1767,VVLTC,1,60+0.6,8,0.5,2.5,rejected,31450,-1.72,1.59,12962.4
+6b000d932ff81bd6a6344556,2026-11-21T16:08:30Z,2026-11-20T09:06:27Z,feeling4vibes,test/correction-scaled-on-nonpawn-material-2,STC,0,10+0.1,1,0,2,rejected,47456,-1.36,1.55,407.5
+6b01c84cb9d0e035d605f90c,2026-11-21T16:35:24Z,2026-11-21T16:35:24Z,martinn,evalcorr,STC,0,10+0.1,1,0,2,failed,0,,,0.0
+6b01c854b9d0e035d605f90e,2026-11-21T16:35:32Z,2026-11-21T16:35:32Z,0x539,mp-sort3,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
