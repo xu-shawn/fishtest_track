@@ -9441,3 +9441,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b00a8f62ff81bd6a634462a,2026-11-21T06:04:52Z,2026-11-20T20:09:26Z,Fisherman,HybridUpdate,STC,0,10+0.1,1,0,2,stopped,10016,-1.70,3.17,86.0
 6af6c2198e7fb2e78bc1d3b3,2026-11-21T06:55:46Z,2026-11-13T07:54:01Z,sg,positive_history_bonus4_rebased,LTC,0,60+0.6,1,0.5,2.5,rejected,202560,0.28,0.69,10435.9
 6afead0f2ff81bd6a634433e,2026-11-21T08:19:10Z,2026-11-19T08:02:23Z,Kaz,kaz-contcorr02,STC,0,10+0.1,1,0,2,passed,94048,1.41,1.09,807.6
+6b005f232ff81bd6a63445d6,2026-11-21T08:33:53Z,2026-11-20T14:54:27Z,fwoodruff,qsearch-parent-blend,STC,0,10+0.1,1,0,2,stopped,18208,-0.02,2.48,156.3
+6b015150b9d0e035d605f820,2026-11-21T08:53:23Z,2026-11-21T08:07:44Z,noobpwnftw,simplify-hyperbola,STC,0,10+0.1,1,-1.75,0.25,stopped,1792,-2.71,7.29,15.4
