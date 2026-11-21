@@ -9427,7 +9427,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0080862ff81bd6a63445fa,2026-11-20T18:48:20Z,2026-11-20T17:16:54Z,fauzi2,pr6720,SMP,0,5+0.05,8,-1.75,0.25,stopped,464,-20.99,15.08,15.9
 6afb46638e7fb2e78bc1db2d,2026-11-20T19:12:55Z,2026-11-16T18:07:31Z,shawnxu,test1766,STC,0,10+0.1,1,0,2,rejected,148128,-0.11,0.86,1271.9
 6afe61c92ff81bd6a63442e1,2026-11-20T21:51:53Z,2026-11-19T02:41:13Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,rejected,75488,-0.65,1.21,648.2
-6afb6f598e7fb2e78bc1db97,2026-11-20T23:04:36Z,2026-11-16T21:02:17Z,rawbee,simp-nfc-combo,STC,0,10+0.1,1,-1.75,0.25,failed,180256,-0.25,0.75,1547.8
 6afc85e88e7fb2e78bc1dcf5,2026-11-20T23:08:45Z,2026-11-17T16:50:48Z,kokodio,risingEval,STC,0,10+0.1,1,0,2,rejected,167456,-0.04,0.78,1437.9
 6b00e102b9d0e035d605f771,2026-11-21T00:14:25Z,2026-11-21T00:08:34Z,Fisherman,FuseThreatCapture,STC,0,10+0.1,1,0,2,stopped,32,54.71,40.69,0.3
 6afaf1918e7fb2e78bc1da68,2026-11-21T00:17:18Z,2026-11-16T12:05:37Z,penneponne,c2s/11-tt-beta-cut,STC,0,10+0.1,1,0,2,rejected,88032,-0.49,1.12,755.9
@@ -9465,3 +9464,8 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afeee7e2ff81bd6a63443b3,2026-11-21T16:47:42Z,2026-11-19T12:41:34Z,Gruenerapfel,nettest603,STC,1,10+0.1,1,0,2,passed,85248,1.53,1.16,732.0
 6b0172e3b9d0e035d605f87a,2026-11-21T17:10:56Z,2026-11-21T10:30:59Z,Dubslow,pawnhist-stm-2,STC,0,10+0.1,1,0,2,rejected,22816,-3.35,2.22,195.9
 6b00cf01b9d0e035d605f74c,2026-11-21T17:26:17Z,2026-11-20T22:51:45Z,Gruenerapfel,codex/nmp-pawn-king-mobility-rebaes,STC,0,10+0.1,1,0,2,rejected,45824,-1.33,1.48,393.5
+6afb6f598e7fb2e78bc1db97,2026-11-21T18:16:11Z,2026-11-16T21:02:17Z,rawbee,simp-nfc-combo,STC,0,10+0.1,1,-1.75,0.25,passed,260128,-0.03,0.62,2233.6
+6afc91428e7fb2e78bc1dd03,2026-11-21T18:19:15Z,2026-11-17T17:39:14Z,Vizvezdenec,qsSimpCiek1,STC,0,10+0.1,1,-1.75,0.25,passed,141472,0.25,0.89,1214.8
+6af922988e7fb2e78bc1d79f,2026-11-21T18:26:32Z,2026-11-15T03:10:16Z,Dubslow,rm-optimism-rb,LTC,0,60+0.6,1,-1.75,0.25,passed,302070,-0.07,0.57,15562.6
+6afddfcc2ff81bd6a6344220,2026-11-21T18:26:45Z,2026-11-18T17:26:36Z,fauzi2,dopde1,STC,0,10+0.1,1,0,2,stopped,22976,-0.65,2.20,197.3
+6b01cd3db9d0e035d605f922,2026-11-21T18:41:09Z,2026-11-21T16:56:29Z,martinn,evalcorr,STC,0,10+0.1,1,0,2,rejected,7456,-11.19,3.86,64.0
