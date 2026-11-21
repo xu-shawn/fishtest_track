@@ -9469,3 +9469,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6af922988e7fb2e78bc1d79f,2026-11-21T18:26:32Z,2026-11-15T03:10:16Z,Dubslow,rm-optimism-rb,LTC,0,60+0.6,1,-1.75,0.25,passed,302070,-0.07,0.57,15562.6
 6afddfcc2ff81bd6a6344220,2026-11-21T18:26:45Z,2026-11-18T17:26:36Z,fauzi2,dopde1,STC,0,10+0.1,1,0,2,stopped,22976,-0.65,2.20,197.3
 6b01cd3db9d0e035d605f922,2026-11-21T18:41:09Z,2026-11-21T16:56:29Z,martinn,evalcorr,STC,0,10+0.1,1,0,2,rejected,7456,-11.19,3.86,64.0
+6b01e81bb9d0e035d605f965,2026-11-21T18:51:07Z,2026-11-21T18:51:07Z,shawnxu,test1769,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6b015ca5b9d0e035d605f83a,2026-11-21T19:00:43Z,2026-11-21T08:56:05Z,noobpwnftw,simplify-hyperbola,STC,0,10+0.1,1,-1.75,0.25,passed,51328,1.26,1.40,440.7
+6afff8c22ff81bd6a6344546,2026-11-21T19:15:44Z,2026-11-20T07:37:38Z,vdv,DissMagic,STC,1,10+0.1,1,0,2,rejected,61248,-0.96,1.36,525.9
