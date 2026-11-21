@@ -9429,3 +9429,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afe61c92ff81bd6a63442e1,2026-11-20T21:51:53Z,2026-11-19T02:41:13Z,0x539,mp-sort,STC,0,10+0.1,1,0,2,rejected,75488,-0.65,1.21,648.2
 6afb6f598e7fb2e78bc1db97,2026-11-20T23:04:36Z,2026-11-16T21:02:17Z,rawbee,simp-nfc-combo,STC,0,10+0.1,1,-1.75,0.25,failed,180256,-0.25,0.75,1547.8
 6afc85e88e7fb2e78bc1dcf5,2026-11-20T23:08:45Z,2026-11-17T16:50:48Z,kokodio,risingEval,STC,0,10+0.1,1,0,2,rejected,167456,-0.04,0.78,1437.9
+6b00e102b9d0e035d605f771,2026-11-21T00:14:25Z,2026-11-21T00:08:34Z,Fisherman,FuseThreatCapture,STC,0,10+0.1,1,0,2,stopped,32,54.71,40.69,0.3
+6afaf1918e7fb2e78bc1da68,2026-11-21T00:17:18Z,2026-11-16T12:05:37Z,penneponne,c2s/11-tt-beta-cut,STC,0,10+0.1,1,0,2,rejected,88032,-0.49,1.12,755.9
