@@ -9462,3 +9462,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b000d932ff81bd6a6344556,2026-11-21T16:08:30Z,2026-11-20T09:06:27Z,feeling4vibes,test/correction-scaled-on-nonpawn-material-2,STC,0,10+0.1,1,0,2,rejected,47456,-1.36,1.55,407.5
 6b01c84cb9d0e035d605f90c,2026-11-21T16:35:24Z,2026-11-21T16:35:24Z,martinn,evalcorr,STC,0,10+0.1,1,0,2,failed,0,,,0.0
 6b01c854b9d0e035d605f90e,2026-11-21T16:35:32Z,2026-11-21T16:35:32Z,0x539,mp-sort3,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
+6afeee7e2ff81bd6a63443b3,2026-11-21T16:47:42Z,2026-11-19T12:41:34Z,Gruenerapfel,nettest603,STC,1,10+0.1,1,0,2,passed,85248,1.53,1.16,732.0
+6b0172e3b9d0e035d605f87a,2026-11-21T17:10:56Z,2026-11-21T10:30:59Z,Dubslow,pawnhist-stm-2,STC,0,10+0.1,1,0,2,rejected,22816,-3.35,2.22,195.9
+6b00cf01b9d0e035d605f74c,2026-11-21T17:26:17Z,2026-11-20T22:51:45Z,Gruenerapfel,codex/nmp-pawn-king-mobility-rebaes,STC,0,10+0.1,1,0,2,rejected,45824,-1.33,1.48,393.5
