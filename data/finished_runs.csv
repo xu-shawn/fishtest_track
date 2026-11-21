@@ -9436,3 +9436,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afec7432ff81bd6a6344351,2026-11-21T01:43:06Z,2026-11-19T09:54:11Z,AdrianStockfish,pvNode,STC,0,10+0.1,1,0,2,rejected,59232,-0.97,1.37,508.6
 6aff516f2ff81bd6a6344442,2026-11-21T02:08:51Z,2026-11-19T19:43:43Z,xoto,tmpc1,STC,0,10+0.1,1,0,2,rejected,52352,-1.16,1.43,449.5
 6aff772c2ff81bd6a634449d,2026-11-21T02:26:05Z,2026-11-19T22:24:44Z,Gruenerapfel,codex/nmp-pawn-king-mobility,STC,0,10+0.1,1,0,2,rejected,32576,-2.09,1.76,279.7
+6aff4ab42ff81bd6a634443a,2026-11-21T02:59:13Z,2026-11-19T19:15:00Z,sscg13,finetune-zero-wdl-upscale,STC,1,10+0.1,1,0,2,rejected,54240,-1.11,1.44,465.7
