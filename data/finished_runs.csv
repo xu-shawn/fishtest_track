@@ -9490,3 +9490,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0190ecb9d0e035d605f8d1,2026-11-22T00:51:45Z,2026-11-21T12:39:08Z,Martin,pliesFromNull-to-repWindow,STC,0,10+0.1,1,-1.75,0.25,passed,55712,1.14,1.33,478.4
 6afddfeb2ff81bd6a6344224,2026-11-22T00:56:19Z,2026-11-18T17:27:07Z,fauzi2,dopde3,STC,0,10+0.1,1,0,2,stopped,97056,0.11,1.07,833.4
 6b0093962ff81bd6a634461b,2026-11-22T01:06:26Z,2026-11-20T18:38:14Z,fwoodruff,correction-capture-gap,STC,0,10+0.1,1,0,2,rejected,67168,-0.80,1.28,576.7
+6b010a55b9d0e035d605f79a,2026-11-22T02:45:26Z,2026-11-21T03:04:53Z,AdrianStockfish,futilityLUT4,STC,0,10+0.1,1,0,2,rejected,80704,-0.59,1.17,693.0
