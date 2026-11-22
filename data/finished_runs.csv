@@ -9505,3 +9505,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b025a2bb9d0e035d605fb86,2026-11-22T11:45:25Z,2026-11-22T02:57:47Z,AdrianStockfish,lowDepthSEtune,SPSA,0,60+0.6,1,,,stopped,5080,-7.39,5.77,261.7
 6b0251eab9d0e035d605fb3e,2026-11-22T14:41:36Z,2026-11-22T02:22:34Z,Gruenerapfel,claude/razor-fold-first-move,STC,0,10+0.1,1,0,2,stopped,20640,-2.27,2.32,177.2
 6b01e17db9d0e035d605f957,2026-11-22T14:58:28Z,2026-11-21T18:22:53Z,RodrigoSambade,fishtest/pawn-escape-lmr-512-2026-11,STC,0,10+0.1,1,0,2,rejected,83136,-0.55,1.15,713.9
+6b0324e9b9d0e035d605fef1,2026-11-22T17:22:49Z,2026-11-22T17:22:49Z,Kaz,kaz-contcorr02-spsa,SPSA,0,20+0.2,8,,,stopped,0,,,0.0
