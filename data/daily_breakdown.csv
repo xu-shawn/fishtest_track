@@ -4613,135 +4613,136 @@ date,kind,name,core_hours,count_hours,mnps_hours
 2026-11-21,hours,compiler,23.7,0.0,
 2026-11-21,hours,contributor,23.7,0.0,
 2026-11-21,hours,mnps,23.7,0.0,
-2026-11-22,arch,apple-silicon,267.0,51.0,328.7
-2026-11-22,arch,armv8,72.0,9.0,35.5
-2026-11-22,arch,armv8-dotprod,325.0,77.0,148.1
-2026-11-22,arch,loongarch64-lasx,342.0,18.0,152.0
-2026-11-22,arch,x86-64-avx2,50261.6,3175.3,22430.3
-2026-11-22,arch,x86-64-avx512,4352.9,516.4,2126.8
-2026-11-22,arch,x86-64-avx512icl,2344.5,565.4,2580.8
-2026-11-22,arch,x86-64-avxvnni,1328.6,132.4,1105.2
-2026-11-22,arch,x86-64-bmi2,3906.6,465.6,2308.0
-2026-11-22,arch,x86-64-sse41-popcnt,342.0,36.0,103.6
-2026-11-22,author,0x539,641.8,9.0,
-2026-11-22,author,AdrianStockfish,3001.6,35.0,
-2026-11-22,author,Elhamuddin,454.5,5.0,
-2026-11-22,author,fauzi2,10847.8,73.0,
-2026-11-22,author,feeling4vibes,993.3,23.0,
-2026-11-22,author,Fisherman,3756.9,47.3,
-2026-11-22,author,fwoodruff,2699.7,26.3,
-2026-11-22,author,Gruenerapfel,4738.6,50.0,
-2026-11-22,author,Kaz,5097.7,9.0,
-2026-11-22,author,luozichen,968.6,9.0,
-2026-11-22,author,Martin,759.7,10.0,
-2026-11-22,author,noobpwnftw,509.9,9.0,
-2026-11-22,author,penneponne,3160.7,63.0,
-2026-11-22,author,rn,2251.9,33.7,
-2026-11-22,author,RodrigoSambade,590.6,9.0,
-2026-11-22,author,Sam,116.2,3.0,
-2026-11-22,author,sg,1535.6,18.0,
-2026-11-22,author,shawnxu,5034.5,39.0,
-2026-11-22,author,Shreeyans,656.6,21.0,
-2026-11-22,author,vdv,12058.1,16.0,
-2026-11-22,author,Vizvezdenec,3175.4,41.0,
-2026-11-22,author,xoto,605.7,9.0,
-2026-11-22,compiler,clang++ 15.0.7,27.0,9.0,14.3
-2026-11-22,compiler,clang++ 17.0.0,135.0,18.0,160.2
-2026-11-22,compiler,clang++ 17.0.6,216.0,9.0,165.8
-2026-11-22,compiler,clang++ 18.1.3,27.0,9.0,14.0
-2026-11-22,compiler,clang++ 19.1.7,63.0,9.0,72.1
-2026-11-22,compiler,clang++ 21.0.0,132.0,33.0,168.5
-2026-11-22,compiler,clang++ 22.1.8,54.0,9.0,71.4
-2026-11-22,compiler,clang++ 23.1.5,63.0,9.0,43.9
-2026-11-22,compiler,clang++ 23.1.6,126.0,18.0,95.0
-2026-11-22,compiler,g++ 10.2.1,252.0,9.0,104.5
-2026-11-22,compiler,g++ 10.5.0,36.0,9.0,18.4
-2026-11-22,compiler,g++ 11.4.0,96.0,15.0,35.7
-2026-11-22,compiler,g++ 12.2.0,423.0,27.0,229.3
-2026-11-22,compiler,g++ 13.3.0,5077.0,677.1,2948.6
-2026-11-22,compiler,g++ 13.3.1,144.0,9.0,88.1
-2026-11-22,compiler,g++ 13.4.0,48080.0,3005.0,20932.7
-2026-11-22,compiler,g++ 14.2.0,1521.0,54.0,629.7
-2026-11-22,compiler,g++ 15.1.0,99.0,9.0,120.8
-2026-11-22,compiler,g++ 15.2.0,3629.5,806.3,2893.3
-2026-11-22,compiler,g++ 16.1.0,539.0,55.0,325.8
-2026-11-22,compiler,g++ 16.2.0,958.5,119.7,802.6
-2026-11-22,compiler,g++ 16.2.1,1844.0,128.0,1384.2
-2026-11-22,contributor,0x539,270.0,9.0,77.7
-2026-11-22,contributor,23jyang5614,36.0,9.0,32.5
-2026-11-22,contributor,ali-al-zhrani,9.0,9.0,5.1
-2026-11-22,contributor,amicic,54.0,9.0,33.9
+2026-11-22,arch,apple-silicon,297.0,57.0,365.8
+2026-11-22,arch,armv8,80.0,10.0,40.1
+2026-11-22,arch,armv8-dotprod,360.0,85.0,163.8
+2026-11-22,arch,loongarch64-lasx,380.0,20.0,169.0
+2026-11-22,arch,x86-64-avx2,54400.6,3437.3,24281.3
+2026-11-22,arch,x86-64-avx512,4456.9,526.4,2195.0
+2026-11-22,arch,x86-64-avx512icl,2561.5,617.4,2837.4
+2026-11-22,arch,x86-64-avxvnni,1475.6,146.4,1232.0
+2026-11-22,arch,x86-64-bmi2,4324.6,515.6,2555.2
+2026-11-22,arch,x86-64-sse41-popcnt,380.0,40.0,115.4
+2026-11-22,author,0x539,705.8,10.0,
+2026-11-22,author,AdrianStockfish,3240.6,39.0,
+2026-11-22,author,Elhamuddin,495.5,6.0,
+2026-11-22,author,fauzi2,11723.8,81.0,
+2026-11-22,author,feeling4vibes,1096.3,26.0,
+2026-11-22,author,Fisherman,4053.9,52.3,
+2026-11-22,author,fwoodruff,2913.7,30.3,
+2026-11-22,author,Gruenerapfel,5154.6,56.0,
+2026-11-22,author,Kaz,5499.7,10.0,
+2026-11-22,author,luozichen,1043.6,10.0,
+2026-11-22,author,Martin,819.7,11.0,
+2026-11-22,author,noobpwnftw,552.9,10.0,
+2026-11-22,author,penneponne,3422.7,70.0,
+2026-11-22,author,rn,2491.9,37.7,
+2026-11-22,author,RodrigoSambade,640.6,10.0,
+2026-11-22,author,Sam,153.2,4.0,
+2026-11-22,author,sg,1649.6,20.0,
+2026-11-22,author,shawnxu,5450.5,43.0,
+2026-11-22,author,Shreeyans,778.6,26.0,
+2026-11-22,author,vdv,12881.1,17.0,
+2026-11-22,author,Vizvezdenec,3463.4,46.0,
+2026-11-22,author,xoto,653.7,10.0,
+2026-11-22,compiler,clang++ 15.0.7,30.0,10.0,15.8
+2026-11-22,compiler,clang++ 17.0.0,150.0,20.0,177.8
+2026-11-22,compiler,clang++ 17.0.6,240.0,10.0,183.3
+2026-11-22,compiler,clang++ 18.1.3,30.0,10.0,15.7
+2026-11-22,compiler,clang++ 19.1.7,70.0,10.0,80.2
+2026-11-22,compiler,clang++ 21.0.0,147.0,37.0,187.9
+2026-11-22,compiler,clang++ 22.1.8,60.0,10.0,79.2
+2026-11-22,compiler,clang++ 23.1.5,70.0,10.0,48.4
+2026-11-22,compiler,clang++ 23.1.6,140.0,20.0,104.7
+2026-11-22,compiler,g++ 10.2.1,280.0,10.0,116.5
+2026-11-22,compiler,g++ 10.5.0,40.0,10.0,20.4
+2026-11-22,compiler,g++ 11.4.0,104.0,16.0,38.7
+2026-11-22,compiler,g++ 12.2.0,470.0,30.0,253.3
+2026-11-22,compiler,g++ 13.3.0,5253.0,705.1,3113.3
+2026-11-22,compiler,g++ 13.3.1,160.0,10.0,98.2
+2026-11-22,compiler,g++ 13.4.0,51984.0,3249.0,22627.6
+2026-11-22,compiler,g++ 14.2.0,1690.0,60.0,699.7
+2026-11-22,compiler,g++ 15.1.0,110.0,10.0,133.9
+2026-11-22,compiler,g++ 15.2.0,3983.5,883.3,3172.4
+2026-11-22,compiler,g++ 16.1.0,597.0,61.0,358.4
+2026-11-22,compiler,g++ 16.2.0,1061.5,131.7,887.5
+2026-11-22,compiler,g++ 16.2.1,2046.0,142.0,1542.1
+2026-11-22,contributor,0x539,300.0,10.0,86.7
+2026-11-22,contributor,23jyang5614,40.0,10.0,36.4
+2026-11-22,contributor,ali-al-zhrani,10.0,10.0,5.7
+2026-11-22,contributor,amicic,60.0,10.0,37.6
 2026-11-22,contributor,Angelkld,24.0,6.0,9.1
-2026-11-22,contributor,Antihistamine,126.0,27.0,120.4
+2026-11-22,contributor,Antihistamine,140.0,30.0,133.4
 2026-11-22,contributor,ARC1,14.0,7.0,14.0
-2026-11-22,contributor,AtticusPenguin2,69.0,12.0,50.2
-2026-11-22,contributor,beginnerchess10002551,716.0,179.0,629.9
-2026-11-22,contributor,Calis007,126.0,9.0,113.8
-2026-11-22,contributor,ChessDBCN,3502.0,437.8,1550.4
-2026-11-22,contributor,chunter18,162.0,18.0,96.3
-2026-11-22,contributor,CypressChess,357.4,44.7,151.1
-2026-11-22,contributor,DMBK,72.0,9.0,53.4
-2026-11-22,contributor,Drewsel,27.0,9.0,10.0
-2026-11-22,contributor,Epic29,72.0,9.0,96.4
-2026-11-22,contributor,Erravle,36.0,9.0,38.6
-2026-11-22,contributor,EWouters,189.0,27.0,138.5
-2026-11-22,contributor,fogleman,432.0,36.0,284.3
-2026-11-22,contributor,Goatminola,153.0,27.0,189.6
+2026-11-22,contributor,AtticusPenguin2,72.0,13.0,51.7
+2026-11-22,contributor,beginnerchess10002551,796.0,199.0,700.5
+2026-11-22,contributor,Calis007,140.0,10.0,124.6
+2026-11-22,contributor,ChessDBCN,3510.0,438.8,1554.3
+2026-11-22,contributor,chunter18,180.0,20.0,107.4
+2026-11-22,contributor,CypressChess,397.4,49.7,168.6
+2026-11-22,contributor,DMBK,80.0,10.0,59.4
+2026-11-22,contributor,Drewsel,30.0,10.0,11.1
+2026-11-22,contributor,Epic29,80.0,10.0,106.8
+2026-11-22,contributor,Erravle,40.0,10.0,42.9
+2026-11-22,contributor,EWouters,210.0,30.0,152.7
+2026-11-22,contributor,fogleman,480.0,40.0,321.5
+2026-11-22,contributor,Goatminola,170.0,30.0,210.2
 2026-11-22,contributor,goyosFishTest,10.0,5.0,5.0
-2026-11-22,contributor,gvreuls,144.0,9.0,88.1
-2026-11-22,contributor,hamzainaan,63.0,18.0,60.6
+2026-11-22,contributor,gvreuls,160.0,10.0,98.2
+2026-11-22,contributor,hamzainaan,70.0,20.0,66.9
 2026-11-22,contributor,Hongildong,23.2,2.3,21.6
-2026-11-22,contributor,InverseInductor,36.0,9.0,33.3
-2026-11-22,contributor,javran,72.0,9.0,75.6
-2026-11-22,contributor,johnwinning,54.0,9.0,68.3
-2026-11-22,contributor,JonstonChan,27.0,9.0,14.0
-2026-11-22,contributor,Karby,60.0,4.0,72.0
-2026-11-22,contributor,kirabrassdaze,216.0,27.0,73.3
-2026-11-22,contributor,Klaus,6.0,6.0,10.6
-2026-11-22,contributor,kokodio,36.0,9.0,65.7
-2026-11-22,contributor,Lavis,54.0,18.0,49.6
-2026-11-22,contributor,leszek,135.0,9.0,40.3
-2026-11-22,contributor,lifefun,214.0,116.0,427.6
-2026-11-22,contributor,Lorenz,63.0,9.0,72.1
-2026-11-22,contributor,MarcusTullius,138.2,8.6,205.3
-2026-11-22,contributor,markkulix,18.0,9.0,24.6
-2026-11-22,contributor,maximmasiutin,90.0,18.0,22.8
-2026-11-22,contributor,mecevdimitar,135.0,9.0,40.1
-2026-11-22,contributor,MediumBerry5575,1589.4,397.3,1422.2
-2026-11-22,contributor,mgd,126.0,9.0,95.4
-2026-11-22,contributor,niklasf,567.0,9.0,300.0
-2026-11-22,contributor,OCISHI,18.0,9.0,8.1
-2026-11-22,contributor,okrout,846.0,63.0,631.4
-2026-11-22,contributor,PluckyPizzicato,56.0,8.0,78.1
-2026-11-22,contributor,qgluca,36.0,9.0,58.4
-2026-11-22,contributor,Ric0701,180.0,9.0,194.4
-2026-11-22,contributor,RickGroszkiewicz,9.0,9.0,6.3
-2026-11-22,contributor,rieger,9.0,9.0,3.6
-2026-11-22,contributor,robal,99.0,9.0,120.8
-2026-11-22,contributor,sebastronomy,243.0,18.0,203.8
-2026-11-22,contributor,Serpensin,63.0,9.0,42.0
-2026-11-22,contributor,Spprtr,63.0,9.0,59.3
-2026-11-22,contributor,Squidroot,18.0,9.0,7.0
-2026-11-22,contributor,sylvek,117.0,27.0,87.5
-2026-11-22,contributor,tastedcheese,27.0,9.0,4.5
-2026-11-22,contributor,technologov,396.0,18.0,190.1
+2026-11-22,contributor,InverseInductor,40.0,10.0,37.6
+2026-11-22,contributor,javran,80.0,10.0,83.4
+2026-11-22,contributor,johnwinning,60.0,10.0,75.7
+2026-11-22,contributor,JonstonChan,30.0,10.0,15.7
+2026-11-22,contributor,Karby,75.0,5.0,86.5
+2026-11-22,contributor,kirabrassdaze,240.0,30.0,80.3
+2026-11-22,contributor,Klaus,7.0,7.0,12.5
+2026-11-22,contributor,kokodio,40.0,10.0,72.8
+2026-11-22,contributor,Lavis,60.0,20.0,55.1
+2026-11-22,contributor,leszek,150.0,10.0,45.0
+2026-11-22,contributor,lifefun,238.0,129.0,475.7
+2026-11-22,contributor,Lorenz,70.0,10.0,80.2
+2026-11-22,contributor,MarcusTullius,154.2,9.6,228.3
+2026-11-22,contributor,markkulix,20.0,10.0,27.3
+2026-11-22,contributor,maximmasiutin,100.0,20.0,25.4
+2026-11-22,contributor,mecevdimitar,150.0,10.0,43.4
+2026-11-22,contributor,MediumBerry5575,1717.4,429.3,1537.0
+2026-11-22,contributor,mgd,140.0,10.0,114.0
+2026-11-22,contributor,niklasf,630.0,10.0,330.9
+2026-11-22,contributor,OCISHI,20.0,10.0,9.0
+2026-11-22,contributor,okrout,940.0,70.0,702.7
+2026-11-22,contributor,PluckyPizzicato,63.0,9.0,88.7
+2026-11-22,contributor,qgluca,40.0,10.0,65.2
+2026-11-22,contributor,Ric0701,200.0,10.0,220.2
+2026-11-22,contributor,RickGroszkiewicz,10.0,10.0,7.0
+2026-11-22,contributor,rieger,10.0,10.0,4.0
+2026-11-22,contributor,robal,110.0,10.0,133.9
+2026-11-22,contributor,RudyMars,2.0,1.0,0.8
+2026-11-22,contributor,sebastronomy,270.0,20.0,225.5
+2026-11-22,contributor,Serpensin,70.0,10.0,46.7
+2026-11-22,contributor,Spprtr,70.0,10.0,66.2
+2026-11-22,contributor,Squidroot,20.0,10.0,7.7
+2026-11-22,contributor,sylvek,130.0,30.0,96.6
+2026-11-22,contributor,tastedcheese,30.0,10.0,5.0
+2026-11-22,contributor,technologov,440.0,20.0,211.3
 2026-11-22,contributor,tolkki963,66.6,8.3,37.1
-2026-11-22,contributor,Torom,216.0,9.0,195.7
-2026-11-22,contributor,vdv,48080.0,3005.0,20932.7
-2026-11-22,contributor,Vejlby,36.0,9.0,38.5
-2026-11-22,contributor,Wencey,1350.0,36.0,500.1
-2026-11-22,contributor,Williamguttn,101.8,7.6,143.6
-2026-11-22,contributor,Windcent,64.0,8.0,62.9
-2026-11-22,contributor,wizzouk,488.9,22.4,253.5
-2026-11-22,contributor,WoodMan777,108.0,18.0,128.8
+2026-11-22,contributor,Torom,240.0,10.0,218.0
+2026-11-22,contributor,vdv,51984.0,3249.0,22627.6
+2026-11-22,contributor,Vejlby,40.0,10.0,43.1
+2026-11-22,contributor,Wencey,1500.0,40.0,556.3
+2026-11-22,contributor,Williamguttn,113.8,8.6,159.1
+2026-11-22,contributor,Windcent,72.0,9.0,70.3
+2026-11-22,contributor,wizzouk,531.9,24.4,275.2
+2026-11-22,contributor,WoodMan777,120.0,20.0,143.0
 2026-11-22,contributor,xliaiyawa,5.3,2.0,4.8
-2026-11-22,contributor,xuhdev,18.0,9.0,19.2
-2026-11-22,contributor,zarthus,18.0,9.0,12.7
-2026-11-22,contributor,zeryl,117.0,9.0,74.6
-2026-11-22,contributor,Zirie,261.0,21.0,188.0
-2026-11-22,contributor,zoe,108.0,18.0,48.7
-2026-11-22,hours,arch,9.0,0.0,
-2026-11-22,hours,author,9.0,0.0,
-2026-11-22,hours,compiler,9.0,0.0,
-2026-11-22,hours,contributor,9.0,0.0,
-2026-11-22,hours,mnps,9.0,0.0,
+2026-11-22,contributor,xuhdev,20.0,10.0,21.4
+2026-11-22,contributor,zarthus,20.0,10.0,14.2
+2026-11-22,contributor,zeryl,130.0,10.0,83.8
+2026-11-22,contributor,Zirie,289.0,23.0,203.6
+2026-11-22,contributor,zoe,120.0,20.0,54.7
+2026-11-22,hours,arch,10.0,0.0,
+2026-11-22,hours,author,10.0,0.0,
+2026-11-22,hours,compiler,10.0,0.0,
+2026-11-22,hours,contributor,10.0,0.0,
+2026-11-22,hours,mnps,10.0,0.0,
