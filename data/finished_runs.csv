@@ -9491,3 +9491,8 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afddfeb2ff81bd6a6344224,2026-11-22T00:56:19Z,2026-11-18T17:27:07Z,fauzi2,dopde3,STC,0,10+0.1,1,0,2,stopped,97056,0.11,1.07,833.4
 6b0093962ff81bd6a634461b,2026-11-22T01:06:26Z,2026-11-20T18:38:14Z,fwoodruff,correction-capture-gap,STC,0,10+0.1,1,0,2,rejected,67168,-0.80,1.28,576.7
 6b010a55b9d0e035d605f79a,2026-11-22T02:45:26Z,2026-11-21T03:04:53Z,AdrianStockfish,futilityLUT4,STC,0,10+0.1,1,0,2,rejected,80704,-0.59,1.17,693.0
+6b01e84ab9d0e035d605f968,2026-11-22T02:54:56Z,2026-11-21T18:51:54Z,shawnxu,test1769,STC,0,10+0.1,1,0,2,rejected,31328,-2.22,1.83,269.0
+6b01b594b9d0e035d605f8f6,2026-11-22T03:03:34Z,2026-11-21T15:15:32Z,fwoodruff,correction-extra-tables,STC,0,10+0.1,1,0,2,rejected,45920,-1.42,1.56,394.3
+6affd43e2ff81bd6a63444f1,2026-11-22T03:05:09Z,2026-11-20T05:01:50Z,Elhamuddin,nmp-r-tt-capture,STC,0,10+0.1,1,0,2,rejected,171072,-0.02,0.81,1468.9
+6afc928a8e7fb2e78bc1dd0f,2026-11-22T03:14:15Z,2026-11-17T17:44:42Z,Vizvezdenec,qsSimpCiek3,STC,0,10+0.1,1,-1.75,0.25,passed,179392,0.12,0.78,1540.4
+6aff7b9f2ff81bd6a63444a3,2026-11-22T03:31:32Z,2026-11-19T22:43:43Z,fwoodruff,correction-rfp-scale-06,STC,0,10+0.1,1,0,2,passed,127392,1.18,0.94,1093.9
