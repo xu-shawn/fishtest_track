@@ -9487,3 +9487,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0232dcb9d0e035d605fb10,2026-11-22T00:10:04Z,2026-11-22T00:10:04Z,Fisherman,AttacksTweak,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6afaf17a8e7fb2e78bc1da64,2026-11-22T00:13:25Z,2026-11-16T12:05:14Z,penneponne,c2s/13-corr-complexity-scale,STC,0,10+0.1,1,0,2,rejected,130336,-0.18,0.93,1119.2
 6b017133b9d0e035d605f861,2026-11-22T00:14:40Z,2026-11-21T10:23:47Z,Dubslow,pawnhist-stm-1,STC,0,10+0.1,1,-1.75,0.25,rejected,62080,-1.78,1.35,533.1
+6b0190ecb9d0e035d605f8d1,2026-11-22T00:51:45Z,2026-11-21T12:39:08Z,Martin,pliesFromNull-to-repWindow,STC,0,10+0.1,1,-1.75,0.25,passed,55712,1.14,1.33,478.4
+6afddfeb2ff81bd6a6344224,2026-11-22T00:56:19Z,2026-11-18T17:27:07Z,fauzi2,dopde3,STC,0,10+0.1,1,0,2,stopped,97056,0.11,1.07,833.4
+6b0093962ff81bd6a634461b,2026-11-22T01:06:26Z,2026-11-20T18:38:14Z,fwoodruff,correction-capture-gap,STC,0,10+0.1,1,0,2,rejected,67168,-0.80,1.28,576.7
