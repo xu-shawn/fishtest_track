@@ -9498,3 +9498,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6aff7b9f2ff81bd6a63444a3,2026-11-22T03:31:32Z,2026-11-19T22:43:43Z,fwoodruff,correction-rfp-scale-06,STC,0,10+0.1,1,0,2,passed,127392,1.18,0.94,1093.9
 6b006d9b2ff81bd6a63445e7,2026-11-22T05:50:35Z,2026-11-20T15:56:11Z,rn,fix-1-move-pvs-take3,STC,0,10+0.1,1,-1.75,0.25,passed,109760,0.42,1.00,942.5
 6b005cd52ff81bd6a63445cd,2026-11-22T07:05:38Z,2026-11-20T14:44:37Z,vdv,master,Progtest,1,60+0.6,1,,,completed,60000,30.86,1.29,3091.2
+6afadd608e7fb2e78bc1da43,2026-11-22T09:46:13Z,2026-11-16T10:39:28Z,penneponne,c2s/28-qs-quiet-ttm,STC,0,10+0.1,1,0,2,rejected,175648,-0.01,0.80,1508.2
+6af45fa08e7fb2e78bc1cf70,2026-11-22T09:49:38Z,2026-11-11T12:29:20Z,shawnxu,test1761,STC,1,10+0.1,1,0,2,rejected,687616,0.37,0.41,5904.3
+6b029680b9d0e035d605fcf2,2026-11-22T10:23:49Z,2026-11-22T07:15:12Z,feeling4vibes,test/minor-piece-quiet-history-4,STC,0,10+0.1,1,0,2,stopped,6976,-7.47,4.02,59.9
