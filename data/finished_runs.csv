@@ -9518,3 +9518,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afb0aac8e7fb2e78bc1da9d,2026-11-23T15:39:51Z,2026-11-16T13:52:44Z,fauzi2,insde,SPSA,0,60+0.6,1,,,stopped,73904,-0.39,1.15,3807.5
 6b0039902ff81bd6a63445ad,2026-11-23T17:58:39Z,2026-11-20T12:14:08Z,Gruenerapfel,alternative-failhighrecover,LTC,0,60+0.6,1,0.5,2.5,rejected,101874,-0.11,0.98,5248.5
 6b0249cbb9d0e035d605fb37,2026-11-23T19:59:57Z,2026-11-22T01:47:55Z,feeling4vibes,test/minor-piece-quiet-history-3,STC,0,10+0.1,1,0,2,stopped,69024,-0.55,1.27,592.7
+6b0353e9b9d0e035d605ff51,2026-11-23T23:04:10Z,2026-11-22T20:43:21Z,martinn,evalcorr,STC,0,10+0.1,1,0,2,rejected,35008,-1.98,1.77,300.6
+6b01ceb1b9d0e035d605f926,2026-11-23T23:26:21Z,2026-11-21T17:02:41Z,xoto,tmpc2,SPSA,0,10+0.1,1,,,stopped,153590,0.66,0.84,1318.8
