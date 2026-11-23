@@ -9515,3 +9515,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b040c7a9f65cf9079e2567b,2026-11-23T10:28:25Z,2026-11-23T09:50:50Z,Mineta,test/3e8fde75/1,STC,0,1+0.01,1,,,completed,10000,0.83,4.09,8.6
 6b0432759f65cf9079e256dd,2026-11-23T12:32:53Z,2026-11-23T12:32:53Z,fwoodruff,correction-minor-few-plain,STC,0,10+0.1,1,0,2,stopped,0,,,0.0
 6b006cbe2ff81bd6a63445e3,2026-11-23T13:44:21Z,2026-11-20T15:52:30Z,Vizvezdenec,checksMpM3,STC,0,10+0.1,1,0,2,passed,134464,1.15,0.91,1154.6
+6afb0aac8e7fb2e78bc1da9d,2026-11-23T15:39:51Z,2026-11-16T13:52:44Z,fauzi2,insde,SPSA,0,60+0.6,1,,,stopped,73904,-0.39,1.15,3807.5
