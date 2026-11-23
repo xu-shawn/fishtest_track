@@ -9512,3 +9512,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afb45738e7fb2e78bc1db1a,2026-11-22T23:39:34Z,2026-11-16T18:03:31Z,shawnxu,test1764,LTC,0,60+0.6,1,0.5,2.5,rejected,189198,0.26,0.72,9747.5
 6b017d9cb9d0e035d605f8b2,2026-11-23T00:27:34Z,2026-11-21T11:16:44Z,Martin,inline-st,STC,0,10+0.1,1,-1.75,0.25,passed,143520,0.22,0.83,1232.4
 6b0236b9b9d0e035d605fb1f,2026-11-23T01:54:22Z,2026-11-22T00:26:33Z,fwoodruff,correction-last-moves,STC,0,10+0.1,1,0,2,rejected,48544,-1.30,1.51,416.8
+6b040c7a9f65cf9079e2567b,2026-11-23T10:28:25Z,2026-11-23T09:50:50Z,Mineta,test/3e8fde75/1,STC,0,1+0.01,1,,,completed,10000,0.83,4.09,8.6
