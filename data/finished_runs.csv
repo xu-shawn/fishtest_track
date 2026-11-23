@@ -9510,3 +9510,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b033655b9d0e035d605ff03,2026-11-22T19:43:47Z,2026-11-22T18:37:09Z,shawnxu,test1773,STC,1,10+0.1,1,0,2,stopped,768,-3.17,12.00,6.6
 6afc4fdb8e7fb2e78bc1dcc6,2026-11-22T23:09:57Z,2026-11-17T13:00:11Z,penneponne,c2s/24-se-margin-history,LTC,0,60+0.6,1,0.5,2.5,rejected,59322,-0.69,1.28,3056.3
 6afb45738e7fb2e78bc1db1a,2026-11-22T23:39:34Z,2026-11-16T18:03:31Z,shawnxu,test1764,LTC,0,60+0.6,1,0.5,2.5,rejected,189198,0.26,0.72,9747.5
+6b017d9cb9d0e035d605f8b2,2026-11-23T00:27:34Z,2026-11-21T11:16:44Z,Martin,inline-st,STC,0,10+0.1,1,-1.75,0.25,passed,143520,0.22,0.83,1232.4
