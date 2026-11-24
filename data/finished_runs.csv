@@ -9522,3 +9522,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b01ceb1b9d0e035d605f926,2026-11-23T23:26:21Z,2026-11-21T17:02:41Z,xoto,tmpc2,SPSA,0,10+0.1,1,,,stopped,153590,0.66,0.84,1318.8
 6b005ce02ff81bd6a63445cf,2026-11-23T23:53:17Z,2026-11-20T14:44:48Z,vdv,master,Progtest,1,60+0.6,8,,,completed,60000,22.62,1.16,24729.6
 6b04bf609f65cf9079e257b0,2026-11-24T03:39:45Z,2026-11-23T22:34:08Z,martinn,evalcorr-activation-cache,STC,0,10+0.1,1,0,2,rejected,7936,-10.69,3.81,68.1
+6b028ab6b9d0e035d605fce8,2026-11-24T03:51:15Z,2026-11-22T06:24:54Z,Elhamuddin,quiet-follows-capture1,STC,0,10+0.1,1,0,2,rejected,70240,-0.75,1.26,603.1
