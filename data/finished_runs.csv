@@ -9535,3 +9535,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b01fd9db9d0e035d605f9c8,2026-11-24T18:16:49Z,2026-11-21T20:22:53Z,shawnxu,test1771,SMP,0,5+0.05,8,0,2,rejected,72536,-0.69,1.20,2491.4
 6b031fedb9d0e035d605fed7,2026-11-24T19:28:35Z,2026-11-22T17:01:33Z,sscg13,k20h3,STC,1,10+0.1,1,-1.75,0.25,rejected,77440,-1.49,1.20,665.0
 6b026703b9d0e035d605fb9b,2026-11-24T19:45:29Z,2026-11-22T03:52:35Z,Shreeyans,remove-correl,STC,0,10+0.1,1,-1.75,0.25,passed,76256,0.77,1.21,654.8
+6afaf16d8e7fb2e78bc1da62,2026-11-24T19:57:19Z,2026-11-16T12:05:01Z,penneponne,c2s/09-shuffle-return,STC,0,10+0.1,1,0,2,rejected,245152,0.13,0.65,2105.0
