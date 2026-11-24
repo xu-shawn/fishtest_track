@@ -9525,3 +9525,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b028ab6b9d0e035d605fce8,2026-11-24T03:51:15Z,2026-11-22T06:24:54Z,Elhamuddin,quiet-follows-capture1,STC,0,10+0.1,1,0,2,rejected,70240,-0.75,1.26,603.1
 6b0232fab9d0e035d605fb12,2026-11-24T08:07:31Z,2026-11-22T00:10:34Z,noobpwnftw,remove-constexpr-limits,STC,0,10+0.1,1,-1.75,0.25,passed,120480,0.33,0.92,1034.5
 6b03bac59f65cf9079e25606,2026-11-24T08:29:28Z,2026-11-23T04:02:13Z,penneponne,c2s/52-se-margin-history-centred,STC,0,10+0.1,1,0,2,rejected,21440,-3.57,2.28,184.1
+6b040de99f65cf9079e2567e,2026-11-24T08:45:47Z,2026-11-23T09:56:57Z,feeling4vibes,test/minor-piece-quiet-history-6,STC,0,10+0.1,1,0,2,stopped,21632,-2.76,2.27,185.7
