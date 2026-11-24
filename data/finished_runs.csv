@@ -9536,3 +9536,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b031fedb9d0e035d605fed7,2026-11-24T19:28:35Z,2026-11-22T17:01:33Z,sscg13,k20h3,STC,1,10+0.1,1,-1.75,0.25,rejected,77440,-1.49,1.20,665.0
 6b026703b9d0e035d605fb9b,2026-11-24T19:45:29Z,2026-11-22T03:52:35Z,Shreeyans,remove-correl,STC,0,10+0.1,1,-1.75,0.25,passed,76256,0.77,1.21,654.8
 6afaf16d8e7fb2e78bc1da62,2026-11-24T19:57:19Z,2026-11-16T12:05:01Z,penneponne,c2s/09-shuffle-return,STC,0,10+0.1,1,0,2,rejected,245152,0.13,0.65,2105.0
+6b019c5eb9d0e035d605f8df,2026-11-24T21:41:53Z,2026-11-21T13:27:58Z,AdrianStockfish,beta2,STC,0,10+0.1,1,0,2,rejected,181792,0.01,0.78,1561.0
+6b036fcab9d0e035d605ff6a,2026-11-24T21:44:40Z,2026-11-22T22:42:18Z,sscg13,pp-k2h3,STC,1,10+0.1,1,0,2,passed,69120,1.76,1.28,593.5
