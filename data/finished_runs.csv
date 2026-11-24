@@ -9528,3 +9528,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b040de99f65cf9079e2567e,2026-11-24T08:45:47Z,2026-11-23T09:56:57Z,feeling4vibes,test/minor-piece-quiet-history-6,STC,0,10+0.1,1,0,2,stopped,21632,-2.76,2.27,185.7
 6afddfdd2ff81bd6a6344222,2026-11-24T11:35:10Z,2026-11-18T17:26:53Z,fauzi2,dopde2,STC,0,10+0.1,1,0,2,stopped,99296,0.08,1.05,852.6
 6aff71822ff81bd6a6344496,2026-11-24T14:45:57Z,2026-11-19T22:00:34Z,Vizvezdenec,checksMpM2,STC,0,10+0.1,1,0,2,rejected,197024,0.05,0.75,1691.8
+6b0557909f65cf9079e25867,2026-11-24T15:57:33Z,2026-11-24T09:23:28Z,martinn,evalcorr-activation-cache,STC,0,10+0.1,1,0,2,rejected,9184,-9.01,3.48,78.9
