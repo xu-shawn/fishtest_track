@@ -9568,3 +9568,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b05925e9f65cf9079e258a8,2026-11-25T19:55:07Z,2026-11-24T13:34:22Z,Vizvezdenec,phistQueenSplit1,STC,0,10+0.1,1,0,2,rejected,52448,-1.17,1.46,450.4
 6b0735669f65cf9079e25c37,2026-11-25T19:59:01Z,2026-11-25T19:22:14Z,Mineta,nettest/1,Nodestime,1,67.2+0.672,1,0,2,passed,3208,35.43,7.34,185.1
 6afdebc12ff81bd6a6344238,2026-11-25T21:05:04Z,2026-11-18T18:17:37Z,Vizvezdenec,futMultSC2,STC,0,10+0.1,1,0,2,rejected,341152,0.24,0.57,2929.4
+6b075cea9f65cf9079e25c9b,2026-11-25T22:10:50Z,2026-11-25T22:10:50Z,0x539,simp-skipquiets,STC,0,10+0.1,1,-1.75,0.25,failed,0,,,0.0
+6b027a7cb9d0e035d605fcda,2026-11-25T22:27:45Z,2026-11-22T05:15:40Z,Shreeyans,skip-research-tt-upper,STC,0,10+0.1,1,0,2,rejected,167840,-0.04,0.81,1441.2
