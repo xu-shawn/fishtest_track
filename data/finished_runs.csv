@@ -9543,3 +9543,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0261a9b9d0e035d605fb92,2026-11-25T03:11:33Z,2026-11-22T03:29:45Z,Shreeyans,evasion-pawnhist,STC,0,10+0.1,1,0,2,rejected,95424,-0.42,1.08,819.4
 6b027e95b9d0e035d605fcde,2026-11-25T03:20:04Z,2026-11-22T05:33:09Z,Sam,elo-hist1,STC,0,10+0.1,1,0,2,passed,135296,1.12,0.90,1161.7
 6b025e31b9d0e035d605fb8d,2026-11-25T03:39:59Z,2026-11-22T03:14:57Z,Shreeyans,allnode-nott-lmr,STC,0,10+0.1,1,0,2,rejected,99776,-0.38,1.05,856.7
+6b005ad52ff81bd6a63445c9,2026-11-25T04:50:04Z,2026-11-20T14:36:05Z,AdrianStockfish,lmp,STC,0,10+0.1,1,0,2,rejected,294080,0.19,0.62,2525.2
+6b029a03b9d0e035d605fcfa,2026-11-25T04:57:14Z,2026-11-22T07:30:11Z,Shreeyans,ttvalue-valid-pv-lmr,STC,0,10+0.1,1,-1.75,0.25,passed,84448,0.66,1.15,725.1
