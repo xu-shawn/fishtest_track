@@ -9556,3 +9556,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b06c3929f65cf9079e25ad9,2026-11-25T11:16:34Z,2026-11-25T11:16:34Z,Kaz,kaz-contcorr02,SMP,0,5+0.05,8,0,2,failed,0,,,0.0
 6b04b7f49f65cf9079e2579a,2026-11-25T12:29:40Z,2026-11-23T22:02:28Z,feeling4vibes,test/minor-piece-quiet-history-7,STC,0,10+0.1,1,0,2,rejected,62432,-0.92,1.33,536.1
 6b035bc6b9d0e035d605ff5a,2026-11-25T12:35:18Z,2026-11-22T21:16:54Z,HappyNoah,lmr-reciprocal-cached,STC,0,10+0.1,1,0,2,rejected,135200,-0.14,0.85,1160.9
+6b017d65b9d0e035d605f8af,2026-11-25T13:12:53Z,2026-11-21T11:15:49Z,fauzi2,altre1R,LTC,0,60+0.6,1,0.5,2.5,stopped,48612,-0.58,1.41,2504.5
