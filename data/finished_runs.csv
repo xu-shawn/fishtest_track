@@ -9545,3 +9545,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b025e31b9d0e035d605fb8d,2026-11-25T03:39:59Z,2026-11-22T03:14:57Z,Shreeyans,allnode-nott-lmr,STC,0,10+0.1,1,0,2,rejected,99776,-0.38,1.05,856.7
 6b005ad52ff81bd6a63445c9,2026-11-25T04:50:04Z,2026-11-20T14:36:05Z,AdrianStockfish,lmp,STC,0,10+0.1,1,0,2,rejected,294080,0.19,0.62,2525.2
 6b029a03b9d0e035d605fcfa,2026-11-25T04:57:14Z,2026-11-22T07:30:11Z,Shreeyans,ttvalue-valid-pv-lmr,STC,0,10+0.1,1,-1.75,0.25,passed,84448,0.66,1.15,725.1
+6afc93058e7fb2e78bc1dd12,2026-11-25T05:54:54Z,2026-11-17T17:46:45Z,luozichen,opt-lmr-fastdiv,STC,0,10+0.1,1,0,2,rejected,583776,0.32,0.41,5012.7
