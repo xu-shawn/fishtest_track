@@ -9559,3 +9559,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b017d65b9d0e035d605f8af,2026-11-25T13:12:53Z,2026-11-21T11:15:49Z,fauzi2,altre1R,LTC,0,60+0.6,1,0.5,2.5,stopped,48612,-0.58,1.41,2504.5
 6b03bbc39f65cf9079e25608,2026-11-25T14:20:14Z,2026-11-23T04:06:27Z,penneponne,c2s/51-se-margin-history-base47,STC,0,10+0.1,1,0,2,passed,67936,1.77,1.28,583.3
 6b0433109f65cf9079e256e1,2026-11-25T15:14:58Z,2026-11-23T12:35:28Z,fwoodruff,correction-minor-few-plain,STC,0,10+0.1,1,0,2,passed,74560,1.66,1.22,640.2
+6afaf1b28e7fb2e78bc1da6e,2026-11-25T16:23:49Z,2026-11-16T12:06:10Z,penneponne,c2s/07-losing-king-attack-keep,STC,0,10+0.1,1,0,2,rejected,318080,0.20,0.56,2731.2
