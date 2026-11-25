@@ -9570,3 +9570,8 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afdebc12ff81bd6a6344238,2026-11-25T21:05:04Z,2026-11-18T18:17:37Z,Vizvezdenec,futMultSC2,STC,0,10+0.1,1,0,2,rejected,341152,0.24,0.57,2929.4
 6b075cea9f65cf9079e25c9b,2026-11-25T22:10:50Z,2026-11-25T22:10:50Z,0x539,simp-skipquiets,STC,0,10+0.1,1,-1.75,0.25,failed,0,,,0.0
 6b027a7cb9d0e035d605fcda,2026-11-25T22:27:45Z,2026-11-22T05:15:40Z,Shreeyans,skip-research-tt-upper,STC,0,10+0.1,1,0,2,rejected,167840,-0.04,0.81,1441.2
+6b06b0fd9f65cf9079e25ace,2026-11-25T23:01:01Z,2026-11-25T09:57:17Z,xoto,impronot1,STC,0,10+0.1,1,0,2,rejected,43936,-1.51,1.59,377.3
+6b022c07b9d0e035d605fb07,2026-11-25T23:03:54Z,2026-11-21T23:40:55Z,Fisherman,PawnHistQueen,LTC,0,60+0.6,1,0.5,2.5,passed,106170,1.45,0.96,5469.9
+6b0497959f65cf9079e2576d,2026-11-25T23:26:13Z,2026-11-23T19:44:21Z,sg,cram2_i8_array_embed_move_order,Nodestime,0,100+1,1,0,2,passed,53176,2.17,1.47,4566.0
+6b047a1e9f65cf9079e2574f,2026-11-25T23:27:24Z,2026-11-23T17:38:38Z,Vizvezdenec,checksMpM4,STC,0,10+0.1,1,0,2,rejected,81920,-0.56,1.16,703.4
+6b01fd7bb9d0e035d605f9c1,2026-11-25T23:37:27Z,2026-11-21T20:22:19Z,shawnxu,test1770,SMP,0,5+0.05,8,0,2,rejected,148456,-0.09,0.84,5099.0
