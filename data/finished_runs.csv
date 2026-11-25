@@ -9549,3 +9549,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b04a3139f65cf9079e2577a,2026-11-25T06:54:45Z,2026-11-23T20:33:23Z,rn5f107s2,adatpFPMarginToSearch,STC,0,10+0.1,1,0,2,rejected,75808,-0.66,1.21,650.9
 6b028921b9d0e035d605fce6,2026-11-25T07:53:20Z,2026-11-22T06:18:09Z,Vizvezdenec,qsSimpCiekReb3,LTC,0,60+0.6,1,-1.75,0.25,passed,44268,1.48,1.47,2280.7
 6b05b9fa9f65cf9079e258db,2026-11-25T08:17:15Z,2026-11-24T16:23:22Z,martinn,corrhist-agreement,STC,0,10+0.1,1,0,2,rejected,41984,-1.60,1.64,360.5
+6aff816e2ff81bd6a63444aa,2026-11-25T09:21:22Z,2026-11-19T23:08:30Z,Fisherman,CorrHist,STC,0,10+0.1,1,0,2,passed,259904,0.82,0.66,2231.7
+6b033608b9d0e035d605ff01,2026-11-25T09:34:10Z,2026-11-22T18:35:52Z,shawnxu,test1773,STC,1,10+0.1,1,0,2,rejected,90592,-0.47,1.12,777.9
