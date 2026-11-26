@@ -9584,3 +9584,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b05dec29f65cf9079e25903,2026-11-26T01:39:31Z,2026-11-24T19:00:18Z,shawnxu,test1772,LTC,1,60+0.6,1,0.5,2.5,passed,46830,2.46,1.46,2412.7
 6b0699629f65cf9079e25a50,2026-11-26T02:39:38Z,2026-11-25T08:16:34Z,Vizvezdenec,ttmrCutNode1,STC,0,10+0.1,1,0,2,failed,42176,1.14,1.61,362.2
 6b071a1e9f65cf9079e25bc6,2026-11-26T02:41:28Z,2026-11-25T17:25:50Z,penneponne,c2s/07b-behind-king-attack-keep,STC,0,10+0.1,1,0,2,rejected,18848,-4.17,2.45,161.8
+6b020b89b9d0e035d605f9da,2026-11-26T02:50:14Z,2026-11-21T21:22:17Z,sg,cram_i8_array_embed_move_order,Nodestime,0,600+6,1,0.5,2.5,stopped,39616,-0.11,1.54,20410.2
+6b01f5b6b9d0e035d605f991,2026-11-26T02:51:47Z,2026-11-21T19:49:10Z,sg,cram_i8_array_embed_move_order,Nodestime,0,100+1,1,0,2,stopped,131840,1.02,0.93,11320.7
+6b06614d9f65cf9079e259dc,2026-11-26T03:17:12Z,2026-11-25T04:17:17Z,Sam,elo-hist1,LTC,0,60+0.6,1,0.5,2.5,rejected,42066,-1.25,1.52,2167.2
