@@ -9593,3 +9593,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b033f01b9d0e035d605ff0b,2026-11-26T07:49:26Z,2026-11-22T19:14:09Z,Gruenerapfel,nmp-verify-root-fp,STC,0,10+0.1,1,-1.75,0.25,passed,164832,0.16,0.82,1415.4
 6b0728389f65cf9079e25c1d,2026-11-26T07:54:29Z,2026-11-25T18:26:00Z,Disservin,skip-destructors-trivial-arrays,STC,0,10+0.1,1,-1.75,0.25,passed,60800,1.01,1.29,522.1
 6b074a0e9f65cf9079e25c6e,2026-11-26T08:04:46Z,2026-11-25T20:50:22Z,tsoj,scoredecay-net,STC,1,10+0.1,1,0,2,rejected,45184,-1.44,1.58,388.0
+6b0762649f65cf9079e25cc7,2026-11-26T09:03:37Z,2026-11-25T22:34:12Z,0x539,simp-skipquiets,STC,0,10+0.1,1,-1.75,0.25,rejected,30112,-3.24,1.92,258.6
