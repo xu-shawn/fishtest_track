@@ -9607,3 +9607,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b06ce999f65cf9079e25aee,2026-11-26T19:11:27Z,2026-11-25T12:03:37Z,Kaz,kaz-contcorr-exclude-null-move,SMP,0,5+0.05,8,0,2,rejected,68920,-0.74,1.22,2367.2
 6b08724f9f65cf9079e25fd0,2026-11-26T19:51:23Z,2026-11-26T17:54:23Z,fwoodruff,root-scrutiny,STC,0,10+0.1,1,0,2,rejected,4256,-20.51,5.17,36.5
 6b08683e9f65cf9079e25fc0,2026-11-26T19:53:00Z,2026-11-26T17:11:26Z,fauzi2,wave11b,VVLTC,0,60+0.6,8,0,2,stopped,3174,-2.74,4.92,1308.2
+6b071a4b9f65cf9079e25bc8,2026-11-26T20:29:31Z,2026-11-25T17:26:35Z,penneponne,c2s/18b-refresh-first-tile-prefetch,STC,0,10+0.1,1,0,2,rejected,66208,-0.78,1.23,568.5
