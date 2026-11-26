@@ -9605,3 +9605,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b082b5a9f65cf9079e25eed,2026-11-26T17:05:04Z,2026-11-26T12:51:38Z,luozichen,tm-stable-pred,STC,0,10+0.1,1,0,2,rejected,12224,-6.62,2.95,105.0
 6b0699629f65cf9079e25a50,2026-11-26T17:24:45Z,2026-11-25T08:16:34Z,Vizvezdenec,ttmrCutNode1,STC,0,10+0.1,1,0,2,passed,74848,1.67,1.22,642.7
 6b06ce999f65cf9079e25aee,2026-11-26T19:11:27Z,2026-11-25T12:03:37Z,Kaz,kaz-contcorr-exclude-null-move,SMP,0,5+0.05,8,0,2,rejected,68920,-0.74,1.22,2367.2
+6b08724f9f65cf9079e25fd0,2026-11-26T19:51:23Z,2026-11-26T17:54:23Z,fwoodruff,root-scrutiny,STC,0,10+0.1,1,0,2,rejected,4256,-20.51,5.17,36.5
+6b08683e9f65cf9079e25fc0,2026-11-26T19:53:00Z,2026-11-26T17:11:26Z,fauzi2,wave11b,VVLTC,0,60+0.6,8,0,2,stopped,3174,-2.74,4.92,1308.2
