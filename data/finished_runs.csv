@@ -9587,3 +9587,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b020b89b9d0e035d605f9da,2026-11-26T02:50:14Z,2026-11-21T21:22:17Z,sg,cram_i8_array_embed_move_order,Nodestime,0,600+6,1,0.5,2.5,stopped,39616,-0.11,1.54,20410.2
 6b01f5b6b9d0e035d605f991,2026-11-26T02:51:47Z,2026-11-21T19:49:10Z,sg,cram_i8_array_embed_move_order,Nodestime,0,100+1,1,0,2,stopped,131840,1.02,0.93,11320.7
 6b06614d9f65cf9079e259dc,2026-11-26T03:17:12Z,2026-11-25T04:17:17Z,Sam,elo-hist1,LTC,0,60+0.6,1,0.5,2.5,rejected,42066,-1.25,1.52,2167.2
+6b0745279f65cf9079e25c69,2026-11-26T04:14:34Z,2026-11-25T20:29:27Z,shawnxu,test1775,STC,1,10+0.1,1,0,2,rejected,30272,-2.38,1.92,259.9
