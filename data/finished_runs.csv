@@ -9582,3 +9582,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0789ac9f65cf9079e25cf7,2026-11-26T01:21:48Z,2026-11-26T01:21:48Z,Fisherman,AttkSimpl,STC,0,10+0.1,1,-1.75,0.25,stopped,0,,,0.0
 6b0349e3b9d0e035d605ff48,2026-11-26T01:31:19Z,2026-11-22T20:00:35Z,feeling4vibes,test/threat-score-based-on-piece,STC,0,10+0.1,1,0,2,rejected,145856,-0.10,0.87,1252.4
 6b05dec29f65cf9079e25903,2026-11-26T01:39:31Z,2026-11-24T19:00:18Z,shawnxu,test1772,LTC,1,60+0.6,1,0.5,2.5,passed,46830,2.46,1.46,2412.7
+6b0699629f65cf9079e25a50,2026-11-26T02:39:38Z,2026-11-25T08:16:34Z,Vizvezdenec,ttmrCutNode1,STC,0,10+0.1,1,0,2,failed,42176,1.14,1.61,362.2
+6b071a1e9f65cf9079e25bc6,2026-11-26T02:41:28Z,2026-11-25T17:25:50Z,penneponne,c2s/07b-behind-king-attack-keep,STC,0,10+0.1,1,0,2,rejected,18848,-4.17,2.45,161.8
