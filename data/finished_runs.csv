@@ -9598,3 +9598,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0032952ff81bd6a63445a5,2026-11-26T12:13:16Z,2026-11-20T11:44:21Z,rn,fix-1-move-pvs,STC,0,10+0.1,1,-1.75,0.25,passed,426176,-0.16,0.51,3659.4
 6b05eb189f65cf9079e25927,2026-11-26T12:25:21Z,2026-11-24T19:52:56Z,Shreeyans,remove-correl,LTC,0,60+0.6,1,-1.75,0.25,passed,63132,0.94,1.24,3252.6
 6b0821bc9f65cf9079e25ee2,2026-11-26T13:00:31Z,2026-11-26T12:10:36Z,Fisherman,AttkSimpl,STC,0,10+0.1,1,-1.75,0.25,stopped,800,3.91,11.00,6.9
+6b0467239f65cf9079e2570c,2026-11-26T13:52:52Z,2026-11-23T16:17:39Z,fauzi2,insde1,STC,0,10+0.1,1,0,2,stopped,83936,0.00,1.15,720.7
