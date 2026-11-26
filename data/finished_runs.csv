@@ -9589,3 +9589,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b06614d9f65cf9079e259dc,2026-11-26T03:17:12Z,2026-11-25T04:17:17Z,Sam,elo-hist1,LTC,0,60+0.6,1,0.5,2.5,rejected,42066,-1.25,1.52,2167.2
 6b0745279f65cf9079e25c69,2026-11-26T04:14:34Z,2026-11-25T20:29:27Z,shawnxu,test1775,STC,1,10+0.1,1,0,2,rejected,30272,-2.38,1.92,259.9
 6b072f9c9f65cf9079e25c30,2026-11-26T05:57:42Z,2026-11-25T18:57:32Z,tsoj,se-node-count,LTC,0,60+0.6,1,0.5,2.5,passed,21546,4.45,2.11,1110.0
+6b0623629f65cf9079e25997,2026-11-26T07:42:08Z,2026-11-24T23:53:06Z,fwoodruff,lmr-queens-off,STC,0,10+0.1,1,0,2,rejected,80864,-0.59,1.17,694.4
