@@ -9578,7 +9578,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b072cc59f65cf9079e25c27,2026-11-26T00:02:40Z,2026-11-25T18:45:25Z,Mineta,nettest/1,LTC,1,60+0.6,1,0,2,rejected,5562,-14.56,4.27,286.6
 6b077a0a9f65cf9079e25ce4,2026-11-26T00:15:06Z,2026-11-26T00:15:06Z,tsoj,se-node-count-log64int,LTC,0,60+0.6,1,0.5,2.5,stopped,0,,,0.0
 6b0760129f65cf9079e25ca3,2026-11-26T00:26:42Z,2026-11-25T22:24:18Z,martinn,square-regions-corrhist,STC,0,10+0.1,1,0,2,rejected,6912,-12.37,4.02,59.4
-6afe61d22ff81bd6a63442e3,2026-11-26T00:36:57Z,2026-11-19T02:41:22Z,0x539,mp-sort3,STC,0,10+0.1,1,0,2,failed,151552,0.36,0.86,1301.3
 6b0789ac9f65cf9079e25cf7,2026-11-26T01:21:48Z,2026-11-26T01:21:48Z,Fisherman,AttkSimpl,STC,0,10+0.1,1,-1.75,0.25,stopped,0,,,0.0
 6b0349e3b9d0e035d605ff48,2026-11-26T01:31:19Z,2026-11-22T20:00:35Z,feeling4vibes,test/threat-score-based-on-piece,STC,0,10+0.1,1,0,2,rejected,145856,-0.10,0.87,1252.4
 6b05dec29f65cf9079e25903,2026-11-26T01:39:31Z,2026-11-24T19:00:18Z,shawnxu,test1772,LTC,1,60+0.6,1,0.5,2.5,passed,46830,2.46,1.46,2412.7
@@ -9611,3 +9610,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0718b59f65cf9079e25bc2,2026-11-26T22:16:02Z,2026-11-25T17:19:49Z,feeling4vibes,test/promotion-handling-in-see,STC,0,10+0.1,1,0,2,stopped,86208,-0.44,1.13,740.2
 6b088bef9f65cf9079e25ff1,2026-11-26T23:03:58Z,2026-11-26T19:43:43Z,Fisherman,SimpSortNoFirst,STC,0,10+0.1,1,-1.75,0.25,stopped,8352,-3.37,3.64,71.7
 6b07bb609f65cf9079e25d50,2026-11-26T23:31:16Z,2026-11-26T04:53:52Z,AdrianStockfish,R_Both2,STC,0,10+0.1,1,0,2,rejected,24640,-3.05,2.11,211.6
+6afe61d22ff81bd6a63442e3,2026-11-27T01:27:34Z,2026-11-19T02:41:22Z,0x539,mp-sort3,STC,0,10+0.1,1,0,2,rejected,245056,0.13,0.68,2104.2
+6b07e59f9f65cf9079e25eb0,2026-11-27T01:28:24Z,2026-11-26T07:54:07Z,shawnxu,test1774,STC,0,10+0.1,1,0,2,rejected,57472,-1.02,1.39,493.5
+6afc3e0b8e7fb2e78bc1dcb0,2026-11-27T01:38:05Z,2026-11-17T11:44:11Z,fauzi2,scscs1,LTC,0,60+0.6,1,0,2,stopped,204708,0.21,0.69,10546.6
