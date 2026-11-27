@@ -9645,3 +9645,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b09437d9f65cf9079e26131,2026-11-27T13:10:31Z,2026-11-27T08:46:53Z,luozichen,tm-iteration-fit,STC,0,10+0.1,1,0,2,rejected,12288,-6.50,2.96,105.5
 6b06d8b99f65cf9079e25af8,2026-11-27T14:13:49Z,2026-11-25T12:46:49Z,AdrianStockfish,lesslmp,STC,0,10+0.1,1,0,2,rejected,82336,-0.56,1.16,707.0
 6b096bf39f65cf9079e2617a,2026-11-27T14:39:20Z,2026-11-27T11:39:31Z,fauzi2,altro2,STC,0,10+0.1,1,0,2,stopped,6912,-5.18,3.91,59.4
+6b075b109f65cf9079e25c86,2026-11-27T15:56:20Z,2026-11-25T22:02:56Z,xoto,badred1,STC,0,10+0.1,1,0,2,rejected,153696,-0.08,0.84,1319.7
+6b08b94d9f65cf9079e26057,2026-11-27T16:37:50Z,2026-11-26T22:57:17Z,fwoodruff,root-danger,STC,0,10+0.1,1,0,2,rejected,34080,-2.03,1.78,292.6
