@@ -9627,3 +9627,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b054fc49f65cf9079e25853,2026-11-27T07:04:47Z,2026-11-24T08:50:12Z,feeling4vibes,test/higher-rfp-margin-in-ttpv,STC,0,10+0.1,1,0,2,rejected,216064,0.09,0.72,1855.3
 6b05f06f9f65cf9079e2592f,2026-11-27T07:10:53Z,2026-11-24T20:15:43Z,Gruenerapfel,nettest625,STC,1,10+0.1,1,0,2,rejected,165696,-0.04,0.83,1422.8
 6b08046b9f65cf9079e25ecb,2026-11-27T07:51:00Z,2026-11-26T10:05:31Z,Dubslow,d83c07401e,VVLTC,1,60+0.6,8,0.5,2.5,stopped,2818,-13.57,5.44,1161.5
+6b079e989f65cf9079e25d34,2026-11-27T09:37:40Z,2026-11-26T02:51:04Z,sg,cram2_i8_array_embed_move_order,Nodestime,0,600+6,1,0.5,2.5,stopped,19556,-0.84,2.15,10075.3
+6b05d9969f65cf9079e258fc,2026-11-27T09:38:16Z,2026-11-24T18:38:14Z,sg,cram_hidden_move_order,Nodestime,0,100+1,1,0,2,stopped,80536,0.86,1.18,6915.4
