@@ -9595,6 +9595,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b078f7d9f65cf9079e25d1e,2026-11-26T12:08:49Z,2026-11-26T01:46:37Z,Fisherman,AttkSimpl,STC,0,10+0.1,1,-1.75,0.25,stopped,20160,0.76,2.20,173.1
 6b0032952ff81bd6a63445a5,2026-11-26T12:13:16Z,2026-11-20T11:44:21Z,rn,fix-1-move-pvs,STC,0,10+0.1,1,-1.75,0.25,passed,426176,-0.16,0.51,3659.4
 6b05eb189f65cf9079e25927,2026-11-26T12:25:21Z,2026-11-24T19:52:56Z,Shreeyans,remove-correl,LTC,0,60+0.6,1,-1.75,0.25,passed,63132,0.94,1.24,3252.6
+6b00e316b9d0e035d605f777,2026-11-26T12:51:50Z,2026-11-21T00:17:26Z,Fisherman,FuseThreatCapture,STC,0,10+0.1,1,0,2,stopped,144480,0.11,0.83,1240.6
 6b0821bc9f65cf9079e25ee2,2026-11-26T13:00:31Z,2026-11-26T12:10:36Z,Fisherman,AttkSimpl,STC,0,10+0.1,1,-1.75,0.25,stopped,800,3.91,11.00,6.9
 6b0467239f65cf9079e2570c,2026-11-26T13:52:52Z,2026-11-23T16:17:39Z,fauzi2,insde1,STC,0,10+0.1,1,0,2,stopped,83936,0.00,1.15,720.7
 6b05d1a19f65cf9079e258f2,2026-11-26T16:12:56Z,2026-11-24T18:04:17Z,Gruenerapfel,alternative-failhighrecover-v2,STC,0,10+0.1,1,0,2,passed,113088,1.26,0.99,971.0
@@ -9603,6 +9604,7 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b04674e9f65cf9079e25710,2026-11-26T17:02:06Z,2026-11-23T16:18:22Z,fauzi2,insde2,STC,0,10+0.1,1,0,2,stopped,96288,0.22,1.08,826.8
 6b082b5a9f65cf9079e25eed,2026-11-26T17:05:04Z,2026-11-26T12:51:38Z,luozichen,tm-stable-pred,STC,0,10+0.1,1,0,2,rejected,12224,-6.62,2.95,105.0
 6b0699629f65cf9079e25a50,2026-11-26T17:24:45Z,2026-11-25T08:16:34Z,Vizvezdenec,ttmrCutNode1,STC,0,10+0.1,1,0,2,passed,74848,1.67,1.22,642.7
+6b072b339f65cf9079e25c23,2026-11-26T18:33:25Z,2026-11-25T18:38:43Z,fwoodruff,lmr-closed-outposts,STC,0,10+0.1,1,0,2,stopped,48288,-0.40,1.49,414.6
 6b06ce999f65cf9079e25aee,2026-11-26T19:11:27Z,2026-11-25T12:03:37Z,Kaz,kaz-contcorr-exclude-null-move,SMP,0,5+0.05,8,0,2,rejected,68920,-0.74,1.22,2367.2
 6b08724f9f65cf9079e25fd0,2026-11-26T19:51:23Z,2026-11-26T17:54:23Z,fwoodruff,root-scrutiny,STC,0,10+0.1,1,0,2,rejected,4256,-20.51,5.17,36.5
 6b08683e9f65cf9079e25fc0,2026-11-26T19:53:00Z,2026-11-26T17:11:26Z,fauzi2,wave11b,VVLTC,0,60+0.6,8,0,2,stopped,3174,-2.74,4.92,1308.2
@@ -9638,3 +9640,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0194d9b9d0e035d605f8d8,2026-11-27T11:17:26Z,2026-11-21T12:55:53Z,AdrianStockfish,noTTpvFP,LTC,0,60+0.6,1,-1.75,0.25,rejected,208512,-0.73,0.68,10742.5
 6b06e7f99f65cf9079e25b1d,2026-11-27T11:30:13Z,2026-11-25T13:51:53Z,fauzi2,insde2b,STC,0,10+0.1,1,0,2,stopped,97536,-0.30,1.06,837.5
 6b003ffe2ff81bd6a63445b6,2026-11-27T11:33:30Z,2026-11-20T12:41:34Z,fauzi2,doppio,STC,0,10+0.1,1,0,2,stopped,323520,0.45,0.59,2778.0
+6b096bb29f65cf9079e26177,2026-11-27T12:17:17Z,2026-11-27T11:38:26Z,fauzi2,altro1,STC,0,10+0.1,1,0,2,stopped,1472,-12.99,8.68,12.6
