@@ -9641,3 +9641,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b06e7f99f65cf9079e25b1d,2026-11-27T11:30:13Z,2026-11-25T13:51:53Z,fauzi2,insde2b,STC,0,10+0.1,1,0,2,stopped,97536,-0.30,1.06,837.5
 6b003ffe2ff81bd6a63445b6,2026-11-27T11:33:30Z,2026-11-20T12:41:34Z,fauzi2,doppio,STC,0,10+0.1,1,0,2,stopped,323520,0.45,0.59,2778.0
 6b096bb29f65cf9079e26177,2026-11-27T12:17:17Z,2026-11-27T11:38:26Z,fauzi2,altro1,STC,0,10+0.1,1,0,2,stopped,1472,-12.99,8.68,12.6
+6b05fc3e9f65cf9079e2593c,2026-11-27T12:46:52Z,2026-11-24T21:06:06Z,penneponne,c2s/09b-shuffle-any-return,STC,0,10+0.1,1,0,2,rejected,174176,-0.01,0.76,1495.6
+6b09437d9f65cf9079e26131,2026-11-27T13:10:31Z,2026-11-27T08:46:53Z,luozichen,tm-iteration-fit,STC,0,10+0.1,1,0,2,rejected,12288,-6.50,2.96,105.5
