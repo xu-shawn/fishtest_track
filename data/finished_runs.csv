@@ -9621,3 +9621,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b08038b9f65cf9079e25ec8,2026-11-27T04:21:05Z,2026-11-26T10:01:47Z,Martin,rep-vec,STC,0,10+0.1,1,-1.75,0.25,rejected,63488,-1.64,1.25,545.2
 6b07c0cf9f65cf9079e25e2e,2026-11-27T04:21:45Z,2026-11-26T05:17:03Z,Elhamuddin,hindsight-adjustment,STC,0,10+0.1,1,0,2,rejected,76096,-0.65,1.21,653.4
 6b0744519f65cf9079e25c63,2026-11-27T04:38:21Z,2026-11-25T20:25:53Z,Vizvezdenec,ttmrCutNode2,STC,0,10+0.1,1,0,2,rejected,77600,-0.63,1.20,666.3
+6b08880a9f65cf9079e25fe5,2026-11-27T05:21:39Z,2026-11-26T19:27:06Z,feeling4vibes,test/adaptive-probcut-depth,STC,0,10+0.1,1,0,2,passed,24320,4.04,2.13,208.8
+6b07230e9f65cf9079e25c14,2026-11-27T05:42:26Z,2026-11-25T18:03:58Z,Shreeyans,ttvalue-valid-pv-lmr,LTC,0,60+0.6,1,-1.75,0.25,passed,62508,0.95,1.24,3220.4
