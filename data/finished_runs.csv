@@ -9623,3 +9623,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0744519f65cf9079e25c63,2026-11-27T04:38:21Z,2026-11-25T20:25:53Z,Vizvezdenec,ttmrCutNode2,STC,0,10+0.1,1,0,2,rejected,77600,-0.63,1.20,666.3
 6b08880a9f65cf9079e25fe5,2026-11-27T05:21:39Z,2026-11-26T19:27:06Z,feeling4vibes,test/adaptive-probcut-depth,STC,0,10+0.1,1,0,2,passed,24320,4.04,2.13,208.8
 6b07230e9f65cf9079e25c14,2026-11-27T05:42:26Z,2026-11-25T18:03:58Z,Shreeyans,ttvalue-valid-pv-lmr,LTC,0,60+0.6,1,-1.75,0.25,passed,62508,0.95,1.24,3220.4
+6b07a0839f65cf9079e25d3b,2026-11-27T06:46:52Z,2026-11-26T02:59:15Z,AdrianStockfish,all2,STC,0,10+0.1,1,0,2,rejected,42432,-1.56,1.63,364.3
+6b054fc49f65cf9079e25853,2026-11-27T07:04:47Z,2026-11-24T08:50:12Z,feeling4vibes,test/higher-rfp-margin-in-ttpv,STC,0,10+0.1,1,0,2,rejected,216064,0.09,0.72,1855.3
+6b05f06f9f65cf9079e2592f,2026-11-27T07:10:53Z,2026-11-24T20:15:43Z,Gruenerapfel,nettest625,STC,1,10+0.1,1,0,2,rejected,165696,-0.04,0.83,1422.8
