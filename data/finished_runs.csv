@@ -9614,3 +9614,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b07e59f9f65cf9079e25eb0,2026-11-27T01:28:24Z,2026-11-26T07:54:07Z,shawnxu,test1774,STC,0,10+0.1,1,0,2,rejected,57472,-1.02,1.39,493.5
 6afc3e0b8e7fb2e78bc1dcb0,2026-11-27T01:38:05Z,2026-11-17T11:44:11Z,fauzi2,scscs1,LTC,0,60+0.6,1,0,2,stopped,204708,0.21,0.69,10546.6
 6b04d5499f65cf9079e257f5,2026-11-27T02:36:18Z,2026-11-24T00:07:37Z,xoto,tmpc2,STC,0,10+0.1,1,0,2,rejected,277216,0.17,0.62,2380.4
+6b08bde39f65cf9079e2605e,2026-11-27T02:45:50Z,2026-11-26T23:16:51Z,xoto,tmred2,STC,0,10+0.1,1,0,2,rejected,9600,-8.33,3.29,82.4
