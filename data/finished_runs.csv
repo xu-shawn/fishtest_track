@@ -9657,3 +9657,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b09c2a39f65cf9079e263f1,2026-11-27T20:26:17Z,2026-11-27T17:49:23Z,luozichen,tm-phase-tilt,STC,0,10+0.1,1,0,2,rejected,12096,-6.61,2.98,103.9
 6b09f2599f65cf9079e265fd,2026-11-27T21:58:41Z,2026-11-27T21:12:57Z,xoto,tmred3,SPSA,0,10+0.1,1,,,stopped,2136,4.39,7.19,18.3
 6b08ee519f65cf9079e2608f,2026-11-27T22:06:21Z,2026-11-27T02:43:29Z,xoto,tmred2,STC,0,10+0.1,1,0,2,rejected,31936,-2.21,1.85,274.2
+6b00ea0cb9d0e035d605f77e,2026-11-27T23:02:51Z,2026-11-21T00:47:08Z,fauzi2,6720+6835,SMP,0,5+0.05,8,-1.75,0.25,failed,190736,-0.11,0.74,6551.1
