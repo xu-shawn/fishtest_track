@@ -9615,3 +9615,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afc3e0b8e7fb2e78bc1dcb0,2026-11-27T01:38:05Z,2026-11-17T11:44:11Z,fauzi2,scscs1,LTC,0,60+0.6,1,0,2,stopped,204708,0.21,0.69,10546.6
 6b04d5499f65cf9079e257f5,2026-11-27T02:36:18Z,2026-11-24T00:07:37Z,xoto,tmpc2,STC,0,10+0.1,1,0,2,rejected,277216,0.17,0.62,2380.4
 6b08bde39f65cf9079e2605e,2026-11-27T02:45:50Z,2026-11-26T23:16:51Z,xoto,tmred2,STC,0,10+0.1,1,0,2,rejected,9600,-8.33,3.29,82.4
+6b06049c9f65cf9079e25945,2026-11-27T03:04:25Z,2026-11-24T21:41:48Z,sanityeclipse000,stop-hygiene,SMP,0,5+0.05,8,0,2,rejected,147592,-0.10,0.84,5069.3
+6b06fd099f65cf9079e25b2e,2026-11-27T03:40:02Z,2026-11-25T15:21:45Z,Gruenerapfel,nmp-verify-minimal,LTC,0,60+0.6,1,0.5,2.5,rejected,47370,-1.03,1.43,2440.5
+6b089cb39f65cf9079e26006,2026-11-27T03:41:44Z,2026-11-26T20:55:15Z,martinn,corrhist-krisztory,STC,0,10+0.1,1,0,2,rejected,20096,-3.84,2.33,172.6
