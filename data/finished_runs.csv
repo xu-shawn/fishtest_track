@@ -9629,3 +9629,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b08046b9f65cf9079e25ecb,2026-11-27T07:51:00Z,2026-11-26T10:05:31Z,Dubslow,d83c07401e,VVLTC,1,60+0.6,8,0.5,2.5,stopped,2818,-13.57,5.44,1161.5
 6b079e989f65cf9079e25d34,2026-11-27T09:37:40Z,2026-11-26T02:51:04Z,sg,cram2_i8_array_embed_move_order,Nodestime,0,600+6,1,0.5,2.5,stopped,19556,-0.84,2.15,10075.3
 6b05d9969f65cf9079e258fc,2026-11-27T09:38:16Z,2026-11-24T18:38:14Z,sg,cram_hidden_move_order,Nodestime,0,100+1,1,0,2,stopped,80536,0.86,1.18,6915.4
+6b0926289f65cf9079e260d5,2026-11-27T09:54:24Z,2026-11-27T06:41:44Z,luiscortespenguin,fishtest-sse2-test,STC,0,10+0.1,1,0,2,passed,2816,31.80,6.09,24.2
+6b094e6e9f65cf9079e2613b,2026-11-27T10:00:38Z,2026-11-27T09:33:34Z,sg,cram_i8_array_embed_move_order2,Nodestime,1,100+1,1,0,2,stopped,328,-10.60,18.30,28.2
+6b08836a9f65cf9079e25fdd,2026-11-27T10:18:22Z,2026-11-26T19:07:22Z,Shreeyans,hist-prune-skip-quiets,STC,0,10+0.1,1,0,2,rejected,41216,-1.61,1.64,353.9
