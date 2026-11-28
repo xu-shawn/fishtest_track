@@ -9679,3 +9679,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b072e389f65cf9079e25c2b,2026-11-28T10:56:12Z,2026-11-25T18:51:36Z,fauzi2,insde3,STC,0,10+0.1,1,0,2,stopped,211776,0.14,0.72,1818.4
 6b0a9a6a9f65cf9079e26745,2026-11-28T11:10:02Z,2026-11-28T09:10:02Z,fwoodruff,lmr-complexity-history,STC,0,10+0.1,1,0,2,stopped,5824,2.86,4.42,50.0
 6b021192b9d0e035d605fad9,2026-11-28T12:30:12Z,2026-11-21T21:48:02Z,Gruenerapfel,nettest603,LTC,1,60+0.6,1,0.5,2.5,stopped,274038,0.76,0.60,14118.4
+6b09315e9f65cf9079e2611c,2026-11-28T12:49:20Z,2026-11-27T07:29:34Z,rn,tt-clamp-decisive-take4a,STC,0,10+0.1,1,-1.75,0.25,passed,134176,0.28,0.91,1152.1
+6b0693489f65cf9079e25a49,2026-11-28T13:01:30Z,2026-11-25T07:50:32Z,feeling4vibes,test/improve-pinned-piece-handling-in-see,STC,0,10+0.1,1,0,2,passed,333600,0.75,0.58,2864.5
+6b08db6f9f65cf9079e2607d,2026-11-28T13:10:44Z,2026-11-27T01:22:55Z,Shreeyans,negext-cutnode,STC,0,10+0.1,1,0,2,rejected,116512,-0.26,0.98,1000.4
