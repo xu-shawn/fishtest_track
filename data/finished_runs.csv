@@ -9671,3 +9671,8 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b082edd9f65cf9079e25ef7,2026-11-28T08:46:07Z,2026-11-26T13:06:37Z,Fisherman,AttkSimpl,STC,0,10+0.1,1,-1.75,0.25,passed,142048,0.23,0.83,1219.7
 6b09783b9f65cf9079e261a1,2026-11-28T09:11:05Z,2026-11-27T12:31:55Z,fwoodruff,bitboard-horizon-tactics,STC,0,10+0.1,1,0,2,rejected,10432,-7.83,3.27,89.6
 6b0a51b39f65cf9079e26698,2026-11-28T09:45:47Z,2026-11-28T03:59:47Z,luiscortespenguin,nnue-weight-search-disagreements,STC,1,10+0.1,1,0,2,stopped,22048,-1.51,2.24,189.3
+6b08ef829f65cf9079e26092,2026-11-28T09:55:45Z,2026-11-27T02:48:34Z,xoto,badred1,SPSA,0,10+0.1,1,,,stopped,70154,0.02,1.26,602.4
+6b06f9eb9f65cf9079e25b2a,2026-11-28T09:58:11Z,2026-11-25T15:08:27Z,penneponne,c2s/51-se-margin-history-base47,LTC,0,60+0.6,1,0.5,2.5,rejected,108330,-0.06,0.94,5581.2
+6afaf1858e7fb2e78bc1da66,2026-11-28T10:05:49Z,2026-11-16T12:05:25Z,penneponne,c2s/10-tm-reply-surprise,STC,0,10+0.1,1,0,2,rejected,632384,0.34,0.40,5430.1
+6b0a005e9f65cf9079e26644,2026-11-28T10:06:36Z,2026-11-27T22:12:46Z,xoto,tmred3,SPSA,0,10+0.1,1,,,stopped,43170,0.25,1.60,370.7
+6b062bd19f65cf9079e259a0,2026-11-28T10:15:41Z,2026-11-25T00:29:05Z,sscg13,pp-k2h3,LTC,1,60+0.6,1,0.5,2.5,rejected,203586,0.29,0.69,10488.8
