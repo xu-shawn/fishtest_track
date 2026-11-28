@@ -9682,3 +9682,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b09315e9f65cf9079e2611c,2026-11-28T12:49:20Z,2026-11-27T07:29:34Z,rn,tt-clamp-decisive-take4a,STC,0,10+0.1,1,-1.75,0.25,passed,134176,0.28,0.91,1152.1
 6b0693489f65cf9079e25a49,2026-11-28T13:01:30Z,2026-11-25T07:50:32Z,feeling4vibes,test/improve-pinned-piece-handling-in-see,STC,0,10+0.1,1,0,2,passed,333600,0.75,0.58,2864.5
 6b08db6f9f65cf9079e2607d,2026-11-28T13:10:44Z,2026-11-27T01:22:55Z,Shreeyans,negext-cutnode,STC,0,10+0.1,1,0,2,rejected,116512,-0.26,0.98,1000.4
+6b06ec429f65cf9079e25b21,2026-11-28T13:33:48Z,2026-11-25T14:10:10Z,Fisherman,CorrHist^,LTC,0,60+0.6,1,0.5,2.5,rejected,131418,0.07,0.86,6770.7
