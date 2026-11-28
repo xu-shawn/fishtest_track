@@ -9664,3 +9664,4 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b09a6149f65cf9079e262d1,2026-11-28T02:23:00Z,2026-11-27T15:47:32Z,Shreeyans,lmp-history,STC,0,10+0.1,1,0,2,rejected,28960,-2.48,1.94,248.7
 6b071a749f65cf9079e25bcd,2026-11-28T02:42:47Z,2026-11-25T17:27:16Z,penneponne,c2s/15b-depth1-dead-lmr,STC,0,10+0.1,1,0,2,passed,185600,0.90,0.73,1593.7
 6b093aca9f65cf9079e2612c,2026-11-28T02:52:05Z,2026-11-27T08:09:46Z,Disservin,net-635,STC,1,10+0.1,1,0,2,rejected,63776,-0.88,1.34,547.6
+6b0a6b349f65cf9079e266be,2026-11-28T05:48:36Z,2026-11-28T05:48:36Z,shawnxu,test1778,STC,1,10+0.1,1,0,2,stopped,0,,,0.0
