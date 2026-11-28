@@ -9668,3 +9668,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b0982d79f65cf9079e261af,2026-11-28T07:39:01Z,2026-11-27T13:17:11Z,fauzi2,wave11b,VVLTC,0,60+0.6,8,0.5,2.5,passed,92796,1.38,0.90,38246.8
 6b0a453a9f65cf9079e26683,2026-11-28T07:53:41Z,2026-11-28T03:06:34Z,sanityeclipse000,sse2-widen,STC,0,10+0.1,1,0,2,passed,8480,10.41,3.51,72.8
 6b08b7fa9f65cf9079e26054,2026-11-28T08:11:34Z,2026-11-26T22:51:38Z,Fisherman,SimpSortNoFirst,STC,0,10+0.1,1,-1.75,0.25,passed,99296,0.50,1.06,852.6
+6b082edd9f65cf9079e25ef7,2026-11-28T08:46:07Z,2026-11-26T13:06:37Z,Fisherman,AttkSimpl,STC,0,10+0.1,1,-1.75,0.25,passed,142048,0.23,0.83,1219.7
+6b09783b9f65cf9079e261a1,2026-11-28T09:11:05Z,2026-11-27T12:31:55Z,fwoodruff,bitboard-horizon-tactics,STC,0,10+0.1,1,0,2,rejected,10432,-7.83,3.27,89.6
+6b0a51b39f65cf9079e26698,2026-11-28T09:45:47Z,2026-11-28T03:59:47Z,luiscortespenguin,nnue-weight-search-disagreements,STC,1,10+0.1,1,0,2,stopped,22048,-1.51,2.24,189.3
