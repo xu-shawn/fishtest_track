@@ -9676,3 +9676,5 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6afaf1858e7fb2e78bc1da66,2026-11-28T10:05:49Z,2026-11-16T12:05:25Z,penneponne,c2s/10-tm-reply-surprise,STC,0,10+0.1,1,0,2,rejected,632384,0.34,0.40,5430.1
 6b0a005e9f65cf9079e26644,2026-11-28T10:06:36Z,2026-11-27T22:12:46Z,xoto,tmred3,SPSA,0,10+0.1,1,,,stopped,43170,0.25,1.60,370.7
 6b062bd19f65cf9079e259a0,2026-11-28T10:15:41Z,2026-11-25T00:29:05Z,sscg13,pp-k2h3,LTC,1,60+0.6,1,0.5,2.5,rejected,203586,0.29,0.69,10488.8
+6b072e389f65cf9079e25c2b,2026-11-28T10:56:12Z,2026-11-25T18:51:36Z,fauzi2,insde3,STC,0,10+0.1,1,0,2,stopped,211776,0.14,0.72,1818.4
+6b0a9a6a9f65cf9079e26745,2026-11-28T11:10:02Z,2026-11-28T09:10:02Z,fwoodruff,lmr-complexity-history,STC,0,10+0.1,1,0,2,stopped,5824,2.86,4.42,50.0
