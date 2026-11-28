@@ -9660,3 +9660,6 @@ id,finished,started,username,branch,type,net,tc,threads,elo0,elo1,outcome,games,
 6b00ea0cb9d0e035d605f77e,2026-11-27T23:02:51Z,2026-11-21T00:47:08Z,fauzi2,6720+6835,SMP,0,5+0.05,8,-1.75,0.25,failed,190736,-0.11,0.74,6551.1
 6b09770a9f65cf9079e2619e,2026-11-28T01:01:56Z,2026-11-27T12:26:50Z,luiscortespenguin,cross-turn-static-eval,STC,0,10+0.1,1,0,2,rejected,41632,-1.58,1.62,357.5
 6b09c4a79f65cf9079e263f8,2026-11-28T01:22:55Z,2026-11-27T17:57:59Z,fwoodruff,correction-expanded,STC,0,10+0.1,1,0,2,rejected,17696,-4.42,2.50,151.9
+6b02a6ccb9d0e035d605fd3c,2026-11-28T01:55:50Z,2026-11-22T08:24:44Z,rn,fix-1-move-pvs-take3,LTC,0,60+0.6,1,-1.75,0.25,passed,220362,0.03,0.66,11353.1
+6b09a6149f65cf9079e262d1,2026-11-28T02:23:00Z,2026-11-27T15:47:32Z,Shreeyans,lmp-history,STC,0,10+0.1,1,0,2,rejected,28960,-2.48,1.94,248.7
+6b071a749f65cf9079e25bcd,2026-11-28T02:42:47Z,2026-11-25T17:27:16Z,penneponne,c2s/15b-depth1-dead-lmr,STC,0,10+0.1,1,0,2,passed,185600,0.90,0.73,1593.7
